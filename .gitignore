@@ -1,2 +1,4 @@
 sync_data.json
 .DS_Store
+server.py
+start_server.command

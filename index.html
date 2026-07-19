@@ -316,7 +316,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
     <div class="hw-mix-btns">
       <button class="hw-all-btn hw-all-btn-all" onclick="startHwQuiz('all')">&#9654; 全部课后错题</button>
       <button class="hw-all-btn hw-all-btn-g1" onclick="startHwQuiz('g1')">&#9654; 数量·经济·财报·公司金融（混合）</button>
-      <button class="hw-all-btn hw-all-btn-g2" onclick="startHwQuiz('g2')">&#9654; 权益·道德（混合）</button>
+      <button class="hw-all-btn hw-all-btn-g2" onclick="startHwQuiz('g2')">&#9654; 权益·固收·衍生·组合·另类（混合）</button>
     </div>
     <div class="hw-grid" id="hw-grid"></div>
   </div>
@@ -810,7 +810,7 @@ function showToast(msg){
 // ── CFA 课后题 ──────────────────────────────────────────────
 var HW_GROUP = {
   g1: ['数量分析', '经济学', '公司发行人', '财务报表'],
-  g2: ['股权投资', '固定收益', '衍生品', '另类投资', '组合管理', '职业道德']
+  g2: ['股权投资', '固定收益', '衍生品', '另类投资', '组合管理']
 };
 var HW_ICONS = {
   '数量分析':'🔢','经济学':'📚','公司发行人':'🏢','财务报表':'📊',
@@ -862,7 +862,7 @@ function startHwQuiz(mode){
     label = '课后题·数量/经济/公司金融';
   } else if(mode === 'g2'){
     qs = HW_QUESTIONS.filter(function(q){ return HW_GROUP.g2.indexOf(q.subject)>=0; });
-    label = '课后题·权益/道德';
+    label = '课后题·权益/固收/衍生/组合/另类';
   } else if(mode.indexOf('subj:')===0){
     var subj = mode.slice(5);
     qs = HW_QUESTIONS.filter(function(q){ return q.subject===subj; });
@@ -1063,13 +1063,13 @@ renderHome();
 // ── Firebase 云同步 ──────────────────────────────────────
 // ⚠ 将下面 7 个字段替换为你的 Firebase 项目配置
 var FIREBASE_CONFIG = {
-  apiKey:            "YOUR_API_KEY",
-  authDomain:        "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL:       "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId:         "YOUR_PROJECT_ID",
-  storageBucket:     "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId:             "YOUR_APP_ID"
+  apiKey:            "AIzaSyDJWQQjAZx-VtcK0kbzLXSp1raGnxPTwN8",
+  authDomain:        "cfa-quiz-2060a.firebaseapp.com",
+  databaseURL:       "https://cfa-quiz-2060a-default-rtdb.firebaseio.com",
+  projectId:         "cfa-quiz-2060a",
+  storageBucket:     "cfa-quiz-2060a.firebasestorage.app",
+  messagingSenderId: "872176538849",
+  appId:             "1:872176538849:web:c4379c7b780dd781bb93a0"
 };
 var FB_PATH = '/cfa_quiz';   // Firebase 中的数据路径
 var _fbDb = null;

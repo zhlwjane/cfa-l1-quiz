@@ -1,5 +1,5 @@
 // CFA 课后错题数据 — 来自 CFA Institute 平台
-// 共 476 道错题
+// 共 552 道错题
 // 生成时间: 2026-07-19
 var CFA_HW_QUESTIONS = [
   {
@@ -8091,5 +8091,1297 @@ var CFA_HW_QUESTIONS = [
     "answer": "B",
     "userWrongAnswer": "A",
     "explanation": "Correct because the risk-neutral probability (π) is the computed probability used in binomial option pricing with π = (1 + r – Rd) / (Ru – Rd), where π is the risk-neutral probability of an increase in the underlying price, r is the risk-free rate and Rd and Ru represent the underlying asset volatility, i.e., expected up and down moves of the underlying after the period. Here, r = 0.05, Ru is (1 + 0.25)=1.25 and Rd is (1 – 0.25) = 0.75. Substituting in yields (1 + 0.05 – 0.75) / (1.25 – 0.75) = 0.60. Since the risk-neutral probability of a decrease in the underlying price is 1 – π we get 1 – 0.60 = 0.40.\n\nC. 0.60."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_1",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 1,
+    "question": "With respect to trading costs, liquidity is least likely to impact the:",
+    "options": {
+      "A": "stock price.",
+      "C": "brokerage commissions.",
+      "B": "bid–ask spreads."
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "C is correct. Brokerage commissions are negotiated with the brokerage firm. A security’s liquidity impacts the operational efficiency of trading costs. Specifically, liquidity impacts the bid–ask spread and can impact the stock price (if the ability to sell the stock is impaired by the uncertainty associated with being able to sell the stock)."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_3",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 3,
+    "question": "With respect to risk-averse investors, a risk-free asset will generate a numerical utility that is:",
+    "options": {
+      "A": "the same for all individuals.",
+      "B": "positive for risk-averse investors.",
+      "C": "equal to zero for risk seeking investors."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "A is correct. A risk-free asset has a variance of zero and is not dependent on whether the investor is risk neutral, risk seeking or risk averse. That is, given that the utility function of an investment is expressed as \n𝑈\n=\n𝐸\n(\n𝑟\n)\n−\n1\n2\n𝐴\n𝜎\n2\n , where A is the measure of risk aversion, then the sign of A is irrelevant if the variance is zero (like that of a risk-free asset)."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_4",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 4,
+    "question": "With respect to utility theory, the most risk-averse investor will have an indifference curve with the:",
+    "options": {
+      "A": "most convexity.",
+      "B": "smallest intercept value.",
+      "C": "greatest slope coefficient."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "A is correct. The most risk-adverse investors have the most convexity in their indifference curves. The most risk-averse investor experiences the fastest deterioration in marginal utility from risk."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_5",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 5,
+    "question": "With respect to an investor’s utility function expressed as: \n𝑈\n=\n𝐸\n(\n𝑟\n)\n−\n1\n2\n𝐴\n𝜎\n2\n , which of the following values for the measure for risk aversion has the least amount of risk aversion?",
+    "options": {
+      "A": "−4.",
+      "B": "0.",
+      "C": "4."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "A is correct. A negative value in the given utility function indicates that the investor is a risk seeker.\n\nVignette\n\nA financial planner has created the following data to illustrate the application of utility theory to portfolio selection:\n\nInvestment\tExpected\n\nReturn (%)\tExpected\n\nStandard Deviation (%)\n1\t18\t2\n2\t19\t8\n3\t20\t15\n4\t18\t30"
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_8",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 8,
+    "question": "If an investor’s utility function is expressed as \n𝑈\n=\n𝐸\n(\n𝑟\n)\n−\n1\n2\n𝐴\n𝜎\n2\n and the measure for risk aversion has a value of 2, the risk-averse investor is most likely to choose:",
+    "options": {
+      "A": "Investment 1.",
+      "B": "Investment 2.",
+      "C": "Investment 3."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "B is correct. Investment 2 provides the highest utility value (0.1836) for a risk-averse investor who has a measure of risk aversion equal to 2.\n\nInvestment\tExpected\n\nReturn (%)\tExpected\n\nStandard Deviation (%)\tUtility\n\nA = 2\n1\t18\t2\t0.1796\n2\t19\t8\t0.1836\n3\t20\t15\t0.1775\n4\t18\t30\t0.0900"
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_14",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 14,
+    "question": "A portfolio manager creates the following portfolio:\n\nSecurity\tSecurity Weight (%)\tExpected\nStandard Deviation (%)\n1\t30\t20\n2\t70\t12\n\nIf the covariance of returns between the two securities is −0.0240, the expected standard deviation of the portfolio is closest to:",
+    "options": {
+      "A": "2.4%.",
+      "B": "7.5%.",
+      "C": "9.2%."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "A is correct.\n\n𝜎\n𝑝\n𝑜\n𝑟\n𝑡\n=\n𝑤\n1\n2\n𝜎\n1\n2\n+\n𝑤\n2\n2\n𝜎\n2\n2\n+\n2\n𝑤\n1\n𝑤\n2\n𝐶\n𝑜\n𝑣\n(\n𝑅\n1\n𝑅\n2\n)\n\n\n=\n(\n0.3\n)\n2\n(\n20\n%\n)\n2\n+\n(\n0.7\n)\n2\n(\n12\n%\n)\n2\n+\n2\n(\n0.3\n)\n(\n0.7\n)\n(\n−\n0.0240\n)\n\n\n=\n(\n0.3600\n%\n+\n0.7056\n%\n−\n1.008\n%\n)\n0.5\n=\n(\n0.0576\n%\n)\n0.5\n=\n2.40\n%\nVignette\n\nA portfolio manager creates the following portfolio:\n\nSecurity\tSecurity Weight (%)\tExpected\n\nStandard Deviation (%)\n1\t30\t20\n2\t70\t12"
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_19",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 19,
+    "question": "If the two securities are uncorrelated, the expected standard deviation of an equal-weighted portfolio is closest to:",
+    "options": {
+      "A": "14.00%.",
+      "B": "14.14%.",
+      "C": "20.00%."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "B is correct.\n\n𝜎\n𝑝\n𝑜\n𝑟\n𝑡\n=\n𝑤\n1\n2\n𝜎\n1\n2\n+\n𝑤\n2\n2\n𝜎\n2\n2\n+\n2\n𝑤\n1\n𝑤\n2\n𝜌\n1\n,\n2\n𝜎\n1\n𝜎\n2\n\n\n=\n(\n0.5\n)\n2\n(\n20\n%\n)\n2\n+\n(\n0.5\n)\n2\n(\n20\n%\n)\n2\n+\n2\n(\n0.5\n)\n(\n0.5\n)\n(\n0.00\n)\n(\n20\n%\n)\n(\n20\n%\n)\n\n\n=\n(\n1.0000\n%\n+\n1.0000\n%\n−\n0.0000\n%\n)\n0.5\n=\n(\n2.0000\n%\n)\n0.5\n=\n14.14\n%\nVignette\n\nAn analyst has made the following return projections for each of three possible outcomes with an equal likelihood of occurrence:\n\nAsset\tOutcome 1\n\n(%)\tOutcome 2\n\n(%)\tOutcome 3\n\n(%)\tExpected Return\n\n(%)\n1\t12\t0\t6\t6\n2\t12\t6\t0\t6\n3\t0\t6\t12\t6"
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_20",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 20,
+    "question": "If the analyst constructs two-asset portfolios that are equally-weighted, which pair of assets has the lowest expected standard deviation?",
+    "options": {
+      "A": "Asset 1 and Asset 2.",
+      "B": "Asset 1 and Asset 3.",
+      "C": "Asset 2 and Asset 3."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. An equally weighted portfolio of Asset 2 and Asset 3 will have the lowest portfolio standard deviation, because for each outcome, the portfolio has the same expected return (they are perfectly negatively correlated)."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_25",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 25,
+    "question": "Which of the following statements is least accurate? The efficient frontier is the set of all attainable risky assets with the:",
+    "options": {
+      "A": "highest expected return for a given level of risk.",
+      "B": "lowest amount of risk for a given level of return.",
+      "C": "highest expected return relative to the risk-free rate."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. The efficient frontier does not account for the risk-free rate. The efficient frontier is the set of all attainable risky assets with the highest expected return for a given level of risk or the lowest amount of risk for a given level of return."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_28",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 28,
+    "question": "The dominant capital allocation line is the combination of the risk-free asset and the:",
+    "options": {
+      "A": "optimal risky portfolio.",
+      "B": "levered portfolio of risky assets.",
+      "C": "global minimum-variance portfolio."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "A is correct. The use of leverage and the combination of a risk-free asset and the optimal risky asset will dominate the efficient frontier of risky assets (the Markowitz efficient frontier)."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_31",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 31,
+    "question": "The correlation between the historical returns of Stock A and Stock B is 0.75. If the variance of Stock A is 0.16 and the variance of Stock B is 0.09, the covariance of returns of Stock A and Stock B is closest to:",
+    "options": {
+      "A": "0.01.",
+      "B": "0.09.",
+      "C": "0.16."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "Correct.\n\nCov(A,B) = ρABσAσB = 0.75 × 0.4 × 0.3 = 0.09\n\nC. 0.16."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_35",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 35,
+    "question": "The covariance of the assets in the following portfolio is closest to:\n\n \tAsset 1\tAsset 2\tAsset 1\nvs. Asset 2\nCorrelation\t---\t---\t0.8\nPortfolio weight\t0.6\t0.4\t---\nVariance\t3.5%\t1.5%\t---\nCorrect answer:",
+    "options": {
+      "A": "1.8%",
+      "B": "0.4%",
+      "C": "2.3%"
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. The covariance is calculated from the standard deviations of the two assets and their correlation. The portfolio weights are not relevant.\n\n \n\nCov = ρ1,2 × σ1 × σ2\n\n \n\n = \n𝜌\n1\n,\n2\n×\nvar\n1\n×\nvar\n2\n\n \n\n = \n0.8\n×\n3.5\n%\n×\n1.5\n%\n\n \n\n= 1.8%\n\nB. 0.4%"
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_36",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 36,
+    "question": "When considering a portfolio that is optimal for one investor, a second investor with a higher risk aversion would most likely:",
+    "options": {
+      "A": "expect a higher variance for the portfolio.",
+      "B": "derive a lower utility from the portfolio.",
+      "C": "have a lower return expectation for the portfolio."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "Correct. Utility has two terms: the expected return and a negative term based on the portfolio risk weighted by risk aversion. For an identical portfolio, the investor with a higher risk aversion (A) would calculate a lower utility (U).\n𝑈\n=\n𝐸\n(\n𝑟\n)\n \n-\n1\n2\n𝐴\n𝜎\n\nC. have a lower return expectation for the portfolio."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_39",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 39,
+    "question": "When constructing the optimal portfolios for investors with different risk preferences, the investor with the higher risk aversion is most likely to have a:\n\nCorrect answer:",
+    "options": {
+      "A": "lower expected return.",
+      "B": "steeper capital allocation line.",
+      "C": "flatter indifference curve."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "Correct. The optimal portfolio is identified as the point at which the capital allocation line (CAL) is tangential to the investor’s indifference curve. As investor risk aversion increases, the optimal portfolio slides down the CAL to a point of lower expected risk and lower expected return."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_40",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 40,
+    "question": "John Smith is given two investment options. Option A is a payment with a 50% chance of getting $100 and a 50% chance of getting $0. Option B is a guaranteed payment of $50. If Smith chooses Option A over Option B, his risk preference is best described as risk:\n\nCorrect answer:",
+    "options": {
+      "A": "seeking.",
+      "B": "averse.",
+      "C": "neutral."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "Correct. Both options have the same expected return of $50. Option A, however, has a higher risk (standard deviation) than Option B. Therefore, John Smith’s risk preference is that of risk seeking."
+  },
+  {
+    "id": "pm_Module_1_Portfolio_Risk_and_Return_Part_I_42",
+    "source": "CFA_PM_M01",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 1: Portfolio Risk and Return: Part I",
+    "num": 42,
+    "question": "If Investor A has a lower risk aversion coefficient than Investor B, on the capital allocation line, will Investor B’s optimal portfolio most likely have a higher expected return?",
+    "options": {
+      "A": "Yes",
+      "B": "No, because Investor B has a higher risk tolerance",
+      "C": "No, because Investor B has a lower risk tolerance"
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "Correct. Investor B has a higher risk aversion coefficient, thus a lower risk tolerance and a lower expected return on the capital allocation line.\n\nRetake"
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_2",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 2,
+    "question": "The portfolio of a risk-free asset and a risky asset has a better risk-return tradeoff than investing in only one asset type because the correlation between the risk-free asset and the risky asset is equal to:",
+    "options": {
+      "A": "−1.0.",
+      "B": "0.0.",
+      "C": "1.0."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "B is correct. A portfolio of the risk-free asset and a risky asset or a portfolio of risky assets can result in a better risk-return tradeoff than an investment in only one type of an asset, because the risk-free asset has zero correlation with the risky asset."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_11",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 11,
+    "question": "Which of the following types of risk is most likely avoided by forming a diversified portfolio?",
+    "options": {
+      "A": "Total risk.",
+      "B": "Systematic risk.",
+      "C": "Nonsystematic risk."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. Investors are capable of avoiding nonsystematic risk by forming a portfolio of assets that are not highly correlated with one another, thereby reducing total risk and being exposed only to systematic risk."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_14",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 14,
+    "question": "The sum of an asset’s systematic variance and its nonsystematic variance of returns is equal to the asset’s:",
+    "options": {
+      "A": "beta.",
+      "B": "total risk.",
+      "C": "total variance."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. The sum of systematic variance and nonsystematic variance equals the total variance of the asset. References to total risk as the sum of systematic risk and nonsystematic risk refer to variance, not to risk.\n\nVignette\n\nAn analyst gathers the following information:\n\nSecurity\tExpected\n\nAnnual Return (%)\tExpected\n\nStandard Deviation (%)\tCorrelation between Security and the Market\nSecurity 1\t11\t25\t0.6\nSecurity 2\t11\t20\t0.7\nSecurity 3\t14\t20\t0.8\nMarket\t10\t15\t1.0"
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_18",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 18,
+    "question": "With respect to return-generating models, the intercept term of the market model is the asset’s estimated:",
+    "options": {
+      "A": "beta.",
+      "B": "alpha.",
+      "C": "variance."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "B is correct. In the market model, Ri = αi + βiRm + ei, the intercept, αi, and slope coefficient, βi, are estimated using historical security and market returns."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_22",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 22,
+    "question": "With respect to the capital asset pricing model, the primary determinant of expected return of an individual asset is the:",
+    "options": {
+      "A": "asset’s beta.",
+      "B": "market risk premium.",
+      "C": "asset’s standard deviation."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "A is correct. The CAPM shows that the primary determinant of expected return for an individual asset is its beta, or how well the asset correlates with the market."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_24",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 24,
+    "question": "With respect to the capital asset pricing model, the market risk premium is:",
+    "options": {
+      "A": "less than the excess market return.",
+      "B": "equal to the excess market return.",
+      "C": "greater than the excess market return."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "B is correct. In the CAPM, the market risk premium is the difference between the return on the market and the risk-free rate, which is the same as the return in excess of the market return."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_32",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 32,
+    "question": "With respect to capital market theory, which of the following assumptions allows for the existence of the market portfolio? All investors:",
+    "options": {
+      "A": "are price takers.",
+      "B": "have homogeneous expectations.",
+      "C": "plan for the same, single holding period."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "B is correct. The homogeneous expectations assumption means that all investors analyze securities in the same way and are rational. That is, they use the same probability distributions, use the same inputs for future cash flows, and arrive at the same valuations. Because their valuation of all assets is identical, they will generate the same optimal risky portfolio, which is the market portfolio."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_34",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 34,
+    "question": "Which of the following performance measures is consistent with the CAPM?",
+    "options": {
+      "A": "M2.",
+      "B": "Sharpe ratio.",
+      "C": "Jensen’s alpha."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. Jensen’s alpha adjusts for systematic risk, and M2 and the Sharpe Ratio adjust for total risk."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_35",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 35,
+    "question": "Which of the following performance measures does not require the measure to be compared to another value?",
+    "options": {
+      "A": "Sharpe ratio.",
+      "C": "Jensen’s alpha.",
+      "B": "Treynor ratio."
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "C is correct. The sign of Jensen’s alpha indicates whether or not the portfolio has outperformed the market. If alpha is positive, the portfolio has outperformed the market; if alpha is negative, the portfolio has underperformed the market."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_46",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 46,
+    "question": "The stock of GBK Corporation has a beta of 0.65. If the risk-free rate of return is 3% and the expected market return is 9%, the expected return for GBK is closest to:",
+    "options": {
+      "A": "10.8%.",
+      "B": "3.9%.",
+      "C": "6.9%."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "Correct.\n\nE(RGBK) = Rf + βGBK × [E(RMkt) – Rf]\n\n = 0.03 + 0.65 × (0.09 – 0.03)\n\n = 0.069"
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_48",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 48,
+    "question": "An investor with $10,000 decides to borrow an additional $5,000 at the risk-free rate and invest all the available funds in the market portfolio. This investor’s portfolio beta is closest to:",
+    "options": {
+      "A": "0.5.",
+      "B": "1.0.",
+      "C": "1.5."
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "Correct. The weight in the market portfolio is 15,000/10,000 = 1.5 and the weight in the risk-free asset is –5,000/10,000 = –0.5. Because the beta of the risk-free asset is 0 and the market portfolio’s beta is 1, the portfolio’s beta is βp = 0(–0.5) + 1(1.5) = 1.5."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_50",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 50,
+    "question": "Which of the following is least likely an assumption underlying the capital asset pricing model (CAPM)?\n\nCorrect answer:",
+    "options": {
+      "A": "Investors analyze securities according to their own future cash flow estimates and probability distributions.",
+      "B": "There are no restrictions on short selling assets.",
+      "C": "The amount invested in an asset can be as much or as little as the investor wants."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "Correct. The CAPM requires that there are no restrictions on short selling (which is an assumption underlying frictionless markets) and that the amount invested in an asset can be as much or as little as the investor wants (that is, investments are infinitely divisible). The CAPM also assumes that all investors analyze securities in the same way using the same inputs for future cash flows and the same probability distributions; that is, it assumes that investors have homogenous expectations."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_54",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 54,
+    "question": "Based on the capital asset pricing model (CAPM), the expected return on FGL Corp’s shares is 12%. Using a model independent of the CAPM, an analyst has estimated the returns on the stock at 10%. Based on this information, the analyst is most likely to consider the stock to be:\n\nCorrect answer:",
+    "options": {
+      "A": "overvalued.",
+      "B": "correctly valued.",
+      "C": "undervalued."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. Because the estimated return on the stock is lower than the expected return using the CAPM, the stock does not compensate the investor for the level of risk and so it is most likely overvalued.\n\nB. correctly valued."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_57",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 57,
+    "question": "Information about three stocks is provided in the following table:\n\nStock\tExpected Return\tBeta\nBooraem Inc.\t12.85%\t1.5\nHeisen Inc.\t11.27%\t1.1\nGutmann Inc.\t9.51%\t0.8\n\nIf the expected market return is 9.5% and the average risk-free rate is 1.2%, according to the capital asset pricing model (CAPM) and the security market line (SML), which of the three stocks is most likely overvalued?\n\nCorrect answer:",
+    "options": {
+      "A": "Booraem Inc.",
+      "B": "Heisen Inc.",
+      "C": "Gutmann Inc."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. Booraem Inc. is overvalued because it lies below the SML. The expected return, 12.85%, is less than the required return. According to the CAPM, the required return for Booraem Inc. is 0.1365 or 13.65%: 0.1365 = 0.012 + 1.5(0.095 – 0.012).\n\nB. Heisen Inc."
+  },
+  {
+    "id": "pm_Module_2_Portfolio_Risk_and_Return_Part_II_63",
+    "source": "CFA_PM_M02",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 2: Portfolio Risk and Return: Part II",
+    "num": 63,
+    "question": "An analyst gathers the following information about three stocks:\n\n \tBeta\tStandard Deviation of Returns\nStock 1\t0.9\t17%\nStock 2\t1.1\t18%\nStock 3\t1.2\t16%\n\nIf the standard deviation of market returns is equal to 10%, the stock with the highest nonsystematic risk is:\n\nCorrect answer:",
+    "options": {
+      "A": "Stock 1.",
+      "B": "Stock 2.",
+      "C": "Stock 3."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "Correct because Total variance = Systematic variance + Nonsystematic variance, which can be written as σi2 = βi2σm2 + σe2. Thus, σe2 = σi2 – βi2σm2. Thus, nonsystematic variance for Stock 1 is equal to (0.17)2 – (0.9)2(0.1)2 = 0.0208. For Stock 2, this is equal to (0.18)2 – (1.1)2(0.1)2 = 0.0203. For Stock 3, this is equal to (0.16)2 – (1.2)2(0.1)2 = 0.0112. Therefore, Stock 1 has the highest nonsystematic variance and the highest idiosyncratic risk. Nonsystematic risk is the risk that pertains to a single company or industry and is also known as company-specific, industry-specific, diversifiable, or idiosyncratic risk."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_3",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 3,
+    "question": "With respect to the formation of portfolios, which of the following statements is most accurate?",
+    "options": {
+      "A": "Portfolios affect risk less than returns.",
+      "B": "Portfolios affect risk more than returns.",
+      "C": "Portfolios affect risk and returns equally."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "B is correct. As illustrated in the reading, portfolios reduce risk more than they increase returns."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_8",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 8,
+    "question": "Which of the following institutions will on average have the greatest need for liquidity?",
+    "options": {
+      "A": "Banks.",
+      "B": "Investment companies.",
+      "C": "Non-life insurance companies."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "A is correct. The excess reserves invested by banks need to be relatively liquid. Although investment companies and non-life insurance companies have high liquidity needs, the liquidity need for banks is on average the greatest."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_9",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 9,
+    "question": "Which of the following institutional investors will most likely have the longest time horizon?",
+    "options": {
+      "A": "Defined benefit plan.",
+      "B": "University endowment.",
+      "C": "Life insurance company."
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "B is correct. Most foundations and endowments are established with the intent of having perpetual lives. Although defined benefit plans and life insurance companies have portfolios with a long time horizon, they are not perpetual."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_10",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 10,
+    "question": "A defined benefit plan with a large number of retirees is likely to have a high need for:",
+    "options": {
+      "A": "income.",
+      "B": "liquidity.",
+      "C": "insurance."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "A is correct. Income is necessary to meet the cash flow obligation to retirees. Although defined benefit plans have a need for income, the need for liquidity typically is quite low. A retiree may need life insurance; however, a defined benefit plan does not need insurance."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_12",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 12,
+    "question": "Which of the following investment products is most likely to trade at their net asset value per share?",
+    "options": {
+      "A": "Exchange traded funds.",
+      "B": "Open-end mutual funds.",
+      "C": "Closed-end mutual funds."
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "B is correct. Open-end funds trade at their net asset value per share, whereas closed-end funds and exchange traded funds can trade at a premium or a discount."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_13",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 13,
+    "question": "Which of the following financial products is least likely to have a capital gain distribution?",
+    "options": {
+      "A": "Exchange traded funds.",
+      "B": "Open-end mutual funds.",
+      "C": "Closed-end mutual funds."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "A is correct. Exchange traded funds do not have capital gain distributions. If an investor sells shares of an ETF (or open-end mutual fund or closed-end mutual fund), the investor may have a capital gain or loss on the shares sold; however, the gain (or loss) from the sale is not a distribution."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_20",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 20,
+    "question": "With respect to the portfolio management process, asset allocation decisions are most likely made in the:\n\nCorrect answer:",
+    "options": {
+      "A": "execution step.",
+      "B": "planning step.",
+      "C": "feedback step."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "Correct. Asset allocation decisions are made in the execution step."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_21",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 21,
+    "question": "A key difference between a wrap account and a mutual fund is that wrap accounts:\n\nCorrect answer:",
+    "options": {
+      "A": "have assets that are owned directly by the individual.",
+      "B": "cannot be tailored to the tax needs of a client.",
+      "C": "have a lower required minimum investment."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "Correct. The key difference between a wrap account and a mutual fund is that in a wrap account, the assets are owned directly by the individual."
+  },
+  {
+    "id": "pm_Module_3_Portfolio_Management_An_Overview_23",
+    "source": "CFA_PM_M03",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 3: Portfolio Management: An Overview",
+    "num": 23,
+    "question": "Security analysis is most likely a part of which step in the portfolio management process?",
+    "options": {
+      "A": "The feedback step",
+      "B": "The execution step",
+      "C": "The planning step"
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. The execution step of the portfolio management process has three parts: asset allocation, security analysis, and portfolio construction."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_2",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 2,
+    "question": "Which of the following best describes the underlying rationale for a written investment policy statement (IPS)?",
+    "options": {
+      "A": "A written IPS communicates a plan for trying to achieve investment success.",
+      "B": "A written IPS provides investment managers with a ready defense against client lawsuits.",
+      "C": "A written IPS allows investment managers to instruct clients about the proper use and purpose of investments."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "A is correct. A written IPS is best seen as a communication instrument allowing clients and portfolio managers to mutually establish investment objectives and constraints."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_5",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 5,
+    "question": "Which of the following is least likely to be placed in the appendices to an investment policy statement (IPS)?",
+    "options": {
+      "A": "Rebalancing Policy.",
+      "B": "Strategic Asset Allocation.",
+      "C": "Statement of Duties and Responsibilities."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. The major components of an IPS are listed in Section 2 of the reading. Strategic Asset Allocation (also known as the policy portfolio) and Rebalancing Policy are often included as appendices to the IPS. The Statement of Duties and Responsibilities, however, is an integral part of the IPS and is unlikely to be placed in an appendix."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_7",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 7,
+    "question": "An investment policy statement that includes a return objective of outperforming the FTSE 100 by 120 basis points is best characterized as having a(n):",
+    "options": {
+      "A": "relative return objective.",
+      "B": "absolute return objective.",
+      "C": "arbitrage-based return objective."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "A is correct. Because the return objective specifies a target return relative to the FTSE 100 Index, the objective is best described as a relative return objective."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_9",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 9,
+    "question": "Which of the following is best characterized as a relative risk objective?",
+    "options": {
+      "A": "Value at risk for the fund will not exceed US$3 million.",
+      "B": "The fund will not underperform the DAX by more than 250 basis points.",
+      "C": "The fund will not lose more than €2.5 million in the coming 12-month period."
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "B is correct. The reference to the DAX marks this response as a relative risk objective. Value at risk establishes a minimum value of loss expected during a specified time period at a given level of probability. A statement of maximum allowed absolute loss (€2.5 million) is an absolute risk objective."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_19",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 19,
+    "question": "Tactical asset allocation is best described as:",
+    "options": {
+      "A": "attempts to exploit arbitrage possibilities among asset classes.",
+      "B": "the decision to deliberately deviate from the policy portfolio.",
+      "C": "selecting asset classes with the desired exposures to sources of systematic risk in an investment portfolio."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "B is correct. Tactical asset allocation allows actual asset allocation to deviate from that of the strategic asset allocation (policy portfolio) of the IPS. Tactical asset allocation attempts to take advantage of temporary dislocations from the market conditions and assumptions that drove the policy portfolio decision."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_20",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 20,
+    "question": "A portfolio manager decides to temporarily invest more of a portfolio in equities than the investment policy statement prescribes because he expects equities will generate a higher return than other asset classes. This decision is most likely an example of:",
+    "options": {
+      "A": "rebalancing.",
+      "B": "tactical asset allocation.",
+      "C": "strategic asset allocation."
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. Tactical asset allocation is the decision to deliberately deviate from the policy exposures to systematic risk factors with the intent to add value based on forecasts of the near-term returns of those asset classes."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_22",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 22,
+    "question": "A 35-year-old financial analyst expects to retire at the age of 65 and is interested in investing to fund her retirement. She describes herself as being financially astute with average risk tolerance. Which asset class is least likely to be suitable for a majority allocation in her portfolio to meet her retirement needs?",
+    "options": {
+      "A": "Long-term bonds",
+      "B": "US Treasury bills",
+      "C": "Exchange-listed equities"
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. The investor has a 30-year time horizon and average risk tolerance, so she is able to accept the additional risk associated with exchange-listed equities and long-term bonds compared with US Treasury bills."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_24",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 24,
+    "question": "The strategic asset allocation and portfolio rebalancing policy are most likely addressed in which section of an investment policy statement?\n\nCorrect answer:",
+    "options": {
+      "A": "Appendices",
+      "B": "Investment objectives",
+      "C": "Procedures"
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. Information related to strategic asset allocation and portfolio rebalancing policy would be placed in the appendices of an investment policy statement.\n\nB. Investment objectives"
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_26",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 26,
+    "question": "Which of the following is most likely associated with an investor’s ability to take risk rather than the investor’s willingness to take risk?\n\nCorrect answer:",
+    "options": {
+      "A": "The investor has a long investment time horizon.",
+      "B": "The investor believes earning excess returns on stocks is a matter of luck.",
+      "C": "Safety of principal is very important to the investor."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. Investment time horizon is an objective factor that measures the investor’s ability to take risk.\n\nB. The investor believes earning excess returns on stocks is a matter of luck."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_27",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 27,
+    "question": "Which of the following is most likely developed by combining a client's investment objectives and constraints with long-term capital market expectations?",
+    "options": {
+      "A": "Risk budget",
+      "B": "Strategic asset allocation",
+      "C": "Investment policy statement"
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "Correct because a strategic asset allocation results from combining the constraints and objectives articulated in the IPS [investment policy statement] and long-term capital market expectations regarding the asset classes."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_28",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 28,
+    "question": "Which of the following investment principles best explains the use of strategic asset allocation in portfolio construction?\n\nCorrect answer:",
+    "options": {
+      "A": "Returns on similar assets reflect exposures to certain sets of systematic factors.",
+      "B": "Nonsystematic risk accounts for most of the change in portfolio value over the long term.",
+      "C": "Deviating from policy exposures to systematic risk factors may add value to the portfolio."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct because the focus on the SAA [strategic asset allocation] is the result of a number of important investment principles. One such principle is that the returns to groups of similar assets (e.g., long-term debt claims) predictably reflect exposures to certain sets of systematic factors (e.g., for the debt claims, unexpected changes in the inflation rate).\n\nB. Nonsystematic risk accounts for most of the change in portfolio value over the long term."
+  },
+  {
+    "id": "pm_Module_4_Basics_of_Portfolio_Planning_and_Construction_30",
+    "source": "CFA_PM_M04",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 4: Basics of Portfolio Planning and Construction",
+    "num": 30,
+    "question": "Portfolio rebalancing is best described as a process aimed at:",
+    "options": {
+      "A": "generating alpha.",
+      "B": "aligning portfolio weights with the tactical asset allocation decision.",
+      "C": "restoring the portfolio's original exposures to systematic risk factors."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "Correct because as the portfolio is constructed and its value changes with the returns of the asset classes and securities in which it is invested, the weights of the asset classes will gradually deviate from the policy weights in the strategic asset allocation. This process is referred to as drift. Periodically, or when a certain threshold deviation from the policy weight (the bandwidth) has been breached, the portfolio should be rebalanced back to the policy weights. The set of rules that guide the process of restoring the portfolio’s original exposures to systematic risk factors is known as the rebalancing policy."
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_2",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 2,
+    "question": "The advice “Don’t confuse brains with a bull market” is aimed at mitigating which of the following behavioral biases?",
+    "options": {
+      "A": "Self-control",
+      "B": "Conservatism",
+      "C": "Overconfidence"
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. This advice is specifically aimed at reducing self-attribution bias, a form of overconfidence bias. This bias may result in FMPs taking credit for investment success, as well as assigning responsibility to others for investment failures, when in reality the investment results reflect exogenous market forces."
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_3",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 3,
+    "question": "Status quo bias is least similar to which of the following behavioral biases?",
+    "options": {
+      "A": "Endowment",
+      "C": "Confirmation",
+      "B": "Regret aversion"
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "C is correct. Both endowment bias and regret-aversion bias often result in indecision or inertia—a typical outcome of status quo bias, in which people prefer to not make changes even when changes are warranted."
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_4",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 4,
+    "question": "Which strategy would best mitigate or prevent endowment bias?",
+    "options": {
+      "A": "Actively seeking out information that challenges existing beliefs",
+      "B": "When new information is presented, asking “How does this information change my forecast?”",
+      "C": "Asking “Would you buy this security today at the current price?”"
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. Endowment bias refers to people attributing additional, unwarranted value to things they possess versus things they do not. This bias is evident in FMPs that systematically and materially overvalue securities in their portfolio versus securities not in their portfolio. The question “Would you buy this security today at the current price?” turns the investor’s attention to assessing the reasonableness of the current price as a buy price rather than solely as a selling price."
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_5",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 5,
+    "question": "Jun Park, CFA, works at a hedge fund. Most of Park’s colleagues are also CFA charterholders. At an event with recent university graduates, Park comments, “Most CFA charterholders work at hedge funds.” Park’s remark exhibits which behavioral bias?",
+    "options": {
+      "A": "Availability",
+      "B": "Conservatism",
+      "C": "Framing"
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "A is correct. Park is extrapolating his observation based on a narrow range of experience (working at a hedge fund that employs many CFA charterholders) to the entire population of CFA charterholders. Using a narrow range of experience is a form of availability bias."
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_6",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 6,
+    "question": "In the 1980s, Japan was viewed by many FMPs as the model economy. Although its growth began to decelerate sharply by 1990, it was not until the mid to late 1990s that FMPs’ GDP forecasts were consistently achieved. By taking several years to adapt their forecasts to the lower growth environment, FMPs exhibited which behavioral bias?",
+    "options": {
+      "A": "Mental accounting",
+      "C": "Conservatism",
+      "B": "Overconfidence"
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "C is correct. Conservatism bias results in maintain or only slowly updating views and forecasts despite the presence of new information. FMPs in the 1990s were reluctant to update forecasts, despite materially different new information for several years.\n\nVignette\n\nCaitríona Daosri is a portfolio manager for an international bank, where she advises high-net-worth clients. Daosri is meeting with a new client, Estêvão Kai, a 40-year-old surgeon with €4 million across various accounts and a salary of €500,000 per annum. Kai explains to Daosri that he has four accounts at four different banks, each with specific sources and uses of funds, as shown in the following table:\n\nBank Account\tSource of Deposits\tUse of Funds\n1\tSalary\tLiving expenses\n2\tBonus\tCharitable gifts\n3\tPortfolio interest\tSavings for retirement\n4\tPortfolio dividends\tMother’s living expenses"
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_12",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 12,
+    "question": "All of the following are reasons that an apparent deviation from the efficient market hypothesis might not be anomalous except:",
+    "options": {
+      "A": "The abnormal returns represent compensation for exposure to risk.",
+      "C": "The deviation is well known or documented.",
+      "B": "Changing the asset pricing model makes the deviation to disappear."
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "C is correct. Bubbles and crashes are well-known and well-documented phenomena yet represent market anomalies."
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_14",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 14,
+    "question": "Momentum, can be partly explained by the following behavioral biases except:",
+    "options": {
+      "A": "availability.",
+      "B": "home bias.",
+      "C": "regret."
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "B is correct. Home bias refers to FMPs preferentially investing in domestic securities, likely reflecting perceived relative informational advantages, a greater feeling of comfort with the access to company executives that proximity brings (either personal or through a local brokerage), or a psychological desire to invest in a local community. Momentum, on the other hand, has been documented in a range of markets around the world, in a time-dependent manner, and reflects some FMPs’ availability bias, manifested as a belief that stocks will continue to rise because recently they have only risen, as well as regret aversion by those who invest in past winners because they regret not investing in them in the past."
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_15",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 15,
+    "question": "All of the following are reasons that the historical outperformance of value stocks versus growth stocks may not be anomalous except:",
+    "options": {
+      "A": "Abnormal returns represent compensation for risk exposures, such as the heightened risk of value stocks to suffer distress during downturns.",
+      "B": "Companies with strong historical growth rates are viewed as good investments, with higher expected returns than risk characteristics merit.",
+      "C": "The deviation disappears by incorporating a three-factor asset pricing model."
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "B is correct. This choice describes the halo effect, which does offer a behavioral explanation for the poor performance of growth stocks versus value stocks. Growth stocks are mispriced relative to their risk characteristics, because FMPs focusing on just a few properties, such as a high historical revenue growth rate, while neglecting other characteristics."
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_16",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 16,
+    "question": "Failing to act in pursuit of long-term goals in favor of short-term satisfaction best describes which of the following emotional biases?\n\nCorrect answer:",
+    "options": {
+      "A": "Self-control bias",
+      "B": "Endowment bias",
+      "C": "Loss-aversion bias"
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct because self-control bias is a bias in which people fail to act in pursuit of their long-term, overarching goals in favor of short-term satisfaction.\n\nB. Endowment bias"
+  },
+  {
+    "id": "pm_Module_5_The_Behavioral_Biases_of_Individuals_18",
+    "source": "CFA_PM_M05",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 5: The Behavioral Biases of Individuals",
+    "num": 18,
+    "question": "Which of the following behavioral biases is most likely the hardest to correct?",
+    "options": {
+      "A": "Hindsight bias",
+      "B": "Loss-aversion bias",
+      "C": "Representativeness bias"
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "Correct because loss-aversion bias is an emotional bias, as opposed to a cognitive error, and cognitive errors can often be corrected or eliminated through better information, education, and advice. Emotional biases, on the other hand, are harder to correct because they stem from impulses and intuitions. Thus, it is often possible only to recognize an emotional bias and adapt to it. Loss-aversion bias refers to the tendency to strongly prefer avoiding losses to achieving gains.\n\nC. Representativeness bias"
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_2",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 2,
+    "question": "Which of the following may be controlled by an investor?",
+    "options": {
+      "A": "Risk",
+      "B": "Raw returns",
+      "C": "Risk-adjusted returns"
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "A is correct. Many decision makers focus on return, which is not something that is easily controlled, as opposed to risk, or exposure to risk, which may actually be managed or controlled."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_4",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 4,
+    "question": "The factors a risk management framework should address include all of the following except:",
+    "options": {
+      "A": "communications.",
+      "C": "names of responsible individuals.",
+      "B": "policies and processes."
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "C is correct. While risk infrastructure, which a risk management framework must address, refers to the people and systems required to track risk exposures, there is no requirement to actually name the responsible individuals."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_7",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 7,
+    "question": "Effective risk governance in an enterprise provides guidance on all of the following except:",
+    "options": {
+      "A": "unacceptable risks.",
+      "C": "specific methods to mitigate risk for each subsidiary in the enterprise.",
+      "B": "worst losses that may be tolerated."
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "C is correct. Risk governance is not about specifying methods to mitigate risk at the business line level. Rather, it is about establishing an appropriate level of risk for the entire enterprise. Specifics of dealing with risk fall under risk management and the risk infrastructure framework."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_10",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 10,
+    "question": "Which factor should most affect a company’s ability to tolerate risk?",
+    "options": {
+      "A": "A stable market environment",
+      "B": "The beliefs of the individual board members",
+      "C": "The ability to dynamically respond to adverse events"
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "C is correct. If a company has the ability to adapt quickly to adverse events may allow for a higher risk tolerance. There are other factors, such as beliefs of board members and a stable market environment, which may but should not affect risk tolerance."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_11",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 11,
+    "question": "Which of the following is the correct sequence of events for risk governance and management that focuses on the entire enterprise? Establishing:",
+    "options": {
+      "A": "risk tolerance, then risk budgeting, and then risk exposures.",
+      "B": "risk exposures, then risk tolerance, and then risk budgeting.",
+      "C": "risk budgeting, then risk exposures, and then risk tolerance."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "A is correct. In establishing a risk management system, determining risk tolerance must happen before specific risks can be accepted or reduced. Risk tolerance defines the appetite for risk. Risk budgeting determine how or where the risk is taken and quantifies the tolerable risk by specific metrics. Risk exposures can then be measured and compared against the acceptable risk."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_21",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 21,
+    "question": "A top-down process that offers guidance and directs activities that seek to maximize the value of an enterprise is most likely an element of:\n\nCorrect answer:",
+    "options": {
+      "A": "risk governance.",
+      "B": "risk infrastructure.",
+      "C": "risk monitoring and mitigation."
+    },
+    "answer": "A",
+    "userWrongAnswer": "B",
+    "explanation": "Correct. Risk governance is the top-down process and guidance that directs risk management activities to align with and support the overall enterprise."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_22",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 22,
+    "question": "Within a risk management framework, risk tolerance:\n\nCorrect answer:",
+    "options": {
+      "A": "and risk exposure should be kept in alignment.",
+      "B": "includes the qualitative assessment and evaluation of risk.",
+      "C": "is determined as a result of establishing how and where risk is taken."
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. The process of risk monitoring, mitigation, and management is the most obvious facet of the risk management framework and requires recognizing when risk exposure is not aligned with risk tolerance.\n\nB. includes the qualitative assessment and evaluation of risk."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_23",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 23,
+    "question": "Risk budgeting most likely:",
+    "options": {
+      "A": "limits the cost of hedging a portfolio.",
+      "B": "can be defined by a measure such as beta or scenario loss.",
+      "C": "focuses on the appetite for risk and what exposures are acceptable."
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. Risk budgeting quantifies and allocates the tolerable risk according to specific metrics. A risk budget can be multidimensional or a simple, one-dimensional risk measure, such as standard deviation, beta, value at risk, or scenario loss, among others."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_24",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 24,
+    "question": "Risk management is most likely the process by which an organization:",
+    "options": {
+      "A": "minimizes its exposure to potential losses.",
+      "B": "adjusts its risk to a predetermined level.",
+      "C": "maximizes its risk-adjusted return."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "Correct. An organization with a strong competitive position can recover from losses more easily than one with a weaker competitive position. Therefore, an organization’s risk tolerance should reflect its competitive position. An organization’s size does not define the risk sources it faces or the relative losses it can absorb, so it should not be reflected in its risk tolerance. Neither the risk sources affecting an organization nor the size of the losses an organization can absorb are a function of its perception of market stability.\n\nC. maximizes its risk-adjusted return."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_27",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 27,
+    "question": "Among other things, an organization’s risk tolerance should most likely reflect its:",
+    "options": {
+      "A": "perception of market stability.",
+      "B": "size.",
+      "C": "competitive position."
+    },
+    "answer": "C",
+    "userWrongAnswer": "A",
+    "explanation": "Correct. An organization with a strong competitive position can recover from losses more easily than one with a weaker competitive position. Therefore an organization’s risk tolerance should reflect its competitive position. An organization’s size does not define the risk sources it faces or the relative losses it can absorb, so it should not be reflected in its risk tolerance. Neither the risk sources affecting an organization nor the size of the losses an organization can absorb are a function of its perception of market stability."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_28",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 28,
+    "question": "A major benefit of employing a risk budgeting process is that it most likely:",
+    "options": {
+      "A": "allows the organization to determine its enterprise risk tolerance.",
+      "B": "forces risk tradeoffs across the organization.",
+      "C": "eliminates the need for hedging within the organization."
+    },
+    "answer": "B",
+    "userWrongAnswer": "A",
+    "explanation": "Correct. Adding a risk budgeting process causes the organization to consider how its total risk tolerance will be allocated across its subsidiaries. Either the total current risks the subsidiaries are engaging in will exceed the risk tolerance and subsidiaries will have to compete for risk by demonstrating highest returns per unit of risk or the total current risks will be less than the risk tolerance and a search will be underway for the subsidiaries that can best utilize the remaining risk budget. The risk tolerance is determined and then sets the risk budget, rather than being determined by it. Hedging can be a part of risk budgeting if hedging produces the superior risk adjusted returns.\n\nC. eliminates the need for hedging within the organization."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_29",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 29,
+    "question": "Which of the following pairs of risks are most closely related?\n\nCorrect answer:",
+    "options": {
+      "A": "Model risk and tail risk",
+      "B": "Liquidity risk and operational risk",
+      "C": "Credit risk and solvency risk"
+    },
+    "answer": "A",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. Model risk is the risk of using the wrong model to analyze an investment or the risk of using the right model for the analysis but using it incorrectly. Tail risk, although it involves unlikely but substantial losses, typically results from using inappropriate modeling assumptions such as assuming that returns are normally distributed. Credit risk involves the risk of a borrower not repaying you, whereas solvency risk is the risk of you running out of the money needed to pay your obligations. Liquidity risk is the risk that the future transaction price for an investment will be different than expected, whereas operational risk includes a wide range of potential problems occurring within an organization’s personnel and systems.\n\nB. Liquidity risk and operational risk"
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_30",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 30,
+    "question": "An example of risk transfer combined with self-insurance is most likely:",
+    "options": {
+      "A": "a bond portfolio hedged with an interest rate option.",
+      "B": "an insurance policy with a deductible.",
+      "C": "a bank that establishes a loan loss reserve fund."
+    },
+    "answer": "B",
+    "userWrongAnswer": "C",
+    "explanation": "Correct. Risk transfer is accomplished through an insurance policy. A deductible in an insurance policy means the insured is bearing some of the risk of loss and thereby (partially) self-insuring. Hedging with derivatives accomplishes risk shifting, not risk transfer. A bank loan loss reserve is a form of self-insurance combined with diversification, but it does not include risk transfer."
+  },
+  {
+    "id": "pm_Module_6_Introduction_to_Risk_Management_31",
+    "source": "CFA_PM_M06",
+    "subject": "组合管理",
+    "subjectEn": "Portfolio Management",
+    "module": "Module 6: Introduction to Risk Management",
+    "num": 31,
+    "question": "The German firm IHK AG has entered into a three-month forward currency contract to purchase USD35 million versus euros from US firm GED Corp. to hedge a future payment obligation. The US dollar appreciates 5% in the coming three months. IHK should most likely focus on:",
+    "options": {
+      "A": "market risk.",
+      "B": "liquidity risk.",
+      "C": "counterparty risk."
+    },
+    "answer": "C",
+    "userWrongAnswer": "B",
+    "explanation": "Correct. IHK’s potential risk is settlement risk, which is a type of counterparty risk. Settlement risk deals with the settling of payments that occur just before a default. If IHK wires the euros to GED and GED then declares bankruptcy, IHK will not be able to get the money back.\n\nRetake"
   }
 ];
