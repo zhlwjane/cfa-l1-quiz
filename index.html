@@ -329,9 +329,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
     <div class="pg-title">CFA 课后题</div>
     <div class="pg-sub" id="hw-pg-sub">来自 CFA Institute 平台的错题 · 重新练习巩固</div>
     <div class="hw-mix-btns">
-      <button class="hw-all-btn hw-all-btn-all" onclick="startHwQuiz('all')">&#9654; 全部课后错题</button>
-      <button class="hw-all-btn hw-all-btn-g1" onclick="startHwQuiz('g1')">&#9654; 数量·经济·财报·公司金融（混合）</button>
-      <button class="hw-all-btn hw-all-btn-g2" onclick="startHwQuiz('g2')">&#9654; 权益·固收·衍生·组合·另类（混合）</button>
+      <button class="hw-all-btn hw-all-btn-all" onclick="openHwSel('all')">&#9654; 全部课后错题</button>
+      <button class="hw-all-btn hw-all-btn-g1" onclick="openHwSel('g1')">&#9654; 数量·经济·财报·公司金融（混合）</button>
+      <button class="hw-all-btn hw-all-btn-g2" onclick="openHwSel('g2')">&#9654; 权益·固收·衍生·组合·另类（混合）</button>
     </div>
     <div class="hw-grid" id="hw-grid"></div>
   </div>
@@ -341,9 +341,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
     <div class="pg-title">JC 王者百题库</div>
     <div class="pg-sub" id="jc-pg-sub">共 922 道精选题 · 附详细解析 · 按科目或分组练习</div>
     <div class="jc-mix-btns">
-      <button class="all-btn" onclick="startJcQuiz('all')">&#9654; 全部混合练习（922题）</button>
-      <button class="all-btn all-btn-g1" onclick="startJcQuiz('g1')">&#9654; 数量·经济·财报·公司金融</button>
-      <button class="all-btn all-btn-g2" onclick="startJcQuiz('g2')">&#9654; 权益·固收·衍生·另类·组合</button>
+      <button class="all-btn" onclick="openJcMixSel('all')">&#9654; 全部混合练习（922题）</button>
+      <button class="all-btn all-btn-g1" onclick="openJcMixSel('g1')">&#9654; 数量·经济·财报·公司金融</button>
+      <button class="all-btn all-btn-g2" onclick="openJcMixSel('g2')">&#9654; 权益·固收·衍生·另类·组合</button>
     </div>
     <div class="jc-wrong-bar">
       <div class="jc-wrong-bar-info" id="jc-wrong-info">暂无错题</div>
@@ -354,7 +354,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
 
   <!-- STATS -->
   <div class="view" id="view-stats">
-    <div class="section-title" style="margin-bottom:18px">练习统计</div>
+    <div class="section-title" style="margin-bottom:14px">练习统计</div>
+    <div class="tag-row" style="margin-bottom:18px">
+      <button class="ftag on" id="stats-tab-pack" onclick="setStatsType('pack')">📦 PACK题</button>
+      <button class="ftag" id="stats-tab-hw" onclick="setStatsType('hw')">📚 课后题</button>
+      <button class="ftag" id="stats-tab-jc" onclick="setStatsType('jc')">🎯 JC百题</button>
+    </div>
     <div class="stat-grid" id="stat-grid"></div>
     <div class="tbl">
       <table>
@@ -431,21 +436,22 @@ var SUBJECTS = [];
 // Storage
 var DB_KEY = 'cfa_l1';
 var JC_DB_KEY = 'jc_l1';
+var HW_DB_KEY = 'hw_l1';
 function getDb(ns){
-  var k = ns==='jc' ? JC_DB_KEY : DB_KEY;
+  var k = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
   var d; try{ d=JSON.parse(localStorage.getItem(k)||'{}'); }catch(e){ d={}; }
   if(!d.history) d.history={};
   if(!d.wrong) d.wrong={};
   return d;
 }
 function saveDb(d, ns, noPush){
-  var k = ns==='jc' ? JC_DB_KEY : DB_KEY;
+  var k = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
   localStorage.setItem(k, JSON.stringify(d));
   if(!noPush) pushSync();
 }
 
 // State
-var S = { view:'home', quiz:{qs:[],idx:0,ans:{},subject:null,isJc:false}, wrongSrc:'all', wrongSubj:'all', selSubject:null, selMode:'seq' };
+var S = { view:'home', quiz:{qs:[],idx:0,ans:{},subject:null,isJc:false,isHw:false}, wrongSrc:'all', wrongSubj:'all', selSubject:null, selMode:'seq', statsType:'pack' };
 
 // View
 function showView(v){
@@ -511,10 +517,12 @@ function openSubjSel(subj){
   document.getElementById('range-row').style.display = 'none';
   document.getElementById('range-from').value = '';
   document.getElementById('range-to').value = '';
+  var undone = total - done;
   var modes = [
     {id:'seq', title:'顺序练习', desc:'从第 1 题开始，按顺序练习全部 '+total+' 题'},
     {id:'cont', title:'继续上次', desc:'从第 '+(done+1)+' 题继续（已做 '+done+'/'+total+'）'},
-    {id:'rand', title:'随机练习', desc:'随机打乱顺序练习全部 '+total+' 题'},
+    {id:'rand', title:'随机混合（全部）', desc:'随机打乱顺序，科目交替出现，共 '+total+' 题'},
+    {id:'rand_undone', title:'随机混合（未做）', desc:'仅练习未做的 '+undone+' 题，随机科目交替出现'},
     {id:'range', title:'指定范围', desc:'自定义起止题号（按顺序）'},
   ];
   document.getElementById('mode-list').innerHTML = modes.map(function(m,i){
@@ -554,8 +562,11 @@ function startFromSel(){
     var first = qs.findIndex(function(q){ return !d.history[q.subject+'_'+q.num]; });
     startQuiz(qs, subj, Math.max(0, first));
   } else if(mode==='rand'){
-    for(var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i];qs[i]=qs[j];qs[j]=t; }
-    startQuiz(qs, subj, 0);
+    startQuiz(shuffleNoConsecutive(qs), subj, 0);
+  } else if(mode==='rand_undone'){
+    var undoneQs = qs.filter(function(q){ return !d.history[q.subject+'_'+q.num]; });
+    if(!undoneQs.length){ showToast('该范围题目已全部做完！'); return; }
+    startQuiz(shuffleNoConsecutive(undoneQs), subj, 0);
   } else if(mode==='range'){
     qs.sort(function(a,b){ return a.num-b.num; });
     var from = parseInt(document.getElementById('range-from').value)||1;
@@ -568,9 +579,9 @@ function startFromSel(){
 }
 
 // Quiz
-function startQuiz(qs, subject, startIdx, isJc){
+function startQuiz(qs, subject, startIdx, isJc, isHw){
   if(!qs||!qs.length){ showToast('没有题目'); return; }
-  S.quiz = { qs:qs, idx:startIdx||0, ans:{}, subject:subject, isJc:!!isJc };
+  S.quiz = { qs:qs, idx:startIdx||0, ans:{}, subject:subject, isJc:!!isJc, isHw:!!isHw };
   showView('quiz');
   renderQ();
 }
@@ -584,16 +595,17 @@ function renderQ(){
   var quiz = S.quiz;
   var q = quiz.qs[quiz.idx];
   var isJcQ = quiz.isJc || !!(q.id && q.id.indexOf('jc_')===0);
-  var ns = isJcQ ? 'jc' : 'main';
+  var isHwQ = quiz.isHw || !!(q.id && q.id.indexOf('hw_')===0);
+  var ns = isJcQ ? 'jc' : isHwQ ? 'hw' : 'main';
   var d = getDb(ns);
-  var key = isJcQ ? q.id : q.subject+'_'+q.num;
+  var key = (isJcQ||isHwQ) ? q.id : q.subject+'_'+q.num;
   var isWrong = d.wrong[key]&&d.wrong[key].on;
   document.getElementById('q-tag').textContent = q.subject;
   document.getElementById('q-info').textContent = (quiz.idx+1)+'/'+quiz.qs.length;
   document.getElementById('q-pbar').style.width = ((quiz.idx+1)/quiz.qs.length*100)+'%';
   document.getElementById('jmp-in').value = '';
   document.getElementById('q-num').textContent = '['+q.subject+'] 第 '+q.num+' 题  (本次 '+(quiz.idx+1)+'/'+quiz.qs.length+')';
-  document.getElementById('q-text').textContent = q.question||'';
+  document.getElementById('q-text').textContent = (q.question||'').replace(/\xa0/g,' ').trim();
   var letters = ['A','B','C'].filter(function(l){ return q.options&&q.options[l]; });
   var answered = quiz.ans[quiz.idx];
   document.getElementById('q-opts').innerHTML = letters.map(function(l){
@@ -622,9 +634,10 @@ function pick(l){
   var ok = l===q.answer;
   quiz.ans[quiz.idx] = {sel:l, ok:ok};
   var isJcQ2 = quiz.isJc || !!(q.id && q.id.indexOf('jc_')===0);
-  var ns = isJcQ2 ? 'jc' : 'main';
+  var isHwQ2 = quiz.isHw || !!(q.id && q.id.indexOf('hw_')===0);
+  var ns = isJcQ2 ? 'jc' : isHwQ2 ? 'hw' : 'main';
   var d = getDb(ns);
-  var key = isJcQ2 ? q.id : q.subject+'_'+q.num;
+  var key = (isJcQ2||isHwQ2) ? q.id : q.subject+'_'+q.num;
   d.history[key] = {ok:ok, sel:l, t:Date.now()};
   if(!ok){
     if(!d.wrong[key]) d.wrong[key]={subject:q.subject,num:q.num,id:q.id||null,cnt:0};
@@ -667,8 +680,9 @@ function jumpQ(){
 function toggleWrong(){
   var q=S.quiz.qs[S.quiz.idx];
   var isJcQ3=S.quiz.isJc||!!(q.id&&q.id.indexOf('jc_')===0);
-  var ns=isJcQ3?'jc':'main';
-  var key=isJcQ3?q.id:q.subject+'_'+q.num;
+  var isHwQ3=S.quiz.isHw||!!(q.id&&q.id.indexOf('hw_')===0);
+  var ns=isJcQ3?'jc':isHwQ3?'hw':'main';
+  var key=(isJcQ3||isHwQ3)?q.id:q.subject+'_'+q.num;
   var d=getDb(ns);
   if(!d.wrong[key]) d.wrong[key]={subject:q.subject,num:q.num,id:q.id||null,cnt:0};
   d.wrong[key].on=!d.wrong[key].on;
@@ -684,13 +698,16 @@ var SRC_STYLE = {
   '课后题':  {bg:'#f0fff4', color:'#276749'}
 };
 function _collectWrong(){
-  var dMain=getDb(), dJc=getDb('jc'), items=[];
+  var dMain=getDb(), dJc=getDb('jc'), dHw=getDb('hw'), items=[];
   Object.entries(dMain.wrong).filter(function(e){return e[1].on;}).forEach(function(e){
     var key=e[0],w=e[1];
     var q=QUESTIONS.find(function(q){return q.subject===w.subject&&q.num===w.num;});
-    var src='PACK题';
-    if(!q){q=HW_QUESTIONS.find(function(q){return q.subject===w.subject&&q.num===w.num;});if(q)src='课后题';}
-    if(q) items.push({key:key,w:w,q:q,src:src,ns:'main'});
+    if(q) items.push({key:key,w:w,q:q,src:'PACK题',ns:'main'});
+  });
+  Object.entries(dHw.wrong).filter(function(e){return e[1].on;}).forEach(function(e){
+    var key=e[0],w=e[1];
+    var q=HW_QUESTIONS.find(function(q){return q.id===key;});
+    if(q) items.push({key:key,w:w,q:q,src:'课后题',ns:'hw'});
   });
   Object.entries(dJc.wrong).filter(function(e){return e[1].on;}).forEach(function(e){
     var key=e[0],w=e[1];
@@ -736,7 +753,9 @@ function renderWrong(){
     var preview=(q.question||'').substring(0,110)+((q.question||'').length>110?'...':'');
     var ss=SRC_STYLE[src]||{bg:'#f7f7f7',color:'#333'};
     var srcBadge='<span class="tag" style="background:'+ss.bg+';color:'+ss.color+'">'+src+'</span>';
-    var clickFn=it.ns==='jc'?'goJcWrong(\''+it.key+'\')':'goWrong(\''+esc(w.subject)+'\','+w.num+')';
+    var clickFn=it.ns==='jc'?'goJcWrong(\''+it.key+'\')'
+      :it.ns==='hw'?'goHwWrong(\''+it.key+'\')'
+      :'goWrong(\''+esc(w.subject)+'\','+w.num+')';
     var rmFn='rmWrong(\''+it.key+'\',\''+it.ns+'\')';
     return '<div class="wi" onclick="'+clickFn+'">'
       +'<div class="wi-hd"><div class="wi-meta">'
@@ -765,6 +784,13 @@ function goJcWrong(id){
   if(!q){showToast('题目不存在');return;}
   var qs=JC_QUESTIONS.filter(function(q2){return q2.subject===q.subject;});
   startQuiz(qs,'JC·'+q.subject,Math.max(0,qs.findIndex(function(q2){return q2.id===id;})),true);
+}
+function goHwWrong(id){
+  var q=HW_QUESTIONS.find(function(q){return q.id===id;});
+  if(!q){showToast('题目不存在');return;}
+  var qs=HW_QUESTIONS.filter(function(q2){return q2.subject===q.subject;});
+  qs.sort(function(a,b){return a.module<b.module?-1:a.module>b.module?1:a.num-b.num;});
+  startQuiz(qs,'课后题·'+q.subject,Math.max(0,qs.findIndex(function(q2){return q2.id===id;})),false,true);
 }
 function practiceWrong(){
   var items=_collectWrong();
@@ -804,24 +830,60 @@ function exportWrong(){
 }
 
 // Stats
+function setStatsType(t){ S.statsType=t; renderStats(); }
 function renderStats(){
-  var d=getDb();
-  var totalDone=0,totalOk=0,totalWrong=0;
-  var rows=SUBJECTS.map(function(subj){
-    var qs=QUESTIONS.filter(function(q){ return q.subject===subj; });
-    var done=qs.filter(function(q){ return d.history[subj+'_'+q.num]; }).length;
-    var ok=qs.filter(function(q){ var h=d.history[subj+'_'+q.num]; return h&&h.ok; }).length;
-    var w=qs.filter(function(q){ var wr=d.wrong[subj+'_'+q.num]; return wr&&wr.on; }).length;
-    totalDone+=done; totalOk+=ok; totalWrong+=w;
-    return {subj:subj,total:qs.length,done:done,ok:ok,acc:done?Math.round(ok/done*100):0,w:w};
+  var type=S.statsType||'pack';
+  // Update tab highlights
+  ['pack','hw','jc'].forEach(function(t){
+    var el=document.getElementById('stats-tab-'+t);
+    if(el) el.className='ftag'+(t===type?' on':'');
   });
+
+  var allIcons=Object.assign({},ICONS,HW_ICONS,JC_ICONS);
+  var rows=[], totalDone=0,totalOk=0,totalWrong=0, totalQ=0;
+
+  if(type==='pack'){
+    var d=getDb();
+    rows=SUBJECTS.map(function(subj){
+      var qs=QUESTIONS.filter(function(q){return q.subject===subj;});
+      var done=qs.filter(function(q){return d.history[subj+'_'+q.num];}).length;
+      var ok=qs.filter(function(q){var h=d.history[subj+'_'+q.num];return h&&h.ok;}).length;
+      var w=qs.filter(function(q){var wr=d.wrong[subj+'_'+q.num];return wr&&wr.on;}).length;
+      totalDone+=done;totalOk+=ok;totalWrong+=w;totalQ+=qs.length;
+      return {subj:subj,total:qs.length,done:done,ok:ok,acc:done?Math.round(ok/done*100):0,w:w};
+    });
+  } else if(type==='hw'){
+    var dHw=getDb('hw');
+    var bySubj={};
+    HW_QUESTIONS.forEach(function(q){if(!bySubj[q.subject])bySubj[q.subject]=[];bySubj[q.subject].push(q);});
+    rows=Object.keys(bySubj).map(function(subj){
+      var qs=bySubj[subj];
+      var done=qs.filter(function(q){return dHw.history[q.id];}).length;
+      var ok=qs.filter(function(q){var h=dHw.history[q.id];return h&&h.ok;}).length;
+      var w=qs.filter(function(q){var wr=dHw.wrong[q.id];return wr&&wr.on;}).length;
+      totalDone+=done;totalOk+=ok;totalWrong+=w;totalQ+=qs.length;
+      return {subj:subj,total:qs.length,done:done,ok:ok,acc:done?Math.round(ok/done*100):0,w:w};
+    });
+  } else if(type==='jc'){
+    var dJc=getDb('jc');
+    rows=JC_SUBJECTS.map(function(subj){
+      var qs=JC_QUESTIONS.filter(function(q){return q.subject===subj;});
+      var done=qs.filter(function(q){return dJc.history[q.id];}).length;
+      var ok=qs.filter(function(q){var h=dJc.history[q.id];return h&&h.ok;}).length;
+      var w=qs.filter(function(q){var wr=dJc.wrong[q.id];return wr&&wr.on;}).length;
+      totalDone+=done;totalOk+=ok;totalWrong+=w;totalQ+=qs.length;
+      return {subj:subj,total:qs.length,done:done,ok:ok,acc:done?Math.round(ok/done*100):0,w:w};
+    });
+  }
+
   document.getElementById('stat-grid').innerHTML=[
-    [QUESTIONS.length,'总题数'],[totalDone,'已练习'],[totalOk,'答对题数'],[totalWrong,'错题库'],
+    [totalQ,'总题数'],[totalDone,'已练习'],[totalOk,'答对题数'],[totalWrong,'错题库'],
     [totalDone?Math.round(totalOk/totalDone*100)+'%':'—','综合正确率'],
-  ].map(function(x){ return '<div class="stat-card"><div class="stat-n">'+x[0]+'</div><div class="stat-l">'+x[1]+'</div></div>'; }).join('');
+  ].map(function(x){return '<div class="stat-card"><div class="stat-n">'+x[0]+'</div><div class="stat-l">'+x[1]+'</div></div>';}).join('');
+
   document.getElementById('stat-body').innerHTML=rows.map(function(r){
     return '<tr>'
-      +'<td>'+(ICONS[r.subj]||'')+' '+r.subj+'</td>'
+      +'<td>'+(allIcons[r.subj]||'')+' '+r.subj+'</td>'
       +'<td>'+r.done+'/'+r.total+'</td>'
       +'<td>'+r.ok+'</td>'
       +'<td><div class="acc-bar"><div class="acc-bg"><div class="acc-fill" style="width:'+r.acc+'%"></div></div>'
@@ -833,6 +895,37 @@ function renderStats(){
 
 // Utils
 function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+// 混合洗牌：保证相邻两题不同科目，加权随机保持题目分布均匀
+function shuffleNoConsecutive(qs){
+  if(!qs||qs.length<=1) return qs.slice();
+  var groups={}, subjList=[];
+  qs.forEach(function(q){
+    var s=q.subject||'';
+    if(!groups[s]){groups[s]=[];subjList.push(s);}
+    groups[s].push(q);
+  });
+  // 各科目内部先打乱
+  subjList.forEach(function(s){
+    var arr=groups[s];
+    for(var i=arr.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=arr[i];arr[i]=arr[j];arr[j]=t;}
+  });
+  var result=[], lastS=null;
+  while(result.length<qs.length){
+    var avail=subjList.filter(function(s){return groups[s].length>0;});
+    if(!avail.length) break;
+    var cands=avail.filter(function(s){return s!==lastS;});
+    if(!cands.length) cands=avail;
+    // 按剩余数量加权随机，避免某科目被用尽后仍强选
+    var total=cands.reduce(function(acc,s){return acc+groups[s].length;},0);
+    var r=Math.floor(Math.random()*total), cum=0, picked=cands[cands.length-1];
+    for(var ci=0;ci<cands.length;ci++){cum+=groups[cands[ci]].length;if(r<cum){picked=cands[ci];break;}}
+    result.push(groups[picked].shift());
+    lastS=picked;
+  }
+  return result;
+}
+
 function showToast(msg){
   var t=document.getElementById('toast');
   t.textContent=msg; t.classList.add('on');
@@ -869,43 +962,110 @@ function renderHw(){
     if(q.module) bySubj[s].modules[q.module] = (bySubj[s].modules[q.module]||0)+1;
   });
 
+  var dHw = getDb('hw');
   var html = Object.keys(bySubj).map(function(subj){
     var info = bySubj[subj];
     var modCount = Object.keys(info.modules).length;
     var icon = HW_ICONS[subj] || '📝';
-    return '<div class="hw-card" onclick="startHwQuiz(\'subj:\'+\''+subj+'\')">'
+    var subjQs = HW_QUESTIONS.filter(function(q){return q.subject===subj;});
+    var done = subjQs.filter(function(q){return dHw.history[q.id];}).length;
+    var ok = subjQs.filter(function(q){var h=dHw.history[q.id];return h&&h.ok;}).length;
+    var wCount = subjQs.filter(function(q){var w=dHw.wrong[q.id];return w&&w.on;}).length;
+    var pct = info.count ? Math.round(done/info.count*100) : 0;
+    var acc = done ? Math.round(ok/done*100) : 0;
+    var wBtn = wCount
+      ? '<button class="sc-btn sc-btn-w" onclick="startHwWrongSubj(\''+subj+'\');event.stopPropagation()">错题('+wCount+')</button>'
+      : '';
+    return '<div class="hw-card">'
       +'<div class="hw-card-subj">'+icon+' '+subj+'</div>'
       +'<div class="hw-card-mod">'+modCount+' 个模块</div>'
-      +'<div class="hw-card-cnt">'+info.count+'</div>'
-      +'<div class="hw-card-lbl">道错题</div>'
+      +'<div class="sc-meta" style="font-size:.8rem;color:var(--tx2);display:flex;gap:10px;flex-wrap:wrap;margin:6px 0">'
+        +'<span>'+info.count+' 题</span>'
+        +'<span>已做 '+done+'</span>'
+        +(done?'<span>正确率 '+acc+'%</span>':'')
+        +(wCount?'<span style="color:var(--err)">错题 '+wCount+'</span>':'')
+      +'</div>'
+      +'<div class="pbar"><div class="pbar-fill" style="width:'+pct+'%"></div></div>'
+      +'<div class="sc-btns">'
+        +'<button class="sc-btn sc-btn-p" onclick="openHwSel(\'subj:'+subj+'\');event.stopPropagation()">开始练习</button>'
+        +wBtn
+      +'</div>'
     +'</div>';
   }).join('');
   document.getElementById('hw-grid').innerHTML = html;
 }
 
-function startHwQuiz(mode){
-  var qs;
-  var label;
-  if(mode === 'all'){
-    qs = HW_QUESTIONS.slice();
-    label = 'CFA课后题·全部';
-  } else if(mode === 'g1'){
-    qs = HW_QUESTIONS.filter(function(q){ return HW_GROUP.g1.indexOf(q.subject)>=0; });
-    label = '课后题·数量/经济/公司金融';
-  } else if(mode === 'g2'){
-    qs = HW_QUESTIONS.filter(function(q){ return HW_GROUP.g2.indexOf(q.subject)>=0; });
-    label = '课后题·权益/固收/衍生/组合/另类';
+// 直接开始课后题（供外部调用）
+function startHwQuiz(mode, selMode){
+  selMode = selMode || 'rand';
+  var qs, label;
+  var dHw = getDb('hw');
+  if(mode==='all'){
+    qs = HW_QUESTIONS.slice(); label = 'CFA课后题·全部';
+  } else if(mode==='g1'){
+    qs = HW_QUESTIONS.filter(function(q){return HW_GROUP.g1.indexOf(q.subject)>=0;}); label='课后题·G1';
+  } else if(mode==='g2'){
+    qs = HW_QUESTIONS.filter(function(q){return HW_GROUP.g2.indexOf(q.subject)>=0;}); label='课后题·G2';
   } else if(mode.indexOf('subj:')===0){
-    var subj = mode.slice(5);
-    qs = HW_QUESTIONS.filter(function(q){ return q.subject===subj; });
-    label = '课后题·'+subj;
-  } else {
-    qs = [];
+    var subj2=mode.slice(5);
+    qs=HW_QUESTIONS.filter(function(q){return q.subject===subj2;}); label='课后题·'+subj2;
+  } else { qs=[]; label='课后题'; }
+  if(!qs.length){showToast('该分类暂无题目');return;}
+  // 按 module+num 排序作为"顺序"
+  var sorted=qs.slice().sort(function(a,b){return a.module<b.module?-1:a.module>b.module?1:a.num-b.num;});
+  if(selMode==='seq'){
+    startQuiz(sorted,label,0,false,true);
+  } else if(selMode==='cont'){
+    var first=sorted.findIndex(function(q){return !dHw.history[q.id];});
+    startQuiz(sorted,label,Math.max(0,first),false,true);
+  } else if(selMode==='rand'){
+    startQuiz(shuffleNoConsecutive(qs),label,0,false,true);
+  } else if(selMode==='rand_undone'){
+    var undoneHw=qs.filter(function(q){return !dHw.history[q.id];});
+    if(!undoneHw.length){showToast('该分类题目已全部做完！');return;}
+    startQuiz(shuffleNoConsecutive(undoneHw),label,0,false,true);
   }
-  if(!qs.length){ showToast('该分类暂无题目'); return; }
-  // Shuffle
-  for(var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i];qs[i]=qs[j];qs[j]=t; }
-  startQuiz(qs, label, 0);
+}
+
+function startHwWrongSubj(subj){
+  var dHw=getDb('hw');
+  var wqs=HW_QUESTIONS.filter(function(q){return q.subject===subj&&dHw.wrong[q.id]&&dHw.wrong[q.id].on;});
+  if(!wqs.length){showToast('该科目暂无错题');return;}
+  startQuiz(wqs,'课后错题·'+subj,0,false,true);
+}
+
+var _hwSelMode='all'; // 'all','g1','g2','subj:XX'
+function openHwSel(mode){
+  _hwSelMode=mode;
+  var dHw=getDb('hw');
+  var qs;
+  if(mode==='all') qs=HW_QUESTIONS;
+  else if(mode==='g1') qs=HW_QUESTIONS.filter(function(q){return HW_GROUP.g1.indexOf(q.subject)>=0;});
+  else if(mode==='g2') qs=HW_QUESTIONS.filter(function(q){return HW_GROUP.g2.indexOf(q.subject)>=0;});
+  else if(mode.indexOf('subj:')===0) qs=HW_QUESTIONS.filter(function(q){return q.subject===mode.slice(5);});
+  else qs=[];
+  var total=qs.length;
+  var done=qs.filter(function(q){return dHw.history[q.id];}).length;
+  var undone=total-done;
+  var label=mode==='all'?'课后题·全部':mode==='g1'?'课后题·G1':mode==='g2'?'课后题·G2':'课后题·'+mode.slice(5);
+  document.getElementById('subj-sel-title').textContent=label+' · '+total+' 题';
+  document.getElementById('range-row').style.display='none';
+  var modes=[
+    {id:'seq',     title:'顺序练习',         desc:'按模块顺序从头开始，共 '+total+' 题'},
+    {id:'cont',    title:'继续上次',          desc:'从第一道未做题继续（已做 '+done+'/'+total+'）'},
+    {id:'rand',    title:'随机混合（全部）',  desc:'随机科目交替，共 '+total+' 题'},
+    {id:'rand_undone',title:'随机混合（未做）',desc:'仅练习未做的 '+undone+' 题，随机科目交替'},
+  ];
+  document.getElementById('mode-list').innerHTML=modes.map(function(m,i){
+    return '<button class="mbt'+(i===0?' on':'')+'" id="mbt-'+m.id+'" onclick="selectMode(\''+m.id+'\')">'
+      +'<div class="mbt-title">'+m.title+'</div>'
+      +'<div class="mbt-desc">'+m.desc+'</div>'
+    +'</button>';
+  }).join('');
+  S.selMode='seq';
+  var sel=document.getElementById('subj-sel');
+  sel.dataset.jc='';sel.dataset.jcmix='';sel.dataset.hw='1';
+  sel.classList.add('on');
 }
 // ─────────────────────────────────────────────────────────────
 
@@ -984,29 +1144,70 @@ function renderJc(){
   document.getElementById('jc-grid').innerHTML = html;
 }
 
-function startJcQuiz(mode){
+function startJcQuiz(mode, selMode){
+  selMode = selMode || 'rand';
   var qs, label;
   var d = getDb('jc');
   if(mode==='all'){
-    qs = (JC_QUESTIONS||[]).slice();
-    label = 'JC全部';
+    qs = (JC_QUESTIONS||[]).slice(); label='JC全部';
   } else if(JC_GROUP[mode]){
-    qs = (JC_QUESTIONS||[]).filter(function(q){ return JC_GROUP[mode].indexOf(q.subject)>=0; });
-    label = 'JC·'+JC_GROUP_LABELS[mode];
+    qs = (JC_QUESTIONS||[]).filter(function(q){return JC_GROUP[mode].indexOf(q.subject)>=0;}); label='JC·'+JC_GROUP_LABELS[mode];
   } else if(mode==='wrong'){
-    var wrongIds = Object.entries(d.wrong).filter(function(e){ return e[1].on; }).map(function(e){ return e[0]; });
-    qs = (JC_QUESTIONS||[]).filter(function(q){ return wrongIds.indexOf(q.id)>=0; });
-    label = 'JC错题';
+    var wrongIds=Object.entries(d.wrong).filter(function(e){return e[1].on;}).map(function(e){return e[0];});
+    qs=(JC_QUESTIONS||[]).filter(function(q){return wrongIds.indexOf(q.id)>=0;}); label='JC错题';
   } else if(mode.indexOf('subj:')===0){
-    var subj = mode.slice(5);
-    qs = (JC_QUESTIONS||[]).filter(function(q){ return q.subject===subj; });
-    label = 'JC·'+subj;
+    var subj=mode.slice(5);
+    qs=(JC_QUESTIONS||[]).filter(function(q){return q.subject===subj;}); label='JC·'+subj;
   } else { qs=[]; label='JC'; }
 
-  if(!qs||!qs.length){ showToast('该分类暂无题目'); return; }
-  // Shuffle
-  for(var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i];qs[i]=qs[j];qs[j]=t; }
-  startQuiz(qs, label, 0, true);
+  if(!qs||!qs.length){showToast('该分类暂无题目');return;}
+  var sorted=qs.slice().sort(function(a,b){return a.subject===b.subject?a.num-b.num:JC_SUBJECTS.indexOf(a.subject)-JC_SUBJECTS.indexOf(b.subject);});
+  if(selMode==='seq'){
+    startQuiz(sorted,label,0,true);
+  } else if(selMode==='cont'){
+    var first=sorted.findIndex(function(q){return !d.history[q.id];});
+    startQuiz(sorted,label,Math.max(0,first),true);
+  } else if(selMode==='rand'){
+    startQuiz(shuffleNoConsecutive(qs),label,0,true);
+  } else if(selMode==='rand_undone'){
+    var undone=qs.filter(function(q){return !d.history[q.id];});
+    if(!undone.length){showToast('该分类题目已全部做完！');return;}
+    startQuiz(shuffleNoConsecutive(undone),label,0,true);
+  } else {
+    startQuiz(shuffleNoConsecutive(qs),label,0,true);
+  }
+}
+
+var _jcMixMode='all';
+function openJcMixSel(mode){
+  _jcMixMode=mode;
+  var d=getDb('jc');
+  var qs;
+  if(mode==='all') qs=JC_QUESTIONS||[];
+  else if(JC_GROUP[mode]) qs=(JC_QUESTIONS||[]).filter(function(q){return JC_GROUP[mode].indexOf(q.subject)>=0;});
+  else qs=[];
+  var total=qs.length;
+  var done=qs.filter(function(q){return d.history[q.id];}).length;
+  var undone=total-done;
+  var label=mode==='all'?'JC全部混合':('JC·'+JC_GROUP_LABELS[mode]);
+  document.getElementById('subj-sel-title').textContent=label+' · '+total+' 题';
+  document.getElementById('range-row').style.display='none';
+  var modes=[
+    {id:'seq',         title:'顺序练习',       desc:'按科目顺序从头开始，共 '+total+' 题'},
+    {id:'cont',        title:'继续上次',        desc:'从第一道未做题继续（已做 '+done+'/'+total+'）'},
+    {id:'rand',        title:'随机混合（全部）',desc:'随机科目交替，共 '+total+' 题'},
+    {id:'rand_undone', title:'随机混合（未做）',desc:'仅练习未做的 '+undone+' 题，随机科目交替'},
+  ];
+  document.getElementById('mode-list').innerHTML=modes.map(function(m,i){
+    return '<button class="mbt'+(i===0?' on':'')+'" id="mbt-'+m.id+'" onclick="selectMode(\''+m.id+'\')">'
+      +'<div class="mbt-title">'+m.title+'</div>'
+      +'<div class="mbt-desc">'+m.desc+'</div>'
+    +'</button>';
+  }).join('');
+  S.selMode='seq';
+  var sel=document.getElementById('subj-sel');
+  sel.dataset.jc='';sel.dataset.hw='';sel.dataset.jcmix='1';
+  sel.classList.add('on');
 }
 
 var _jcSubj = null;
@@ -1021,11 +1222,13 @@ function openJcSubjSel(subj){
   document.getElementById('range-row').style.display = 'none';
   document.getElementById('range-from').value = '';
   document.getElementById('range-to').value = '';
+  var undoneJc = total - done;
   var modes = [
-    {id:'seq', title:'顺序练习', desc:'从第 1 题开始，顺序练习全部 '+total+' 题'},
-    {id:'cont', title:'继续上次', desc:'从第 '+(done+1)+' 题继续（已做 '+done+'/'+total+'）'},
-    {id:'rand', title:'随机练习', desc:'随机打乱顺序练习全部 '+total+' 题'},
-    {id:'range', title:'指定范围', desc:'自定义起止题号（按顺序）'},
+    {id:'seq',         title:'顺序练习',       desc:'从第 1 题开始，顺序练习全部 '+total+' 题'},
+    {id:'cont',        title:'继续上次',        desc:'从第 '+(done+1)+' 题继续（已做 '+done+'/'+total+'）'},
+    {id:'rand',        title:'随机混合（全部）',desc:'随机顺序练习全部 '+total+' 题'},
+    {id:'rand_undone', title:'随机混合（未做）',desc:'仅练习未做的 '+undoneJc+' 题，随机顺序'},
+    {id:'range',       title:'指定范围',        desc:'自定义起止题号（按顺序）'},
   ];
   document.getElementById('mode-list').innerHTML = modes.map(function(m,i){
     return '<button class="mbt'+(i===0?' on':'')+'" id="mbt-'+m.id+'" onclick="selectMode(\''+m.id+'\')">'
@@ -1033,8 +1236,9 @@ function openJcSubjSel(subj){
       +'<div class="mbt-desc">'+m.desc+'</div>'
     +'</button>';
   }).join('');
-  document.getElementById('subj-sel').classList.add('on');
-  document.getElementById('subj-sel').dataset.jc = '1';
+  var sel=document.getElementById('subj-sel');
+  sel.dataset.hw='';sel.dataset.jcmix='';sel.dataset.jc='1';
+  sel.classList.add('on');
 }
 
 function startJcWrongSubj(subj){
@@ -1046,37 +1250,57 @@ function startJcWrongSubj(subj){
   startQuiz(wqs, 'JC错题·'+subj, 0, true);
 }
 
-// Override closeSubjSel to clean up JC flag
-var _origCloseSubjSel = null;
-// Patch startFromSel to support JC subjects
+// Patch startFromSel to support HW / JC mix / JC subject
 var _origStartFromSel = startFromSel;
 startFromSel = function(){
-  var isJc = document.getElementById('subj-sel').dataset.jc === '1';
-  if(isJc && _jcSubj){
-    document.getElementById('subj-sel').dataset.jc = '';
-    var subj = _jcSubj;
-    var mode = S.selMode||'seq';
-    var d = getDb('jc');
-    var qs = (JC_QUESTIONS||[]).filter(function(q){ return q.subject===subj; });
-    qs = qs.slice().sort(function(a,b){ return a.num-b.num; });
+  var sel = document.getElementById('subj-sel');
+  var mode = S.selMode||'seq';
+
+  // ── HW 课后题 ──
+  if(sel.dataset.hw === '1'){
+    sel.dataset.hw='';
+    startHwQuiz(_hwSelMode, mode);
+    closeSubjSel();
+    return;
+  }
+
+  // ── JC 混合（all/g1/g2） ──
+  if(sel.dataset.jcmix === '1'){
+    sel.dataset.jcmix='';
+    startJcQuiz(_jcMixMode, mode);
+    closeSubjSel();
+    return;
+  }
+
+  // ── JC 科目级 ──
+  if(sel.dataset.jc === '1' && _jcSubj){
+    sel.dataset.jc='';
+    var subj=_jcSubj;
+    var dJc=getDb('jc');
+    var qs=(JC_QUESTIONS||[]).filter(function(q){return q.subject===subj;});
+    qs=qs.slice().sort(function(a,b){return a.num-b.num;});
     if(mode==='seq'){
-      startQuiz(qs, 'JC·'+subj, 0, true);
+      startQuiz(qs,'JC·'+subj,0,true);
     } else if(mode==='cont'){
-      var first = qs.findIndex(function(q){ return !d.history[q.id]; });
-      startQuiz(qs, 'JC·'+subj, Math.max(0,first), true);
+      var first=qs.findIndex(function(q){return !dJc.history[q.id];});
+      startQuiz(qs,'JC·'+subj,Math.max(0,first),true);
     } else if(mode==='rand'){
-      for(var i=qs.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=qs[i];qs[i]=qs[j];qs[j]=t; }
-      startQuiz(qs, 'JC·'+subj, 0, true);
+      startQuiz(shuffleNoConsecutive(qs),'JC·'+subj,0,true);
+    } else if(mode==='rand_undone'){
+      var undoneJcS=qs.filter(function(q){return !dJc.history[q.id];});
+      if(!undoneJcS.length){showToast('该科目题目已全部做完！');return;}
+      startQuiz(shuffleNoConsecutive(undoneJcS),'JC·'+subj,0,true);
     } else if(mode==='range'){
-      var from = parseInt(document.getElementById('range-from').value)||1;
-      var to = parseInt(document.getElementById('range-to').value)||qs.length;
-      var ranged = qs.filter(function(_,i){ return i+1>=from&&i+1<=to; });
-      if(!ranged.length){ showToast('该范围内没有题目'); return; }
-      startQuiz(ranged, 'JC·'+subj, 0, true);
+      var from=parseInt(document.getElementById('range-from').value)||1;
+      var to=parseInt(document.getElementById('range-to').value)||qs.length;
+      var ranged=qs.filter(function(_,i){return i+1>=from&&i+1<=to;});
+      if(!ranged.length){showToast('该范围内没有题目');return;}
+      startQuiz(ranged,'JC·'+subj,0,true);
     }
     closeSubjSel();
     return;
   }
+
   _origStartFromSel();
 };
 // ─────────────────────────────────────────────────────────────
@@ -1098,7 +1322,7 @@ function hideDataModal(){ document.getElementById('data-modal').classList.remove
 
 function exportDataJson(){
   var payload = {};
-  [['main', DB_KEY], ['jc', JC_DB_KEY]].forEach(function(pair){
+  [['main', DB_KEY], ['jc', JC_DB_KEY], ['hw', HW_DB_KEY]].forEach(function(pair){
     var ns = pair[0], k = pair[1];
     try{ payload[k] = JSON.parse(localStorage.getItem(k)||'{}'); }catch(e){ payload[k]={}; }
   });
@@ -1123,7 +1347,7 @@ function importDataJson(input){
     try{
       var payload = JSON.parse(e.target.result);
       var imported = 0;
-      [['main', DB_KEY], ['jc', JC_DB_KEY]].forEach(function(pair){
+      [['main', DB_KEY], ['jc', JC_DB_KEY], ['hw', HW_DB_KEY]].forEach(function(pair){
         var ns = pair[0], k = pair[1];
         var incoming = payload[k];
         if(!incoming) return;
@@ -1150,8 +1374,8 @@ function forcePushSync(){
     .then(function(snap){
       var cloud = snap.val() || {};
       var merged = {};
-      ['main','jc'].forEach(function(ns){
-        var ck = ns==='jc' ? JC_DB_KEY : DB_KEY;
+      ['main','jc','hw'].forEach(function(ns){
+        var ck = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
         merged[ck] = _mergeDb(getDb(ns), cloud[ck] || {});
         saveDb(merged[ck], ns, true);
       });
@@ -1226,8 +1450,8 @@ function pullSync(cb){
   _fbDb.ref(FB_PATH).once('value')
     .then(function(snap){
       var cloud = snap.val() || {};
-      ['main','jc'].forEach(function(ns){
-        var ck = ns==='jc' ? JC_DB_KEY : DB_KEY;
+      ['main','jc','hw'].forEach(function(ns){
+        var ck = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
         if(cloud[ck]) saveDb(_mergeDb(getDb(ns), cloud[ck]), ns, true);
       });
       cb&&cb(true);
@@ -1245,8 +1469,8 @@ function pushSync(){
       .then(function(snap){
         var cloud = snap.val() || {};
         var merged = {};
-        ['main','jc'].forEach(function(ns){
-          var ck = ns==='jc' ? JC_DB_KEY : DB_KEY;
+        ['main','jc','hw'].forEach(function(ns){
+          var ck = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
           merged[ck] = _mergeDb(getDb(ns), cloud[ck] || {});
           saveDb(merged[ck], ns, true);
         });
