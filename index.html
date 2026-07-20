@@ -519,11 +519,12 @@ function openSubjSel(subj){
   document.getElementById('range-to').value = '';
   var undone = total - done;
   var modes = [
-    {id:'seq', title:'顺序练习', desc:'从第 1 题开始，按顺序练习全部 '+total+' 题'},
-    {id:'cont', title:'继续上次', desc:'从第 '+(done+1)+' 题继续（已做 '+done+'/'+total+'）'},
-    {id:'rand', title:'随机混合（全部）', desc:'随机打乱顺序，科目交替出现，共 '+total+' 题'},
-    {id:'rand_undone', title:'随机混合（未做）', desc:'仅练习未做的 '+undone+' 题，随机科目交替出现'},
-    {id:'range', title:'指定范围', desc:'自定义起止题号（按顺序）'},
+    {id:'seq',         title:'顺序练习',       desc:'从第 1 题开始，按顺序练习全部 '+total+' 题'},
+    {id:'cont',        title:'继续上次',        desc:'从第 '+(done+1)+' 题继续（已做 '+done+'/'+total+'）'},
+    {id:'rand',        title:'随机混合（全部）',desc:'随机打乱顺序，科目交替出现，共 '+total+' 题'},
+    {id:'rand_undone', title:'随机混合（未做）',desc:'仅练习未做的 '+undone+' 题，随机科目交替出现'},
+    {id:'review',      title:'回顾已做题',      desc:'浏览已做的 '+done+' 题，显示你当时的选择'},
+    {id:'range',       title:'指定范围',        desc:'自定义起止题号（按顺序）'},
   ];
   document.getElementById('mode-list').innerHTML = modes.map(function(m,i){
     return '<button class="mbt'+(i===0?' on':'')+'" id="mbt-'+m.id+'" onclick="selectMode(\''+m.id+'\')">'
@@ -567,6 +568,11 @@ function startFromSel(){
     var undoneQs = qs.filter(function(q){ return !d.history[q.subject+'_'+q.num]; });
     if(!undoneQs.length){ showToast('该范围题目已全部做完！'); return; }
     startQuiz(shuffleNoConsecutive(undoneQs), subj, 0);
+  } else if(mode==='review'){
+    qs.sort(function(a,b){ return a.subject===b.subject ? a.num-b.num : SUBJECTS.indexOf(a.subject)-SUBJECTS.indexOf(b.subject); });
+    var doneQs=qs.filter(function(q){ return d.history[q.subject+'_'+q.num]; });
+    if(!doneQs.length){ showToast('暂无已做题目'); return; }
+    startQuiz(doneQs, subj, 0, false, false, _buildPreAnswers(doneQs,'main',function(q){return q.subject+'_'+q.num;}));
   } else if(mode==='range'){
     qs.sort(function(a,b){ return a.num-b.num; });
     var from = parseInt(document.getElementById('range-from').value)||1;
@@ -579,11 +585,20 @@ function startFromSel(){
 }
 
 // Quiz
-function startQuiz(qs, subject, startIdx, isJc, isHw){
+function startQuiz(qs, subject, startIdx, isJc, isHw, preAnswers){
   if(!qs||!qs.length){ showToast('没有题目'); return; }
-  S.quiz = { qs:qs, idx:startIdx||0, ans:{}, subject:subject, isJc:!!isJc, isHw:!!isHw };
+  S.quiz = { qs:qs, idx:startIdx||0, ans:preAnswers||{}, subject:subject, isJc:!!isJc, isHw:!!isHw };
   showView('quiz');
   renderQ();
+}
+// 从历史记录里为题目列表构造 preAnswers 对象
+function _buildPreAnswers(qs, ns, keyFn){
+  var d=getDb(ns), pre={};
+  qs.forEach(function(q,i){
+    var h=d.history[keyFn(q)];
+    if(h && h.sel) pre[i]={sel:h.sel, ok:!!h.ok};
+  });
+  return pre;
 }
 function startWrongSubj(subj){
   var d = getDb();
@@ -1024,6 +1039,10 @@ function startHwQuiz(mode, selMode){
     var undoneHw=qs.filter(function(q){return !dHw.history[q.id];});
     if(!undoneHw.length){showToast('该分类题目已全部做完！');return;}
     startQuiz(shuffleNoConsecutive(undoneHw),label,0,false,true);
+  } else if(selMode==='review'){
+    var doneHw=sorted.filter(function(q){return dHw.history[q.id];});
+    if(!doneHw.length){showToast('暂无已做题目');return;}
+    startQuiz(doneHw,label,0,false,true,_buildPreAnswers(doneHw,'hw',function(q){return q.id;}));
   }
 }
 
@@ -1051,10 +1070,11 @@ function openHwSel(mode){
   document.getElementById('subj-sel-title').textContent=label+' · '+total+' 题';
   document.getElementById('range-row').style.display='none';
   var modes=[
-    {id:'seq',     title:'顺序练习',         desc:'按模块顺序从头开始，共 '+total+' 题'},
-    {id:'cont',    title:'继续上次',          desc:'从第一道未做题继续（已做 '+done+'/'+total+'）'},
-    {id:'rand',    title:'随机混合（全部）',  desc:'随机科目交替，共 '+total+' 题'},
-    {id:'rand_undone',title:'随机混合（未做）',desc:'仅练习未做的 '+undone+' 题，随机科目交替'},
+    {id:'seq',         title:'顺序练习',       desc:'按模块顺序从头开始，共 '+total+' 题'},
+    {id:'cont',        title:'继续上次',        desc:'从第一道未做题继续（已做 '+done+'/'+total+'）'},
+    {id:'rand',        title:'随机混合（全部）',desc:'随机科目交替，共 '+total+' 题'},
+    {id:'rand_undone', title:'随机混合（未做）',desc:'仅练习未做的 '+undone+' 题，随机科目交替'},
+    {id:'review',      title:'回顾已做题',      desc:'浏览已做的 '+done+' 题，显示你当时的选择'},
   ];
   document.getElementById('mode-list').innerHTML=modes.map(function(m,i){
     return '<button class="mbt'+(i===0?' on':'')+'" id="mbt-'+m.id+'" onclick="selectMode(\''+m.id+'\')">'
@@ -1173,6 +1193,10 @@ function startJcQuiz(mode, selMode){
     var undone=qs.filter(function(q){return !d.history[q.id];});
     if(!undone.length){showToast('该分类题目已全部做完！');return;}
     startQuiz(shuffleNoConsecutive(undone),label,0,true);
+  } else if(selMode==='review'){
+    var doneJcQ=sorted.filter(function(q){return d.history[q.id];});
+    if(!doneJcQ.length){showToast('暂无已做题目');return;}
+    startQuiz(doneJcQ,label,0,true,false,_buildPreAnswers(doneJcQ,'jc',function(q){return q.id;}));
   } else {
     startQuiz(shuffleNoConsecutive(qs),label,0,true);
   }
@@ -1197,6 +1221,7 @@ function openJcMixSel(mode){
     {id:'cont',        title:'继续上次',        desc:'从第一道未做题继续（已做 '+done+'/'+total+'）'},
     {id:'rand',        title:'随机混合（全部）',desc:'随机科目交替，共 '+total+' 题'},
     {id:'rand_undone', title:'随机混合（未做）',desc:'仅练习未做的 '+undone+' 题，随机科目交替'},
+    {id:'review',      title:'回顾已做题',      desc:'浏览已做的 '+done+' 题，显示你当时的选择'},
   ];
   document.getElementById('mode-list').innerHTML=modes.map(function(m,i){
     return '<button class="mbt'+(i===0?' on':'')+'" id="mbt-'+m.id+'" onclick="selectMode(\''+m.id+'\')">'
@@ -1228,6 +1253,7 @@ function openJcSubjSel(subj){
     {id:'cont',        title:'继续上次',        desc:'从第 '+(done+1)+' 题继续（已做 '+done+'/'+total+'）'},
     {id:'rand',        title:'随机混合（全部）',desc:'随机顺序练习全部 '+total+' 题'},
     {id:'rand_undone', title:'随机混合（未做）',desc:'仅练习未做的 '+undoneJc+' 题，随机顺序'},
+    {id:'review',      title:'回顾已做题',      desc:'浏览已做的 '+done+' 题，显示你当时的选择'},
     {id:'range',       title:'指定范围',        desc:'自定义起止题号（按顺序）'},
   ];
   document.getElementById('mode-list').innerHTML = modes.map(function(m,i){
@@ -1290,6 +1316,10 @@ startFromSel = function(){
       var undoneJcS=qs.filter(function(q){return !dJc.history[q.id];});
       if(!undoneJcS.length){showToast('该科目题目已全部做完！');return;}
       startQuiz(shuffleNoConsecutive(undoneJcS),'JC·'+subj,0,true);
+    } else if(mode==='review'){
+      var doneJcS=qs.filter(function(q){return dJc.history[q.id];});
+      if(!doneJcS.length){showToast('暂无已做题目');return;}
+      startQuiz(doneJcS,'JC·'+subj,0,true,false,_buildPreAnswers(doneJcS,'jc',function(q){return q.id;}));
     } else if(mode==='range'){
       var from=parseInt(document.getElementById('range-from').value)||1;
       var to=parseInt(document.getElementById('range-to').value)||qs.length;
@@ -1430,7 +1460,12 @@ function _mergeDb(local, remote){
   };
   Object.keys(local.history || {}).forEach(function(k){
     var lv=local.history[k]||{}, rv=m.history[k]||{};
+    // 优先保留更新的那条（时间戳较大），同时兼容 ok/sel/t 和旧 times/correct 两种格式
+    var useLocal = +(lv.t||0) >= +(rv.t||0);
     m.history[k]={
+      ok:      useLocal ? lv.ok      : (rv.ok      != null ? rv.ok      : lv.ok),
+      sel:     useLocal ? lv.sel     : (rv.sel      || lv.sel),
+      t:       Math.max(+(lv.t||0),       +(rv.t||0)),
       times:   Math.max(+(lv.times||0),   +(rv.times||0)),
       correct: Math.max(+(lv.correct||0), +(rv.correct||0))
     };
