@@ -95,7 +95,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
 .opts{display:flex;flex-direction:column;gap:9px}
 .opt{display:flex;align-items:flex-start;gap:13px;padding:14px 18px;
   border:2px solid var(--bd);border-radius:8px;background:#fff;cursor:pointer;
-  text-align:left;font-size:1.05rem;line-height:1.7;transition:all .15s;width:100%}
+  text-align:left;font-size:1.05rem;line-height:1.7;transition:all .15s;width:100%;
+  white-space:normal}
+.opt>span:last-child{flex:1;min-width:0;word-break:break-word}
 .opt:hover:not(:disabled){border-color:var(--pri);background:#f0f4ff}
 .opt-l{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--bd);
   color:var(--tx);display:flex;align-items:center;justify-content:center;
