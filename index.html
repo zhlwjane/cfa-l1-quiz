@@ -293,6 +293,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
         <button class="btn btn-s" onclick="prevQ()">&#8592; 上一题</button>
         <button class="btn btn-p" id="btn-next" onclick="nextQ()">下一题 &#8594;</button>
         <button class="btn btn-a" id="btn-wrong" onclick="toggleWrong()" style="display:none">加入错题</button>
+        <button class="btn btn-s" id="btn-reset" onclick="resetQ()" style="display:none">&#8635; 重做</button>
       </div>
       <div class="bg">
         <div class="jmp">
@@ -638,11 +639,13 @@ function renderQ(){
   }).join('');
   document.getElementById('btn-next').textContent = quiz.idx===quiz.qs.length-1 ? '完成' : '下一题';
   var bw = document.getElementById('btn-wrong');
+  var br = document.getElementById('btn-reset');
   if(answered){
     bw.style.display='';
     bw.textContent = isWrong ? '移出错题' : '加入错题';
     bw.className = 'btn '+(isWrong?'btn-s':'btn-a');
-  } else { bw.style.display='none'; }
+    br.style.display='';
+  } else { bw.style.display='none'; br.style.display='none'; }
   if(answered) showExpl(q, answered.ok);
   else document.getElementById('q-expl').style.display='none';
 }
@@ -708,6 +711,21 @@ function toggleWrong(){
   saveDb(d,ns);
   renderQ();
   showToast(d.wrong[key].on?'已加入错题库':'已移出错题库');
+}
+
+function resetQ(){
+  var quiz=S.quiz;
+  var q=quiz.qs[quiz.idx];
+  var isJcQ=quiz.isJc||!!(q.id&&q.id.indexOf('jc_')===0);
+  var isHwQ=quiz.isHw||!!(q.id&&q.id.indexOf('hw_')===0);
+  var ns=isJcQ?'jc':isHwQ?'hw':'main';
+  var key=(isJcQ||isHwQ)?q.id:q.subject+'_'+q.num;
+  var d=getDb(ns);
+  delete d.history[key];
+  delete quiz.ans[quiz.idx];
+  saveDb(d,ns);
+  renderQ();
+  showToast('已重置，可重新作答');
 }
 
 // Wrong book — 来源标识
