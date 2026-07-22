@@ -25,9 +25,9 @@ var JC_QUESTIONS =
     "num": 2,
     "question": "The maturity premium can be best described as compensation to investors for the:",
     "options": {
-      "A": "risk of loss relative to an investment’s fair value if the investment needs to be converted to cash",
-      "B": "increased sensitivity of the market value of debt to a change in market interest rates as maturity",
-      "C": "possibility that the borrower will fail to make a promised payment at the contracted time and in"
+      "A": "risk of loss relative to an investment’s fair value if the investment needs to be converted to cash quickly.",
+      "B": "increased sensitivity of the market value of debt to a change in market interest rates as maturity is extended.",
+      "C": "possibility that the borrower will fail to make a promised payment at the contracted time and in the contracted amount."
     },
     "answer": "B",
     "explanation": "Explain an interest rate as the sum of a real risk-free rate and premiums that compensate investors\nfor bearing distinct types of risk.\nThe maturity premium compensates investors for the increased sensitivity of the market value of\ndebt to a change in market interest rates as maturity is extended, in general (holding all else equal)."
@@ -776,8 +776,8 @@ var JC_QUESTIONS =
     "question": "Which of the following statements about Monte Carlo simulation is least likely true?",
     "options": {
       "A": "Monte Carlo simulation is an analytical method",
-      "B": "Monte Carlo simulation involves the use of a computer to represent the operation of a complex",
-      "C": "Monte Carlo simulation is based on the repeated generation of one or more risk factors that"
+      "B": "Monte Carlo simulation involves the use of a computer to represent the operation of a complex financial system.",
+      "C": "Monte Carlo simulation is based on the repeated generation of one or more risk factors that affect security values."
     },
     "answer": "A",
     "explanation": "Monte Carlo simulation is a statistical method, not an analytical method.\nThe other two statements are correct."
@@ -1540,7 +1540,7 @@ var JC_QUESTIONS =
     "num": 2,
     "question": "The following choices describe the importance of trust except:",
     "options": {
-      "A": "Since the nature of investment products and services is intangible, trust is essential to the",
+      "A": "Since the nature of investment products and services is intangible, trust is essential to the increase of investment willing.",
       "B": "Trust can be replaced by laws since laws are always the best mechanism to reduce unethical",
       "C": "Trust is the very foundation of the relationship between investors and investment managers. 10.2. The Process for the Enforcement of the Code and Standards"
     },
@@ -1735,7 +1735,7 @@ var JC_QUESTIONS =
     "num": 15,
     "question": "Andrew Smith, CFA, works for Granite, a commercial bank that also has a sizable\nsell-side research division. Smith is presenting financing solutions to a potential\nbusiness client, Dynamic Materials Corp. As part of his presentation, Smith mentions\nthat Granite will initiate research coverage on Dynamic. Is Smith's arrangement most\nlikely appropriate with regard to the Code and Standards? 2016Mock",
     "options": {
-      "A": "No, because Smith cannot offer to provide research coverage on a company if it becomes a",
+      "A": "No, because Smith cannot offer to provide research coverage on a company if it becomes a Corporate finance client.",
       "B": "No, because Granite cannot provide research coverage on a corporate finance client because",
       "C": "Yes"
     },
@@ -1975,7 +1975,7 @@ var JC_QUESTIONS =
     "num": 31,
     "question": "Which of the following actions violate the Standard relating to market manipulation?",
     "options": {
-      "A": "Entering large buy and sell trades between multiple proprietary accounts of the firm with the",
+      "A": "Entering large buy and sell trades between multiple proprietary accounts of the firm with the intent to increase trading volume.",
       "B": "Exploiting perceived market inefficiencies through aggressive trading strategies",
       "C": "Placing the securities mentioned as material nonpublic information on the firm’s restricted"
     },
@@ -1992,7 +1992,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "No",
       "B": "Yes, the Standard relating to market manipulation only",
-      "C": "Yes, both the Standard relating to market manipulation and the Standard relating to"
+      "C": "Yes, both the Standard relating to market manipulation and the Standard relating to misconduct"
     },
     "answer": "C",
     "explanation": "According to Standard II(B), Market Manipulation, \"[i]nformation-based manipulation includes,\nbut is not limited to, spreading false rumors to induce trading by others. For example, members\nand candidates must refrain from “pumping up” the price of an investment by issuing misleading\npositive information or overly optimistic projections of a security’s worth only to later “dump” the\ninvestment (i.e., sell it) once the price, fueled by the misleading information’s effect on other\nmarket participants, reaches an artificially high level.\" Chang spreads rumors on social media\nabout a potential acquisition of AEC after buying the stock for his personal account. Therefore,\nChang has violated the Standard II(B), Market Manipulation.\nIn addition, Standard I(D), Misconduct, \"addresses all conduct that reflects poorly on the\nprofessional integrity, good reputation, or competence of members and candidates. Any act that\ninvolves lying, cheating, stealing, or other dishonest conduct is a violation of this standard if the\noffense reflects adversely on a member’s or candidate’s professional activities.\" Spreading rumors\non social media to push up the stock price reflects poorly on Chang's professional integrity.\nTherefore, Chang has violated the Standard I(D), Misconduct."
@@ -2067,7 +2067,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "No",
       "B": "Yes, because the manager was hired based upon his previous investment strategy",
-      "C": "Yes, because the restrictions provided by the Trustees are not in the best interest of the"
+      "C": "Yes, because the restrictions provided by the Trustees are not in the best interest of the members."
     },
     "answer": "A",
     "explanation": "According to Standard III (A) Loyalty, Prudence, and Care, Gupta’s duty of loyalty, prudence, and\ncare is owed to the participants and beneficiaries (members) of the pension plan. As a church plan,\nthe restrictions are appropriate given the objectives and constraints of the portfolio."
@@ -2231,7 +2231,7 @@ var JC_QUESTIONS =
     "question": "Amanda, CFA, is a portfolio manager. She has a new client and develops an investment\npolicy statement (IPS) that addresses the client's risk and return objectives and\nconstraints. The client does not disclose assets managed by other firms and Amanda\nagrees to only manage the portion of the client's assets disclosed to her. In a separate\ndocument, Amanda develops an investment program and strategic asset allocation for\nthe portion of client assets she manages. Has Amanda most likely violated the Standard\nrelating to suitability?",
     "options": {
       "A": "No",
-      "B": "Yes, by keeping the investment program and strategic asset allocation in a document that is",
+      "B": "Yes, by keeping the investment program and strategic asset allocation in a document that is separate from the IPS.",
       "C": "Yes, by agreeing to manage a portion of the client's assets without knowledge of the client's"
     },
     "answer": "A",
@@ -2365,7 +2365,7 @@ var JC_QUESTIONS =
     "num": 57,
     "question": "Jimmy Lan, CFA, is a technology analyst at Pacific Securities, Inc. and is a leading\nauthority on Japanese technology companies. Lan's clients include many leading\nJapanese equity managers. While still employed at Pacific, Lan makes plans during the\nweekends to start a new company, JL Consulting. His plans consist of contracting\noffice space, interviewing potential employees, and purchasing office equipment. Once\nhe feels ready to launch his new firm, Lan provides Pacific with his resignation notice.\nAfter leaving, Lan constructs earnings models of the technology companies he\npreviously covered, using the knowledge and experience gained while at Pacific. He\nthen contacts former clients by using public sources and encourages them to become\nclients of his new firm. Are Lan's actions in compliance with the Code and\nStandards?16Mock",
     "options": {
-      "A": "No, because the names of former clients, modeling skills, and experience gained by Lan are",
+      "A": "No, because the names of former clients, modeling skills, and experience gained by Lan are confidential information of Pacific Securities.",
       "B": "Yes, assuming he is not in breach of any non-compete agreement signed while at Pacific",
       "C": "No, because he is prohibited from engaging in activities related to starting his new business"
     },
@@ -2380,7 +2380,7 @@ var JC_QUESTIONS =
     "num": 58,
     "question": "Marc Davidson, CFA, works as a trust specialist for Integrity Financial. Davidson starts\na part-time consulting business providing advice to trustees for a fee. He conducts this\nbusiness on his own time and therefore did not notify Integrity Financial of his\nconsulting. Davidson asks his assistant to compile a list of Integrity's clients and their\ncontact information. The following month, Davidson is offered a similar role at\nIntegrity's largest competitor, Legacy Trust Services, Inc. After he begins working at\nLegacy, his new manager arranges for him to meet with a number of prospective clients,\nmany of whom are clients of Integrity. After meeting with Davidson, a number of\nformer Integrity clients decide to transfer their business to Legacy. Did Davidson's\naction violate the Code and Standards? (1912)",
     "options": {
-      "A": "Yes, both Davidson's part-time consulting business and his meetings with Integrity clients are",
+      "A": "Yes, both Davidson's part-time consulting business and his meetings with Integrity clients are violations of the Standards.",
       "B": "Yes, Davidson's part-time consulting business is a violation of the Standards",
       "C": "No"
     },
@@ -2545,9 +2545,9 @@ var JC_QUESTIONS =
     "num": 69,
     "question": "Madeline Smith, CFA, was recently promoted to senior portfolio manager. In her new\nposition, Smith is required to supervise three portfolio managers. Smith asks for a copy\nof her firm's written supervisory policies and procedures but is advised that no such\npolicies are required by regulatory standards in the country where Smith works.\nAccording to the Standards of Practice Handbook, Smith's most appropriate course of\naction would be to: ★2017Mock",
     "options": {
-      "A": "require her firm to adopt the CFA Institute Code of Ethics and Standards of Professional",
-      "B": "decline to accept supervisory responsibility until her firm adopts procedures to allow her to",
-      "C": "require the employees she supervises to adopt the CFA Institute Code of Ethics and Standards"
+      "A": "require her firm to adopt the CFA Institute Code of Ethics and Standards of Professional Conduct.",
+      "B": "decline to accept supervisory responsibility until her firm adopts procedures to allow her to adequately exercise such responsibility.",
+      "C": "require the employees she supervises to adopt the CFA Institute Code of Ethics and Standards of Professional Conduct."
     },
     "answer": "B",
     "explanation": "According to guidance for Standard (IV(C), if a member cannot fulfill supervisory responsibilities\nbecause of the absence of a compliance system or because of an inadequate compliance system,\nthe member should decline in writing to accept supervisory responsibility until the firm adopts\nreasonable procedures to allow the member to adequately exercise such responsibility."
@@ -2560,7 +2560,7 @@ var JC_QUESTIONS =
     "num": 70,
     "question": "Eileen Fisher, CFA, has been a supervisory analyst at SL Advisers for the past 10 years.\nRecently, one of her analysts was found to be in violation of the CFA Institute\nStandards of Professional Conduct. Fisher has placed limits on the analyst's activities\nand is now monitoring all of his investment activities. Although SL did not have any\ncompliance procedures up to this point, to avoid future violations, Fisher has put in\nplace procedures industry standards. Did Fisher most likely violate any CFA Institute\nStandards of Professional Conduct? 2016Mock",
     "options": {
-      "A": "No, because she is taking steps to implement compliance procedures that are more than",
+      "A": "No, because she is taking steps to implement compliance procedures that are more than adequate.",
       "B": "Yes",
       "C": "No, because she has taken steps to ensure the violations will not be repeated by the analyst"
     },
@@ -2681,7 +2681,7 @@ var JC_QUESTIONS =
     "question": "Which of the following statements concerning requirements under Standard V(B)–\nCommunication with Clients and Prospective Clients is least likely accurate? This\nstandard requires members and candidates to: 2017Mock",
     "options": {
       "A": "divulge the number of investment related personnel responsible for external communication",
-      "B": "distinguish between fact and opinion in the presentation of investment analysis and",
+      "B": "distinguish between fact and opinion in the presentation of investment analysis and recommendations.",
       "C": "disclose the basic format and general principles of the investment process"
     },
     "answer": "A",
@@ -2921,7 +2921,7 @@ var JC_QUESTIONS =
     "question": "Which of the following relating to conduct as participants in CFA Institute Programs is\nmost likely violate? A candidate:",
     "options": {
       "A": "Expresses opinions regarding CFA Institute in an online forum",
-      "B": "tells her brother, after taking the exam, how glad she was that no questions about the",
+      "B": "tells her brother, after taking the exam, how glad she was that no questions about the binomial model were asked.",
       "C": "publishes on a social media website her disappointment about what she thinks is an overly"
     },
     "answer": "B",
@@ -4617,7 +4617,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "€10 million is shown as a liability, and €9 million appears as an asset",
       "B": "€1 million is shown as a net pension obligation.（原版书课后题）",
-      "C": "Pension assets and obligations are not required to be shown on the balance sheet but only"
+      "C": "Pension assets and obligations are not required to be shown on the balance sheet but only disclosed in footnotes."
     },
     "answer": "B",
     "explanation": "The company will report a net pension obligation of €1 million equal to the pension obligation\n(€10 million) less the plan assets (€9 million)."
@@ -4916,8 +4916,8 @@ var JC_QUESTIONS =
     "question": "An analyst has calculated a ratio using as the numerator the sum of operating cash flow,\ninterest, and taxes, and as the denominator the amount of interest. What is this ratio,\nwhat does it measure, and what does it indicate? (原版书)",
     "options": {
       "A": "This ratio is an interest coverage ratio, measuring a company's ability to meet its interest obligations and indicating a company's solvency",
-      "B": "This ratio is an effective tax ratio, measuring the amount of a company's operating cash flow",
-      "C": "This ratio is an operating profitability ratio, measuring the operating cash flow generated for"
+      "B": "This ratio is an effective tax ratio, measuring the amount of a company's operating cash flow used for taxes, and indicating a company's efficiency in tax management.",
+      "C": "This ratio is an operating profitability ratio, measuring the operating cash flow generated for taxes and interest and indicating a company's liquidity."
     },
     "answer": "A",
     "explanation": "This is the interest coverage ratio using operating cash flow rather than earnings before interest,\ntax, depreciation, and amortization (EBITDA)."
@@ -5276,8 +5276,8 @@ var JC_QUESTIONS =
     "question": "Which of the following statements regarding a mature company's stakeholders is the\nmost accurate?",
     "options": {
       "A": "Equity represents a cheaper financing source for companies",
-      "B": "Shareholders are residual claimants to the company after all other stakeholders have been",
-      "C": "Dividend payments to company shareholders are generally treated as a tax-deductible"
+      "B": "Shareholders are residual claimants to the company after all other stakeholders have been paid",
+      "C": "Dividend payments to company shareholders are generally treated as a tax-deductible expense for the company"
     },
     "answer": "B",
     "explanation": "Debtholders have a prior legal claim on the company’s cash flows and assets over the claims of\nequity owners. Equity holders [shareholders] are therefore residual claimants to the company after\nall other stakeholders have been paid, including creditors (interest/principal), suppliers (accounts\npayable), government (taxes), and employees (wages)."
@@ -5397,7 +5397,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Risk appetites are similar among private lenders",
       "B": "Staggered boards provide continuous implementation of strategy and oversight",
-      "C": "A company's CEO is responsible for implementing the company’s strategy under the"
+      "C": "A company's CEO is responsible for implementing the company’s strategy under the oversight of the company's shareholders"
     },
     "answer": "B",
     "explanation": "A company's CEO is hired by the board and responsible for implementing the company’s strategy\nunder the oversight of the board of directors. Managers, led by the chief executive officer of the\ncompany, are responsible for determining and implementing the corporation’s strategy under the\noversight of the board of directors. In addition, a company’s board of directors is elected by\nshareholders to protect shareholders’ interests and provide strategic direction, taking into\nconsideration the company’s risk appetite, which it defines for the company. The board is also\nresponsible for hiring the CEO and monitoring the performance of the company and\nmanagement.\nPrivate debtholders have wide variation in risk appetites. With banks and private lenders, the\ngeneral perspective of debtholders applies: less financial leverage implies less risk and is\ntherefore preferred. Among private lenders, however, there is wide variation in their risk\nappetite, approach, behavior, and relationships with companies to whom they have provided\ncapital.\nThe positive aspect of a staggered board is that it provides continuous implementation of\nstrategy and oversight without constantly being reassessed by new board members, which\notherwise risks bringing short-termism into company strategy."
@@ -5442,7 +5442,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Dual-class share structures can be easily changed over time",
       "B": "Company insiders can maintain significant power over the organization",
-      "C": "Conflicts of interest between management and stakeholder groups are less likely than with"
+      "C": "Conflicts of interest between management and stakeholder groups are less likely than with single-share structures."
     },
     "answer": "B",
     "explanation": "Under dual-class share systems, company founders or insiders may control board elections,\nstrategic decisions, and other significant voting matters.\nDual-share systems are virtually impossible to dismantle once adopted.\nConflicts of interest between management and stakeholders are more likely than with single-\nshare structures because of the potential control element under dual systems.\n2023BT.5.1.74"
@@ -5786,7 +5786,7 @@ var JC_QUESTIONS =
     "question": "An analyst is estimating the NPV of a project to introduce a new spicier version of its\nwell-known barbeque sauce into its product line. A cost that should most likely be\nexcluded from his analysis is:",
     "options": {
       "A": "$200,000 to develop a recipe for the new sauce",
-      "B": "a $150,000 decrease in sales of its current sauce as some current customers switch to the",
+      "B": "a $150,000 decrease in sales of its current sauce as some current customers switch to the spicier sauce.",
       "C": "$100,000 for a marketing survey that was conducted to determine demand for a spicier sauce"
     },
     "answer": "C",
@@ -6400,7 +6400,7 @@ var JC_QUESTIONS =
     "num": 88,
     "question": "Which of the following is least likely an appropriate method for an analyst to estimate a\nfirm's target capital structure?(notes)",
     "options": {
-      "A": "Use the firm's current proportions of debt and equity based on market values, with an",
+      "A": "Use the firm's current proportions of debt and equity based on market values, with an adjustment for recent trends in its capital structure.",
       "B": "Use average capital structure weights for the firm's industry, based on book values of debt",
       "C": "Use the firm's current capital structure, based on market values of debt and equity"
     },
@@ -7046,7 +7046,7 @@ var JC_QUESTIONS =
     "question": "In the morning business news, a financial analyst, Kevin Durbin, learned that average hourly earnings had increased last month. The most appropriate action for Durbin is to:",
     "options": {
       "A": "call his clients to inform them of a good trading opportunity today",
-      "B": "examine other leading indicators to see any confirmation of a possible turning point for the",
+      "B": "examine other leading indicators to see any confirmation of a possible turning point for the economy.",
       "C": "use the news in his research report as a confirmation for his belief that the economy has"
     },
     "answer": "B",
@@ -7092,7 +7092,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "acts as a medium of exchange only",
       "B": "provides economic agents with a means of storing wealth only",
-      "C": "provides society with a unit of account, acts as a medium of exchange, and acts as a store of"
+      "C": "provides society with a unit of account, acts as a medium of exchange, and acts as a store of wealth."
     },
     "answer": "C",
     "explanation": "Money needs to be able to fulfill the functions of acting as a unit of account, a medium of exchange,\nand a means of storing wealth."
@@ -7152,7 +7152,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "involves the setting of medium-term targets for broad money aggregates",
       "B": "involves the manipulation by a central bank of the government’s budget deficit",
-      "C": "seeks to influence the macro economy by influencing the quantity of money and credit in the"
+      "C": "seeks to influence the macro economy by influencing the quantity of money and credit in the economy"
     },
     "answer": "C",
     "explanation": "Although the setting of targets for monetary aggregates is a possible tool of monetary policy,\nmonetary policy itself is concerned with influencing the overall, or macro, economy."
@@ -7555,9 +7555,9 @@ var JC_QUESTIONS =
     "num": 67,
     "question": "A small country has a competitive advantage in the production of pencils. The\ngovernment implements an export subsidy for pencils to stimulate economic growth.\nThe most likely outcome of this policy is:",
     "options": {
-      "A": "Although domestic producers will receive a net benefit, the policy will give rise to",
+      "A": "Although domestic producers will receive a net benefit, the policy will give rise to inefficiencies that cause a deadweight loss to the national welfare.",
       "B": "As new domestic producers enter the pencils market, supply will increase and domestic prices",
-      "C": "The increase in the domestic producer surplus will exceed the sum of the subsidy and the"
+      "C": "The increase in the domestic producer surplus will exceed the sum of the subsidy and the decrease in the domestic consumer surplus."
     },
     "answer": "A",
     "explanation": "Export subsidies interfere with the functioning of the free market and result in a deadweight loss\nto society. The deadweight loss arises on the producer side because the higher subsidized price\ncauses inefficient producers to remain in the market. On the consumer side, the higher price causes\nthose that would have purchased at the lower price to be shut out of the market.\nProducers shift output from the domestic to the export market to capture the subsidy. Furthermore,\nas a small country, the domestic market is a price taker and thus consumers pay the international\nprice plus the subsidy causing the domestic price to rise.\nAs prices rise and producers increase production beyond the efficient level, efficiencies diminish.\nNational welfare must decline, as the increase in producer surplus is less than the combined cost\nto consumer and government."
