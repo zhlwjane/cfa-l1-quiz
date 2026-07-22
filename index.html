@@ -40,6 +40,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
 .data-btn-imp{background:#f0fff4;color:#276749}.data-btn-imp:hover{background:#c6f6d5}
 .data-btn-sync{background:#fffbeb;color:#b7791f}.data-btn-sync:hover{background:#fef3c7}
 .data-btn-pull{background:#f5f3ff;color:#553c9a}.data-btn-pull:hover{background:#e9d8fd}
+.data-btn-clean{background:#fff5f5;color:#c53030}.data-btn-clean:hover{background:#fed7d7}
 .data-btn-close{background:#f7f8fc;color:var(--tx2);margin-top:4px}.data-btn-close:hover{background:#edf2f7}
 .data-hint{font-size:.75rem;color:var(--tx2);margin-top:14px;padding:10px;background:#f7f8fc;border-radius:6px;line-height:1.5}
 .sync-dot.synced{background:rgba(255,255,255,.2);color:#fff}
@@ -383,6 +384,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
       <button class="data-btn data-btn-imp" onclick="triggerImport()">&#11014; 导入备份（JSON）— 从文件恢复</button>
       <button class="data-btn data-btn-sync" onclick="forcePushSync()">&#9729; 立即上传到云端</button>
       <button class="data-btn data-btn-pull" onclick="forcePullSync()">&#11123; 从云端拉取最新</button>
+      <button class="data-btn data-btn-clean" onclick="cleanIncompleteHistory()">&#129529; 清理无答案记录（重置为未做）</button>
       <button class="data-btn data-btn-close" onclick="hideDataModal()">取消</button>
     </div>
     <div class="data-hint">💡 迁移步骤：在旧设备点「导出」→ 在新设备点「导入」选择文件 → 完成</div>
@@ -1415,6 +1417,32 @@ function forcePushSync(){
     })
     .then(function(){ _setSyncDot('synced','✓ 已同步'); hideDataModal(); showToast('已上传到云端'); })
     .catch(function(err){ _setSyncDot('err','⚠ 同步失败'); showToast('上传失败：' + err.message); });
+}
+
+function cleanIncompleteHistory(){
+  var total = 0;
+  ['main','jc','hw'].forEach(function(ns){
+    var d = getDb(ns);
+    var cleaned = {};
+    Object.keys(d.history).forEach(function(k){
+      var h = d.history[k];
+      if(h && h.sel) cleaned[k] = h;
+      else total++;
+    });
+    d.history = cleaned;
+    saveDb(d, ns);
+  });
+  hideDataModal();
+  if(total === 0){
+    showToast('没有需要清理的记录');
+  } else {
+    showToast('已清理 '+total+' 条无答案记录，重置为未做');
+    renderHome();
+    if(S.view==='stats') renderStats();
+    else if(S.view==='jc') renderJc();
+    else if(S.view==='hw') renderHw();
+    else if(S.view==='wrong') renderWrong();
+  }
 }
 
 function forcePullSync(){
