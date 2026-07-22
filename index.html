@@ -386,6 +386,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
       <button class="data-btn data-btn-sync" onclick="forcePushSync()">&#9729; 立即上传到云端</button>
       <button class="data-btn data-btn-pull" onclick="forcePullSync()">&#11123; 从云端拉取最新</button>
       <button class="data-btn data-btn-clean" onclick="cleanIncompleteHistory()">&#129529; 清理无答案记录（重置为未做）</button>
+      <button class="data-btn data-btn-clean" onclick="clearNsRecords('main')">&#128465; 清空 PACK 题库全部做题记录</button>
       <button class="data-btn data-btn-close" onclick="hideDataModal()">取消</button>
     </div>
     <div class="data-hint">💡 迁移步骤：在旧设备点「导出」→ 在新设备点「导入」选择文件 → 完成</div>
@@ -794,6 +795,7 @@ function renderWrong(){
     var clickFn=it.ns==='jc'?'goJcWrong(\''+it.key+'\')'
       :it.ns==='hw'?'goHwWrong(\''+it.key+'\')'
       :'goWrong(\''+esc(w.subject)+'\','+w.num+')';
+    var resetFn='resetAndGoWrong(\''+it.key+'\',\''+it.ns+'\')';
     var rmFn='rmWrong(\''+it.key+'\',\''+it.ns+'\')';
     return '<div class="wi" onclick="'+clickFn+'">'
       +'<div class="wi-hd"><div class="wi-meta">'
@@ -804,10 +806,18 @@ function renderWrong(){
       +'<div class="wi-q">'+esc(preview)+'</div>'
       +'<div class="wi-ans">正确答案: '+(q.answer||'?')+'</div>'
       +'<div class="wi-act" onclick="event.stopPropagation()">'
-        +'<button class="bsm bsm-p" onclick="'+clickFn+'">重做</button>'
+        +'<button class="bsm bsm-p" onclick="'+resetFn+'">重做</button>'
         +'<button class="bsm bsm-d" onclick="'+rmFn+'">移出错题</button>'
       +'</div></div>';
   }).join('');
+}
+function resetAndGoWrong(key, ns){
+  var d = getDb(ns);
+  delete d.history[key];
+  saveDb(d, ns);
+  if(ns==='jc') goJcWrong(key);
+  else if(ns==='hw') goHwWrong(key);
+  else { var w=d.wrong[key]; if(w) goWrong(w.subject, w.num); }
 }
 function setWS(s){ S.wrongSrc=s; renderWrong(); }
 function setWSub(s){ S.wrongSubj=s; renderWrong(); }
@@ -1438,6 +1448,17 @@ function forcePushSync(){
     .catch(function(err){ _setSyncDot('err','⚠ 同步失败'); showToast('上传失败：' + err.message); });
 }
 
+function clearNsRecords(ns){
+  var label = ns==='main'?'PACK题库':ns==='jc'?'JC百题':'课后题';
+  if(!confirm('确认清空「'+label+'」全部做题记录和错题？此操作不可撤销。')) return;
+  var d = getDb(ns);
+  d.history = {};
+  d.wrong = {};
+  saveDb(d, ns);
+  hideDataModal();
+  renderHome();
+  showToast(label+' 记录已全部清空');
+}
 function cleanIncompleteHistory(){
   var total = 0;
   ['main','jc','hw'].forEach(function(ns){
