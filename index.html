@@ -780,6 +780,7 @@ function renderWrong(){
   });
   document.getElementById('wrong-stats').textContent='共 '+items.length+' 道错题'
     +(filtered.length<items.length?' · 筛选 '+filtered.length+' 道':'');
+  filtered.sort(function(a,b){ return (b.w.t||0)-(a.w.t||0); });
   var list=document.getElementById('wrong-list');
   if(!filtered.length){
     list.innerHTML='<div class="empty"><div class="empty-i">&#127881;</div><div>暂无错题</div></div>';
