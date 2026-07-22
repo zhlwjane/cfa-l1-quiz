@@ -659,7 +659,7 @@ var JC_QUESTIONS =
       "B": "Probability density function",
       "C": "Probability function."
     },
-    "answer": "B",
+    "answer": "A",
     "explanation": "The cumulative distribution function gives the probability that a random variable X is less than or\nequal to a particular value x, P (X < x). For continuous random variables, “the probability function\nis denoted f(x) and called the probability density function (pdf), or just the density”."
   },
   {
@@ -4709,7 +4709,7 @@ var JC_QUESTIONS =
       "B": "$300 increase",
       "C": "$200 decrease"
     },
-    "answer": "C",
+    "answer": "A",
     "explanation": "A is correct. A valuation allowance reduces the value of the deferred tax assets under US GAAP,\nso the total change in net income as a result of the changes in the three accounts can be calculated\nas follows:\nEffect of Change on Net Income\nAccount Change in Account from 2021 Direction Dollar Effect\nDeferred tax assets $ 200 increase Increase $200\nDeferred tax liabilities $ 100 decrease Increase $100\nValuation allowance $ 100 increase Decrease ($100)\nOverall effect: A net increase of: $200"
   },
   {
@@ -11414,7 +11414,7 @@ var JC_QUESTIONS =
       "B": "Clearly articulating the enterprise's risk appetite and thresholds",
       "C": "Implementing a bottom-up approach to guide risk management efforts throughout the"
     },
-    "answer": "A",
+    "answer": "C",
     "explanation": "The answer is C. Effective risk governance requires taking an enterprise-wide view of risks, which\nmeans developing a comprehensive understanding of the enterprise's overall risk profile. This\nincludes identifying and evaluating both internal and external factors that could potentially\nimpact the achievement of the enterprise's strategic objectives. Hence, statement A aligns with\neffective risk governance practices.\nAdditionally, effective risk governance involves defining the enterprise's risk appetite and\nthresholds, i.e., the amount and type of risk the enterprise is willing to accept in pursuit of its\nobjectives. This helps ensure that risk-taking activities remain within acceptable bounds and\nsupports informed decision-making across the organization. Statement B aligns with effective risk\ngovernance practices.\nStatement C, however, suggests implementing a bottom-up process to direct risk management\nactivities, where decisions regarding risk management are made at lower levels of the\norganization and then communicated upwards. While input from lower levels should certainly be\nconsidered, a purely bottom-up approach may result in fragmented and inconsistent risk\nmanagement practices across different parts of the organization. Effective risk governance\ntypically relies on a top-down approach, where senior management sets the tone for risk\nmanagement and establishes clear policies and procedures to guide risk management efforts\nthroughout the organization. Therefore, statement C is least aligned with effective risk\ngovernance practices."
   },
   {
@@ -13833,4 +13833,3 @@ var JC_QUESTIONS =
     "explanation": "Using risk-neutral pricing, we can determine the risk-neutral probability as:\nS = 7,950 × 1.12 = 8,904\nu\nS = 7,950 × 0.92 = 7,314\nd\nc = Max (8,904-7,880, 0) = 1,024\n+\nc = Max (7,314-7,880, 0) = 0\n−\nπ = (1 − 0.005 − 0.92)/(1.12 − 0.92) = 0.375\nu\nπ =1− π = 0.625\nd u\nc = (0.375 × 1,024 + 0.625 × 0) / (1 - 0.005) = 384 / 0.995 = 385.93\n0"
   }
 ]
-;
