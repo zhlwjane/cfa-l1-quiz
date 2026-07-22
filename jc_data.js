@@ -7886,7 +7886,7 @@ var JC_QUESTIONS =
     "question": "Which of the following least likely describes an advantage of fund investing?",
     "options": {
       "A": "Access to alternative investments without possessing a high degree of investment expertise",
-      "B": "Lower level of investor involvement as the fund managers provide investment services and",
+      "B": "Lower level of investor involvement as the fund managers provide investment services and expertise.",
       "C": "Highest level of control over how the asset is managed"
     },
     "answer": "C",
@@ -8367,7 +8367,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "If mortgage defaults and losses are high, all tranches bear the cost of the shortfall on pro rata",
       "B": "When rates rise, property owner prepayments can also slow, lengthening the duration of most",
-      "C": "An MBS issuer forms a special purpose vehicle (SPV) to buy mortgages from lenders and"
+      "C": "An MBS issuer forms a special purpose vehicle (SPV) to buy mortgages from lenders and other mortgage owners and use them to create a diversified mortgage pool."
     },
     "answer": "A",
     "explanation": "If mortgage defaults and losses are high, the lowest-ranked tranches bear the cost of the shortfall.\nThe most junior tranche is referred to as the first-loss tranche."
@@ -8427,7 +8427,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "The money multiple calculation relies on the amount and timing of cash flows",
       "B": "The IRR calculation involves the assumption of two rates",
-      "C": "Because private equity funds have low volatility, accounting conventions allow them to use a"
+      "C": "Because private equity funds have low volatility, accounting conventions allow them to use a lagged mark-to-market process."
     },
     "answer": "B",
     "explanation": "B is correct. The determination of an IRR involves certain assumptions about a financing rate to\nuse for outgoing cash flows (typically a weighted average cost of capital) and a reinvestment rate\nassumption to make on incoming cash flows (which must be assumed and may or may not actually\nbe earned).\nA is incorrect because the money multiple calculation completely ignores the timing of cash flows.\nC is incorrect because it is somewhat of a reversal of cause and effect: Private equity (PE) funds\ncan appear to have low volatility because of the lag in their mark-to-market process. It’s not that\nPE investments don’t actually rise and fall behind the scenes with economic influences, but\naccounting conventions may simply leave longer-lived investments marked at their initial cost for\nsome time or with only modest adjustments to such carrying value until known impairments or\nrealization events begin to transpire. Also, because PE funds are not easily marked to market, their\nreturns can appear somewhat smoothed, making them appear more resilient and less correlated\nwith other assets than they really are. The slowness to re-mark them can unfortunately be confused\nby investors as an overall lack of volatility."
@@ -8442,7 +8442,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "force the hedge fund to liquidate or unwind 50% of its positions in an orderly fashion",
       "B": "have little effect on the prices received when liquidating the positions because the hedge fund",
-      "C": "result in a forced liquidation, which is likely to further drive down prices and result in"
+      "C": "result in a forced liquidation, which is likely to further drive down prices and result in ongoing pressures on the hedge fund as it tries to convince nervous investors to remain in the fund."
     },
     "answer": "C",
     "explanation": "C is correct. One week may not be enough time to unwind such a large portion of the fund’s\npositions in an orderly fashion that does not also further drive down prices. A downgrade is not\nlikely to have a temporary effect, so even if other non-losing positions are liquidated to meet the\nredemption requests, it is unlikely that the two large holdings will return to previous or higher\nvalues in short order. Also, the hedge fund may have a week to satisfy the requests for\nredemptions, but the margin call must be met immediately. Overall, sudden redemptions at the\nfund level can have a cascading negative impact on a fund."
@@ -8877,7 +8877,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "The short seller must pay all dividends or interest to the lender of shares. （改编题）",
       "B": "Short sales involve time limits for returning the shares borrowed to the lender",
-      "C": "A short sale can be made only on an uptick or a zero-uptick trade if the previous trade was an"
+      "C": "A short sale can be made only on an uptick or a zero-uptick trade if the previous trade was an uptick, meaning the trade must occur at a price higher than the previous trade price or at the same price as the previous trade if that previous price was higher than the price preceding it."
     },
     "answer": "B",
     "explanation": "Short sales have no time limits. However, if the lender of shares decides to sell them, the broker\nmust find another investor willing to lend the shares."
@@ -9220,8 +9220,8 @@ var JC_QUESTIONS =
     "num": 38,
     "question": "Which of the following statements regarding sector indexes is most accurate? Sector\nindexes:（原版书课后题）",
     "options": {
-      "A": "A track different economic sectors and cannot be aggregated to represent the equivalent of a",
-      "B": "provide a means to determine whether an active investment manager is more successful at",
+      "A": "A track different economic sectors and cannot be aggregated to represent the equivalent of a broad market index.",
+      "B": "provide a means to determine whether an active investment manager is more successful at stock selection or sector allocation.",
       "C": "apply a universally agreed upon sector classification system to identify the constituent"
     },
     "answer": "B",
@@ -9326,7 +9326,7 @@ var JC_QUESTIONS =
     "question": "If securities markets are semi-strong-form efficient, the most appropriate role of a\nportfolio manager is to:（2016 Mock AM）",
     "options": {
       "A": "invest by analyzing publicly available information to consistently generate abnormal returns",
-      "B": "manage portfolios with appropriate diversification and asset allocation, taking into",
+      "B": "manage portfolios with appropriate diversification and asset allocation, taking into consideration the risk preferences and tax situation of the investor.",
       "C": "exploit appropriate trading rules and serial correlations for achieving excess returns."
     },
     "answer": "B",
@@ -9460,7 +9460,7 @@ var JC_QUESTIONS =
     "num": 54,
     "question": "Which of the following best describes the majority of the evidence regarding anomalies\nin stock returns?",
     "options": {
-      "A": "Weak-form market efficiency holds, but semi-strong form efficiency does not",
+      "A": "Weak-form market efficiency holds, but semi-strong form efficiency does not hold.",
       "B": "Neither weak-form nor semi-strong form market efficiency holds",
       "C": "Reported anomalies are not violations of market efficiency but are the result of research"
     },
@@ -9505,7 +9505,7 @@ var JC_QUESTIONS =
     "num": 57,
     "question": "In behavioral finance, which of the following statements best describes the bias of\nconservatism? Investors:",
     "options": {
-      "A": "tend to be slow to react to new information and continue to maintain their prior views or",
+      "A": "tend to be slow to react to new information and continue to maintain their prior views or forecasts.",
       "B": "focus on issues in isolation and respond to the issues based on how the issues are posed",
       "C": "assess new information and probabilities of outcomes based on similarity to the current state."
     },
@@ -9580,7 +9580,7 @@ var JC_QUESTIONS =
     "num": 62,
     "question": "Which of the following statements is most accurate?（2016 Mock PM）",
     "options": {
-      "A": "Investors owning a small number of common shares would prefer statutory voting to",
+      "A": "Investors owning a small number of common shares would prefer statutory voting to cumulative voting.",
       "B": "Convertible preference shares are more volatile and riskier than the underlying common",
       "C": "Putable common shares provide benefits to both the issuing company and investors."
     },
@@ -9670,7 +9670,7 @@ var JC_QUESTIONS =
     "num": 68,
     "question": "For a US investor, which of the following statements concerning investing in depository\nreceipts (DRs) is least accurate?（2015 Mock PM）",
     "options": {
-      "A": "Investors in unsponsored DRs would have the same voting rights as the direct owners of",
+      "A": "Investors in unsponsored DRs would have the same voting rights as the direct owners of common shares.",
       "B": "Investing in DRs could provide arbitrage opportunities and entail currency risk",
       "C": "Sponsored DRs are subject to greater reporting requirements than unsponsored DRs."
     },
@@ -9717,7 +9717,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "A cyclical company may have a growth component in it",
       "B": "Business-cycle sensitivity is a discrete phenomenon rather than a continuous spectrum",
-      "C": "A global company can experience economic expansion in one part of the world while"
+      "C": "A global company can experience economic expansion in one part of the world while experiencing economic contraction in another part of the world."
     },
     "answer": "B",
     "explanation": "Business-cycle sensitivity falls on a continuum and is not a discrete “either–or” phenomenon."
@@ -10135,7 +10135,7 @@ var JC_QUESTIONS =
     "num": 99,
     "question": "Which of the following statements concerning different valuation approaches is most\naccurate? (2014 Mock AM )",
     "options": {
-      "A": "The justified forward price-to-earnings ratio (P/E) approach offers the advantage of",
+      "A": "The justified forward price-to-earnings ratio (P/E) approach offers the advantage of incorporating fundamentals and presenting intrinsic value estimations.",
       "B": "One advantage of the three-stage dividend discount model (DDM) model is that it is equally",
       "C": "It is advantageous to use asset-based valuation approaches rather than forward-looking cash"
     },
@@ -10272,7 +10272,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Defined benefit plans tend to have a lower risk tolerance compared to defined contribution",
       "B": "Defined contribution plans usually have a lower risk tolerance compared to defined benefit",
-      "C": "The employer sponsoring a defined benefit plan sets out how much money will be paid to the"
+      "C": "The employer sponsoring a defined benefit plan sets out how much money will be paid to the employee upon retirement. The employer defines the obligation owed to each participant, which usually takes into account various factors such as salary history and length of employment."
     },
     "answer": "C",
     "explanation": "In a defined benefit plan, the employer promises to pay out a predetermined benefit upon\nthe employee's retirement, regardless of investment performance or any external factors\n(e.g., stock market fluctuations). Therefore, the sponsor (i.e., employer) defines the\nobligation owed to each participant, which usually takes into account various factors such as\nsalary history and length of employment.\nRegarding the other options:\nA. Although defined benefit plans tend to have lower volatility since they are guaranteed by\nthe employer, they are not necessarily immune to market fluctuations or economic\ndownturns, especially if the sponsoring company experiences financial difficulties or\nbankruptcy.\nB. On the contrary, defined contribution plans place more responsibility on the employee,\ngiving them greater control over their investments but also exposing them to potential\nmarket risks. The risk tolerance of these plans can vary widely depending on the investment\nchoices made by the employee.\nSo, option C provides the most accurate description of one characteristic of defined benefit\nplans."
@@ -10421,7 +10421,7 @@ var JC_QUESTIONS =
     "question": "With respect to the utility theory, which of the following statements is most accurate?",
     "options": {
       "A": "The risk aversion coefficient, A, is less than zero for a risk-averse investor",
-      "B": "The risk-averse investor’s indifference curve exhibits a negative slope, implying that they are",
+      "B": "The risk-averse investor’s indifference curve exhibits a negative slope, implying that they are willing to accept lower expected returns in exchange for lower risk.",
       "C": "The risk-averse investor has an indifference curve with a positive slope. As volatility"
     },
     "answer": "C",
@@ -10495,7 +10495,7 @@ var JC_QUESTIONS =
     "num": 23,
     "question": "What is the best description of the Markowitz efficient frontier?",
     "options": {
-      "A": "A curve that contains all portfolios of risky assets that rational, risk-averse investors will",
+      "A": "A curve that contains all portfolios of risky assets that rational, risk-averse investors will choose, representing portfolios with the lowest risk for a given level of expected return.",
       "B": "A curve that connects the minimum-variance portfolios for all possible returns",
       "C": "A curve that lies above and to the left of the minimum-variance frontier."
     },
@@ -10542,7 +10542,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "investing a portion of his capital in the risk-free asset and the balance in a fully diversified",
       "B": "investing a portion of his capital in the risk-free asset and the balance in a fully diversified",
-      "C": "borrowing capital at the risk-free rate and investing all his capital plus all borrowed capital in"
+      "C": "borrowing capital at the risk-free rate and investing all his capital plus all borrowed capital in the optimal risky portfolio."
     },
     "answer": "A",
     "explanation": "Portfolios located on the CML may be constructed by: 1) investing a portion of an investor’s\ncapital in the risk-free asset and the balance in the market portfolio which consists of all risky\nassets, or 2) borrowing capital at the risk-free rate and investing all of an investor’s capital plus all\nborrowed capital in the market portfolio."
@@ -10870,8 +10870,8 @@ var JC_QUESTIONS =
     "num": 48,
     "question": "With respect to portfolio performance appraisal measures, which of the following\nstatements is most accurate about Jensen’s Alpha?",
     "options": {
-      "A": "The difference between the actual portfolio return and the calculated risk-adjusted return is",
-      "B": "Jensen’s Alpha is a commonly used measure of performance, which is defined as the",
+      "A": "The difference between the actual portfolio return and the calculated risk-adjusted return is known as Jensen's Alpha, which is a measure of the portfolio manager's ability to generate excess returns above what is predicted by the CAPM.",
+      "B": "Jensen’s Alpha is a commonly used measure of performance, which is defined as the difference between the actual return of a portfolio and its expected return as calculated by the Capital Asset Pricing Model (CAPM).",
       "C": "Jensen’s Alpha is defined as the portfolio’s risk premium divided by its total risk."
     },
     "answer": "A",
@@ -11065,9 +11065,9 @@ var JC_QUESTIONS =
     "num": 61,
     "question": "Which of the following statements regarding shareholder engagement is the least\naccurate regarding environmental, social, and governance (ESG) considerations?",
     "options": {
-      "A": "Engagement efforts are not time-consuming based on a required good cooperation between",
+      "A": "Engagement efforts are not time-consuming based on a required good cooperation between the company and shareholders, and the issues are usually resolved without formal procedures.",
       "B": "Clients and investment managers must be clear with each other about the exercise of voting",
-      "C": "Alternatively, the client may instruct some proxy agent to vote on its behalf and according to"
+      "C": "Alternatively, the client may instruct some proxy agent to vote on its behalf and according to the client's instructions without discretion."
     },
     "answer": "A",
     "explanation": "A is not correct. Shareholder engagement requires good cooperation between investor (client)\nand investment manager. Engagement efforts are time-consuming, and the interest in such\nefforts is often that of the clients rather than that of the investment managers.\nB and C are correct. Clients and investment managers must be clear with each other about the\nexercise of voting rights, filing of shareholder proposals, or entering into conversations with\ncompany management. It may be that the engagement and voting is delegated by the client to\nthe investment manager and implemented according to the manager’s stewardship policy.\nAlternatively, the client may instruct some proxy agent to vote on its behalf and according to its\nown stewardship policies, or the client may instruct voting and maintain dialogue with its\ninvestee companies through either individual engagements or collaborative engagements."
@@ -11156,7 +11156,7 @@ var JC_QUESTIONS =
     "question": "An effective way to overcome endowment bias is:",
     "options": {
       "A": "quantifying the risk-reducing return-enhancing advantages of diversification",
-      "B": "reviewing past performance and risk of unfamiliar securities and contemplating the",
+      "B": "reviewing past performance and risk of unfamiliar securities and contemplating the reasoning underlying the recommendation.",
       "C": "ensuring a proper investment plan and maintaining a personal budget."
     },
     "answer": "B",
@@ -11170,7 +11170,7 @@ var JC_QUESTIONS =
     "num": 68,
     "question": "A consequence of the availability bias is:",
     "options": {
-      "A": "Choose an investment, based on advertising rather than on a thorough analysis of the",
+      "A": "Choose an investment, based on advertising rather than on a thorough analysis of the investment's fundamentals, risks, and suitability.",
       "B": "Focus on short-term price fluctuations, which may result in excessive trading",
       "C": "To become more risk-averse when presented with a gain frame of reference and more"
     },
@@ -11412,7 +11412,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Developing a comprehensive understanding of the enterprise's overall risk profile",
       "B": "Clearly articulating the enterprise's risk appetite and thresholds",
-      "C": "Implementing a bottom-up approach to guide risk management efforts throughout the"
+      "C": "Implementing a bottom-up approach to guide risk management efforts throughout the organization."
     },
     "answer": "C",
     "explanation": "The answer is C. Effective risk governance requires taking an enterprise-wide view of risks, which\nmeans developing a comprehensive understanding of the enterprise's overall risk profile. This\nincludes identifying and evaluating both internal and external factors that could potentially\nimpact the achievement of the enterprise's strategic objectives. Hence, statement A aligns with\neffective risk governance practices.\nAdditionally, effective risk governance involves defining the enterprise's risk appetite and\nthresholds, i.e., the amount and type of risk the enterprise is willing to accept in pursuit of its\nobjectives. This helps ensure that risk-taking activities remain within acceptable bounds and\nsupports informed decision-making across the organization. Statement B aligns with effective risk\ngovernance practices.\nStatement C, however, suggests implementing a bottom-up process to direct risk management\nactivities, where decisions regarding risk management are made at lower levels of the\norganization and then communicated upwards. While input from lower levels should certainly be\nconsidered, a purely bottom-up approach may result in fragmented and inconsistent risk\nmanagement practices across different parts of the organization. Effective risk governance\ntypically relies on a top-down approach, where senior management sets the tone for risk\nmanagement and establishes clear policies and procedures to guide risk management efforts\nthroughout the organization. Therefore, statement C is least aligned with effective risk\ngovernance practices."
@@ -12130,9 +12130,9 @@ var JC_QUESTIONS =
     "num": 49,
     "question": "Which of the following statements is most likely correct regarding the spot and forward\ncurves. The spot curve: 2016 Mock AM",
     "options": {
-      "A": "Cannot be calculated from the forward curve, but the forward curve can be calculated from",
-      "B": "Can be calculated from the forward curve, and the forward curve can be calculated from the",
-      "C": "Can be calculated from the forward curve, but the forward curve cannot be calculated from"
+      "A": "Cannot be calculated from the forward curve, but the forward curve can be calculated from the spot curve.",
+      "B": "Can be calculated from the forward curve, and the forward curve can be calculated from the spot curve.",
+      "C": "Can be calculated from the forward curve, but the forward curve cannot be calculated from the spot curve."
     },
     "answer": "B",
     "explanation": "The forward and spot curves are interconnected to each other. The spot curve can be calculated\nfrom the forward curve, and the forward curve can be calculated from the spot curve. Either\ncurve can be used to value fixed-rate bonds."
@@ -12702,7 +12702,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Covered bonds provide investors with dual recourse, to the cover pool and also to the issuer",
       "B": "Covered bonds usually carry higher credit risks and offer higher yields than otherwise similar",
-      "C": "Covered bonds have a dynamic cover pool, meaning sponsors must replace any prepaid or"
+      "C": "Covered bonds have a dynamic cover pool, meaning sponsors must replace any prepaid or non-performing assets."
     },
     "answer": "B",
     "explanation": "Covered bonds usually carry lower credit risks and offer lower yields than otherwise similar ABS.\nThe reason is, among other factors, covered bonds provide investors with dual recourse, to the\ncover pool and also to the issuer. Moreover, covered bonds have a dynamic cover pool, meaning\nsponsors must replace any prepaid or non-performing assets."
@@ -12957,7 +12957,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "bring investors more difficulties to go short than to go long",
       "B": "allow trading the risk without trading the instrument itself",
-      "C": "improve the allocation of risk and facilitate more effective risk management for both"
+      "C": "improve the allocation of risk and facilitate more effective risk management for both companies and economies."
     },
     "answer": "A",
     "explanation": "One other extremely valuable operational advantage of derivative markets is the ease with which\none can go short. With derivatives, it is nearly as easy to take a short position as to take a long\nposition, whereas for the underlying asset, it is almost always much more difficult to go short than\nto go long. In fact, for many commodities, short selling is nearly impossible."
@@ -12985,9 +12985,9 @@ var JC_QUESTIONS =
     "num": 9,
     "question": "Which of the following statement is most likely correct according to hedge designation:",
     "options": {
-      "A": "A cash flow hedge is a derivative used to offset the fluctuation in fair value of an asset or",
+      "A": "A cash flow hedge is a derivative used to offset the fluctuation in fair value of an asset or liability.",
       "B": "A fair value hedge is a derivative designated as absorbing the variable cash flow of a floating-",
-      "C": "A net investment hedge is a derivative designated as offsetting the foreign exchange risk of the"
+      "C": "A net investment hedge is a derivative designated as offsetting the foreign exchange risk of the equity of a foreign operation."
     },
     "answer": "C",
     "explanation": "A fair value hedge is a derivative used to offset the fluctuation in fair value of an asset or liability.\nA cash flow hedge is a derivative designated as absorbing the variable cash flow of a floating-rate\nasset or liability."
@@ -13000,7 +13000,7 @@ var JC_QUESTIONS =
     "num": 10,
     "question": "Which of the following statement about the derivative market participants is most likely\ncorrect?",
     "options": {
-      "A": "Investors use derivatives to offset or hedge market-based underlying exposures incidental to",
+      "A": "Investors use derivatives to offset or hedge market-based underlying exposures incidental to their commercial operations and financing activities.",
       "B": "Issuers use derivatives to replicate a cash market strategy, hedge a fund’s value against adverse",
       "C": "Both issuers and investors use derivatives to change their exposure to an underlying asset price"
     },
@@ -13015,9 +13015,9 @@ var JC_QUESTIONS =
     "num": 11,
     "question": "Regarding to the descriptions of derivative market risks below, which one does not match?",
     "options": {
-      "A": "Basis risk is that the expected value of a derivative differs unexpectedly from that of the",
+      "A": "Basis risk is that the expected value of a derivative differs unexpectedly from that of the underlying.",
       "B": "Unsystematic risk is the risk that excessive risk taking and use of leverage in derivative markets",
-      "C": "Liquidity risk appears when a divergence in the cash flow timing of a derivative versus that of"
+      "C": "Liquidity risk appears when a divergence in the cash flow timing of a derivative versus that of an underlying transaction."
     },
     "answer": "B",
     "explanation": "Systemic risk involves excessive risk taking and use of leverage in derivative markets that contribute\nto market stress, not the unsystematic risk."
@@ -13031,7 +13031,7 @@ var JC_QUESTIONS =
     "question": "The usefulness of a forward contract is limited by some problems. Which of the following\nis most likely one of those problems?",
     "options": {
       "A": "Once you have entered into a forward contract, it is difficult to exit from the contract",
-      "B": "Entering into a forward contract requires the long party to deposit an initial amount with the",
+      "B": "Entering into a forward contract requires the long party to deposit an initial amount with the short party.",
       "C": "If the price of the underlying asset moves adversely from the perspective of the long party,"
     },
     "answer": "A",
@@ -13091,7 +13091,7 @@ var JC_QUESTIONS =
     "question": "Identify which of the following activities corresponds to short forward replication?",
     "options": {
       "A": "Purchase an asset at today’s spot price (S ), and simultaneously enter into a forward",
-      "B": "Sell the asset short for S at t = 0, and lend proceeds of the asset sale at the risk-free rate, r. At",
+      "B": "Sell the asset short for S at t = 0, and lend proceeds of the asset sale at the risk-free rate, r. At time t = T, buy back the asset at the spot price, S_T.",
       "C": "Borrow at the risk-free rate, r, and buy the underlying asset at today’s spot price (S ). At time"
     },
     "answer": "B",
@@ -13210,9 +13210,9 @@ var JC_QUESTIONS =
     "num": 24,
     "question": "Identify which of the following characteristics does not match with certain forward\ncommitment contract:",
     "options": {
-      "A": "An interest rate swap involves periodic settlements based on the difference between a",
-      "B": "A series of forward rate agreements (FRAs) involves a single settlement based on the",
-      "C": "Both interest rate swap and a series of FRAs have a symmetric payoff and a value of zero to"
+      "A": "An interest rate swap involves periodic settlements based on the difference between a constant fixed rate and the MRR.",
+      "B": "A series of forward rate agreements (FRAs) involves a single settlement based on the difference between a fixed rate established for each period and the MRR.",
+      "C": "Both interest rate swap and a series of FRAs have a symmetric payoff and a value of zero to both counter-parties at inception."
     },
     "answer": "B",
     "explanation": "A series of FRAs involves periodic settlements, not a single settlement based on the difference\nbetween a fixed rate established for each period and the MRR."
@@ -13436,8 +13436,8 @@ var JC_QUESTIONS =
     "question": "A description that will least likely be used to explain put-call parity is:",
     "options": {
       "A": "The (exercise) prices of calls and puts on an underlying asset must be consistent with each other to remove arbitrage opportunities",
-      "B": "A fiduciary call option strategy and a protective put option strategy for an underlying asset are",
-      "C": "A put is equivalent to long a call, a long position in the underlying asset, and a long position in"
+      "B": "A fiduciary call option strategy and a protective put option strategy for an underlying asset are equal in value.",
+      "C": "A put is equivalent to long a call, a long position in the underlying asset, and a long position in the risk-free asset."
     },
     "answer": "C",
     "explanation": "For P=C+X / (1+r)T -S\nf\nA put is equivalent to long a call, a short position in the underlying asset, and a long position in the\nrisk free asset."
@@ -13510,8 +13510,8 @@ var JC_QUESTIONS =
     "num": 44,
     "question": "Based on put-call parity application, the firm value is least likely be described as:",
     "options": {
-      "A": "If the value of the firm (V ) is below the face value of its debt outstanding, debtholders will",
-      "B": "A debtholder’s payoff is min(D, V ) and equals the debt face value (D) minus a put option on",
+      "A": "If the value of the firm (V ) is below the face value of its debt outstanding, debtholders will receive less than the face value (D) to settle their debt claim.",
+      "B": "A debtholder’s payoff is min(D, V ) and equals the debt face value (D) minus a put option on firm value (V ) with an exercise price of D.",
       "C": "A debtholder’s position may be considered similar to the long put option on firm value."
     },
     "answer": "C",
@@ -13556,8 +13556,8 @@ var JC_QUESTIONS =
     "question": "An analyst observes a current USD/GBP spot exchange rate of 1.22, a US risk-free rate\nof -0.25%, and a UK risk-free rate of 1.5%. Which of the following statements describe\nthe action that can take today to earn a riskless profit if the one-year USD/GBP forward\nrate is observed to be 1.205?",
     "options": {
       "A": "No arbitrage opportunity exists, because the observed one-year USD/GBP FX forward rate",
-      "B": "Since the no-arbitrage one-year USD/GBP forward rate is 1.196, the investor should borrow in",
-      "C": "Since the no-arbitrage one-year USD/GBP forward rate is 1.196, the investor should borrow in"
+      "B": "Since the no-arbitrage one-year USD/GBP forward rate is 1.196, the investor should borrow in US dollars and buy British pounds today, simultaneously selling British pounds against US dollars one year forward.",
+      "C": "Since the no-arbitrage one-year USD/GBP forward rate is 1.196, the investor should borrow in British pounds and buy US dollars today, simultaneously buying British pounds and selling US dollars one year forward."
     },
     "answer": "A",
     "explanation": "The spot versus forward relationship for a foreign exchange may be shown as follows:\nF (T) = S e(rf-rd)T\n0,f/d 0, f/d\nIn the specific case of USD/GBP, the equation may be rewritten as\nF (T) = S e(rUSD-rGBP)T\n0,USD/GBP 0,USD/GBP\nIf S = 1.22, r = -0.25% and r = 1.5%, the no-arbitrage forward price in one year equals 1.205 (=\n0 f d\n1.22e(-0.0025-0.015)) and no riskless profit opportunity exists."
