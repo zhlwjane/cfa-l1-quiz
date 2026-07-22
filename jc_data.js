@@ -8699,7 +8699,7 @@ var JC_QUESTIONS =
       "B": "Investment firms",
       "C": "multi-lateral trading facilities."
     },
-    "answer": "C",
+    "answer": "B",
     "explanation": "Investment firms, also known as investment banks, specialize in assisting clients with seasoned\nsecurities offerings. These types of financial intermediaries have expertise in underwriting and\ndistributing new securities issues, as well as providing advice on mergers, acquisitions, and other\ncorporate finance transactions. Commercial banks (retail banks) and multi-lateral trading facilities\ndo not typically provide this service."
   },
   {
