@@ -1413,7 +1413,7 @@ function forcePushSync(){
         merged[ck] = _mergeDb(getDb(ns), cloud[ck] || {});
         saveDb(merged[ck], ns, true);
       });
-      return _fbDb.ref(FB_PATH).set(merged);
+      return _fbDb.ref(FB_PATH).set(JSON.parse(JSON.stringify(merged)));
     })
     .then(function(){ _setSyncDot('synced','✓ 已同步'); hideDataModal(); showToast('已上传到云端'); })
     .catch(function(err){ _setSyncDot('err','⚠ 同步失败'); showToast('上传失败：' + err.message); });
@@ -1539,7 +1539,7 @@ function pushSync(){
           merged[ck] = _mergeDb(getDb(ns), cloud[ck] || {});
           saveDb(merged[ck], ns, true);
         });
-        return _fbDb.ref(FB_PATH).set(merged);
+        return _fbDb.ref(FB_PATH).set(JSON.parse(JSON.stringify(merged)));
       })
       .then(function(){ _setSyncDot('synced','✓ 已同步'); })
       .catch(function(){ _setSyncDot('err','⚠ 同步失败'); });
