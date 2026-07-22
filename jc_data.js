@@ -12777,7 +12777,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Purchases of a CLO’s collateral are funded by issuing equity",
       "B": "Recourse against both the collateral pool, and the original issuers",
-      "C": "Investors in senior or mezzanine bond classes typically earn a higher yield than comparable"
+      "C": "Investors in senior or mezzanine bond classes typically earn a higher yield than comparable corporate bonds."
     },
     "answer": "C",
     "explanation": "Investors in senior or mezzanine bond classes earn a potentially higher yield than comparable\ncorporate bonds offer. CLO collateral purchases rely on funds obtained from the issuance of debt.\nRecourse is limited to the collateral pool, with minimal recourse to the original issuers."
