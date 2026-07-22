@@ -1371,6 +1371,7 @@ startFromSel = function(){
 // Keyboard
 document.addEventListener('keydown', function(e){
   if(S.view!=='quiz') return;
+  if(e.metaKey||e.ctrlKey||e.altKey) return;
   if(!S.quiz.ans[S.quiz.idx]&&['A','B','C'].indexOf(e.key.toUpperCase())>=0) pick(e.key.toUpperCase());
   if(e.key==='ArrowRight'||e.key==='Enter') nextQ();
   if(e.key==='ArrowLeft') prevQ();
