@@ -13735,7 +13735,7 @@ var JC_QUESTIONS =
     "num": 59,
     "question": "Identify which of the following statements is associated with fixed-rate receiver in an\ninterest rate swap contract?",
     "options": {
-      "A": "Realizes an MTM gain on a swap contract if the expected future floating-rate payments",
+      "A": "Realizes an MTM gain on a swap contract if the expected future floating-rate payments increase.",
       "B": "An investor may increase portfolio duration by entering this position in a swap contract",
       "C": "Establishes a set of certain net future cash flows on a swap contract at inception."
     },
