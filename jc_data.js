@@ -10225,9 +10225,9 @@ var JC_QUESTIONS =
     "num": 5,
     "question": "With respect to mutual funds, which of the following statements is least accurate?",
     "options": {
-      "A": "If it is an open-end fund, it will accept new investment money and issue additional shares at",
-      "B": "If it is a closed-end fund, no new investment money is accepted into the fund. New investors",
-      "C": "Unlike closed-end funds in which new shares are created and sold at the current net asset"
+      "A": "If it is an open-end fund, it will accept new investment money and issue additional shares at a price equal to the net asset value per share.",
+      "B": "If it is a closed-end fund, no new investment money is accepted into the fund. New investors must buy shares from existing investors.",
+      "C": "Unlike closed-end funds in which new shares are created and sold at the current net asset value per share, open-end funds can sell for a premium or discount to net asset value depending on the demand for the shares."
     },
     "answer": "C",
     "explanation": "Unlike open-end funds in which new shares are created and sold at the current net asset value\nper share, closed-end funds can sell for a premium or discount to net asset value depending on\nthe demand for the shares."
