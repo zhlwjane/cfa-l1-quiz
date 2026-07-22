@@ -1736,7 +1736,7 @@ var JC_QUESTIONS =
     "question": "Andrew Smith, CFA, works for Granite, a commercial bank that also has a sizable\nsell-side research division. Smith is presenting financing solutions to a potential\nbusiness client, Dynamic Materials Corp. As part of his presentation, Smith mentions\nthat Granite will initiate research coverage on Dynamic. Is Smith's arrangement most\nlikely appropriate with regard to the Code and Standards? 2016Mock",
     "options": {
       "A": "No, because Smith cannot offer to provide research coverage on a company if it becomes a Corporate finance client.",
-      "B": "No, because Granite cannot provide research coverage on a corporate finance client because",
+      "B": "No, because Granite cannot provide research coverage on a corporate finance client because it constitutes a violation of research independence.",
       "C": "Yes"
     },
     "answer": "C",
@@ -2442,7 +2442,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "No",
       "B": "Yes, because he misappropriated property now belonging to Branch",
-      "C": "Yes, because he failed to inform his new employer the model was the same one used by his"
+      "C": "Yes, because he failed to inform his new employer the model was the same one used by his previous employer."
     },
     "answer": "A",
     "explanation": "Although departing employees may not take employer property when departing [Standard IV(A)–\nDuties to Employers (Loyalty)], the model Piedmont presented to his new employer was not\nBranch’s property. It was created by Piedmont prior to his employment with Branch. The model\nwas not created for Branch in the course of his employment, but was adopted by Branch."
@@ -4662,7 +4662,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Stock grants' fair value is usually based on the market value at the grant date, while option",
       "B": "Companies record stock grants by spreading compensation expenses over the employee service period, while compensation expenses for stock options are recognized immediately",
-      "C": "Compensation expense is calculated using the stock's market value on the grant date, whereas"
+      "C": "Compensation expense is calculated using the stock's market value on the grant date, whereas the value of an option is determined when the employee exercises it."
     },
     "answer": "A",
     "explanation": "The compensation for a stock grant is based on the market value at the date of the stock grant. For\na stock option, the value is not definitively known and must be estimated. Answer B is not correct\nbecause companies account for both stock grants and option grants by allocating the value of the\ngrant over the service period (often the vesting period). Answer C is not correct because for both a\nshare grant and an option grant, the value of the grant is determined based on the date of the grant."
@@ -5097,7 +5097,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Sole proprietorships and general partnerships lack legal identity",
       "B": "Corporate shareholders and general partners have limited liability",
-      "C": "The taxation of sole proprietorships and limited partnerships is comparable"
+      "C": "The taxation of sole proprietorships and limited partnerships is comparable."
     },
     "answer": "B",
     "explanation": "Both sole proprietorships and general partnerships have no legal identity, with the business\nconsidered an extension of the owner in a sole proprietorship and the partnership agreement\nsetting ownership in a general partnership. Both sole proprietorships and limited partnerships have\nsimilar tax structures, with all profits taxed as personal income. But in relation to liability, while\ngeneral partners have unlimited liability, shareholders of corporations are granted limited liability."
@@ -7422,7 +7422,7 @@ var JC_QUESTIONS =
     "options": {
       "A": "Globalization is primarily carried out by governmental actors",
       "B": "Nationalism is marked by limited economic and financial cooperation",
-      "C": "Organic private sector forces can drive the exchange of products or ideas even without"
+      "C": "Organic private sector forces can drive the exchange of products or ideas even without government support or harmonized rules."
     },
     "answer": "A",
     "explanation": "Globalization is primarily carried out by non-governmental actors, such as corporations,\nindividuals, or organizations, and is the result of economic and financial cooperation."
@@ -8335,7 +8335,7 @@ var JC_QUESTIONS =
     "num": 36,
     "question": "When considering the attributes of private real estate markets, which is most likely to\napply?",
     "options": {
-      "A": "It is straightforward for individual investors to diversify through direct ownership of multiple",
+      "A": "It is straightforward for individual investors to diversify through direct ownership of multiple properties.",
       "B": "Costs associated with transactions are typically substantial",
       "C": "Private market indexes are investable"
     },
@@ -12701,7 +12701,7 @@ var JC_QUESTIONS =
     "question": "Which statement about covered bonds is least accurate? ( )",
     "options": {
       "A": "Covered bonds provide investors with dual recourse, to the cover pool and also to the issuer",
-      "B": "Covered bonds usually carry higher credit risks and offer higher yields than otherwise similar",
+      "B": "Covered bonds usually carry higher credit risks and offer higher yields than otherwise similar ABS.",
       "C": "Covered bonds have a dynamic cover pool, meaning sponsors must replace any prepaid or non-performing assets."
     },
     "answer": "B",
