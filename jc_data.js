@@ -10540,8 +10540,8 @@ var JC_QUESTIONS =
     "num": 26,
     "question": "Which of the following statements is least accurate? An investor may construct a\nportfolio located on the capital market line (CML) by:",
     "options": {
-      "A": "investing a portion of his capital in the risk-free asset and the balance in a fully diversified",
-      "B": "investing a portion of his capital in the risk-free asset and the balance in a fully diversified",
+      "A": "investing a portion of his capital in the risk-free asset and the balance in a fully diversified portfolio of all equities.",
+      "B": "investing a portion of his capital in the risk-free asset and the balance in a fully diversified portfolio of all risky assets.",
       "C": "borrowing capital at the risk-free rate and investing all his capital plus all borrowed capital in the optimal risky portfolio."
     },
     "answer": "A",
