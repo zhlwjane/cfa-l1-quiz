@@ -206,6 +206,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
 .jc-wrong-bar-info strong{color:var(--err)}
 @media(max-width:600px){.jc-mix-btns{grid-template-columns:1fr}}
 
+/* Pack tab (2025 / 2026) */
+.pack-tabs{display:flex;gap:10px;justify-content:center;margin-bottom:16px}
+.ptab{padding:8px 20px;border:2px solid var(--bd);border-radius:99px;background:#fff;
+  cursor:pointer;font-size:.88rem;font-weight:600;color:var(--tx2);transition:.15s}
+.ptab.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.ptab:hover{border-color:var(--pri)}
+
 /* Subject modal */
 .subj-sel{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:500;
   align-items:center;justify-content:center}
@@ -249,7 +256,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
   </div>
   <div class="hd-nav">
     <span class="sync-dot" id="sync-dot"></span>
-    <button class="hd-btn on" id="nav-home" onclick="showView('home')">PACK题</button>
+    <button class="hd-btn on" id="nav-home" onclick="showView('home')">PACK题库</button>
     <button class="hd-btn" id="nav-hw" onclick="showView('hw')">&#128218; 课后题</button>
     <button class="hd-btn" id="nav-jc" onclick="showView('jc')">&#127381; JC百题</button>
     <button class="hd-btn" id="nav-wrong" onclick="showView('wrong')">&#128213; 错题库</button>
@@ -263,8 +270,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
   <!-- HOME -->
   <div class="view on" id="view-home">
     <div class="pg-title">选择练习科目</div>
-    <div class="pg-sub">共 989 题 · 全部含解析 · 错题自动收录</div>
-    <div class="mix-btns">
+    <div class="pack-tabs">
+      <button class="ptab on" id="ptab-2025" onclick="setPackTab('2025')">PACK 2025</button>
+      <button class="ptab" id="ptab-2026" onclick="setPackTab('2026')">PACK 2026 1.0</button>
+    </div>
+    <div class="pg-sub" id="pack-pg-sub">共 989 题 · 全部含解析 · 错题自动收录</div>
+    <div class="mix-btns" id="pack-mix-btns">
       <button class="all-btn" onclick="openSubjSel('all')">&#9654; 全部科目混合练习（989题）</button>
       <button class="all-btn all-btn-g1" onclick="openSubjSel('group1')">&#9654; 数量·经济·财报·公司金融（混合）</button>
       <button class="all-btn all-btn-g2" onclick="openSubjSel('group2')">&#9654; 权益·固收·衍生·另类·组合（混合）</button>
@@ -360,7 +371,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
   <div class="view" id="view-stats">
     <div class="section-title" style="margin-bottom:14px">练习统计</div>
     <div class="tag-row" style="margin-bottom:18px">
-      <button class="ftag on" id="stats-tab-pack" onclick="setStatsType('pack')">📦 PACK题</button>
+      <button class="ftag on" id="stats-tab-pack" onclick="setStatsType('pack')">📦 PACK 2025</button>
+      <button class="ftag" id="stats-tab-p26" onclick="setStatsType('p26')">📦 PACK 2026</button>
       <button class="ftag" id="stats-tab-hw" onclick="setStatsType('hw')">📚 课后题</button>
       <button class="ftag" id="stats-tab-jc" onclick="setStatsType('jc')">🎯 JC百题</button>
     </div>
@@ -386,7 +398,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
       <button class="data-btn data-btn-sync" onclick="forcePushSync()">&#9729; 立即上传到云端</button>
       <button class="data-btn data-btn-pull" onclick="forcePullSync()">&#11123; 从云端拉取最新</button>
       <button class="data-btn data-btn-clean" onclick="cleanIncompleteHistory()">&#129529; 清理无答案记录（重置为未做）</button>
-      <button class="data-btn data-btn-clean" onclick="clearNsRecords('main')">&#128465; 清空 PACK 题库全部做题记录</button>
+      <button class="data-btn data-btn-clean" onclick="clearNsRecords('main')">&#128465; 清空 PACK 2025 全部做题记录</button>
+      <button class="data-btn data-btn-clean" onclick="clearNsRecords('p26')">&#128465; 清空 PACK 2026 全部做题记录</button>
       <button class="data-btn data-btn-close" onclick="hideDataModal()">取消</button>
     </div>
     <div class="data-hint">💡 迁移步骤：在旧设备点「导出」→ 在新设备点「导入」选择文件 → 完成</div>
@@ -416,6 +429,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
 <div class="toast" id="toast"></div>
 
 <script src="data.js"></script>
+<script src="data2026.js"></script>
 <script src="wrong_answers_data.js"></script>
 <script src="jc_data.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
@@ -424,6 +438,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
 var QUESTIONS = (typeof CFA_QUESTIONS !== 'undefined') ? CFA_QUESTIONS : [];
 var HW_QUESTIONS = (typeof CFA_HW_QUESTIONS !== 'undefined') ? CFA_HW_QUESTIONS : [];
 var JC_QUESTIONS = (typeof window.JC_QUESTIONS !== 'undefined') ? window.JC_QUESTIONS : [];
+var PACK2026_QUESTIONS = (typeof window.PACK2026_QUESTIONS !== 'undefined') ? window.PACK2026_QUESTIONS : [];
+var P26_SUBJECTS = [];
+(function(){
+  var seen={};
+  PACK2026_QUESTIONS.forEach(function(q){ if(!seen[q.subject]){seen[q.subject]=1;P26_SUBJECTS.push(q.subject);} });
+})();
 var ICONS = {'财务报表':'📊','公司发行人':'🏢','股权投资':'📈','固定收益':'💳','经济学':'📚','另类投资':'🔄','数量分析':'🔢','衍生品':'⚙️','职业道德':'⚖️','组合管理':'🗂️'};
 var GROUP_SETS = {
   'group1': ['数量分析','经济学','财务报表','公司发行人'],
@@ -443,21 +463,22 @@ var SUBJECTS = [];
 var DB_KEY = 'cfa_l1';
 var JC_DB_KEY = 'jc_l1';
 var HW_DB_KEY = 'hw_l1';
+var P26_DB_KEY = 'cfa_l1_2026';
+function _nsKey(ns){ return ns==='jc'?JC_DB_KEY:ns==='hw'?HW_DB_KEY:ns==='p26'?P26_DB_KEY:DB_KEY; }
 function getDb(ns){
-  var k = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
+  var k = _nsKey(ns);
   var d; try{ d=JSON.parse(localStorage.getItem(k)||'{}'); }catch(e){ d={}; }
   if(!d.history) d.history={};
   if(!d.wrong) d.wrong={};
   return d;
 }
 function saveDb(d, ns, noPush){
-  var k = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
-  localStorage.setItem(k, JSON.stringify(d));
+  localStorage.setItem(_nsKey(ns), JSON.stringify(d));
   if(!noPush) pushSync();
 }
 
 // State
-var S = { view:'home', quiz:{qs:[],idx:0,ans:{},subject:null,isJc:false,isHw:false}, wrongSrc:'all', wrongSubj:'all', selSubject:null, selMode:'seq', statsType:'pack' };
+var S = { view:'home', quiz:{qs:[],idx:0,ans:{},subject:null,isJc:false,isHw:false,isP26:false}, wrongSrc:'all', wrongSubj:'all', selSubject:null, selMode:'seq', statsType:'pack', packTab:'2025' };
 
 // View
 function showView(v){
@@ -475,17 +496,32 @@ function showView(v){
 }
 
 // Home
+function setPackTab(t){
+  S.packTab = t;
+  ['2025','2026'].forEach(function(v){ var el=document.getElementById('ptab-'+v); if(el) el.className='ptab'+(v===t?' on':''); });
+  renderHome();
+}
 function renderHome(){
-  var d = getDb();
-  var html = SUBJECTS.map(function(subj){
-    var qs = QUESTIONS.filter(function(q){ return q.subject===subj; });
+  var isP26 = S.packTab==='2026';
+  var qsAll = isP26 ? PACK2026_QUESTIONS : QUESTIONS;
+  var subjs = isP26 ? P26_SUBJECTS : SUBJECTS;
+  var ns = isP26 ? 'p26' : 'main';
+  var d = getDb(ns);
+  var isP26Arg = isP26 ? ',true' : '';
+  document.getElementById('pack-pg-sub').textContent = '共 '+qsAll.length+' 题 · 全部含解析 · 错题自动收录';
+  document.getElementById('pack-mix-btns').innerHTML =
+    '<button class="all-btn" onclick="openSubjSel(\'all\''+isP26Arg+')">&#9654; 全部科目混合练习（'+qsAll.length+'题）</button>'
+    +'<button class="all-btn all-btn-g1" onclick="openSubjSel(\'group1\''+isP26Arg+')">&#9654; 数量·经济·财报·公司金融（混合）</button>'
+    +'<button class="all-btn all-btn-g2" onclick="openSubjSel(\'group2\''+isP26Arg+')">&#9654; 权益·固收·衍生·另类·组合（混合）</button>';
+  var html = subjs.map(function(subj){
+    var qs = qsAll.filter(function(q){ return q.subject===subj; });
     var done = qs.filter(function(q){ return d.history[subj+'_'+q.num]; }).length;
     var ok = qs.filter(function(q){ var h=d.history[subj+'_'+q.num]; return h&&h.ok; }).length;
     var wCount = qs.filter(function(q){ var w=d.wrong[subj+'_'+q.num]; return w&&w.on; }).length;
     var pct = qs.length ? Math.round(done/qs.length*100) : 0;
     var acc = done ? Math.round(ok/done*100) : 0;
     var icon = ICONS[subj]||'📝';
-    var wBtn = wCount ? '<button class="sc-btn sc-btn-w" onclick="startWrongSubj(\''+subj+'\');event.stopPropagation()">错题('+wCount+')</button>' : '';
+    var wBtn = wCount ? '<button class="sc-btn sc-btn-w" onclick="startWrongSubj(\''+subj+'\''+isP26Arg+');event.stopPropagation()">错题('+wCount+')</button>' : '';
     return '<div class="sc">'
       +'<div class="sc-icon">'+icon+'</div>'
       +'<div class="sc-name">'+subj+'</div>'
@@ -497,7 +533,7 @@ function renderHome(){
       +'</div>'
       +'<div class="pbar"><div class="pbar-fill" style="width:'+pct+'%"></div></div>'
       +'<div class="sc-btns">'
-        +'<button class="sc-btn sc-btn-p" onclick="openSubjSel(\''+subj+'\')">开始练习</button>'
+        +'<button class="sc-btn sc-btn-p" onclick="openSubjSel(\''+subj+'\''+isP26Arg+')">开始练习</button>'
         +wBtn
       +'</div>'
     +'</div>';
@@ -507,15 +543,18 @@ function renderHome(){
 
 // Subject select modal
 var _pSubj = null;
-function openSubjSel(subj){
+var _pIsP26 = false;
+function openSubjSel(subj, isP26){
   _pSubj = subj;
+  _pIsP26 = !!isP26;
   S.selMode = 'seq';
-  var d = getDb();
+  var qsAll = _pIsP26 ? PACK2026_QUESTIONS : QUESTIONS;
+  var d = getDb(_pIsP26 ? 'p26' : 'main');
   var isAll = subj==='all';
   var isGroup = GROUP_SETS[subj] != null;
-  var qs = isAll ? QUESTIONS
-    : isGroup ? QUESTIONS.filter(function(q){ return GROUP_SETS[subj].indexOf(q.subject)>=0; })
-    : QUESTIONS.filter(function(q){ return q.subject===subj; });
+  var qs = isAll ? qsAll
+    : isGroup ? qsAll.filter(function(q){ return GROUP_SETS[subj].indexOf(q.subject)>=0; })
+    : qsAll.filter(function(q){ return q.subject===subj; });
   var total = qs.length;
   var done = qs.filter(function(q){ return d.history[q.subject+'_'+q.num]; }).length;
   var title = isAll ? '全部科目混合练习' : isGroup ? GROUP_LABELS[subj]+' · '+total+' 题' : subj+' · '+total+' 题';
@@ -557,43 +596,46 @@ function startFromSel(){
   var mode = S.selMode||'seq';
   var isAll = subj==='all';
   var isGroup = GROUP_SETS[subj] != null;
-  var d = getDb();
-  var qs = isAll ? QUESTIONS.slice()
-    : isGroup ? QUESTIONS.filter(function(q){ return GROUP_SETS[subj].indexOf(q.subject)>=0; })
-    : QUESTIONS.filter(function(q){ return q.subject===subj; });
+  var ns = _pIsP26 ? 'p26' : 'main';
+  var subjs = _pIsP26 ? P26_SUBJECTS : SUBJECTS;
+  var qsAll = _pIsP26 ? PACK2026_QUESTIONS : QUESTIONS;
+  var d = getDb(ns);
+  var qs = isAll ? qsAll.slice()
+    : isGroup ? qsAll.filter(function(q){ return GROUP_SETS[subj].indexOf(q.subject)>=0; })
+    : qsAll.filter(function(q){ return q.subject===subj; });
   if(mode==='seq'){
-    qs.sort(function(a,b){ return a.subject===b.subject ? a.num-b.num : SUBJECTS.indexOf(a.subject)-SUBJECTS.indexOf(b.subject); });
-    startQuiz(qs, subj, 0);
+    qs.sort(function(a,b){ return a.subject===b.subject ? a.num-b.num : subjs.indexOf(a.subject)-subjs.indexOf(b.subject); });
+    startQuiz(qs, subj, 0, false, false, null, _pIsP26);
   } else if(mode==='cont'){
-    qs.sort(function(a,b){ return a.subject===b.subject ? a.num-b.num : SUBJECTS.indexOf(a.subject)-SUBJECTS.indexOf(b.subject); });
+    qs.sort(function(a,b){ return a.subject===b.subject ? a.num-b.num : subjs.indexOf(a.subject)-subjs.indexOf(b.subject); });
     var first = qs.findIndex(function(q){ return !d.history[q.subject+'_'+q.num]; });
-    startQuiz(qs, subj, Math.max(0, first));
+    startQuiz(qs, subj, Math.max(0, first), false, false, null, _pIsP26);
   } else if(mode==='rand'){
-    startQuiz(shuffleNoConsecutive(qs), subj, 0);
+    startQuiz(shuffleNoConsecutive(qs), subj, 0, false, false, null, _pIsP26);
   } else if(mode==='rand_undone'){
     var undoneQs = qs.filter(function(q){ return !d.history[q.subject+'_'+q.num]; });
     if(!undoneQs.length){ showToast('该范围题目已全部做完！'); return; }
-    startQuiz(shuffleNoConsecutive(undoneQs), subj, 0);
+    startQuiz(shuffleNoConsecutive(undoneQs), subj, 0, false, false, null, _pIsP26);
   } else if(mode==='review'){
-    qs.sort(function(a,b){ return a.subject===b.subject ? a.num-b.num : SUBJECTS.indexOf(a.subject)-SUBJECTS.indexOf(b.subject); });
+    qs.sort(function(a,b){ return a.subject===b.subject ? a.num-b.num : subjs.indexOf(a.subject)-subjs.indexOf(b.subject); });
     var doneQs=qs.filter(function(q){ return d.history[q.subject+'_'+q.num]; });
     if(!doneQs.length){ showToast('暂无已做题目'); return; }
-    startQuiz(doneQs, subj, 0, false, false, _buildPreAnswers(doneQs,'main',function(q){return q.subject+'_'+q.num;}));
+    startQuiz(doneQs, subj, 0, false, false, _buildPreAnswers(doneQs, ns, function(q){return q.subject+'_'+q.num;}), _pIsP26);
   } else if(mode==='range'){
     qs.sort(function(a,b){ return a.num-b.num; });
     var from = parseInt(document.getElementById('range-from').value)||1;
     var to = parseInt(document.getElementById('range-to').value)||qs.length;
     var ranged = qs.filter(function(_,i){ return i+1>=from&&i+1<=to; });
     if(!ranged.length){ showToast('该范围内没有题目'); return; }
-    startQuiz(ranged, subj, 0);
+    startQuiz(ranged, subj, 0, false, false, null, _pIsP26);
   }
   closeSubjSel();
 }
 
 // Quiz
-function startQuiz(qs, subject, startIdx, isJc, isHw, preAnswers){
+function startQuiz(qs, subject, startIdx, isJc, isHw, preAnswers, isP26){
   if(!qs||!qs.length){ showToast('没有题目'); return; }
-  S.quiz = { qs:qs, idx:startIdx||0, ans:preAnswers||{}, subject:subject, isJc:!!isJc, isHw:!!isHw };
+  S.quiz = { qs:qs, idx:startIdx||0, ans:preAnswers||{}, subject:subject, isJc:!!isJc, isHw:!!isHw, isP26:!!isP26 };
   showView('quiz');
   renderQ();
 }
@@ -606,18 +648,21 @@ function _buildPreAnswers(qs, ns, keyFn){
   });
   return pre;
 }
-function startWrongSubj(subj){
-  var d = getDb();
-  var wqs = QUESTIONS.filter(function(q){ var w=d.wrong[q.subject+'_'+q.num]; return q.subject===subj&&w&&w.on; });
+function startWrongSubj(subj, isP26){
+  var ns = isP26 ? 'p26' : 'main';
+  var qsAll = isP26 ? PACK2026_QUESTIONS : QUESTIONS;
+  var d = getDb(ns);
+  var wqs = qsAll.filter(function(q){ var w=d.wrong[q.subject+'_'+q.num]; return q.subject===subj&&w&&w.on; });
   if(!wqs.length){ showToast('该科目暂无错题'); return; }
-  startQuiz(wqs, subj, 0);
+  startQuiz(wqs, subj, 0, false, false, null, isP26);
 }
 function renderQ(){
   var quiz = S.quiz;
   var q = quiz.qs[quiz.idx];
   var isJcQ = quiz.isJc || !!(q.id && q.id.indexOf('jc_')===0);
   var isHwQ = quiz.isHw || !!(q.id && q.id.indexOf('hw_')===0);
-  var ns = isJcQ ? 'jc' : isHwQ ? 'hw' : 'main';
+  var isP26Q = quiz.isP26 || q._ns==='p26';
+  var ns = isJcQ ? 'jc' : isHwQ ? 'hw' : isP26Q ? 'p26' : 'main';
   var d = getDb(ns);
   var key = (isJcQ||isHwQ) ? q.id : q.subject+'_'+q.num;
   var isWrong = d.wrong[key]&&d.wrong[key].on;
@@ -658,7 +703,8 @@ function pick(l){
   quiz.ans[quiz.idx] = {sel:l, ok:ok};
   var isJcQ2 = quiz.isJc || !!(q.id && q.id.indexOf('jc_')===0);
   var isHwQ2 = quiz.isHw || !!(q.id && q.id.indexOf('hw_')===0);
-  var ns = isJcQ2 ? 'jc' : isHwQ2 ? 'hw' : 'main';
+  var isP26Q2 = quiz.isP26 || q._ns==='p26';
+  var ns = isJcQ2 ? 'jc' : isHwQ2 ? 'hw' : isP26Q2 ? 'p26' : 'main';
   var d = getDb(ns);
   var key = (isJcQ2||isHwQ2) ? q.id : q.subject+'_'+q.num;
   d.history[key] = {ok:ok, sel:l, t:Date.now()};
@@ -704,7 +750,8 @@ function toggleWrong(){
   var q=S.quiz.qs[S.quiz.idx];
   var isJcQ3=S.quiz.isJc||!!(q.id&&q.id.indexOf('jc_')===0);
   var isHwQ3=S.quiz.isHw||!!(q.id&&q.id.indexOf('hw_')===0);
-  var ns=isJcQ3?'jc':isHwQ3?'hw':'main';
+  var isP26Q3=S.quiz.isP26||q._ns==='p26';
+  var ns=isJcQ3?'jc':isHwQ3?'hw':isP26Q3?'p26':'main';
   var key=(isJcQ3||isHwQ3)?q.id:q.subject+'_'+q.num;
   var d=getDb(ns);
   if(!d.wrong[key]) d.wrong[key]={subject:q.subject,num:q.num,id:q.id||null,cnt:0};
@@ -719,7 +766,8 @@ function resetQ(){
   var q=quiz.qs[quiz.idx];
   var isJcQ=quiz.isJc||!!(q.id&&q.id.indexOf('jc_')===0);
   var isHwQ=quiz.isHw||!!(q.id&&q.id.indexOf('hw_')===0);
-  var ns=isJcQ?'jc':isHwQ?'hw':'main';
+  var isP26Q=quiz.isP26||q._ns==='p26';
+  var ns=isJcQ?'jc':isHwQ?'hw':isP26Q?'p26':'main';
   var key=(isJcQ||isHwQ)?q.id:q.subject+'_'+q.num;
   var d=getDb(ns);
   delete d.history[key];
@@ -732,15 +780,21 @@ function resetQ(){
 // Wrong book — 来源标识
 var SRC_STYLE = {
   'PACK题':  {bg:'#ebf4ff', color:'#1a365d'},
+  '2026题':  {bg:'#e8f4fd', color:'#1e4a7a'},
   'JC百题':  {bg:'#fef3c7', color:'#92400e'},
   '课后题':  {bg:'#f0fff4', color:'#276749'}
 };
 function _collectWrong(){
-  var dMain=getDb(), dJc=getDb('jc'), dHw=getDb('hw'), items=[];
+  var dMain=getDb(), dJc=getDb('jc'), dHw=getDb('hw'), dP26=getDb('p26'), items=[];
   Object.entries(dMain.wrong).filter(function(e){return e[1].on;}).forEach(function(e){
     var key=e[0],w=e[1];
     var q=QUESTIONS.find(function(q){return q.subject===w.subject&&q.num===w.num;});
     if(q) items.push({key:key,w:w,q:q,src:'PACK题',ns:'main'});
+  });
+  Object.entries(dP26.wrong).filter(function(e){return e[1].on;}).forEach(function(e){
+    var key=e[0],w=e[1];
+    var q=PACK2026_QUESTIONS.find(function(q){return q.subject===w.subject&&q.num===w.num;});
+    if(q) items.push({key:key,w:w,q:Object.assign({},q,{_ns:'p26'}),src:'2026题',ns:'p26'});
   });
   Object.entries(dHw.wrong).filter(function(e){return e[1].on;}).forEach(function(e){
     var key=e[0],w=e[1];
@@ -756,7 +810,7 @@ function _collectWrong(){
 }
 function renderWrong(){
   var items=_collectWrong();
-  var srcList=['PACK题','JC百题','课后题'];
+  var srcList=['PACK题','2026题','JC百题','课后题'];
   // 来源行：只展示当前有数据的来源
   var activeSrcs=srcList.filter(function(s){return items.some(function(it){return it.src===s;});});
   document.getElementById('wrong-filter-src').innerHTML=['all'].concat(activeSrcs).map(function(t){
@@ -794,6 +848,7 @@ function renderWrong(){
     var srcBadge='<span class="tag" style="background:'+ss.bg+';color:'+ss.color+'">'+src+'</span>';
     var clickFn=it.ns==='jc'?'goJcWrong(\''+it.key+'\')'
       :it.ns==='hw'?'goHwWrong(\''+it.key+'\')'
+      :it.ns==='p26'?'goP26Wrong(\''+esc(w.subject)+'\','+w.num+')'
       :'goWrong(\''+esc(w.subject)+'\','+w.num+')';
     var resetFn='resetAndGoWrong(\''+it.key+'\',\''+it.ns+'\')';
     var rmFn='rmWrong(\''+it.key+'\',\''+it.ns+'\')';
@@ -817,6 +872,7 @@ function resetAndGoWrong(key, ns){
   saveDb(d, ns);
   if(ns==='jc') goJcWrong(key);
   else if(ns==='hw') goHwWrong(key);
+  else if(ns==='p26'){ var wp=d.wrong[key]; if(wp) goP26Wrong(wp.subject, wp.num); }
   else { var w=d.wrong[key]; if(w) goWrong(w.subject, w.num); }
 }
 function setWS(s){ S.wrongSrc=s; renderWrong(); }
@@ -826,6 +882,11 @@ function goWrong(subj,num){
   var idx=qs.findIndex(function(q){ return q.num===num; });
   if(!qs.length){ qs=HW_QUESTIONS.filter(function(q){return q.subject===subj;}); idx=qs.findIndex(function(q){return q.num===num;}); }
   startQuiz(qs, subj, Math.max(0,idx));
+}
+function goP26Wrong(subj,num){
+  var qs=PACK2026_QUESTIONS.filter(function(q){ return q.subject===subj; });
+  var idx=qs.findIndex(function(q){ return q.num===num; });
+  startQuiz(qs, subj, Math.max(0,idx), false, false, null, true);
 }
 function goJcWrong(id){
   var q=JC_QUESTIONS.find(function(q){return q.id===id;});
@@ -882,7 +943,7 @@ function setStatsType(t){ S.statsType=t; renderStats(); }
 function renderStats(){
   var type=S.statsType||'pack';
   // Update tab highlights
-  ['pack','hw','jc'].forEach(function(t){
+  ['pack','hw','jc','p26'].forEach(function(t){
     var el=document.getElementById('stats-tab-'+t);
     if(el) el.className='ftag'+(t===type?' on':'');
   });
@@ -919,6 +980,16 @@ function renderStats(){
       var done=qs.filter(function(q){return dJc.history[q.id];}).length;
       var ok=qs.filter(function(q){var h=dJc.history[q.id];return h&&h.ok;}).length;
       var w=qs.filter(function(q){var wr=dJc.wrong[q.id];return wr&&wr.on;}).length;
+      totalDone+=done;totalOk+=ok;totalWrong+=w;totalQ+=qs.length;
+      return {subj:subj,total:qs.length,done:done,ok:ok,acc:done?Math.round(ok/done*100):0,w:w};
+    });
+  } else if(type==='p26'){
+    var dP26s=getDb('p26');
+    rows=P26_SUBJECTS.map(function(subj){
+      var qs=PACK2026_QUESTIONS.filter(function(q){return q.subject===subj;});
+      var done=qs.filter(function(q){return dP26s.history[subj+'_'+q.num];}).length;
+      var ok=qs.filter(function(q){var h=dP26s.history[subj+'_'+q.num];return h&&h.ok;}).length;
+      var w=qs.filter(function(q){var wr=dP26s.wrong[subj+'_'+q.num];return wr&&wr.on;}).length;
       totalDone+=done;totalOk+=ok;totalWrong+=w;totalQ+=qs.length;
       return {subj:subj,total:qs.length,done:done,ok:ok,acc:done?Math.round(ok/done*100):0,w:w};
     });
@@ -1386,7 +1457,7 @@ function hideDataModal(){ document.getElementById('data-modal').classList.remove
 
 function exportDataJson(){
   var payload = {};
-  [['main', DB_KEY], ['jc', JC_DB_KEY], ['hw', HW_DB_KEY]].forEach(function(pair){
+  [['main', DB_KEY], ['jc', JC_DB_KEY], ['hw', HW_DB_KEY], ['p26', P26_DB_KEY]].forEach(function(pair){
     var ns = pair[0], k = pair[1];
     try{ payload[k] = JSON.parse(localStorage.getItem(k)||'{}'); }catch(e){ payload[k]={}; }
   });
@@ -1411,7 +1482,7 @@ function importDataJson(input){
     try{
       var payload = JSON.parse(e.target.result);
       var imported = 0;
-      [['main', DB_KEY], ['jc', JC_DB_KEY], ['hw', HW_DB_KEY]].forEach(function(pair){
+      [['main', DB_KEY], ['jc', JC_DB_KEY], ['hw', HW_DB_KEY], ['p26', P26_DB_KEY]].forEach(function(pair){
         var ns = pair[0], k = pair[1];
         var incoming = payload[k];
         if(!incoming) return;
@@ -1438,8 +1509,8 @@ function forcePushSync(){
     .then(function(snap){
       var cloud = snap.val() || {};
       var merged = {};
-      ['main','jc','hw'].forEach(function(ns){
-        var ck = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
+      ['main','jc','hw','p26'].forEach(function(ns){
+        var ck = _nsKey(ns);
         merged[ck] = _mergeDb(getDb(ns), cloud[ck] || {});
         saveDb(merged[ck], ns, true);
       });
@@ -1450,7 +1521,7 @@ function forcePushSync(){
 }
 
 function clearNsRecords(ns){
-  var label = ns==='main'?'PACK题库':ns==='jc'?'JC百题':'课后题';
+  var label = ns==='main'?'PACK 2025题库':ns==='jc'?'JC百题':ns==='p26'?'PACK 2026题库':'课后题';
   if(!confirm('确认清空「'+label+'」全部做题记录和错题？此操作不可撤销。')) return;
   var d = getDb(ns);
   d.history = {};
@@ -1462,7 +1533,7 @@ function clearNsRecords(ns){
 }
 function cleanIncompleteHistory(){
   var total = 0;
-  ['main','jc','hw'].forEach(function(ns){
+  ['main','jc','hw','p26'].forEach(function(ns){
     var d = getDb(ns);
     var cleaned = {};
     Object.keys(d.history).forEach(function(k){
@@ -1556,8 +1627,8 @@ function pullSync(cb){
   _fbDb.ref(FB_PATH).once('value')
     .then(function(snap){
       var cloud = snap.val() || {};
-      ['main','jc','hw'].forEach(function(ns){
-        var ck = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
+      ['main','jc','hw','p26'].forEach(function(ns){
+        var ck = _nsKey(ns);
         if(cloud[ck]) saveDb(_mergeDb(getDb(ns), cloud[ck]), ns, true);
       });
       cb&&cb(true);
@@ -1575,8 +1646,8 @@ function pushSync(){
       .then(function(snap){
         var cloud = snap.val() || {};
         var merged = {};
-        ['main','jc','hw'].forEach(function(ns){
-          var ck = ns==='jc' ? JC_DB_KEY : ns==='hw' ? HW_DB_KEY : DB_KEY;
+        ['main','jc','hw','p26'].forEach(function(ns){
+          var ck = _nsKey(ns);
           merged[ck] = _mergeDb(getDb(ns), cloud[ck] || {});
           saveDb(merged[ck], ns, true);
         });
