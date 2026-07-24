@@ -155,7 +155,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
 .empty-i{font-size:2.8rem;margin-bottom:10px}
 
 /* STATS */
-.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-bottom:22px}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:22px}
 .stat-card{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:22px;text-align:center}
 .stat-n{font-size:2rem;font-weight:800;color:var(--pri)}
 .stat-l{font-size:.82rem;color:var(--tx2);margin-top:4px}
@@ -376,13 +376,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
       <button class="ftag" id="stats-tab-hw" onclick="setStatsType('hw')">📚 课后题</button>
       <button class="ftag" id="stats-tab-jc" onclick="setStatsType('jc')">🎯 JC百题</button>
     </div>
-    <div class="stat-grid" id="stat-grid"></div>
     <div class="tbl">
       <table>
         <thead><tr><th>科目</th><th>已做</th><th>答对</th><th>正确率</th><th>错题</th></tr></thead>
         <tbody id="stat-body"></tbody>
       </table>
     </div>
+    <div class="stat-grid" id="stat-grid"></div>
   </div>
 </div>
 
@@ -1001,9 +1001,13 @@ function renderStats(){
     });
   }
 
+  var g45Done=0, g45Ok=0;
+  rows.forEach(function(r){ if(r.subj!=='职业道德'){ g45Done+=r.done; g45Ok+=r.ok; } });
+
   document.getElementById('stat-grid').innerHTML=[
     [totalQ,'总题数'],[totalDone,'已练习'],[totalOk,'答对题数'],[totalWrong,'错题库'],
     [totalDone?Math.round(totalOk/totalDone*100)+'%':'—','综合正确率'],
+    [g45Done?Math.round(g45Ok/g45Done*100)+'%':'—','4门+5门正确率'],
   ].map(function(x){return '<div class="stat-card"><div class="stat-n">'+x[0]+'</div><div class="stat-l">'+x[1]+'</div></div>';}).join('');
 
   document.getElementById('stat-body').innerHTML=rows.map(function(r){
