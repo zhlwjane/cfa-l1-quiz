@@ -1088,7 +1088,7 @@ function renderHw(){
   });
 
   var dHw = getDb('hw');
-  var html = Object.keys(bySubj).map(function(subj){
+  var html = Object.keys(bySubj).sort(function(a,b){ return a==='职业道德'?-1:b==='职业道德'?1:0; }).map(function(subj){
     var info = bySubj[subj];
     var modCount = Object.keys(info.modules).length;
     var icon = HW_ICONS[subj] || '📝';
