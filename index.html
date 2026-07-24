@@ -1001,13 +1001,19 @@ function renderStats(){
     });
   }
 
-  var g45Done=0, g45Ok=0;
-  rows.forEach(function(r){ if(r.subj!=='职业道德'){ g45Done+=r.done; g45Ok+=r.ok; } });
+  var G4=['数量分析','经济学','财务报表','公司发行人'];
+  var G5=['股权投资','固定收益','衍生品','另类投资','组合管理'];
+  var g4Done=0,g4Ok=0,g5Done=0,g5Ok=0;
+  rows.forEach(function(r){
+    if(G4.indexOf(r.subj)>=0){ g4Done+=r.done; g4Ok+=r.ok; }
+    else if(G5.indexOf(r.subj)>=0){ g5Done+=r.done; g5Ok+=r.ok; }
+  });
 
   document.getElementById('stat-grid').innerHTML=[
     [totalQ,'总题数'],[totalDone,'已练习'],[totalOk,'答对题数'],[totalWrong,'错题库'],
     [totalDone?Math.round(totalOk/totalDone*100)+'%':'—','综合正确率'],
-    [g45Done?Math.round(g45Ok/g45Done*100)+'%':'—','4门+5门正确率'],
+    [g4Done?Math.round(g4Ok/g4Done*100)+'%':'—','数量·经济·财报·公司金融'],
+    [g5Done?Math.round(g5Ok/g5Done*100)+'%':'—','权益·固收·衍生·另类·组合'],
   ].map(function(x){return '<div class="stat-card"><div class="stat-n">'+x[0]+'</div><div class="stat-l">'+x[1]+'</div></div>';}).join('');
 
   document.getElementById('stat-body').innerHTML=rows.map(function(r){
