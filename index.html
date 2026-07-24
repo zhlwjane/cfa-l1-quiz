@@ -443,6 +443,7 @@ var P26_SUBJECTS = [];
 (function(){
   var seen={};
   PACK2026_QUESTIONS.forEach(function(q){ if(!seen[q.subject]){seen[q.subject]=1;P26_SUBJECTS.push(q.subject);} });
+  P26_SUBJECTS.sort(function(a,b){ return a==='职业道德'?-1:b==='职业道德'?1:0; });
 })();
 var ICONS = {'财务报表':'📊','公司发行人':'🏢','股权投资':'📈','固定收益':'💳','经济学':'📚','另类投资':'🔄','数量分析':'🔢','衍生品':'⚙️','职业道德':'⚖️','组合管理':'🗂️'};
 var GROUP_SETS = {
@@ -457,6 +458,7 @@ var SUBJECTS = [];
 (function(){
   var seen = {};
   QUESTIONS.forEach(function(q){ if(!seen[q.subject]){ seen[q.subject]=1; SUBJECTS.push(q.subject); } });
+  SUBJECTS.sort(function(a,b){ return a==='职业道德'?-1:b==='职业道德'?1:0; });
 })();
 
 // Storage
@@ -1209,6 +1211,7 @@ var JC_GROUP_LABELS = {
 var JC_SUBJECTS = (function(){
   var seen={}, list=[];
   (JC_QUESTIONS||[]).forEach(function(q){ if(!seen[q.subject]){seen[q.subject]=1;list.push(q.subject);} });
+  list.sort(function(a,b){ return a==='职业道德'?-1:b==='职业道德'?1:0; });
   return list;
 })();
 var JC_ICONS = {
