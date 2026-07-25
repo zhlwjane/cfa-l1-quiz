@@ -92,7 +92,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-
 .qinfo{font-size:.88rem;color:var(--tx2)}
 .qcard{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:28px;margin-bottom:18px;box-shadow:var(--sh)}
 .qnum{color:var(--acc);font-weight:700;font-size:.92rem;margin-bottom:10px}
-.qtext{font-size:1.12rem;line-height:1.85;margin-bottom:24px;white-space:pre-wrap;word-break:break-word}
+.qtext{font-size:1.12rem;line-height:1.85;margin-bottom:24px;word-break:break-word}
+.qtext .q-para{white-space:pre-wrap}
+.q-table{border-collapse:collapse;margin:14px 0;width:100%;font-size:.97rem;border:1px solid var(--bd);border-radius:6px;overflow:hidden}
+.q-table th,.q-table td{padding:9px 14px;border:1px solid var(--bd);text-align:left;vertical-align:middle}
+.q-table th{background:#edf2f7;font-weight:600;color:var(--pri)}
+.q-table tr:nth-child(even) td{background:#f8fafc}
 .opts{display:flex;flex-direction:column;gap:9px}
 .opt{display:flex;align-items:flex-start;gap:13px;padding:14px 18px;
   border:2px solid var(--bd);border-radius:8px;background:#fff;cursor:pointer;
@@ -677,7 +682,15 @@ function renderQ(){
   document.getElementById('q-pbar').style.width = ((quiz.idx+1)/quiz.qs.length*100)+'%';
   document.getElementById('jmp-in').value = '';
   document.getElementById('q-num').textContent = '['+q.subject+'] 第 '+q.num+' 题  (本次 '+(quiz.idx+1)+'/'+quiz.qs.length+')';
-  document.getElementById('q-text').textContent = (q.question||'').replace(/\xa0/g,' ').trim();
+  var qRaw = (q.question||'').replace(/\xa0/g,' ').trim();
+  if(qRaw.indexOf('<table')!==-1){
+    var qHtml=qRaw.split(/(<table[\s\S]*?<\/table>)/).map(function(p){
+      return p.match(/^<table/)?p:'<span class="q-para">'+esc(p)+'</span>';
+    }).join('');
+    document.getElementById('q-text').innerHTML=qHtml;
+  }else{
+    document.getElementById('q-text').textContent=qRaw;
+  }
   var letters = ['A','B','C'].filter(function(l){ return q.options&&q.options[l]; });
   var answered = quiz.ans[quiz.idx];
   document.getElementById('q-opts').innerHTML = letters.map(function(l){

@@ -119,7 +119,7 @@ var CFA_QUESTIONS=[
   {
     "num": 10,
     "subject": "财务报表",
-    "question": "An analyst uses the following information to forecast a company's gross profit margin: Current Amount (in $ millions) Forecasted Growth Sales 1,200 8% Cost of sales 300 4% The analyst's forecasted gross profit margin should be closest to a(n):",
+    "question": "An analyst uses the following information to forecast a company's gross profit margin:\n<table class=\"q-table\"><tbody><tr><th></th><th>Current Amount<br>(in $ millions)</th><th>Forecasted Growth</th></tr><tr><td>Sales</td><td>1,200</td><td>8%</td></tr><tr><td>Cost of sales</td><td>300</td><td>4%</td></tr></tbody></table>\nThe analyst's forecasted gross profit margin should be closest to a(n):",
     "options": {
       "A": "decrease of 1%.",
       "B": "increase of 1%.",
@@ -158,7 +158,7 @@ var CFA_QUESTIONS=[
   {
     "num": 13,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € millions) relating to a company's merchandise inventory as of 31 December of Year 1: Cost 65 Net realizable value 60 Current replacement cost 58 On 31 December of Year 2, the net realizable value of the inventory is € 7 million higher than its carrying value. Under US GAAP, the amount (in € millions) of the reversal of the prior write-down is:",
+    "question": "An analyst gathers the following information (in € millions) relating to a company's merchandise inventory as of 31 December of Year 1:\n<table class=\"q-table\"><tbody><tr><th>Cost</th><th>65</th></tr><tr><td>Net realizable value</td><td>60</td></tr><tr><td>Current replacement cost</td><td>58</td></tr></tbody></table>\nOn 31 December of Year 2, the net realizable value of the inventory is €7 million higher than its carrying value. Under US GAAP, the amount (in € millions) of the reversal of the prior write-down is:",
     "options": {
       "A": "0.",
       "B": "5.",
@@ -171,7 +171,7 @@ var CFA_QUESTIONS=[
   {
     "num": 14,
     "subject": "财务报表",
-    "question": "An analyst gathers the following year-end information from a company's financial statements: Year 2 Year 1 Accounts receivable ￡3 million ￡1 million Accounts payable ￡2 million ￡5 million Based only on this information, if Year 2 net income is ￡3 million and the Year 1 ending cash balance is ￡10 million, the Year 2 ending cash balance is:",
+    "question": "An analyst gathers the following year-end information from a company's financial statements:\n<table class=\"q-table\"><tbody><tr><th></th><th>Year 2</th><th>Year 1</th></tr><tr><td>Accounts receivable</td><td>£3 million</td><td>£1 million</td></tr><tr><td>Accounts payable</td><td>£2 million</td><td>£5 million</td></tr></tbody></table>\nBased only on this information, if Year 2 net income is £3 million and the Year 1 ending cash balance is £10 million, the Year 2 ending cash balance is:",
     "options": {
       "A": "￡8 million.",
       "B": "￡12 million.",
@@ -184,7 +184,7 @@ var CFA_QUESTIONS=[
   {
     "num": 15,
     "subject": "财务报表",
-    "question": "A company incurred the following expenditures (in € millions) to internally develop intangible asset: Costs incurred during the research phase 900 Costs incurred during the development phase 600 If the recognition criteria for an intangible asset have been met, the maximum amount of capitalized costs (in € millions) is:",
+    "question": "A company incurred the following expenditures (in € millions) to internally develop intangible asset:\n<table class=\"q-table\"><tbody><tr><th>Costs incurred during the research phase</th><th>900</th></tr><tr><td>Costs incurred during the development phase</td><td>600</td></tr></tbody></table>\nIf the recognition criteria for an intangible asset have been met, the maximum amount of capitalized costs (in € millions) is:",
     "options": {
       "A": "600.",
       "B": "900.",
@@ -262,7 +262,7 @@ var CFA_QUESTIONS=[
   {
     "num": 21,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in $ millions) about a manufacturing company: Cost of sales 150 Gross profit 100 Selling, general, and administrative expenses 30 Based only on this information, applying vertical common-size analysis to the income statement, selling, general, and administrative expenses are:",
+    "question": "An analyst gathers the following information (in € millions) about a manufacturing company:\n<table class=\"q-table\"><tbody><tr><th>Cost of sales</th><th>150</th></tr><tr><td>Gross profit</td><td>100</td></tr><tr><td>Selling, general, and administrative expenses</td><td>30</td></tr></tbody></table>\nBased only on this information, applying vertical common-size analysis to the income statement, selling, general, and administrative expenses are:",
     "options": {
       "A": "12%.",
       "B": "20%.",
@@ -327,7 +327,7 @@ var CFA_QUESTIONS=[
   {
     "num": 26,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company for its fiscal year ended 31 December. Net income €80,000 Common dividends declared and paid €16,000 Preferred dividends declared and paid €10,000 Weighted average common shares outstanding 150,000 Common shares outstanding at year end 130,000 Basic EPS is closest to",
+    "question": "An analyst gathers the following information about a company for its fiscal year ended 31 December:\n<table class=\"q-table\"><tbody><tr><th>Net income</th><th>€80,000</th></tr><tr><td>Common dividends declared and paid</td><td>€16,000</td></tr><tr><td>Preferred dividends declared and paid</td><td>€10,000</td></tr><tr><td>Weighted average common shares outstanding</td><td>150,000</td></tr><tr><td>Common shares outstanding at year end</td><td>130,000</td></tr></tbody></table>\nBasic EPS is closest to:",
     "options": {
       "A": "€0.36.",
       "B": "€0.47.",
@@ -353,7 +353,7 @@ var CFA_QUESTIONS=[
   {
     "num": 28,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company: Payables turnover 8 Inventory turnover 2 Receivables turnover 10 If all purchases and sales were made on credit, the cash conversion cycle (based on a 360-day year) is:",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><tbody><tr><th>Payables turnover</th><th>8</th></tr><tr><td>Inventory turnover</td><td>2</td></tr><tr><td>Receivables turnover</td><td>10</td></tr></tbody></table>\nIf all purchases and sales were made on credit, the cash conversion cycle (based on a 360-day year) is:",
     "options": {
       "A": "99 days",
       "B": "171 days",
@@ -366,7 +366,7 @@ var CFA_QUESTIONS=[
   {
     "num": 29,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in $ thousands) about a company. Net income 10,000 Gain on debt retirement 500 Decrease in working capital 2,000 Cash flow from operating activities (in $ thousands) is:",
+    "question": "An analyst gathers the following information (in $ thousands) about a company:\n<table class=\"q-table\"><tbody><tr><th>Net income</th><th>10,000</th></tr><tr><td>Gain on debt retirement</td><td>500</td></tr><tr><td>Decrease in working capital</td><td>2,000</td></tr></tbody></table>\nCash flow from operating activities (in $ thousands) is:",
     "options": {
       "A": "8,500.",
       "B": "11,500.",
@@ -392,7 +392,7 @@ var CFA_QUESTIONS=[
   {
     "num": 31,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € millions) about a company before any revaluations: Average total assets 20 Average total liabilities 8 Average total equity 12 An initial revaluation increases the carrying value of the asset valued under the revaluation model ignoring taxes, the financial leverage ratio most likely.",
+    "question": "An analyst gathers the following information (in € millions) about a company before any revaluations:\n<table class=\"q-table\"><tbody><tr><th>Average total assets</th><th>20</th></tr><tr><td>Average total liabilities</td><td>8</td></tr><tr><td>Average total equity</td><td>12</td></tr></tbody></table>\nAn initial revaluation increases the carrying value of the asset valued under the revaluation model. Ignoring taxes, the financial leverage ratio most likely:",
     "options": {
       "A": "decreases.",
       "B": "remains the same.",
@@ -405,7 +405,7 @@ var CFA_QUESTIONS=[
   {
     "num": 32,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a company: Net income 143 Gain on sale of equipment 20 Decrease in accounts receivable 38 Cash flow from operating activities (in € thousands) is.",
+    "question": "An analyst gathers the following information (in € thousands) about a company:\n<table class=\"q-table\"><tbody><tr><th>Net income</th><th>143</th></tr><tr><td>Gain on sale of equipment</td><td>20</td></tr><tr><td>Decrease in accounts receivable</td><td>38</td></tr></tbody></table>\nCash flow from operating activities (in € thousands) is:",
     "options": {
       "A": "85",
       "B": "161",
@@ -444,7 +444,7 @@ var CFA_QUESTIONS=[
   {
     "num": 35,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company's fiscal year ended 31 December. Net income $210.000 Common shares outstanding on 1 January 50,000 Common shares repurchased on 1 April 20,000 If a 2-for-1 stock split took effect on 1 July, basic EPS for the year is:",
+    "question": "An analyst gathers the following information about a company's fiscal year ended 31 December:\n<table class=\"q-table\"><tbody><tr><th>Net income</th><th>$210,000</th></tr><tr><td>Common shares outstanding on 1 January</td><td>50,000</td></tr><tr><td>Common shares repurchased on 1 April</td><td>20,000</td></tr></tbody></table>\nIf a 2-for-1 stock split took effect on 1 July, basic EPS for the year is:",
     "options": {
       "A": "$3.00.",
       "B": "$3.50.",
@@ -457,7 +457,7 @@ var CFA_QUESTIONS=[
   {
     "num": 36,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about two companies (in ¥ thousands): Company 1 Company 2 Revenue 7,586,000 9,445,000 Cost of goods sold 3,413,700 4,533,600 Research and development expense 1,800,000 1,800,000 Advertising expense 531,020 755,600 Based only on the companies' common-size income statements, it appears that.",
+    "question": "An analyst gathers the following information about two companies (in ¥ thousands):\n<table class=\"q-table\"><tbody><tr><th></th><th>Company 1</th><th>Company 2</th></tr><tr><td>Revenue</td><td>7,586,000</td><td>9,445,000</td></tr><tr><td>Cost of goods sold</td><td>3,413,700</td><td>4,533,600</td></tr><tr><td>Research and development expense</td><td>1,800,000</td><td>1,800,000</td></tr><tr><td>Advertising expense</td><td>531,020</td><td>755,600</td></tr></tbody></table>\nBased only on the companies' common-size income statements, it appears that:",
     "options": {
       "A": "Company 1 spent more on advertising than Company 2.",
       "B": "both companies spent equally on research and development.",
@@ -496,7 +496,7 @@ var CFA_QUESTIONS=[
   {
     "num": 39,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company for its fiscal year ended 31 December. Net income €3,000,000 Common shares outstanding,1 January 3,500,000 Common shares issued,1 April 1,000,000 Common shares outstanding,31 December 4,500,000 Convertible preferred shares outstanding 400,000 Convertible preferred dividend per share €1.00 Each convertible preferred share is convertible into two common shares. If there are no other potentially dilutive securities outstanding, reported diluted EPS is closest to:",
+    "question": "An analyst gathers the following information about a company for its fiscal year ended 31 December:\n<table class=\"q-table\"><tbody><tr><th>Net income</th><th>€3,000,000</th></tr><tr><td>Common shares outstanding, 1 January</td><td>3,500,000</td></tr><tr><td>Common shares issued, 1 April</td><td>1,000,000</td></tr><tr><td>Common shares outstanding, 31 December</td><td>4,500,000</td></tr><tr><td>Convertible preferred shares outstanding</td><td>400,000</td></tr><tr><td>Convertible preferred dividend per share</td><td>€1.00</td></tr></tbody></table>\nEach convertible preferred share is convertible into two common shares. If there are no other potentially dilutive securities outstanding, reported diluted EPS is closest to:",
     "options": {
       "A": "€0.51.",
       "B": "€0.57.",
@@ -509,7 +509,7 @@ var CFA_QUESTIONS=[
   {
     "num": 40,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a company: Cash flow from operating activities 80 Capital expenditures 15 Interest paid and expensed 10 If interest paid is classified as a cash flow from operating activities and the income tax rate is 20%, FCFF (in € thousands) is",
+    "question": "An analyst gathers the following information (in € thousands) about a company:\n<table class=\"q-table\"><tbody><tr><th>Cash flow from operating activities</th><th>80</th></tr><tr><td>Capital expenditures</td><td>15</td></tr><tr><td>Interest paid and expensed</td><td>10</td></tr></tbody></table>\nIf interest paid is classified as a cash flow from operating activities and the income tax rate is 20%, FCFF (in € thousands) is:",
     "options": {
       "A": "57.",
       "B": "65.",
@@ -548,7 +548,7 @@ var CFA_QUESTIONS=[
   {
     "num": 43,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company's fiscal year ended 31 December. Interest payable on 1 January ￡45,000 Cash interest paid during the year ￡15,000 Interest expense during the year ￡50,000 Interest payable on 31 December is:",
+    "question": "An analyst gathers the following information about a company's fiscal year ended 31 December:\n<table class=\"q-table\"><tbody><tr><th>Interest payable on 1 January</th><th>£45,000</th></tr><tr><td>Cash interest paid during the year</td><td>£15,000</td></tr><tr><td>Interest expense during the year</td><td>£50,000</td></tr></tbody></table>\nInterest payable on 31 December is:",
     "options": {
       "A": "￡30,000.",
       "B": "￡80,000.",
@@ -561,7 +561,7 @@ var CFA_QUESTIONS=[
   {
     "num": 44,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in￡thousands) about a company. FCFF 2,500 FCFE 1,300 Interest paid 260 If interest paid is classified as a cash flow from operating activities and the income tax rate is 40%,net debt repayment (in￡thousands) is closest to:",
+    "question": "An analyst gathers the following information (in £ thousands) about a company:\n<table class=\"q-table\"><tbody><tr><th>FCFF</th><th>2,500</th></tr><tr><td>FCFE</td><td>1,300</td></tr><tr><td>Interest paid</td><td>260</td></tr></tbody></table>\nIf interest paid is classified as a cash flow from operating activities and the income tax rate is 40%, net debt repayment (in £ thousands) is closest to:",
     "options": {
       "A": "940.",
       "B": "1,044.",
@@ -626,7 +626,7 @@ var CFA_QUESTIONS=[
   {
     "num": 49,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company's non-depreciable asset reported under the revaluation model Original cost €25,000 Reported value after initial revaluation €27,50 Reported value after second revaluation €22,50 The revaluation surplus after the second revaluation is:",
+    "question": "An analyst gathers the following information about a company’s non-depreciable asset reported under the revaluation model:\n<table class=\"q-table\"><tbody><tr><th>Original cost</th><th>€25,000</th></tr><tr><td>Reported value after initial revaluation</td><td>€27,500</td></tr><tr><td>Reported value after second revaluation</td><td>€22,500</td></tr></tbody></table>\nThe revaluation surplus after the second revaluation is:",
     "options": {
       "A": "-€2,500.",
       "B": "€0.",
@@ -639,7 +639,7 @@ var CFA_QUESTIONS=[
   {
     "num": 50,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about an electronics manufacturing company's inventory: Year 2 Year 1 Cost €100,000 €100,000 Net realizable value €105,000 €97,000 As a result of the reversal of the write-down, the company's Year 2 financial statements should report a decrease in cost of sales of:",
+    "question": "An analyst gathers the following information about an electronics manufacturing company's inventory:\n<table class=\"q-table\"><tbody><tr><th></th><th>Year 2</th><th>Year 1</th></tr><tr><td>Cost</td><td>€100,000</td><td>€100,000</td></tr><tr><td>Net realizable value</td><td>€105,000</td><td>€97,000</td></tr></tbody></table>\nAs a result of the reversal of the write-down, the company's Year 2 financial statements should report a decrease in cost of sales of:",
     "options": {
       "A": "€0.",
       "B": "€3,000.",
@@ -665,7 +665,7 @@ var CFA_QUESTIONS=[
   {
     "num": 53,
     "subject": "财务报表",
-    "question": "An analyst collects the following information (in € millions) about a manufacturing company's inventory. Original cost 22,000 Net realizable value at end of Year 1 1,700 Net realizable value at end of Year 2 2,500 At the end of Year 2, the balance sheet should reflect inventory (in € millions) of.",
+    "question": "An analyst collects the following information (in € millions) about a manufacturing company's inventory:\n<table class=\"q-table\"><tbody><tr><th>Original cost</th><th>2,000</th></tr><tr><td>Net realizable value at end of Year 1</td><td>1,700</td></tr><tr><td>Net realizable value at end of Year 2</td><td>2,500</td></tr></tbody></table>\nAt the end of Year 2, the balance sheet should reflect inventory (in € millions) of:",
     "options": {
       "A": "1,700.",
       "B": "2,000.",
@@ -691,7 +691,7 @@ var CFA_QUESTIONS=[
   {
     "num": 55,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a company's non-depreciable asset. Historical cost 50 Carrying value after impairment,31 December of Year 1 40 Recoverable amount,31 December of Year 2 60 The maximum allowable carrying amount (in € thousands) on the Year 2 balance sheet is:",
+    "question": "An analyst gathers the following information (in € thousands) about a company’s non-depreciable asset:\n<table class=\"q-table\"><tbody><tr><th>Historical cost</th><th>50</th></tr><tr><td>Carrying value after impairment, 31 December of Year 1</td><td>40</td></tr><tr><td>Recoverable amount, 31 December of Year 2</td><td>60</td></tr></tbody></table>\nThe maximum allowable carrying amount (in € thousands) on the Year 2 balance sheet is:",
     "options": {
       "A": "40",
       "B": "50.",
@@ -730,7 +730,7 @@ var CFA_QUESTIONS=[
   {
     "num": 58,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € millions) about an automobile manufacturer's inventory: Year 2 Year 1 Cost of goods sold 600 700 Cost of inventory 100 90 Net realizable value of inventory 120 80 The inventory turnover (calculated using average inventory) in Year 2 is closest to:",
+    "question": "An analyst gathers the following information (in € millions) about an automobile manufacturer's inventory:\n<table class=\"q-table\"><tbody><tr><th></th><th>Year 2</th><th>Year 1</th></tr><tr><td>Cost of goods sold</td><td>600</td><td>700</td></tr><tr><td>Cost of inventory</td><td>100</td><td>90</td></tr><tr><td>Net realizable value of inventory</td><td>120</td><td>80</td></tr></tbody></table>\nThe inventory turnover (calculated using average inventory) in Year 2 is closest to:",
     "options": {
       "A": "6.0.",
       "B": "6.3.",
@@ -743,7 +743,7 @@ var CFA_QUESTIONS=[
   {
     "num": 59,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about an electronics manufacturing company's inventory: Cost of ending inventory 3,600 Net realizable value 3,300 Current replacement cost 3,200 Net realizable value less a normal profit margin 3,100 The inventory (in € thousands) is carried on the balance sheet at:",
+    "question": "An analyst gathers the following information (in € thousands) about an electronics manufacturing company's inventory by FIFO:\n<table class=\"q-table\"><tbody><tr><th>Cost of ending inventory</th><th>3,600</th></tr><tr><td>Net realizable value</td><td>3,300</td></tr><tr><td>Current replacement cost</td><td>3,200</td></tr><tr><td>Net realizable value less a normal profit margin</td><td>3,100</td></tr></tbody></table>\nThe inventory (in € thousands) is carried on the balance sheet at:",
     "options": {
       "A": "3,100.",
       "B": "3,200.",
@@ -782,7 +782,7 @@ var CFA_QUESTIONS=[
   {
     "num": 62,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company's equipment: Carrying value prior to impairment €20,000 Undiscounted expected future cash flows €22,000 Value in use €17,400 Fair value if sold €19,100 Costs to sell €1,900 The carrying value of the equipment should be:",
+    "question": "An analyst gathers the following information about a company's equipment:\n<table class=\"q-table\"><tbody><tr><th>Carrying value prior to impairment</th><th>€20,000</th></tr><tr><td>Undiscounted expected future cash flows</td><td>€22,000</td></tr><tr><td>Value in use</td><td>€17,400</td></tr><tr><td>Fair value if sold</td><td>€19,100</td></tr><tr><td>Costs to sell</td><td>€1,900</td></tr></tbody></table>\nThe carrying value of the equipment should be:",
     "options": {
       "A": "€17,200.",
       "B": "€17,400.",
@@ -795,7 +795,7 @@ var CFA_QUESTIONS=[
   {
     "num": 63,
     "subject": "财务报表",
-    "question": "Which of the following ratios would most likely be positively affected by an inventory write-down compared to its value absent the write-down?",
+    "question": "Which of the following ratios would most likely be positively affected by an inventory write-down compared to its value absent the write-down?",
     "options": {
       "A": "Activity",
       "B": "Liquidity",
@@ -886,7 +886,7 @@ var CFA_QUESTIONS=[
   {
     "num": 70,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company's equipment base: Beginning balance accumulated depreciation €7,000,000 Ending balance accumulated depreciation €8,000,000 Depreciation expense of equipment €4,000,000 The company sold equipment having a historical cost of €5,000,000 and reported a loss on sale of €250,000. The cash received from the sale of equipment is:",
+    "question": "An analyst gathers the following information about a company’s equipment base:\n<table class=\"q-table\"><tbody><tr><th>Beginning balance accumulated depreciation</th><th>€7,000,000</th></tr><tr><td>Ending balance accumulated depreciation</td><td>€8,000,000</td></tr><tr><td>Depreciation expense of equipment</td><td>€4,000,000</td></tr></tbody></table>\nThe company sold equipment having a historical cost of €5,000,000 and reported a loss on sale of €250,000. The cash received from the sale of equipment is:",
     "options": {
       "A": "€750,000.",
       "B": "€1,750,000.",
@@ -899,7 +899,7 @@ var CFA_QUESTIONS=[
   {
     "num": 71,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € millions) about a company: EBIT 150 Earnings before taxes 130 Net income 110 Total average assets 1,000 ROA is:",
+    "question": "An analyst gathers the following information (in € millions) about a company:\n<table class=\"q-table\"><tbody><tr><th>EBIT</th><th>150</th></tr><tr><td>Earnings before taxes</td><td>130</td></tr><tr><td>Net income</td><td>110</td></tr><tr><td>Total average assets</td><td>1,000</td></tr></tbody></table>\nROA is:",
     "options": {
       "A": "11%.",
       "B": "13%.",
@@ -925,7 +925,7 @@ var CFA_QUESTIONS=[
   {
     "num": 73,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company's given fiscal year ended 31 December. Net income $1,200,000 Number of common shares outstanding on 1 January 1,000,000 Number of common shares issued on 1 April 100,000 Number of common shares outstanding on 31 December 1,100,000 Face value of convertible bonds outstanding for the year $2,000,000 Coupon rate on convertible bonds 8% Tax rate 30% If the bonds are convertible into 200,000 common shares and there are no other potentially dilutive securities outstanding, the company's reported diluted EPS is closest to:",
+    "question": "An analyst gathers the following information about a company's given fiscal year ended 31 December:\n<table class=\"q-table\"><tbody><tr><th>Net income</th><th>$1,200,000</th></tr><tr><td>Number of common shares outstanding on 1 January</td><td>1,000,000</td></tr><tr><td>Number of common shares issued on 1 April</td><td>100,000</td></tr><tr><td>Number of common shares outstanding on 31 December</td><td>1,100,000</td></tr><tr><td>Face value of convertible bonds outstanding for the year</td><td>$2,000,000</td></tr><tr><td>Coupon rate on convertible bonds</td><td>8%</td></tr><tr><td>Tax rate</td><td>30%</td></tr></tbody></table>\nIf the bonds are convertible into 200,000 common shares and there are no other potentially dilutive securities outstanding, the company's reported diluted EPS is closest to:",
     "options": {
       "A": "$1.01.",
       "B": "$1.03.",
@@ -938,7 +938,7 @@ var CFA_QUESTIONS=[
   {
     "num": 75,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about equipment Carrying amount prior to testing for impairment 10,000 Fair value 9,000 Present value of expected future cash flows 7,000 Costs to sell 200 The equipment's carrying amount (in € thousands) after impairment is:",
+    "question": "An analyst gathers the following information (in € thousands) about equipment:\n<table class=\"q-table\"><tbody><tr><th>Carrying amount prior to testing for impairment</th><th>10,000</th></tr><tr><td>Fair value</td><td>9,000</td></tr><tr><td>Present value of expected future cash flows</td><td>7,000</td></tr><tr><td>Costs to sell</td><td>200</td></tr></tbody></table>\nThe equipment's carrying amount (in € thousands) after impairment is:",
     "options": {
       "A": "7,000.",
       "B": "8,800.",
@@ -990,7 +990,7 @@ var CFA_QUESTIONS=[
   {
     "num": 79,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company: Short-term interest bearing debt 700 Current portion of long-term interest bearing debt 500 Non-current portion of long-term interest bearing debt 800 Total shareholders' equity 7,500 Based only on this information, the company's debt-to-capital ratio is closest to:",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><tbody><tr><th>Short-term interest bearing debt</th><th>700</th></tr><tr><td>Current portion of long-term interest bearing debt</td><td>500</td></tr><tr><td>Non-current portion of long-term interest bearing debt</td><td>800</td></tr><tr><td>Total shareholders' equity</td><td>7,500</td></tr></tbody></table>\nBased only on this information, the company's debt-to-capital ratio is closest to:",
     "options": {
       "A": "17%.",
       "B": "21%.",
@@ -1055,7 +1055,7 @@ var CFA_QUESTIONS=[
   {
     "num": 84,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a company whose fiscal year ends on 31 December: Earnings for the six months ended 30 June of Year 1 2,000 Earnings for the year ended 31 December of Year 1 1,500 Earnings for the six months ended 30 June of Year 2 2,200 The company's trailing 12 month earnings (in € thousands) for the period ended 30 June of Year 2 is:",
+    "question": "An analyst gathers the following information (in € thousands) about a company whose fiscal year ends on 31 December:\n<table class=\"q-table\"><tbody><tr><th>Earnings for the six months ended 30 June of Year 1</th><th>2,000</th></tr><tr><td>Earnings for the year ended 31 December of Year 1</td><td>1,500</td></tr><tr><td>Earnings for the six months ended 30 June of Year 2</td><td>2,200</td></tr></tbody></table>\nThe company’s trailing 12 month earnings (in € thousands) for the period ended 30 June of Year 2 is:",
     "options": {
       "A": "1,700.",
       "B": "3,700.",
@@ -1068,7 +1068,7 @@ var CFA_QUESTIONS=[
   {
     "num": 85,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about three companies (in $ millions): Company 1 Company 2 Company 3 Total assets 100 200 400 Total debt 20 50 80 Total equity 80 150 320 Earnings before interest and taxes (EBIT) 8 10 12 Interest payments 4 4 4 Based on this information, which company is most solvent?",
+    "question": "An analyst gathers the following information about three companies (in $ millions):\n<table class=\"q-table\"><tbody><tr><th></th><th>Company 1</th><th>Company 2</th><th>Company 3</th></tr><tr><td>Total assets</td><td>100</td><td>200</td><td>400</td></tr><tr><td>Total debt</td><td>20</td><td>50</td><td>80</td></tr><tr><td>Total equity</td><td>80</td><td>150</td><td>320</td></tr><tr><td>Earnings before interest and taxes (EBIT)</td><td>8</td><td>10</td><td>12</td></tr><tr><td>Interest payments</td><td>4</td><td>4</td><td>4</td></tr></tbody></table>\nBased on this information, which company is most solvent?",
     "options": {
       "A": "Company 1",
       "B": "Company 2",
@@ -1133,7 +1133,7 @@ var CFA_QUESTIONS=[
   {
     "num": 90,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a manufacturing company: Year 2 Year 1 Average total assets 500 450 Average total liabilities 400 330 Average total shareholders' equity 100 120 EBIT 35 40 Interest payments 5 8 Based only on this information, which of the following ratio (s) may indicate improved solvency from Year 1 to Year 2?",
+    "question": "An analyst gathers the following information (in € thousands) about a manufacturing company:\n<table class=\"q-table\"><tbody><tr><th></th><th>Year 2</th><th>Year 1</th></tr><tr><td>Average total assets</td><td>500</td><td>450</td></tr><tr><td>Average total liabilities</td><td>400</td><td>330</td></tr><tr><td>Average total shareholders' equity</td><td>100</td><td>120</td></tr><tr><td>EBIT</td><td>35</td><td>40</td></tr><tr><td>Interest payments</td><td>5</td><td>8</td></tr></tbody></table>\nBased only on this information, which of the following ratio(s) may indicate improved solvency from Year 1 to Year 2?",
     "options": {
       "A": "Interest coverage ratio only",
       "B": "Financial leverage ratio only",
@@ -1172,7 +1172,7 @@ var CFA_QUESTIONS=[
   {
     "num": 93,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a company's sale of equipment. Selling price 58 Historical cost 50 Accumulated depreciation 5 The gain on the sale (in € thousands) is:",
+    "question": "An analyst gathers the following information (in € thousands) about a company's sale of equipment:\n<table class=\"q-table\"><tbody><tr><th>Selling price</th><th>58</th></tr><tr><td>Historical cost</td><td>50</td></tr><tr><td>Accumulated depreciation</td><td>5</td></tr></tbody></table>\nThe gain on the sale (in € thousands) is:",
     "options": {
       "A": "3.",
       "B": "8.",
@@ -1185,7 +1185,7 @@ var CFA_QUESTIONS=[
   {
     "num": 94,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a manufacturing company's inventory: Cost of ending inventory 750 Estimated selling price in the ordinary course of business 1,100 Estimated costs necessary to sell the inventory 50 Estimated costs to get the inventory in condition for sale 50 The net realizable value of the inventory (in € thousands) is:",
+    "question": "An analyst gathers the following information (in € thousands) about a manufacturing company's inventory:\n<table class=\"q-table\"><tbody><tr><th>Cost of ending inventory</th><th>750</th></tr><tr><td>Estimated selling price in the ordinary course of business</td><td>1,100</td></tr><tr><td>Estimated costs necessary to sell the inventory</td><td>50</td></tr><tr><td>Estimated costs to get the inventory in condition for sale</td><td>50</td></tr></tbody></table>\nThe net realizable value of the inventory (in € thousands) is:",
     "options": {
       "A": "750.",
       "B": "850.",
@@ -1211,7 +1211,7 @@ var CFA_QUESTIONS=[
   {
     "num": 96,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in￡thousands) about a company's current assets and liabilities: Cash and equivalents 800 Short-term marketable securities 500 Inventory 700 Accounts receivable 2,000 Current liabilities 10,000 The company's quick ratio is:",
+    "question": "An analyst gathers the following information (in £ thousands) about a company's current assets and liabilities:\n<table class=\"q-table\"><tbody><tr><th>Cash and equivalents</th><th>800</th></tr><tr><td>Short-term marketable securities</td><td>500</td></tr><tr><td>Inventory</td><td>700</td></tr><tr><td>Accounts receivable</td><td>2,000</td></tr><tr><td>Current liabilities</td><td>10,000</td></tr></tbody></table>\nThe company's quick ratio is:",
     "options": {
       "A": "0.13.",
       "B": "0.33.",
@@ -1224,7 +1224,7 @@ var CFA_QUESTIONS=[
   {
     "num": 97,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in￡millions) about a company: Total assets 400 Total liabilities 200 Total debt 100 Total equity 200 The total debt ratio is:",
+    "question": "An analyst gathers the following information (in £ millions) about a company:\n<table class=\"q-table\"><tbody><tr><th>Total assets</th><th>400</th></tr><tr><td>Total liabilities</td><td>200</td></tr><tr><td>Total debt</td><td>100</td></tr><tr><td>Total equity</td><td>200</td></tr></tbody></table>\nThe total debt ratio is:",
     "options": {
       "A": "0.25.",
       "B": "0.50.",
@@ -1276,7 +1276,7 @@ var CFA_QUESTIONS=[
   {
     "num": 101,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in $ millions) about a company: Other operating expenses 4,500 Decrease in prepaid expenses 200 Increase in other accrued liabilities 300 Cash paid for other operating expenses (in $ millions) is:",
+    "question": "An analyst gathers the following information (in £ millions) about a company:\n<table class=\"q-table\"><tbody><tr><th>Other operating expenses</th><th>4,500</th></tr><tr><td>Decrease in prepaid expenses</td><td>200</td></tr><tr><td>Increase in other accrued liabilities</td><td>300</td></tr></tbody></table>\nCash paid for other operating expenses (in £ millions) is:",
     "options": {
       "A": "4,000.",
       "B": "4,400.",
@@ -1289,7 +1289,7 @@ var CFA_QUESTIONS=[
   {
     "num": 102,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a company's equipment: Purchase price of the equipment 1,000 Accumulated depreciation 250 Gain on sale of the equipment 400 Ignoring taxes, proceeds from sale of the equipment (in € thousands) is:",
+    "question": "An analyst gathers the following information (in € thousands) about a company's equipment:\n<table class=\"q-table\"><tbody><tr><th>Purchase price of the equipment</th><th>1,000</th></tr><tr><td>Accumulated depreciation</td><td>250</td></tr><tr><td>Gain on sale of the equipment</td><td>400</td></tr></tbody></table>\nIgnoring taxes, proceeds from sale of the equipment (in € thousands) is:",
     "options": {
       "A": "750",
       "B": "1,150.",
@@ -1315,7 +1315,7 @@ var CFA_QUESTIONS=[
   {
     "num": 104,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € millions) about a manufacturing company's land reported under the revaluation model: Purchase price and fair value on 1 January Year 1 20 Fair value at initial revaluation on 31 December Year 1 26 All else being equal and ignoring taxes, the revaluation at 31 December Year 1 leads to a:",
+    "question": "An analyst gathers the following information (in € millions) about a manufacturing company's land reported under the revaluation model:\n<table class=\"q-table\"><tbody><tr><th>Purchase price and fair value on 1 January Year 1</th><th>20</th></tr><tr><td>Fair value at initial revaluation on 31 December Year 1</td><td>26</td></tr></tbody></table>\nAll else being equal and ignoring taxes, the revaluation at 31 December Year 1 leads to a:",
     "options": {
       "A": "higher quick ratio.",
       "B": "higher total asset turnover.",
@@ -1393,7 +1393,7 @@ var CFA_QUESTIONS=[
   {
     "num": 110,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € millions) about a company: Net cash flow from operating activities (750) Total cash inflows 1,500 Total cash outflows 2,500 Net increase (decrease) in cash (1,000) On a common-size statement of cash flows presented using the indirect method, net operating cash flow is:",
+    "question": "An analyst gathers the following information (in € millions) about a company:\n<table class=\"q-table\"><tbody><tr><th>Net cash flow from operating activities</th><th>(750)</th></tr><tr><td>Total cash inflows</td><td>1,500</td></tr><tr><td>Total cash outflows</td><td>2,500</td></tr><tr><td>Net increase (decrease) in cash</td><td>(1,000)</td></tr></tbody></table>\nOn a common-size statement of cash flows presented using the indirect method, net operating cash flow is:",
     "options": {
       "A": "30%.",
       "B": "50%.",
@@ -1419,7 +1419,7 @@ var CFA_QUESTIONS=[
   {
     "num": 112,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a company's equipment reported under the cost model: Carrying amount before impairment 2,000 Undiscounted expected future cash flows 1,800 Fair value 1,700 Value in use 1,500 Costs to sell 50 The impairment loss (in € thousands) is:",
+    "question": "An analyst gathers the following information (in € thousands) about a company's equipment reported under the cost model:\n<table class=\"q-table\"><tbody><tr><th>Carrying amount before impairment</th><th>2,000</th></tr><tr><td>Undiscounted expected future cash flows</td><td>1,800</td></tr><tr><td>Fair value</td><td>1,700</td></tr><tr><td>Value in use</td><td>1,500</td></tr><tr><td>Costs to sell</td><td>50</td></tr></tbody></table>\nThe impairment loss (in € thousands) is:",
     "options": {
       "A": "300.",
       "B": "350.",
@@ -1432,7 +1432,7 @@ var CFA_QUESTIONS=[
   {
     "num": 113,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about PP&E that is abandoned and accounted for using the cost model: Carrying value ￡10 million Fair value at time of abandonment ￡1 million Assuming no impairment, the abandonment of PP&E on the financial statements will result in a:",
+    "question": "An analyst gathers the following information about PP&E that is abandoned and accounted for using the cost model:\n<table class=\"q-table\"><tbody><tr><th>Carrying value</th><th>£10 million</th></tr><tr><td>Fair value at time of abandonment</td><td>£1 million</td></tr></tbody></table>\nAssuming no impairment, the abandonment of PP&E on the financial statements will result in a:",
     "options": {
       "A": "decrease of ￡10 million in PP&E.",
       "B": "loss of ￡1 million on the income statement.",
@@ -1471,7 +1471,7 @@ var CFA_QUESTIONS=[
   {
     "num": 117,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company: Interest payments $30,000 Capital expenditures $82,000 Net borrowing $18,000 Income tax rate 40% Under U.S. GAAP, free cash flow to equity is most likely.",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><tbody><tr><th>Interest payments</th><th>$30,000</th></tr><tr><td>Capital expenditures</td><td>$82,000</td></tr><tr><td>Net borrowing</td><td>$18,000</td></tr><tr><td>Income tax rate</td><td>40%</td></tr></tbody></table>\nUnder U.S. GAAP, free cash flow to equity is most likely:",
     "options": {
       "A": "less than free cash flow to the firm.",
       "B": "equal to free cash flow to the firm.",
@@ -1510,7 +1510,7 @@ var CFA_QUESTIONS=[
   {
     "num": 120,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company's fiscal year ended 31 December. Net income €2,500,000 Weighted average common shares outstanding during the year 2,000,000 Convertible preferred shares outstanding 1,000,000 Dividend per convertible preferred share €1 One convertible preferred share is convertible into two common shares. If the tax rate is 40% and there are no other potentially dilutive securities outstanding, reported diluted EPS is closest to:",
+    "question": "An analyst gathers the following information about a company's fiscal year ended 31 December:\n<table class=\"q-table\"><tbody><tr><th>Net income</th><th>€2,500,000</th></tr><tr><td>Weighted average common shares outstanding during the year</td><td>2,000,000</td></tr><tr><td>Convertible preferred shares outstanding</td><td>1,000,000</td></tr><tr><td>Dividend per convertible preferred share</td><td>€1</td></tr></tbody></table>\nOne convertible preferred share is convertible into two common shares. If the tax rate is 40% and there are no other potentially dilutive securities outstanding, reported diluted EPS is closest to:",
     "options": {
       "A": "€0.38.",
       "B": "€0.48.",
@@ -1523,7 +1523,7 @@ var CFA_QUESTIONS=[
   {
     "num": 121,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company's fiscal year ended 31 December. Net income €5,000,000 Common dividends declared and paid €500,000 Weighted average common shares outstanding during the year 2,000,000 Convertible preferred shares outstanding 400,000 Dividend per convertible preferred share €2 One convertible preferred share is convertible into six common shares. If there are no other potentially dilutive securities outstanding, reported diluted EPS should be closest to:",
+    "question": "An analyst gathers the following information about a company's fiscal year ended 31 December:\n<table class=\"q-table\"><tbody><tr><th>Net income</th><th>€5,000,000</th></tr><tr><td>Common dividends declared and paid</td><td>€ 500,000</td></tr><tr><td>Weighted average common shares outstanding during the year</td><td>2,000,000</td></tr><tr><td>Convertible preferred shares outstanding</td><td>400,000</td></tr><tr><td>Dividend per convertible preferred share</td><td>€2</td></tr></tbody></table>\nOne convertible preferred share is convertible into six common shares. If there are no other potentially dilutive securities outstanding, reported diluted EPS should be closest to:",
     "options": {
       "A": "€0.95",
       "B": "€1.02.",
@@ -1536,7 +1536,7 @@ var CFA_QUESTIONS=[
   {
     "num": 122,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € millions) about a company: Cash and cash equivalents 40 Total current assets 125 Total non-current assets 35 Revenue 200 Applying vertical common-size analysis to the company's balance sheet, cash and cash equivalents are:",
+    "question": "An analyst gathers the following information (in € millions) about a company:\n<table class=\"q-table\"><tbody><tr><th>Cash and cash equivalents</th><th>40</th></tr><tr><td>Total current assets</td><td>125</td></tr><tr><td>Total non-current assets</td><td>35</td></tr><tr><td>Revenue</td><td>200</td></tr></tbody></table>\nApplying vertical common-size analysis to the company's balance sheet, cash and cash equivalents are:",
     "options": {
       "A": "20%.",
       "B": "25%.",
@@ -1549,7 +1549,7 @@ var CFA_QUESTIONS=[
   {
     "num": 123,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in € thousands) about a company: Year 2 Year 1 Revenue 2,400 2,000 Cost of sales 1,800 1,400 Ending accounts payable 180 220 Based only on this information, the payables turnover ratio for Year 2 is:",
+    "question": "An analyst gathers the following information (in € thousands) about a company:\n<table class=\"q-table\"><tbody><tr><th></th><th>Year 2</th><th>Year 1</th></tr><tr><td>Revenue</td><td>2,400</td><td>2,000</td></tr><tr><td>Cost of sales</td><td>1,800</td><td>1,400</td></tr><tr><td>Ending accounts payable</td><td>180</td><td>220</td></tr></tbody></table>\nBased only on this information, the payables turnover ratio for Year 2 is:",
     "options": {
       "A": "9.",
       "B": "10.",
@@ -1562,7 +1562,7 @@ var CFA_QUESTIONS=[
   {
     "num": 124,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information about a company: Year 2 Year 1 Days of inventory on hand 11 13 Days of sales outstanding 24 22 Payables turnover 36 18 Based only on the cash conversion cycle, the company's liquidity position from Year 1 to Year 2 has:",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><tbody><tr><th></th><th>Year 2</th><th>Year 1</th></tr><tr><td>Days of inventory on hand</td><td>11</td><td>13</td></tr><tr><td>Days of sales outstanding</td><td>24</td><td>22</td></tr><tr><td>Payables turnover</td><td>36</td><td>18</td></tr></tbody></table>\nBased only on the cash conversion cycle, the company's liquidity position from Year 1 to Year 2 has:",
     "options": {
       "A": "deteriorated.",
       "B": "remained the same.",
@@ -1588,7 +1588,7 @@ var CFA_QUESTIONS=[
   {
     "num": 126,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in $ millions) about a company: EBIT 16 Net income 8 Interest payments 6 Lease payments 4 The fixed charge coverage ratio is closest to:",
+    "question": "An analyst gathers the following information (in £ millions) about a company:\n<table class=\"q-table\"><tbody><tr><th>EBIT</th><th>16</th></tr><tr><td>Net income</td><td>8</td></tr><tr><td>Interest payments</td><td>6</td></tr><tr><td>Lease payments</td><td>4</td></tr></tbody></table>\nThe fixed charge coverage ratio is closest to:",
     "options": {
       "A": "1.2.",
       "B": "1.6.",
@@ -1640,7 +1640,7 @@ var CFA_QUESTIONS=[
   {
     "num": 130,
     "subject": "财务报表",
-    "question": "An analyst gathers the following information (in $ millions) about a company: Year 2 Year 1 Revenues 2,100 2,000 Accounts receivable 230 200 Cash 70 50 Cash received from customers (in $ millions) in Year 2 is:",
+    "question": "An analyst gathers the following information (in £ millions) about a company:\n<table class=\"q-table\"><tbody><tr><th></th><th>Year 2</th><th>Year 1</th></tr><tr><td>Revenues</td><td>2,100</td><td>2,000</td></tr><tr><td>Accounts receivable</td><td>230</td><td>200</td></tr><tr><td>Cash</td><td>70</td><td>50</td></tr></tbody></table>\nCash received from customers (in £ millions) in Year 2 is:",
     "options": {
       "A": "2,070.",
       "B": "2,120.",
@@ -2160,7 +2160,7 @@ var CFA_QUESTIONS=[
   {
     "num": 41,
     "subject": "公司发行人",
-    "question": "Subsequent to making a capital investment, a company reacts to poor financial results from the project by abandoning it. This action alone best exemplifies the exercise of a:",
+    "question": "Subsequent to making a capital investment, a company reacts to poor financial results from the project by abandoning it. This action alone best exemplifies the exercise of a:",
     "options": {
       "A": "sizing option.",
       "B": "timing option",
@@ -2251,7 +2251,7 @@ var CFA_QUESTIONS=[
   {
     "num": 48,
     "subject": "公司发行人",
-    "question": "A company with a required rate of return of 12% is considering a capital project with the following cash flows (in millions)： Initial Outlay Year 1 Year 2 Cash flow -£150 £8 £175 The expected IRR for this project is most likely.",
+    "question": "A company with a required rate of return of 12% is considering a capital project with the following cash flows (in millions):\n<table class=\"q-table\"><tbody><tr><th></th><th>Initial Outlay</th><th>Year 1</th><th>Year 2</th></tr><tr><td>Cash flow</td><td>−£150</td><td>£8</td><td>£175</td></tr></tbody></table>\nThe expected IRR for this project is most likely:",
     "options": {
       "A": "less than 12%.",
       "B": "equal to 12%.",
@@ -2368,7 +2368,7 @@ var CFA_QUESTIONS=[
   {
     "num": 57,
     "subject": "公司发行人",
-    "question": "An analyst gathers the following information about a company: Capital Source Market Value (Millions) Before-tax Cost of Capital Bonds 6% €60 Preferred stock 8% €20 Common stock 15% €120 If the company's marginal tax rate is 40%, its weighted average cost of capital is closest to:",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><tbody><tr><th>Capital Source</th><th>Market Value (Millions)</th><th>Before-tax Cost of Capital</th></tr><tr><td>Bonds</td><td>€60</td><td>6%</td></tr><tr><td>Preferred stock</td><td>€20</td><td>8%</td></tr><tr><td>Common stock</td><td>€120</td><td>15%</td></tr></tbody></table>\nIf the company's marginal tax rate is 40%, its weighted average cost of capital is closest to:",
     "options": {
       "A": "9.7%.",
       "B": "10.9%.",
@@ -2498,7 +2498,7 @@ var CFA_QUESTIONS=[
   {
     "num": 67,
     "subject": "公司发行人",
-    "question": "A company is evaluating the following mutually exclusive capital projects: Project 1 Project 2 NPV $180,000 $100,000 IRR 10% 15% If the hurdle rate is 8%, the company should invest in:",
+    "question": "A company is evaluating the following mutually exclusive capital projects:\n<table class=\"q-table\"><tbody><tr><th></th><th>Project 1</th><th>Project 2</th></tr><tr><td>NPV</td><td>$180,000</td><td>$100,000</td></tr><tr><td>IRR</td><td>10%</td><td>15%</td></tr></tbody></table>\nIf the hurdle rate is 8%, the company should invest in:",
     "options": {
       "A": "Project 1 only.",
       "B": "Project 2 only.",
@@ -2706,7 +2706,7 @@ var CFA_QUESTIONS=[
   {
     "num": 17,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about an equal-weighted index composed of three securities: Security Beginning of Period End of Period Price Total Dividends Price (€) (€) (€) 1 20 18 1 2 10 15 3 3 15 0 The price return of the index is closest to:",
+    "question": "An analyst gathers the following information about an equal-weighted index composed of three securities:\n<table class=\"q-table\"><tbody><tr><th>Security</th><th>Beginning of Period Price (€)</th><th>End of Period Price (€)</th><th>Total Dividends (€)</th></tr><tr><td>1</td><td>20</td><td>18</td><td>1</td></tr><tr><td>2</td><td>10</td><td>15</td><td>3</td></tr><tr><td>3</td><td>15</td><td>21</td><td>0</td></tr></tbody></table>\nThe price return of the index is closest to:",
     "options": {
       "A": "20%",
       "B": "27%.",
@@ -2745,7 +2745,7 @@ var CFA_QUESTIONS=[
   {
     "num": 21,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about a company: Estimated forward P/E ratio 8 Retention rate 45% If the investor's required rate of return is 10%, the company's ROE is closest to:",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><tbody><tr><th>Estimated forward P/E ratio</th><th>8</th></tr><tr><td>Retention rate</td><td>45%</td></tr></tbody></table>\nIf the investor's required rate of return is 10%, the company's ROE is closest to:",
     "options": {
       "A": "6.9%.",
       "B": "8.0%.",
@@ -2875,7 +2875,7 @@ var CFA_QUESTIONS=[
   {
     "num": 32,
     "subject": "股权投资",
-    "question": "Sponsored depository receipts most likely differ from unsponsored ones in terms of whether",
+    "question": "Sponsored depository receipts most likely differ from unsponsored ones in terms of whether:",
     "options": {
       "A": "investors have voting rights.",
       "B": "they are traded on exchanges.",
@@ -2927,7 +2927,7 @@ var CFA_QUESTIONS=[
   {
     "num": 36,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about a company and its common stock: Forward P/E 8 Required rate of return 12% Dividend growth rate 4% Using the Gordon growth model, the company's dividend payout ratio is closest to:",
+    "question": "An analyst gathers the following information about a company and its common stock:\n<table class=\"q-table\"><tbody><tr><th>Forward P/E</th><th>8</th></tr><tr><td>Required rate of return</td><td>12%</td></tr><tr><td>Dividend growth rate</td><td>4%</td></tr></tbody></table>\nUsing the Gordon growth model, the company's dividend payout ratio is closest to:",
     "options": {
       "A": "8%.",
       "B": "33%.",
@@ -3265,7 +3265,7 @@ var CFA_QUESTIONS=[
   {
     "num": 63,
     "subject": "股权投资",
-    "question": "An analyst gathers the following data for three companies in the same industry (in millions): Company Enterprise Value Earnings Before Interest, Taxes, (EV) Depreciation, &Amortization (EBITDA) 1 $100 $8 2 $150 $10 3 $200 $15 Based on enterprise value multiples, which of the three companies is likely the most undervalued?",
+    "question": "An analyst gathers the following data for three companies in the same industry (in millions):\n<table class=\"q-table\"><tbody><tr><th>Company</th><th>Enterprise Value (EV)</th><th>Earnings Before Interest, Taxes, Depreciation, & Amortization (EBITDA)</th></tr><tr><td>1</td><td>$100</td><td>$8</td></tr><tr><td>2</td><td>$150</td><td>$10</td></tr><tr><td>3</td><td>$200</td><td>$15</td></tr></tbody></table>\nBased on enterprise value multiples, which of the three companies is likely the most undervalued?",
     "options": {
       "A": "Company 1",
       "B": "Company 2",
@@ -3421,7 +3421,7 @@ var CFA_QUESTIONS=[
   {
     "num": 75,
     "subject": "股权投资",
-    "question": "80 --75.90 5 -76.00 10 -76.10 15 If the trader submits a fill or kill buy order for 20 shares at a limit price of $76.00, the trader's average price per share for this trade will be closest to:",
+    "question": "A trader observes the following limit order book for a stock:\n<table class=\"q-table\"><tbody><tr><th>Bid Size<br>(Number of Shares)</th><th>Share Price<br>($)</th><th>Offer Size<br>(Number of Shares)</th></tr><tr><td>10</td><td>75.70</td><td>---</td></tr><tr><td>20</td><td>75.80</td><td>---</td></tr><tr><td>---</td><td>75.90</td><td>5</td></tr><tr><td>---</td><td>76.00</td><td>10</td></tr><tr><td>---</td><td>76.10</td><td>15</td></tr></tbody></table>\nIf the trader submits an order to buy 20 shares at a limit price of $76.00, the trader's average price per share for this trade based on the current order book will be closest to:",
     "options": {
       "A": "$75.80.",
       "B": "$75.97.",
@@ -3434,7 +3434,7 @@ var CFA_QUESTIONS=[
   {
     "num": 75,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about a security index: Period Return (%) 1 12 2 -8 3 2 If the index's value is 100 at the beginning of Period 1, the index's value at the end of Period 3 is closest to:",
+    "question": "An analyst gathers the following information about a security index:\n<table class=\"q-table\"><tbody><tr><th>Period</th><th>Return (%)</th></tr><tr><td>1</td><td>12</td></tr><tr><td>2</td><td>−8</td></tr><tr><td>3</td><td>2</td></tr></tbody></table>\nIf the index's value is 100 at the beginning of Period 1, the index's value at the end of Period 3 is closest to:",
     "options": {
       "A": "103",
       "B": "105.",
@@ -3512,7 +3512,7 @@ var CFA_QUESTIONS=[
   {
     "num": 82,
     "subject": "股权投资",
-    "question": "An investor gathers the following information about a company and its common stock: Current dividend per share (D0) $1.00 Dividend payout ratio 60% ROE 12% If the required rate of return is 10%, using the Gordon growth model, the intrinsic value per share of the stock is closest to:",
+    "question": "An investor gathers the following information about a company and its common stock:\n<table class=\"q-table\"><tbody><tr><th>Current dividend per share (D0)</th><th>$1.00</th></tr><tr><td>Dividend payout ratio</td><td>60%</td></tr><tr><td>ROE</td><td>12%</td></tr></tbody></table>\nIf the required rate of return is 10%, using the Gordon growth model, the intrinsic value per share of the stock is closest to:",
     "options": {
       "A": "$14.56.",
       "B": "$19.23.",
@@ -3590,7 +3590,7 @@ var CFA_QUESTIONS=[
   {
     "num": 88,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about a price-weighted index composed of three stocks: Stock Outstanding Beginning of Dividends per End of Period Shares Period Price Share Price 1 10,000 $25.00 $2.00 $20.00 2 40,000 $10.00 $0.50 $13.50 3 50,000 $10.00 $0.00 $14.00 The index's price return is closest to:",
+    "question": "An analyst gathers the following information about a price-weighted index composed of three stocks:\n<table class=\"q-table\"><tbody><tr><th>Stock</th><th>Outstanding Shares</th><th>Beginning of Period Price</th><th>Dividends per Share</th><th>End of Period Price</th></tr><tr><td>1</td><td>10,000</td><td>$25.00</td><td>$2.00</td><td>$20.00</td></tr><tr><td>2</td><td>40,000</td><td>$10.00</td><td>$0.50</td><td>$13.50</td></tr><tr><td>3</td><td>50,000</td><td>$10.00</td><td>$0.00</td><td>$14.00</td></tr></tbody></table>\nThe index's price return is closest to:",
     "options": {
       "A": "5.6%.",
       "B": "11.1%.",
@@ -3772,7 +3772,7 @@ var CFA_QUESTIONS=[
   {
     "num": 102,
     "subject": "股权投资",
-    "question": "An analyst gathers the following book value information about a company and its common shares: Inventories €20 million Net fixed assets €80 million Total assets €150 million Total liabilities €90 million Shares outstanding 4 million The analyst estimates the market value of net fixed assets to be 125% of book value and the market value of inventories to be 90% of book value. If the stock is currently trading at €19.50 per share, the asset-based value per share is most likely.",
+    "question": "An analyst gathers the following book value information about a company and its common shares:\n<table class=\"q-table\"><tbody><tr><th>Inventories</th><th>€20 million</th></tr><tr><td>Net fixed assets</td><td>€80 million</td></tr><tr><td>Total assets</td><td>€150 million</td></tr><tr><td>Total liabilities</td><td>€90 million</td></tr><tr><td>Shares outstanding</td><td>4 million</td></tr></tbody></table>\nThe analyst estimates the market value of net fixed assets to be 125% of book value and the market value of inventories to be 90% of book value. If the stock is currently trading at €19.50 per share, the asset-based value per share is most likely:",
     "options": {
       "A": "less than the market price.",
       "B": "equal to the market price.",
@@ -3824,7 +3824,7 @@ var CFA_QUESTIONS=[
   {
     "num": 106,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about common shares: Company Peer Group Dividend payout ratio 40% 50% Estimated future dividend growth rate 5% 4% If the investor's required rate of return is 9%, the company's justified forward P/E is:",
+    "question": "An analyst gathers the following information about common shares:\n<table class=\"q-table\"><tbody><tr><th></th><th>Company</th><th>Peer Group</th></tr><tr><td>Dividend payout ratio</td><td>40%</td><td>50%</td></tr><tr><td>Estimated future dividend growth rate</td><td>5%</td><td>4%</td></tr></tbody></table>\nIf the investor's required rate of return is 9%, the company's justified forward P/E is:",
     "options": {
       "A": "less than the peer group's justified forward P/E.",
       "B": "the same as the peer group's justified forward P/E.",
@@ -3837,7 +3837,7 @@ var CFA_QUESTIONS=[
   {
     "num": 107,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about a company's shares: Dividend payable per share $0.50 Ex-date 20 August Closing share price on 19 August $29.00 All else being equal, at the beginning of trading on 20 August, the company's shares will most likely trade at",
+    "question": "An analyst gathers the following information about a company's shares:\n<table class=\"q-table\"><tbody><tr><th>Dividend payable per share</th><th>$0.50</th></tr><tr><td>Ex-date</td><td>20 August</td></tr><tr><td>Closing share price on 19 August</td><td>$29.00</td></tr></tbody></table>\nAll else being equal, at the beginning of trading on 20 August, the company's shares will most likely trade at:",
     "options": {
       "A": "$28.50",
       "B": "$29.00.",
@@ -3850,7 +3850,7 @@ var CFA_QUESTIONS=[
   {
     "num": 108,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about a company's dividend payment chronology. Ex-dividend date 2 August Holder-of-record date 5 August 5 August The last date an investor can purchase the company's stock and be entitled to receive the dividend is most likely:",
+    "question": "An analyst gathers the following information about a company's dividend payment chronology:\n<table class=\"q-table\"><tbody><tr><th>Ex-dividend date</th><th>2 August</th></tr><tr><td>Holder-of-record date</td><td>5 August</td></tr></tbody></table>\nThe last date an investor can purchase the company's stock and be entitled to receive the dividend is most likely:",
     "options": {
       "A": "1 August.",
       "B": "2 August",
@@ -3876,7 +3876,7 @@ var CFA_QUESTIONS=[
   {
     "num": 110,
     "subject": "股权投资",
-    "question": "An investor gathers the following data regarding three stocks: Stock Expected Rate of Return Investor's Required Rate of Return 1 9% 9% 2 13% 11% 3 15% 16% All else being equal, the investor should purchase:",
+    "question": "An investor gathers the following data regarding three stocks:\n<table class=\"q-table\"><tbody><tr><th>Stock</th><th>Expected Rate of Return</th><th>Investor's Required Rate of Return</th></tr><tr><td>1</td><td>9%</td><td>9%</td></tr><tr><td>2</td><td>13%</td><td>11%</td></tr><tr><td>3</td><td>15%</td><td>16%</td></tr></tbody></table>\nAll else being equal, the investor should purchase:",
     "options": {
       "A": "Stock 1.",
       "B": "Stock 2.",
@@ -3902,7 +3902,7 @@ var CFA_QUESTIONS=[
   {
     "num": 112,
     "subject": "股权投资",
-    "question": "An analyst gathers and estimates the following information about a company's stock: Current dividend per share (D0) $4 Current EPS $5 Dividend growth rate 4% If the estimated stock value using the Gordon growth model is $92 per share, the required return on this stock is closest to:",
+    "question": "An analyst gathers and estimates the following information about a company's stock:\n<table class=\"q-table\"><tbody><tr><th>Current dividend per share (D0)</th><th>$4</th></tr><tr><td>Current EPS</td><td>$5</td></tr><tr><td>Dividend growth rate</td><td>4%</td></tr></tbody></table>\nIf the estimated stock value using the Gordon growth model is $92 per share, the required return on this stock is closest to:",
     "options": {
       "A": "8.35%",
       "B": "8.52%.",
@@ -4032,7 +4032,7 @@ var CFA_QUESTIONS=[
   {
     "num": 122,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about a company: Dividend payout ratio 40% Required rate of return on equity 15% Return on equity 20% The justified forward P/E ratio for the company's stock is closest to:",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><tbody><tr><th>Dividend payout ratio</th><th>40%</th></tr><tr><td>Required rate of return on equity</td><td>15%</td></tr><tr><td>Return on equity</td><td>20%</td></tr></tbody></table>\nThe justified forward P/E ratio for the company's stock is closest to:",
     "options": {
       "A": "5.7.",
       "B": "8.0.",
@@ -4058,7 +4058,7 @@ var CFA_QUESTIONS=[
   {
     "num": 124,
     "subject": "股权投资",
-    "question": "A trader buys a stock on margin with the following conditions: Purchase price per share $50 Equity per share $25 Maintenance margin requirement 25% If the share price declines, the highest price at which the trader will receive a margin call is closest to:",
+    "question": "A trader buys a stock on margin with the following conditions:\n<table class=\"q-table\"><tbody><tr><th>Purchase price per share</th><th>$50</th></tr><tr><td>Equity per share</td><td>$25</td></tr><tr><td>Maintenance margin requirement</td><td>25%</td></tr></tbody></table>\nIf the share price declines, the highest price at which the trader will receive a margin call is closest to:",
     "options": {
       "A": "$12.50.",
       "B": "$33.33.",
@@ -4136,7 +4136,7 @@ var CFA_QUESTIONS=[
   {
     "num": 130,
     "subject": "股权投资",
-    "question": "A trader reports the following information about an equity investment which was sold after 1 year: Number of shares purchased 2,000 Leverage ratio 3 Purchase price per share $12.00 Sale price per share $9.50 Call money rate per year 3% The trader's equity value as a result of the trade is closest to:",
+    "question": "A trader reports the following information about an equity investment which was sold after 1 year:\n<table class=\"q-table\"><tbody><tr><th>Number of shares purchased</th><th>2,000</th></tr><tr><td>Leverage ratio</td><td>3</td></tr><tr><td>Purchase price per share</td><td>$12.00</td></tr><tr><td>Sale price per share</td><td>$9.50</td></tr><tr><td>Call money rate per year</td><td>3%</td></tr></tbody></table>\nThe trader's equity value as a result of the trade is closest to:",
     "options": {
       "A": "$460.",
       "B": "$2,520.",
@@ -4214,7 +4214,7 @@ var CFA_QUESTIONS=[
   {
     "num": 136,
     "subject": "股权投资",
-    "question": "An investor purchases 1,000 shares of a non-dividend paying stock on margin and sells them after one year as follows: Purchase price per share $25 Sale price per share $20 Annual call money rate 5% Leverage ratio 2 Ignoring commissions, the investor's holding period return is closest to:",
+    "question": "An investor purchases 1,000 shares of a non-dividend paying stock on margin and sells them after one year as follows:\n<table class=\"q-table\"><tbody><tr><th>Purchase price per share</th><th>$25</th></tr><tr><td>Sale price per share</td><td>$20</td></tr><tr><td>Annual call money rate</td><td>5%</td></tr><tr><td>Leverage ratio</td><td>2</td></tr></tbody></table>\nIgnoring commissions, the investor's holding period return is closest to:",
     "options": {
       "A": "-45%.",
       "B": "-40%.",
@@ -4227,7 +4227,7 @@ var CFA_QUESTIONS=[
   {
     "num": 137,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about a market-capitalization-weighted index and one of its four constituent stocks: Total Market Capitalization (in $billions) Stock 20 Index 57 If the stock price is $30 per share and the index value is 100, the stock's weight in the index is closest to:",
+    "question": "An analyst gathers the following information about a market-capitalization-weighted index and one of its four constituent stocks:\n<table class=\"q-table\"><tbody><tr><th></th><th>Total Market Capitalization (in $ Billions)</th></tr><tr><td>Stock</td><td>20</td></tr><tr><td>Index</td><td>57</td></tr></tbody></table>\nIf the stock price is $30 per share and the index value is 100, the stock's weight in the index is closest to:",
     "options": {
       "A": "25%.",
       "B": "30%.",
@@ -4305,7 +4305,7 @@ var CFA_QUESTIONS=[
   {
     "num": 144,
     "subject": "股权投资",
-    "question": "An analyst gathers the following information about an equal-weighted index composed of three stocks: Stock Beginning-of-Period Price End-of-Period Price 1 $10 $8 2 $20 $24 3 $30 $30 If there is a 2% return from dividends for each of the three stocks, the total return of the index is:",
+    "question": "An analyst gathers the following information about an equal-weighted index composed of three stocks:\n<table class=\"q-table\"><tbody><tr><th>Stock</th><th>Beginning-of-Period Price</th><th>End-of-Period Price</th></tr><tr><td>1</td><td>$10</td><td>$8</td></tr><tr><td>2</td><td>$20</td><td>$24</td></tr><tr><td>3</td><td>$30</td><td>$30</td></tr></tbody></table>\nIf there is a 2% return from dividends for each of the three stocks, the total return of the index is:",
     "options": {
       "A": "0%",
       "B": "2%.",
@@ -4617,7 +4617,7 @@ var CFA_QUESTIONS=[
   {
     "num": 15,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about a company that only has senior unsecured debt: Type Total Amount Outstanding Time to Maturity Floating-rate note (FRN) $50 million 12 years Fixed-rate bond $10 million 2 years In a bankruptcy scenario, if the priority of claims is enforced, it is most likely that:",
+    "question": "An analyst gathers the following information about a company that only has senior unsecured debt:\n<table class=\"q-table\"><tbody><tr><th>Type</th><th>Total Amount Outstanding</th><th>Time to Maturity</th></tr><tr><td>Floating-rate note (FRN)</td><td>$50 million</td><td>12 years</td></tr><tr><td>Fixed-rate bond</td><td>$10 million</td><td>2 years</td></tr></tbody></table>\nIn a bankruptcy scenario, if the priority of claims is enforced, it is most likely that:",
     "options": {
       "A": "fixed-rate bond is repaid first because it matures earlier.",
       "B": "both bondholders are repaid proportionally to the amount owed.",
@@ -4851,7 +4851,7 @@ var CFA_QUESTIONS=[
   {
     "num": 35,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about a spot curve: Term to Maturity Spot Rate 1year 6% 2years 5% 3yaers 4% If the coupon rate of a 3-year annual-pay bond is 4%, the price of the bond is closest to:",
+    "question": "An analyst gathers the following information about a spot curve:\n<table class=\"q-table\"><tbody><tr><th>Term to Maturity</th><th>Spot Rate</th></tr><tr><td>1 year</td><td>6%</td></tr><tr><td>2 years</td><td>5%</td></tr><tr><td>3 years</td><td>4%</td></tr></tbody></table>\nIf the coupon rate of a 3-year annual-pay bond is 4%, the price of the bond is closest to:",
     "options": {
       "A": "97.28.",
       "B": "99.86.",
@@ -4890,7 +4890,7 @@ var CFA_QUESTIONS=[
   {
     "num": 38,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about three option-free bonds: Bond 1 Bond 2 Bond 3 Coupon rate 5% 3% 3% Maturity (years) 15 10 15 All else being equal, if the market discount rate decreases by 50 basis points, the bond most likely to experience the greatest percentage price change is:",
+    "question": "An analyst gathers the following information about three option-free bonds:\n<table class=\"q-table\"><tbody><tr><th></th><th>Bond 1</th><th>Bond 2</th><th>Bond 3</th></tr><tr><td>Coupon rate</td><td>5%</td><td>3%</td><td>3%</td></tr><tr><td>Maturity (years)</td><td>15</td><td>10</td><td>15</td></tr></tbody></table>\nAll else being equal, if the market discount rate decreases by 50 basis points, the bond most likely to experience the greatest percentage price change is:",
     "options": {
       "A": "Bond 1.",
       "B": "Bond 2.",
@@ -5033,7 +5033,7 @@ var CFA_QUESTIONS=[
   {
     "num": 51,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about a company (in $ millions): < Operating income 120 Net income 85 Interest expense 15 Depreciation and amortization 15 Interest coverage using EBIT is closest to:",
+    "question": "An analyst gathers the following information about a company (in $ millions):\n<table class=\"q-table\"><tbody><tr><th>Operating income</th><th>120</th></tr><tr><td>Net income</td><td>85</td></tr><tr><td>Interest expense</td><td>15</td></tr><tr><td>Depreciation and amortization</td><td>15</td></tr></tbody></table>\nInterest coverage using EBIT is closest to:",
     "options": {
       "A": "7x.",
       "B": "8x.",
@@ -5085,7 +5085,7 @@ var CFA_QUESTIONS=[
   {
     "num": 56,
     "subject": "固定收益",
-    "question": "An analyst gathers the following details about a bond portfolio: Bond Market Price (per 100 of par value) Money Duration (per 100 of par value) 1 95 730 2 120 515 If each bond has a par value of ￡25 million, the modified duration of this bond portfolio is closest to:",
+    "question": "An analyst gathers the following details about a bond portfolio:\n<table class=\"q-table\"><tbody><tr><th>Bond</th><th>Market Price (per 100 of par value)</th><th>Money Duration (per 100 of par value)</th></tr><tr><td>1</td><td>95</td><td>730</td></tr><tr><td>2</td><td>120</td><td>515</td></tr></tbody></table>\nIf each bond has a par value of £25 million, the modified duration of this bond portfolio is closest to:",
     "options": {
       "A": "5.8.",
       "B": "6.1.",
@@ -5215,7 +5215,7 @@ var CFA_QUESTIONS=[
   {
     "num": 72,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about a bond currently trading at par: Change in Benchmark Curve Price per 100 of Par Value +25 bps 98 -25 bps 103 The effective duration of this bond is closest to:",
+    "question": "An analyst gathers the following information about a bond currently trading at par:\n<table class=\"q-table\"><tbody><tr><th>Change in Benchmark Curve</th><th>Price per 100 of Par Value</th></tr><tr><td>+25 bps</td><td>98</td></tr><tr><td>−25 bps</td><td>103</td></tr></tbody></table>\nThe effective duration of this bond is closest to:",
     "options": {
       "A": "2.5.",
       "B": "5.0.",
@@ -5267,7 +5267,7 @@ var CFA_QUESTIONS=[
   {
     "num": 79,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about forward rates: Time Period Forward Rate 0y1y 1% 1y1y 2% 2y1y 4% Using only this information, the price per 100 of par value of a 3-year, 1% annual coupon bond is closest to:",
+    "question": "An analyst gathers the following information about forward rates:\n<table class=\"q-table\"><tbody><tr><th>Time Period</th><th>Forward Rate</th></tr><tr><td>0y1y</td><td>1%</td></tr><tr><td>1y1y</td><td>2%</td></tr><tr><td>2y1y</td><td>4%</td></tr></tbody></table>\nUsing only this information, the price per 100 of par value of a 3-year, 1% annual coupon bond is closest to:",
     "options": {
       "A": "84.05.",
       "B": "91.74.",
@@ -5306,7 +5306,7 @@ var CFA_QUESTIONS=[
   {
     "num": 82,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about a callable bond that pays interest annually: Current price 105 per 100 of par value Time-to-maturity 4 years Coupon rate 4% Call price at year 2 103 per 100 of par value Call price at year 3 101 per 100 of par value This bond's yield to worst is the:",
+    "question": "An analyst gathers the following information about a callable bond that pays interest annually:\n<table class=\"q-table\"><tbody><tr><th>Current price</th><th>105 per 100 of par value</th></tr><tr><td>Time-to-maturity</td><td>4 years</td></tr><tr><td>Coupon rate</td><td>4%</td></tr><tr><td>Call price at year 2</td><td>103 per 100 of par value</td></tr><tr><td>Call price at year 3</td><td>101 per 100 of par value</td></tr></tbody></table>\nThis bond's yield to worst is the:",
     "options": {
       "A": "yield to maturity.",
       "B": "yield to first call.",
@@ -5319,7 +5319,7 @@ var CFA_QUESTIONS=[
   {
     "num": 83,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about three option-free bonds, each trading at a premium: Coupon Yield To Maturity Time to Maturity Bond 1 4% 4% 10 years Bond 2 4% 5% 11 years Bond 3 5% 5% 9 years All else being equal, the bond with the lowest Macaulay duration is most likely:",
+    "question": "An analyst gathers the following information about three option-free bonds, each trading at a premium:\n<table class=\"q-table\"><tbody><tr><th></th><th>Coupon</th><th>Yield To Maturity</th><th>Time to Maturity</th></tr><tr><td>Bond 1</td><td>4%</td><td>4%</td><td>10 years</td></tr><tr><td>Bond 2</td><td>4%</td><td>5%</td><td>11 years</td></tr><tr><td>Bond 3</td><td>5%</td><td>5%</td><td>9 years</td></tr></tbody></table>\nAll else being equal, the bond with the lowest Macaulay duration is most likely:",
     "options": {
       "A": "Bond 1.",
       "B": "Bond 2.",
@@ -5345,7 +5345,7 @@ var CFA_QUESTIONS=[
   {
     "num": 86,
     "subject": "固定收益",
-    "question": "An investor gathers the following information about a bond portfolio comprised of two option-free bonds: Bond Par Value Market Value Duration 1 $100,000 $120,000 5 2 $200,000 $180,000 4 The duration of the portfolio is closest to:",
+    "question": "An investor gathers the following information about a bond portfolio comprised of two option-free bonds:\n<table class=\"q-table\"><tbody><tr><th>Bond</th><th>Par Value</th><th>Market Value</th><th>Duration</th></tr><tr><td>1</td><td>$100,000</td><td>$120,000</td><td>5</td></tr><tr><td>2</td><td>$200,000</td><td>$180,000</td><td>4</td></tr></tbody></table>\nThe duration of the portfolio is closest to:",
     "options": {
       "A": "4.33.",
       "B": "4.40.",
@@ -5358,7 +5358,7 @@ var CFA_QUESTIONS=[
   {
     "num": 87,
     "subject": "固定收益",
-    "question": "An analyst gathers the following information about a bond that pays interest annually: Coupon rate 4% Time-to-maturity 3 years Par value $100,000 If the market discount rate is 5%, the market value of this bond is closest to:",
+    "question": "An analyst gathers the following information about a bond that pays interest annually:\n<table class=\"q-table\"><tbody><tr><th>Coupon rate</th><th>4%</th></tr><tr><td>Time-to-maturity</td><td>3 years</td></tr><tr><td>Par value</td><td>$100,000</td></tr></tbody></table>\nIf the market discount rate is 5%, the market value of this bond is closest to:",
     "options": {
       "A": "$89,839.",
       "B": "$97,277.",
@@ -5475,7 +5475,7 @@ var CFA_QUESTIONS=[
   {
     "num": 97,
     "subject": "固定收益",
-    "question": "In a securitization, time tranching most likely refers to differences in:",
+    "question": "In a securitization, time tranching most likely refers to differences in:",
     "options": {
       "A": "default risk.",
       "B": "expected maturities.",
@@ -5501,7 +5501,7 @@ var CFA_QUESTIONS=[
   {
     "num": 99,
     "subject": "固定收益",
-    "question": "26 The bond's effective duration is closest to:",
+    "question": "An analyst gathers the following information about a 6% coupon bond currently trading at par:\n<table class=\"q-table\"><tbody><tr><th>Benchmark Rate</th><th>Price per 100 of Par Value</th></tr><tr><td>5.9%</td><td>100.75</td></tr><tr><td>6.0%</td><td>100.00</td></tr><tr><td>6.1%</td><td>99.26</td></tr></tbody></table>\nThe bond's effective duration is closest to:",
     "options": {
       "A": "3.75.",
       "B": "7.45.",
@@ -5553,7 +5553,7 @@ var CFA_QUESTIONS=[
   {
     "num": 104,
     "subject": "固定收益",
-    "question": "A commercial paper has the following characteristics: Redemption value $5,000,000 Interest earned $140,500 Days to maturity 160 For a 365-day year, the discount rate is closest to:",
+    "question": "A commercial paper has the following characteristics:\n<table class=\"q-table\"><tbody><tr><th>Redemption value</th><th>$5,000,000</th></tr><tr><td>Interest earned</td><td>$140,500</td></tr><tr><td>Days to maturity</td><td>160</td></tr></tbody></table>\nFor a 365-day year, the discount rate is closest to:",
     "options": {
       "A": "6.2%.",
       "B": "6.4%.",
@@ -5579,7 +5579,7 @@ var CFA_QUESTIONS=[
   {
     "num": 106,
     "subject": "固定收益",
-    "question": "A bond has the following characteristics: Time to maturity 3 years Coupon rate 12% Payment period Semiannual For a yield to maturity of 4%, the price of the bond per 100 of par value is closest to:",
+    "question": "A bond has the following characteristics:\n<table class=\"q-table\"><tbody><tr><th>Time to maturity</th><th>3 years</th></tr><tr><td>Coupon rate</td><td>12%</td></tr><tr><td>Payment period</td><td>Semiannual</td></tr></tbody></table>\nFor a yield to maturity of 4%, the price of the bond per 100 of par value is closest to:",
     "options": {
       "A": "122.20.",
       "B": "122.41.",
@@ -5592,7 +5592,7 @@ var CFA_QUESTIONS=[
   {
     "num": 108,
     "subject": "固定收益",
-    "question": "5 If the current price is 106, the duration of this bond is closest to:",
+    "question": "An investor determines the following information about the price sensitivity of an option-free bond:\n<table class=\"q-table\"><tbody><tr><th>Rate Change</th><th>Price</th></tr><tr><td>75 basis point increase</td><td>104.0</td></tr><tr><td>75 basis point decrease</td><td>108.5</td></tr></tbody></table>\nIf the current price is 106, the duration of this bond is closest to:",
     "options": {
       "A": "2.1.",
       "B": "2.8.",
@@ -6086,7 +6086,7 @@ var CFA_QUESTIONS=[
   {
     "num": 41,
     "subject": "经济学",
-    "question": "An analyst gathers the following information about spot rates: USD/GBP 1.2604 Beginning of period USD/EUR 1.1786 USD/GBP is the amount of USD per 1 GBP. USD/EUR is the amount of USD per 1 EUR. The spot EUR/GBP cross rate is closest to:",
+    "question": "An analyst gathers the following information about spot rates:\n<table class=\"q-table\"><tbody><tr><th>USD/GBP</th><th>1.2604</th></tr><tr><td>USD/EUR</td><td>1.1786</td></tr></tbody></table>\nUSD/GBP is the amount of USD per 1 GBP.\nUSD/EUR is the amount of USD per 1 EUR.\nThe spot EUR/GBP cross rate is closest to:",
     "options": {
       "A": "0.9351.",
       "B": "1.0694.",
@@ -6138,7 +6138,7 @@ var CFA_QUESTIONS=[
   {
     "num": 45,
     "subject": "经济学",
-    "question": "An analyst gathers the following information: Foreign inflation rate 2% Domestic inflation rate 3% Nominal appreciation of domestic 6% currency against foreign currency The real appreciation of the domestic currency against the foreign currency is closest to:",
+    "question": "An analyst gathers the following information:\n<table class=\"q-table\"><tbody><tr><th>Foreign inflation rate</th><th>2%</th></tr><tr><td>Domestic inflation rate</td><td>3%</td></tr><tr><td>Change in nominal exchange rate</td><td>6%</td></tr></tbody></table>\nNote: the exchange rate is expressed as the number of units of domestic currency per unit of foreign currency.\nThe change in the real exchange rate is closest to:",
     "options": {
       "A": "4%.",
       "B": "5%.",
@@ -6424,7 +6424,7 @@ var CFA_QUESTIONS=[
   {
     "num": 68,
     "subject": "经济学",
-    "question": "An analyst gathers the following information (in $millions) about a firm operating in a perfectly competitive market: Total variable costs 700 Total fixed costs 400 If the firm's total revenue is $1,000 million, the firm should:",
+    "question": "An analyst gathers the following information (in $ millions) about a firm operating in a perfectly competitive market:\n<table class=\"q-table\"><tbody><tr><th>Total variable costs</th><th>700</th></tr><tr><td>Total fixed costs</td><td>400</td></tr></tbody></table>\nIf the firm's total revenue is $1,000 million, the firm should:",
     "options": {
       "A": "stay in the market in both the short run and long run.",
       "B": "stay in the market in the short run and exit the market in the long run.",
@@ -6541,7 +6541,7 @@ var CFA_QUESTIONS=[
   {
     "num": 104,
     "subject": "经济学",
-    "question": "74 CAD/USD is the amount of CAD per 1 USD. JPYIUSD is the amount of JPY per 1 USD. The percentage change in the JPY/CAD cross-rate for the period is closest to:",
+    "question": "An analyst gathers the following foreign exchange rate information:\n<table class=\"q-table\"><tbody><tr><th></th><th>CAD/USD</th><th>JPY/USD</th></tr><tr><td>Beginning of period</td><td>1.3216</td><td>105.42</td></tr><tr><td>End of period</td><td>1.2944</td><td>104.74</td></tr></tbody></table>\nCAD/USD is the amount of CAD per 1 USD.\nJPY/USD is the amount of JPY per 1 USD.\nThe percentage change in the JPY/CAD cross-rate for the period is closest to:",
     "options": {
       "A": "-2.7%.",
       "B": "1.4%.",
@@ -6788,7 +6788,7 @@ var CFA_QUESTIONS=[
   {
     "num": 19,
     "subject": "另类投资",
-    "question": "An analyst gathers the following information about a hedge fund: Beginning-of-year assets under management (AUM) $500 million Annual return before fees 22% Management fee, based on end-of-year AUM before fees 2% Incentive fee 15% Hard hurdle rate 10% The incentive fee (in $ millions) based on returns net of management fees is closest to:",
+    "question": "An analyst gathers the following information about a hedge fund:\n<table class=\"q-table\"><tbody><tr><th>Beginning-of-year assets under management (AUM)</th><th>$500 million</th></tr><tr><td>Annual return before fees</td><td>22%</td></tr><tr><td>Management fee, based on end-of-year AUM before fees</td><td>2%</td></tr><tr><td>Incentive fee</td><td>15%</td></tr><tr><td>Hard hurdle rate</td><td>10%</td></tr></tbody></table>\nThe incentive fee (in $ millions) based on returns net of management fees is closest to:",
     "options": {
       "A": "7.2.",
       "B": "13.0.",
@@ -7126,7 +7126,7 @@ var CFA_QUESTIONS=[
   {
     "num": 45,
     "subject": "另类投资",
-    "question": "A hedge fund has the following characteristics: Assets under management, beginning of year $100 million Assets under management, end of year S120 million Management fee 1% of year-end assets under management Performance fee 15% of the annual return above a 3% hurdle rate If the performance fee is calculated net of the management fee and there were no capital contributions or withdrawals, the net annual return to the investor is closest to:",
+    "question": "A hedge fund has the following characteristics:\n<table class=\"q-table\"><tbody><tr><th>Assets under management, beginning of year</th><th>$100 million</th></tr><tr><td>Assets under management, end of year</td><td>$120 million</td></tr><tr><td>Management fee</td><td>1% of year-end assets under management</td></tr><tr><td>Performance fee</td><td>15% of the annual return above a 3% hurdle rate</td></tr></tbody></table>\nIf the performance fee is calculated net of the management fee and there were no capital contributions or withdrawals, the net annual return to the investor is closest to:",
     "options": {
       "A": "16.3%.",
       "B": "16.4%.",
@@ -7139,7 +7139,7 @@ var CFA_QUESTIONS=[
   {
     "num": 46,
     "subject": "另类投资",
-    "question": "An analyst collects the following information about a hedge fund: Assets under management $1.5 billion, beginning of year Annual return 20% Management fee 2%, based on year-end valuation Incentive fee 20%, calculated net of management fees If the incentive fee is calculated on returns in excess of a 6% hurdle rate, total annual fees earned by the fund manager are closest to:",
+    "question": "An analyst collects the following information about a hedge fund:\n<table class=\"q-table\"><tbody><tr><th>Assets under management</th><th>$1.5 billion, beginning of year</th></tr><tr><td>Annual return</td><td>20%</td></tr><tr><td>Management fee</td><td>2%, based on year-end valuation</td></tr><tr><td>Incentive fee</td><td>20%, calculated net of management fees</td></tr></tbody></table>\nIf the incentive fee is calculated on returns in excess of a 6% hurdle rate, total annual fees earned by the fund manager are closest to:",
     "options": {
       "A": "$34,800,000.",
       "B": "$70,800,000.",
@@ -7321,7 +7321,7 @@ var CFA_QUESTIONS=[
   {
     "num": 61,
     "subject": "另类投资",
-    "question": "An analyst gathers the following information about a hedge fund: Beginning-of-year assets under management (AUM) $50 million Annual return before fees 20% Management fee (based on end-of-year AUM before fees) 2% Incentive fee (based on return net of management fees) 20% An investor's net return is:",
+    "question": "An analyst gathers the following information about a hedge fund:\n<table class=\"q-table\"><tbody><tr><th>Beginning-of-year assets under management (AUM)</th><th>$50 million</th></tr><tr><td>Annual return before fees</td><td>20%</td></tr><tr><td>Management fee (based on end-of-year AUM before fees)</td><td>2%</td></tr><tr><td>Incentive fee (based on return net of management fees)</td><td>20%</td></tr></tbody></table>\nAn investor's net return is:",
     "options": {
       "A": "13.60%",
       "B": "14.08%.",
@@ -7542,7 +7542,7 @@ var CFA_QUESTIONS=[
   {
     "num": 19,
     "subject": "数量分析",
-    "question": "A portfolio manager will invest $100,000 and is presented with the following information about three portfolios with normally distributed returns: Expected Annual Return Standard Deviation of Returns Portfolio 1 23% Portfolio 2 12% Portfolio 3 15% If the manager wants to withdraw $5,000 in one year without invading initial capital, the safety-first optimal portfolio is:",
+    "question": "A portfolio manager will invest €100,000 and is presented with the following information about three portfolios with normally distributed returns:\n<table class=\"q-table\"><tbody><tr><th></th><th>Expected Annual Return</th><th>Standard Deviation of Returns</th></tr><tr><td>Portfolio 1</td><td>23%</td><td>15%</td></tr><tr><td>Portfolio 2</td><td>12%</td><td>6%</td></tr><tr><td>Portfolio 3</td><td>15%</td><td>8%</td></tr></tbody></table>\nIf the manager wants to withdraw €5,000 in one year without invading initial capital, the safety-first optimal portfolio is:",
     "options": {
       "A": "Portfolio 1.",
       "B": "Portfolio 2.",
@@ -7594,7 +7594,7 @@ var CFA_QUESTIONS=[
   {
     "num": 23,
     "subject": "数量分析",
-    "question": "An analyst estimates the following information from a simple linear regression: Sum of squares error 280 Sum of squares regression 25 Number of paired observations 30 The standard error of the estimate is closest to:",
+    "question": "An analyst estimates the following information from a simple linear regression:\n<table class=\"q-table\"><tbody><tr><th>Sum of squares error</th><th>280</th></tr><tr><td>Sum of squares regression</td><td>25</td></tr><tr><td>Number of paired observations</td><td>30</td></tr></tbody></table>\nThe standard error of the estimate is closest to:",
     "options": {
       "A": "2.5.",
       "B": "3.2.",
@@ -7633,7 +7633,7 @@ var CFA_QUESTIONS=[
   {
     "num": 26,
     "subject": "数量分析",
-    "question": "An investor records the following information and transactions for a stock: Year Share at Beginning of Year Cash Flow at Beginning of Year 1 $100 $100 used to purchase one share 2 $100 $9 received in dividends and not reinvested 3 $100 $100 received from selling one share The investor's money-weighted rate of return is closest to:",
+    "question": "An investor records the following information and transactions for a stock:\n<table class=\"q-table\"><tbody><tr><th>Year</th><th>Price per Share at Beginning of Year</th><th>Cash Flow at Beginning of Year</th></tr><tr><td>1</td><td>$100</td><td>$100 used to purchase one share</td></tr><tr><td>2</td><td>$100</td><td>$9 received in dividends and not reinvested</td></tr><tr><td>3</td><td>$100</td><td>$100 received from selling one share</td></tr></tbody></table>\nThe investor's money-weighted rate of return is closest to:",
     "options": {
       "A": "4.4%.",
       "B": "4.5%.",
@@ -7750,7 +7750,7 @@ var CFA_QUESTIONS=[
   {
     "num": 35,
     "subject": "数量分析",
-    "question": "An analyst calculates the following statistics for a sample with 100 observations: Value First quartile 11 Second quartile 62 Third quartile 93 Fourth quartile 359 The interquartile range of the sample is equal to:",
+    "question": "An analyst calculates the following statistics for a sample with 100 observations:\n<table class=\"q-table\"><tbody><tr><th></th><th>Value</th></tr><tr><td>First quartile</td><td>11</td></tr><tr><td>Second quartile</td><td>62</td></tr><tr><td>Third quartile</td><td>93</td></tr><tr><td>Fourth quartile</td><td>359</td></tr></tbody></table>\nThe interquartile range of the sample is equal to:",
     "options": {
       "A": "31.",
       "B": "82.",
@@ -7776,7 +7776,7 @@ var CFA_QUESTIONS=[
   {
     "num": 37,
     "subject": "数量分析",
-    "question": "An investor summarizes end-of-year cash outlays and proceeds from a two-year investment in a company's shares below. Year Outlays Proceeds $100 to purchase the 0 --first share $110 to purchase the $10 dividend received from first share (not 1 second share reinvested) $230 received from selling two shares at $115 2 --per share The annualized time-weighted rate of return of the investment over the two-year period is closest to:",
+    "question": "An investor summarizes end-of-year cash outlays and proceeds from a two-year investment in a company's shares below:\n<table class=\"q-table\"><tbody><tr><th>Year</th><th>Outlays</th><th>Proceeds</th></tr><tr><td>0</td><td>$100 to purchase the first share</td><td>---</td></tr><tr><td>1</td><td>$110 to purchase the second share</td><td>$10 dividend received from first share (not reinvested)</td></tr><tr><td>2</td><td>---</td><td>$230 received from selling two shares at $115 per share</td></tr></tbody></table>\nThe annualized time-weighted rate of return of the investment over the two-year period is closest to:",
     "options": {
       "A": "9.7%.",
       "B": "12.0%.",
@@ -7880,7 +7880,7 @@ var CFA_QUESTIONS=[
   {
     "num": 45,
     "subject": "数量分析",
-    "question": "An analyst gathers the following information about a portfolio's returns: Year Return (%) 1 6% 2 7% 3 3% 4 2% 5 4% If the target return is 5%, the target downside deviation is closest to:",
+    "question": "An analyst gathers the following information about a portfolio's returns:\n<table class=\"q-table\"><tbody><tr><th>Year</th><th>Return</th></tr><tr><td>1</td><td>6%</td></tr><tr><td>2</td><td>7%</td></tr><tr><td>3</td><td>3%</td></tr><tr><td>4</td><td>2%</td></tr><tr><td>5</td><td>4%</td></tr></tbody></table>\nIf the target return is 5%, the target downside deviation is closest to:",
     "options": {
       "A": "1.7%.",
       "B": "1.9%.",
@@ -7906,7 +7906,7 @@ var CFA_QUESTIONS=[
   {
     "num": 47,
     "subject": "数量分析",
-    "question": "An analyst gathers the following returns for seven funds: 12% 7% 5% 4% 8% 3% 3% The second quartile return is:",
+    "question": "An analyst gathers the following returns for seven funds:\n<table class=\"q-table\"><tbody><tr><th>12%</th><th>7%</th><th>5%</th><th>4%</th><th>8%</th><th>3%</th><th>3%</th></tr></tbody></table>\nThe second quartile return is:",
     "options": {
       "A": "4%.",
       "B": "5%.",
@@ -7971,7 +7971,7 @@ var CFA_QUESTIONS=[
   {
     "num": 54,
     "subject": "数量分析",
-    "question": "An investor is considering two term deposits with the following characteristics: Term Deposit 1 Term Deposit 2 Compounding frequency Quarterly Continuous Stated annual rate 4% ? The stated annual rate for Term Deposit 2 that should make the investor indifferent between the two term deposits is closest to:",
+    "question": "An investor is considering two term deposits with the following characteristics:\n<table class=\"q-table\"><tbody><tr><th></th><th>Term Deposit 1</th><th>Term Deposit 2</th></tr><tr><td>Compounding frequency</td><td>Quarterly</td><td>Continuous</td></tr><tr><td>Stated annual rate</td><td>4%</td><td>---</td></tr></tbody></table>\nThe stated annual rate for Term Deposit 2 that should make the investor indifferent between the two term deposits is closest to:",
     "options": {
       "A": "3.92%.",
       "B": "3.98%.",
@@ -7984,7 +7984,7 @@ var CFA_QUESTIONS=[
   {
     "num": 55,
     "subject": "数量分析",
-    "question": "An investor invests a fixed amount of money into a fund each year for three years as follows: Year Term Deposit 1 1 €14.00 2 €12.00 3 €17.00 The investor's average cost per share is closest to:",
+    "question": "An investor invests a fixed amount of money into a fund each year for three years as follows:\n<table class=\"q-table\"><tbody><tr><th>Year</th><th>Price per Share</th></tr><tr><td>1</td><td>€14.00</td></tr><tr><td>2</td><td>€12.00</td></tr><tr><td>3</td><td>€17.00</td></tr></tbody></table>\nThe investor's average cost per share is closest to:",
     "options": {
       "A": "€14.05.",
       "B": "€14.33.",
@@ -8010,7 +8010,7 @@ var CFA_QUESTIONS=[
   {
     "num": 58,
     "subject": "数量分析",
-    "question": "An analyst gathers the following sample returns for a security: Return -2% -1% 1% 2% The mean absolute deviation of the sample returns is:",
+    "question": "An analyst gathers the following sample returns for a security:\n<table class=\"q-table\"><tbody><tr><th>Return</th></tr><tr><td>−2%</td></tr><tr><td>−1%</td></tr><tr><td>1%</td></tr><tr><td>2%</td></tr></tbody></table>\nThe mean absolute deviation of the sample returns is:",
     "options": {
       "A": "less than the sample standard deviation.",
       "B": "equal to the sample standard deviation.",
@@ -8023,7 +8023,7 @@ var CFA_QUESTIONS=[
   {
     "num": 59,
     "subject": "数量分析",
-    "question": "An investor gathers the following information about a stock: Stock price at t=0 $20 Dividend paid at t=1 $3 Stock price at t=1 $12 Dividend paid at t=2 $1 Stock price at t=2 $20 The investor purchased one unit of the stock at t=0 and sold it at t=2. If the dividends were not reinvested, the money-weighted rate of return is closest to:",
+    "question": "An investor gathers the following information about a stock:\n<table class=\"q-table\"><tbody><tr><th>Stock price at t = 0</th><th>$20</th></tr><tr><td>Dividend paid at t = 1</td><td>$3</td></tr><tr><td>Stock price at t = 1</td><td>$12</td></tr><tr><td>Dividend paid at t = 2</td><td>$1</td></tr><tr><td>Stock price at t = 2</td><td>$20</td></tr></tbody></table>\nThe investor purchased one unit of the stock at t = 0 and sold it at t = 2. If the dividends were not reinvested, the money-weighted rate of return is closest to:",
     "options": {
       "A": "10%.",
       "B": "15%.",
@@ -8114,7 +8114,7 @@ var CFA_QUESTIONS=[
   {
     "num": 66,
     "subject": "数量分析",
-    "question": "An investor needs to make the following payments to cover college tuition fees, starting 10 years from today: Annual fee (payable at the beginning of each year) $50,000 Number of years of fee payments 4 If the investor's annual discount rate is 3%, the minimum investment amount required today to fund all four years of college tuition is closest to:",
+    "question": "An investor needs to make the following payments to cover college tuition fees, starting 10 years from today:\n<table class=\"q-table\"><tbody><tr><th>Annual fee (payable at the beginning of each year)</th><th>$50,000</th></tr><tr><td>Number of years of fee payments</td><td>4</td></tr></tbody></table>\nIf the investor’s annual discount rate is 3%, the minimum investment amount required today to fund all four years of college tuition is closest to:",
     "options": {
       "A": "$138,294.",
       "B": "$142,442.",
@@ -8127,7 +8127,7 @@ var CFA_QUESTIONS=[
   {
     "num": 67,
     "subject": "数量分析",
-    "question": "An annuity makes seven annual payments of $10,000 each, with the first payment occurring five years from today. If the discount rate is 6% per year, the value of the annuity today is closest to:",
+    "question": "An annuity makes seven annual payments of $10,000 each, with the first payment occurring five years from today. If the discount rate is 6% per year, the value of the annuity today is closest to:",
     "options": {
       "A": "$41,715.",
       "B": "$44,218.",
@@ -8335,7 +8335,7 @@ var CFA_QUESTIONS=[
   {
     "num": 83,
     "subject": "数量分析",
-    "question": "An analyst tabulates the ranks of four paired observations of random variables X and Y as follows: Observation Rank of X Rank of Y 1 1 2 2 2 3 3 3 4 4 4 1 The Spearman rank correlation coefficient between X and Y is closest to:",
+    "question": "An analyst tabulates the ranks of four paired observations of random variables X and Y as follows:\n<table class=\"q-table\"><tbody><tr><th>Observation</th><th>Rank of X</th><th>Rank of Y</th></tr><tr><td>1</td><td>1</td><td>2</td></tr><tr><td>2</td><td>2</td><td>3</td></tr><tr><td>3</td><td>3</td><td>4</td></tr><tr><td>4</td><td>4</td><td>1</td></tr></tbody></table>\nThe Spearman rank correlation coefficient between X and Y is closest to:",
     "options": {
       "A": "-0.2.",
       "B": "0.8.",
@@ -8491,7 +8491,7 @@ var CFA_QUESTIONS=[
   {
     "num": 2,
     "subject": "衍生品",
-    "question": "All else being equal, which of the following European put options on the same underlying most likely has the highest value? Time to Expiration Exercise Price Option 1 2 months $52 Option 2 4 months $52 Option 3 4 months $58",
+    "question": "All else being equal, which of the following European put options on the same underlying most likely has the highest value?\n<table class=\"q-table\"><tbody><tr><th></th><th>Time to Expiration</th><th>Exercise Price</th></tr><tr><td>Option 1</td><td>2 months</td><td>$52</td></tr><tr><td>Option 2</td><td>4 months</td><td>$52</td></tr><tr><td>Option 3</td><td>4 months</td><td>$58</td></tr></tbody></table>",
     "options": {
       "A": "Option 1",
       "B": "Option 2",
@@ -8517,7 +8517,7 @@ var CFA_QUESTIONS=[
   {
     "num": 4,
     "subject": "衍生品",
-    "question": "An investor gathers the following information about a call option: Option premium $5 Exercise price $25 Price of the underlying at initiation $15 At expiration, if the price of the underlying is $30, the value of the call option to the call seller is:",
+    "question": "An investor gathers the following information about a call option:\n<table class=\"q-table\"><tbody><tr><th>Option premium</th><th>$5</th></tr><tr><td>Exercise price</td><td>$25</td></tr><tr><td>Price of the underlying at initiation</td><td>$15</td></tr></tbody></table>\nAt expiration, if the price of the underlying is $30, the value of the call option to the call seller is:",
     "options": {
       "A": "-$5.",
       "B": "$0.",
@@ -8530,7 +8530,7 @@ var CFA_QUESTIONS=[
   {
     "num": 5,
     "subject": "衍生品",
-    "question": "An analyst gathers the following information: Call price $10 Stock price S40 Exercise price $60 Interest rate 3% Time to expiry 1 year According to put-call parity, the price of the put is closest to:",
+    "question": "An analyst gathers the following information:\n<table class=\"q-table\"><tbody><tr><th>Call price</th><th>$10</th></tr><tr><td>Stock price</td><td>$40</td></tr><tr><td>Exercise price</td><td>$60</td></tr><tr><td>Interest rate</td><td>3%</td></tr><tr><td>Time to expiry</td><td>1 year</td></tr></tbody></table>\nAccording to put-call parity, the price of the put is closest to:",
     "options": {
       "A": "$28.25.",
       "B": "$30.00.",
@@ -8725,7 +8725,7 @@ var CFA_QUESTIONS=[
   {
     "num": 20,
     "subject": "衍生品",
-    "question": "Which of the following statements about derivatives is most accurate?",
+    "question": "Which of the following statements about derivatives is most accurate?",
     "options": {
       "A": "Derivatives reduce the efficiency of price discovery for the underlying",
       "B": "Transaction cost of derivatives are greater than the transaction cost of the underlying",
@@ -8920,7 +8920,7 @@ var CFA_QUESTIONS=[
   {
     "num": 35,
     "subject": "衍生品",
-    "question": "The following portfolios contain a company's stock and a derivative on the stock: Portfolio Securities 1 Stock and a short futures position 2 Stock and a short call option position 3 Stock and a short warrant position The portfolio containing a derivative acting as a firm commitment to hedge the stock is most likely:",
+    "question": "The following portfolios contain a company's stock and a derivative on the stock:\n<table class=\"q-table\"><tbody><tr><th>Portfolio</th><th>Securities</th></tr><tr><td>1</td><td>Stock and a short futures position</td></tr><tr><td>2</td><td>Stock and a short call option position</td></tr><tr><td>3</td><td>Stock and a short warrant position</td></tr></tbody></table>\nThe portfolio containing a derivative acting as a firm commitment to hedge the stock is most likely:",
     "options": {
       "A": "Portfolio 1.",
       "B": "Portfolio 2.",
@@ -9141,7 +9141,7 @@ var CFA_QUESTIONS=[
   {
     "num": 55,
     "subject": "衍生品",
-    "question": "A forward agreement has the following terms: Spot price at inception $275 Forward price $285 Number of shares 2,000 At expiration, if the spot price is $282, the value to the seller is:",
+    "question": "A forward agreement has the following terms:\n<table class=\"q-table\"><tbody><tr><th>Spot price at inception</th><th>$275</th></tr><tr><td>Forward price</td><td>$285</td></tr><tr><td>Number of shares</td><td>2,000</td></tr></tbody></table>\nAt expiration, if the spot price is $282, the value to the seller is:",
     "options": {
       "A": "-$6,000.",
       "B": "$6,000.",
@@ -9180,7 +9180,7 @@ var CFA_QUESTIONS=[
   {
     "num": 58,
     "subject": "衍生品",
-    "question": "An investor sells a European put option with the following characteristics: Put price 30 Exercise price 1,320 If the price of the underlying at expiration is 1,340, the profit for the seller is:",
+    "question": "An investor sells a European put option with the following characteristics:\n<table class=\"q-table\"><tbody><tr><th>Put price</th><th>30</th></tr><tr><td>Exercise price</td><td>1,320</td></tr></tbody></table>\nIf the price of the underlying at expiration is 1,340, the profit for the seller is:",
     "options": {
       "A": "10.",
       "B": "20.",
@@ -9193,7 +9193,7 @@ var CFA_QUESTIONS=[
   {
     "num": 59,
     "subject": "衍生品",
-    "question": "An analyst gathers the following information about three portfolios each consisting of two derivatives on the same underlying: Forward Position Option Position Portfolio 1 Long Long Call Portfolio 2 Long Long Put Portfolio 3 Short Long Call All else being equal, which portfolio will benefit from an increase in price of the underlying?",
+    "question": "An analyst gathers the following information about three portfolios each consisting of two derivatives on the same underlying:\n<table class=\"q-table\"><tbody><tr><th></th><th>Forward Position</th><th>Option Position</th></tr><tr><td>Portfolio 1</td><td>Long</td><td>Long Call</td></tr><tr><td>Portfolio 2</td><td>Long</td><td>Long Put</td></tr><tr><td>Portfolio 3</td><td>Short</td><td>Long Call</td></tr></tbody></table>\nAll else being equal, which portfolio will benefit from an increase in price of the underlying?",
     "options": {
       "A": "Portfolio 1",
       "B": "Portfolio 2",
@@ -9219,7 +9219,7 @@ var CFA_QUESTIONS=[
   {
     "num": 61,
     "subject": "衍生品",
-    "question": "An investor collects the following information about a put option: Stock price at initiation $220 Strike price $210 Option premium $9 At expiration, if the price of the stock is $200, the investor's profit from buying the put is:",
+    "question": "An investor collects the following information about a put option:\n<table class=\"q-table\"><tbody><tr><th>Stock price at initiation</th><th>$220</th></tr><tr><td>Strike price</td><td>$210</td></tr><tr><td>Option premium</td><td>$9</td></tr></tbody></table>\nAt expiration, if the price of the stock is $200, the investor's profit from buying the put is:",
     "options": {
       "A": "-$19.",
       "B": "-$9.",
@@ -9453,7 +9453,7 @@ var CFA_QUESTIONS=[
   {
     "num": 14,
     "subject": "职业道德",
-    "question": "Which of the following statements is accurate according to the Standards? Statement 1 A member, prior to leaving his current employer, may contact potential clients for purposes of soliciting1their business for their new employer. Statement 2 A member, while still employed, is free to make arrangements outside of normal working hours to apply for a license with the local regulator to set up a competing business.",
+    "question": "Which of the following statements is accurate according to the Standards?\n<table class=\"q-table\"><tbody><tr><th>Statement 1</th><th>A member, prior to leaving his current employer, may contact potential clients for purposes of soliciting their business for their new employer.</th></tr><tr><td>Statement 2</td><td>A member, while still employed, is free to make arrangements outside of normal working hours to apply for a license with the local regulator to set up a competing business.</td></tr></tbody></table>",
     "options": {
       "A": "Statement 1 only.",
       "B": "Statement 2 only.",
@@ -9570,7 +9570,7 @@ var CFA_QUESTIONS=[
   {
     "num": 23,
     "subject": "职业道德",
-    "question": "After completing Level II of the CFA exam, Aashi Banerjee posts several comments on an online chatroom for CFA program candidates. Which of the following comments violate the Standard relating to conduct as participants in CFA Institute programs? Comment 1 CFA Institute must revise the topic area weights on the exam. Comment 1 There were no questions on GIPS standards.",
+    "question": "After completing Level II of the CFA exam, Aashi Banerjee posts several comments on an online chatroom for CFA program candidates. Which of the following comments violate the Standard relating to conduct as participants in CFA Institute programs?\n<table class=\"q-table\"><tbody><tr><th>Comment 1</th><th>CFA Institute must revise the topic area weights on the exam.</th></tr><tr><td>Comment 2</td><td>There were no questions on GIPS standards.</td></tr></tbody></table>",
     "options": {
       "A": "Comment 1 only",
       "B": "Comment 2 only",
@@ -9583,7 +9583,7 @@ var CFA_QUESTIONS=[
   {
     "num": 24,
     "subject": "职业道德",
-    "question": "Which of the following activities violates the Standard relating to market manipulation? Activity 1 A member secures a dominant position in futures contracts to influence the price of the underlying. The transaction results in large losses for the member. Activity 2 A member frequently trades a stock in multiple client accounts with an intent to increase the volume of the stock. The transactions result in large gains for the clients.",
+    "question": "Which of the following activities violates the Standard relating to market manipulation?\n<table class=\"q-table\"><tbody><tr><th>Activity 1</th><th>A member secures a dominant position in futures contracts to influence the price of the underlying. The transaction results in large losses for the member.</th></tr><tr><td>Activity 2</td><td>A member frequently trades a stock in multiple client accounts with an intent to increase the volume of the stock. The transactions result in large gains for the clients.</td></tr></tbody></table>",
     "options": {
       "A": "Activity 1 only",
       "B": "Activity 2 only",
@@ -10012,7 +10012,7 @@ var CFA_QUESTIONS=[
   {
     "num": 57,
     "subject": "职业道德",
-    "question": "Which of the following is a recommended procedure for compliance with the Standard relating to preservation of confidentiality? Procedure 1 Members should convey to clients that not all firm-sponsored communication methods may be suitable for transmitting confidential information. Procedure 2 Procedure Members should encourage their firms to provide periodic training on confidentiality procedures to all clients. Procedure 3 Procedure Members should become experts in information technology security in order to protect client confidentiality.",
+    "question": "Which of the following is a recommended procedure for compliance with the Standard relating to preservation of confidentiality?\n<table class=\"q-table\"><tbody><tr><th>Procedure 1</th><th>Members should convey to clients that not all firm-sponsored communication methods may be suitable for transmitting confidential information.</th></tr><tr><td>Procedure 2</td><td>Members should encourage their firms to provide periodic training on confidentiality procedures to all clients.</td></tr><tr><td>Procedure 3</td><td>Members should become experts in information technology security in order to protect client confidentiality.</td></tr></tbody></table>",
     "options": {
       "A": "Procedure 1",
       "B": "Procedure 2",
@@ -10077,7 +10077,7 @@ var CFA_QUESTIONS=[
   {
     "num": 62,
     "subject": "职业道德",
-    "question": "According to the Standards, which of the following statements relating to a member in a supervisory position is accurate? Statement 1 The member must make reasonable efforts to ensure that anyone subject to her supervision complies1with the Code and Standards. Statement 2 The member must adopt the CFA Institute Code of Ethics to substitute for lack of compliance procedures until the firm adopts reasonable procedures to allow adequate exercise of supervisory responsibility.",
+    "question": "According to the Standards, which of the following statements relating to a member in a supervisory position is accurate?\n<table class=\"q-table\"><tbody><tr><th>Statement 1</th><th>The member must make reasonable efforts to ensure that anyone subject to her supervision complies with the Code and Standards.</th></tr><tr><td>Statement 2</td><td>The member must adopt the CFA Institute Code of Ethics to substitute for lack of compliance procedures until the firm adopts reasonable procedures to allow adequate exercise of supervisory responsibility.</td></tr></tbody></table>",
     "options": {
       "A": "Statement 1 only",
       "B": "Statement 2 only",
@@ -10571,7 +10571,7 @@ var CFA_QUESTIONS=[
   {
     "num": 100,
     "subject": "职业道德",
-    "question": "Amanda Covington, CFA, works for McJan Investment Management. McJan employees must receive prior clearance of their personal investments in accordance with McJan's compliance procedures. To obtain prior clearance, McJan employees must provide a written request identifying the security, the quantity of the security to be purchased, and the name of the broker through which the transaction will be made. Pre -cleared transactions are approved only for that trading day. As indicated below, Covington received prior clearance. Security Quantity Broker Prior Clearance A 100 Easy Trade Yes B 150 Easy Trade Yes Two days after she received prior clearance, the price of Stock B had decreased, so Covington decided to purchase 250 shares of Stock B only. In her decision to purchase 250 shares of Stock B only, did Covington violate any CFA Institute Standards of Professional Conduct?",
+    "question": "Amanda Covington, CFA, works for McJan Investment Management. McJan employees must receive prior clearance of their personal investments in accordance with McJan’s compliance procedures. To obtain prior clearance, McJan employees must provide a written request identifying the security, the quantity of the security to be purchased, and the name of the broker through which the transaction will be made. Pre-cleared transactions are approved only for that trading day. As indicated below, Covington received prior clearance.\n<table class=\"q-table\"><tbody><tr><th>Security</th><th>Quantity</th><th>Broker</th><th>Prior Clearance</th></tr><tr><td>A</td><td>100</td><td>Easy Trade</td><td>Yes</td></tr><tr><td>B</td><td>150</td><td>Easy Trade</td><td>Yes</td></tr></tbody></table>\nTwo days after she received prior clearance, the price of Stock B had decreased, so Covington decided to purchase 250 shares of Stock B only. In her decision to purchase 250 shares of Stock B only, did Covington violate any CFA Institute Standards of Professional Conduct?",
     "options": {
       "A": "No.",
       "B": "Yes, relating to diligence and reasonable basis.",
@@ -10948,7 +10948,7 @@ var CFA_QUESTIONS=[
   {
     "num": 129,
     "subject": "职业道德",
-    "question": "Which of the following is a recommended procedure for compliance with the Standard relating to suitability? Procedure1 An investor's objectives and constraints should be reviewed annually unless there is a reason that1dictates more frequent review. Procedure2 A member in an investment advisory relationship with clients should take into consideration performance measurement benchmarks in formulating an investment policy statement.",
+    "question": "Which of the following is a recommended procedure for compliance with the Standard relating to suitability?\n<table class=\"q-table\"><tbody><tr><th>Procedure 1</th><th>An investor's objectives and constraints should be reviewed annually unless there is a reason that dictates more frequent review.</th></tr><tr><td>Procedure 2</td><td>A member in an investment advisory relationship with clients should take into consideration performance measurement benchmarks in formulating an investment policy statement.</td></tr></tbody></table>",
     "options": {
       "A": "Procedure 1 only.",
       "B": "Procedure 2 only.",
@@ -11858,7 +11858,7 @@ var CFA_QUESTIONS=[
   {
     "num": 54,
     "subject": "组合管理",
-    "question": "An analyst gathers the following information about an asset and the market: Risk-free rate 1% Market risk premium 5% Asset's expected return 5% Based on the CAPM, the asset's beta is closest to:",
+    "question": "An analyst gathers the following information about an asset and the market:\n<table class=\"q-table\"><tbody><tr><th>Risk-free rate</th><th>1%</th></tr><tr><td>Market risk premium</td><td>5%</td></tr><tr><td>Asset's expected return</td><td>5%</td></tr></tbody></table>\nBased on the CAPM, the asset's beta is closest to:",
     "options": {
       "A": "0.80.",
       "B": "1.00.",
@@ -12274,7 +12274,7 @@ var CFA_QUESTIONS=[
   {
     "num": 90,
     "subject": "组合管理",
-    "question": "A portfolio consisting of two securities has the following characteristics: Security Portfolio 1 2 Weight Standard 40% 60% Deviation 15% 18% If the correlation of returns between the two securities is 0.20, the portfolio's standard deviation of returns is closest to:",
+    "question": "A portfolio consisting of two securities has the following characteristics:\n<table class=\"q-table\"><tbody><tr><th>Security</th><th>Portfolio Weight</th><th>Standard Deviation</th></tr><tr><td>1</td><td>40%</td><td>15%</td></tr><tr><td>2</td><td>60%</td><td>18%</td></tr></tbody></table>\nIf the correlation of returns between the two securities is 0.20, the portfolio's standard deviation of returns is closest to:",
     "options": {
       "A": "1.8%.",
       "B": "9.1%.",
