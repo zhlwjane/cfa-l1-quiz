@@ -745,7 +745,15 @@ function showExpl(q, ok){
   hd.innerHTML = ok
     ? '&#10003; 回答正确！正确答案是 <strong>'+q.answer+'</strong>'
     : '&#10007; 回答错误。正确答案是 <strong>'+q.answer+'</strong>';
-  bd.textContent = q.explanation||'（暂无解析）';
+  var eRaw = q.explanation||'（暂无解析）';
+  if(eRaw.indexOf('<table')!==-1){
+    var eHtml=eRaw.split(/(<table[\s\S]*?<\/table>)/).map(function(p){
+      return p.match(/^<table/)?p:'<span class="q-para">'+esc(p)+'</span>';
+    }).join('');
+    bd.innerHTML=eHtml;
+  }else{
+    bd.textContent=eRaw;
+  }
 }
 function prevQ(){ if(S.quiz.idx>0){ S.quiz.idx--; renderQ(); scrollTo(0,0); } }
 function nextQ(){
