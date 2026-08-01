@@ -53,7 +53,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 4,
-    "question": "The closing prices of a firm’s share are as follows:\nTime (years) Price\n0.5 99.25\n1.0 100\n1.5 101.25\nThe continuously compounded semi-annual return for the period t=1 to t=1.5 is closest to:",
+    "question": "The closing prices of a firm’s share are as follows:\n<table class=\"q-table\"><thead><tr><th>Time (years)</th><th>Price</th></tr></thead><tbody><tr><td>0.5</td><td>99.25</td></tr><tr><td>1.0</td><td>100</td></tr><tr><td>1.5</td><td>101.25</td></tr></tbody></table>\nThe continuously compounded semi-annual return for the period t=1 to t=1.5 is closest to:",
     "options": {
       "A": "1.0125%",
       "B": "1.2423%",
@@ -113,7 +113,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 8,
-    "question": "A saver deposits the following amounts in an account paying a stated annual rate of 4%,\ncompounded semiannually:\nYear End of Year Deposits ($)\n1 4000\n2 8000\n3 7000\n4 10000\nAt the end of Year 4, the value of the account is closest to:",
+    "question": "A saver deposits the following amounts in an account paying a stated annual rate of 4%,\ncompounded semiannually:\n<table class=\"q-table\"><thead><tr><th>Year</th><th>End of Year Deposits ($)</th></tr></thead><tbody><tr><td>1</td><td>4,000</td></tr><tr><td>2</td><td>8,000</td></tr><tr><td>3</td><td>7,000</td></tr><tr><td>4</td><td>10,000</td></tr></tbody></table>\nAt the end of Year 4, the value of the account is closest to:",
     "options": {
       "A": "$30,432",
       "B": "$30,447",
@@ -173,7 +173,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 12,
-    "question": "XYZ Corp. Annual Stock Returns\n2015 2016 2017 2018 2019 2020\n23% 6% -8% 12% 4% 12%\nWhat is the median return for XYZ stock?",
+    "question": "XYZ Corp. Annual Stock Returns\n<table class=\"q-table\"><thead><tr><th>2015</th><th>2016</th><th>2017</th><th>2018</th><th>2019</th><th>2020</th></tr></thead><tbody><tr><td>23%</td><td>6%</td><td>-8%</td><td>12%</td><td>4%</td><td>12%</td></tr></tbody></table>\nWhat is the median return for XYZ stock?",
     "options": {
       "A": "8.2%",
       "B": "9.0%",
@@ -203,7 +203,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 14,
-    "question": "A manager invests €5,000 annually in a security for 5 years at the prices shown in the\nfollowing table.(原版书)\nPurchase Price of Security (€)\nYear 1 124.00\nYear 2 152.00\nYear 3 168.00\nYear 4 180.00\nYear 5 184.00\nThe average price paid for the security is closest to:",
+    "question": "A manager invests €5,000 annually in a security for 5 years at the prices shown in the\nfollowing table.(原版书)\n<table class=\"q-table\"><thead><tr><th>Year</th><th>Purchase Price of Security (€)</th></tr></thead><tbody><tr><td>Year 1</td><td>124.00</td></tr><tr><td>Year 2</td><td>152.00</td></tr><tr><td>Year 3</td><td>168.00</td></tr><tr><td>Year 4</td><td>180.00</td></tr><tr><td>Year 5</td><td>184.00</td></tr></tbody></table>\nThe average price paid for the security is closest to:",
     "options": {
       "A": "€ 161.6000",
       "B": "€ 134.1841",
@@ -413,7 +413,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 28,
-    "question": "A decision tree shows the potential outcomes of a company’s earnings per share\ndepending on two scenarios. Based on the provided probabilities and values, what is the\nexpected earnings per share?\nScenario Probabilities of scenario Earning per share Probabilities of earning\n$12 0.2\n1 0.65\n$10 0.8\n$5 0.6\n2 0.35\n$3 0.4",
+    "question": "A decision tree shows the potential outcomes of a company’s earnings per share\ndepending on two scenarios. Based on the provided probabilities and values, what is the\nexpected earnings per share?\n<table class=\"q-table\"><thead><tr><th>Scenario</th><th>Prob of Scenario</th><th>EPS</th><th>Prob of EPS</th></tr></thead><tbody><tr><td>1</td><td>0.65</td><td>$12</td><td>0.2</td></tr><tr><td>1</td><td>0.65</td><td>$10</td><td>0.8</td></tr><tr><td>2</td><td>0.35</td><td>$5</td><td>0.6</td></tr><tr><td>2</td><td>0.35</td><td>$3</td><td>0.4</td></tr></tbody></table>",
     "options": {
       "A": "$6.76",
       "B": "$8.23",
@@ -458,7 +458,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 31,
-    "question": "An individual wants to invest $300,000 in the following investment products:\nInvestment Expected Weights Standard\nCorrelation\nproducts Return deviation\nStock 6% 80% 25%\n0.2\nFund 8% 20% 30%\nWhat will be the rate of return and the standard deviation on the expected portfolio?",
+    "question": "An individual wants to invest $300,000 in the following investment products:\n<table class=\"q-table\"><thead><tr><th>Investment</th><th>Expected Return</th><th>Weights</th><th>Standard Deviation</th><th>Correlation</th></tr></thead><tbody><tr><td>Stock</td><td>6%</td><td>80%</td><td>25%</td><td rowspan=\"2\">0.2</td></tr><tr><td>Fund</td><td>8%</td><td>20%</td><td>30%</td></tr></tbody></table>\nWhat will be the rate of return and the standard deviation on the expected portfolio?",
     "options": {
       "A": "6.4% and 4.84%",
       "B": "6.4% and 22%.（",
@@ -608,7 +608,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 41,
-    "question": "The return of a portfolio follows a normal distribution, with its mean return of 13% and\nits standard deviation of 5%. Given the following z-table, the probability that its return\nfalls between 7% and 19% is closest to:（疑似改写题）\nCumulative Probabilities for a Standard Normal Distribution\nP(Z ≤ x) = N(x) for x ≥ 0 or P(Z ≤ z) = N(z) for z ≥ 0\nx or z 0 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09\n1.20 0.8849 0.8869 0.8888 0.8907 0.8925 0.8944 0.8962 0.8980 0.8997 0.9015\n1.30 0.9032 0.9049 0.9066 0.9082 0.9099 0.9115 0.9131 0.9147 0.9162 0.9177\n1.40 0.9192 0.9207 0.9222 0.9236 0.9251 0.9265 0.9279 0.9292 0.9306 0.9319\n1.50 0.9332 0.9345 0.9357 0.9370 0.9382 0.9394 0.9406 0.9418 0.9429 0.9441\n1.60 0.9452 0.9463 0.9474 0.9484 0.9495 0.9505 0.9515 0.9525 0.9535 0.9545\n1.70 0.9554 0.9564 0.9573 0.9582 0.9591 0.9599 0.9608 0.9616 0.9625 0.9633\n1.80 0.9641 0.9649 0.9656 0.9664 0.9671 0.9678 0.9686 0.9693 0.9699 0.9706\n1.90 0.9713 0.9719 0.9726 0.9732 0.9738 0.9744 0.9750 0.9756 0.9761 0.9767\nNotes:For example, to find the z-value leaving 2.5 percent of the area/probability in the upper tail, find\nthe element 0.9750 in the body of the table. Read 1.90 at the left end of the element’s row and 0.06 at the\ntop of the element’s column, to give 1.90+ 0.06= 1.96. (2023-L1V1-Appendix 1)",
+    "question": "The return of a portfolio follows a normal distribution, with its mean return of 13% and\nits standard deviation of 5%. Given the following z-table, the probability that its return\nfalls between 7% and 19% is closest to:（疑似改写题）\nCumulative Probabilities for a Standard Normal Distribution\nP(Z ≤ x) = N(x) for x ≥ 0 or P(Z ≤ z) = N(z) for z ≥ 0\n<table class=\"q-table\"><thead><tr><th>x or z</th><th>0.00</th><th>0.01</th><th>0.02</th><th>0.03</th><th>0.04</th><th>0.05</th><th>0.06</th><th>0.07</th><th>0.08</th><th>0.09</th></tr></thead><tbody><tr><td>1.20</td><td>0.8849</td><td>0.8869</td><td>0.8888</td><td>0.8907</td><td>0.8925</td><td>0.8944</td><td>0.8962</td><td>0.8980</td><td>0.8997</td><td>0.9015</td></tr><tr><td>1.30</td><td>0.9032</td><td>0.9049</td><td>0.9066</td><td>0.9082</td><td>0.9099</td><td>0.9115</td><td>0.9131</td><td>0.9147</td><td>0.9162</td><td>0.9177</td></tr><tr><td>1.40</td><td>0.9192</td><td>0.9207</td><td>0.9222</td><td>0.9236</td><td>0.9251</td><td>0.9265</td><td>0.9279</td><td>0.9292</td><td>0.9306</td><td>0.9319</td></tr><tr><td>1.50</td><td>0.9332</td><td>0.9345</td><td>0.9357</td><td>0.9370</td><td>0.9382</td><td>0.9394</td><td>0.9406</td><td>0.9418</td><td>0.9429</td><td>0.9441</td></tr><tr><td>1.60</td><td>0.9452</td><td>0.9463</td><td>0.9474</td><td>0.9484</td><td>0.9495</td><td>0.9505</td><td>0.9515</td><td>0.9525</td><td>0.9535</td><td>0.9545</td></tr><tr><td>1.70</td><td>0.9554</td><td>0.9564</td><td>0.9573</td><td>0.9582</td><td>0.9591</td><td>0.9599</td><td>0.9608</td><td>0.9616</td><td>0.9625</td><td>0.9633</td></tr><tr><td>1.80</td><td>0.9641</td><td>0.9649</td><td>0.9656</td><td>0.9664</td><td>0.9671</td><td>0.9678</td><td>0.9686</td><td>0.9693</td><td>0.9699</td><td>0.9706</td></tr><tr><td>1.90</td><td>0.9713</td><td>0.9719</td><td>0.9726</td><td>0.9732</td><td>0.9738</td><td>0.9744</td><td>0.9750</td><td>0.9756</td><td>0.9761</td><td>0.9767</td></tr></tbody></table>\nNotes:For example, to find the z-value leaving 2.5 percent of the area/probability in the upper tail, find\nthe element 0.9750 in the body of the table. Read 1.90 at the left end of the element’s row and 0.06 at the\ntop of the element’s column, to give 1.90+ 0.06= 1.96. (2023-L1V1-Appendix 1)",
     "options": {
       "A": "83.84%",
       "B": "76.98%",
@@ -803,7 +803,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 54,
-    "question": "The following sample of 10 items is selected from a normally distributed population. The\npopulation variance is unknown.\n1st 2nd 3rd 4th 5th 6th 7th 8th 9th 10th\n11 21 -7 3 -8 6 0 -7 4 22\nThe standard error of the sample mean is closest to: （15、1706年mock题）",
+    "question": "The following sample of 10 items is selected from a normally distributed population. The\npopulation variance is unknown.\n<table class=\"q-table\"><thead><tr><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th><th>7th</th><th>8th</th><th>9th</th><th>10th</th></tr></thead><tbody><tr><td>11</td><td>21</td><td>-7</td><td>3</td><td>-8</td><td>6</td><td>0</td><td>-7</td><td>4</td><td>22</td></tr></tbody></table>\nThe standard error of the sample mean is closest to: （15、1706年mock题）",
     "options": {
       "A": "10.89",
       "B": "3.44",
@@ -998,7 +998,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 67,
-    "question": "Consider a two-tailed test of the hypothesis that the population mean is zero. The sample\nhas 50 observations. The population is normally distributed with a known variance.\nt Distribution\nDegree of freedom p=0.10 p=0.05 p=0.025\n49 1.299 1.677 2.010\n50 1.299 1.676 2.009\nz-Distribution α=0.10 α=0.05 α=0.025\n1.645 1.960 2.330\nAt a 0.05 significance level, the rejection points are most likely at:（16/17年mock题）",
+    "question": "Consider a two-tailed test of the hypothesis that the population mean is zero. The sample\nhas 50 observations. The population is normally distributed with a known variance.\nt Distribution\n<table class=\"q-table\"><thead><tr><th>Degree of freedom</th><th>p=0.10</th><th>p=0.05</th><th>p=0.025</th></tr></thead><tbody><tr><td>49</td><td>1.299</td><td>1.677</td><td>2.010</td></tr><tr><td>50</td><td>1.299</td><td>1.676</td><td>2.009</td></tr></tbody></table>\nz-Distribution\n<table class=\"q-table\"><thead><tr><th>α=0.10</th><th>α=0.05</th><th>α=0.025</th></tr></thead><tbody><tr><td>1.645</td><td>1.960</td><td>2.330</td></tr></tbody></table>\nAt a 0.05 significance level, the rejection points are most likely at:（16/17年mock题）",
     "options": {
       "A": "-2.010 and 2.010",
       "B": "-2.009 and 2.009",
@@ -1028,7 +1028,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 69,
-    "question": "Using a two-tailed test of the hypothesis that the population mean is zero, the calculated\ntest statistic is 2.41. The sample has 24 observations. The population is normally\ndistributed with an unknown variance. （17/18A 年mock题）\nDegrees of p = 0.10 p = 0.05 p = 0.025 p = 0.01 p = 0.005\nfreedom\n21 1.323 1.721 2.080 2.518 2.831\n22 1.321 1.717 2.074 2.508 2.819\n23 1.319 1.714 2.069 2.500 2.807\n24 1.318 1.711 2.064 2.492 2.797\nAn analyst will most likely reject the null hypothesis at significance levels of:",
+    "question": "Using a two-tailed test of the hypothesis that the population mean is zero, the calculated\ntest statistic is 2.41. The sample has 24 observations. The population is normally\ndistributed with an unknown variance. （17/18A 年mock题）\n<table class=\"q-table\"><thead><tr><th>Degrees of freedom</th><th>p = 0.10</th><th>p = 0.05</th><th>p = 0.025</th><th>p = 0.01</th><th>p = 0.005</th></tr></thead><tbody><tr><td>21</td><td>1.323</td><td>1.721</td><td>2.080</td><td>2.518</td><td>2.831</td></tr><tr><td>22</td><td>1.321</td><td>1.717</td><td>2.074</td><td>2.508</td><td>2.819</td></tr><tr><td>23</td><td>1.319</td><td>1.714</td><td>2.069</td><td>2.500</td><td>2.807</td></tr><tr><td>24</td><td>1.318</td><td>1.711</td><td>2.064</td><td>2.492</td><td>2.797</td></tr></tbody></table>\nAn analyst will most likely reject the null hypothesis at significance levels of:",
     "options": {
       "A": "0.10, 0.05, and 0.01",
       "B": "0.10 and 0.05",
@@ -3713,7 +3713,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 42,
-    "question": "An analyst gathered the following information from a company's 2022 financial\nstatements (in $ millions):\nYear Ended 31 December 2021 2022\nNet sales 296.5 384.6\nCost of goods sold (D&A excluded) 157.4 168.3\nAccounts receivable 152.3 155.5\nInventory 66.3 74.8\nAccounts payable 35.5 34.1\nBased only on the information above, the company's 2022 statement of cash flows in the\ndirect format would include amounts (in $ millions) for cash received from customers\nand cash paid to suppliers, respectively, that are closest to:\ncash received from customers cash paid to suppliers",
+    "question": "An analyst gathered the following information from a company's 2022 financial\nstatements (in $ millions):\n<table class=\"q-table\"><thead><tr><th>Year Ended 31 December</th><th>2021</th><th>2022</th></tr></thead><tbody><tr><td>Net sales</td><td>296.5</td><td>384.6</td></tr><tr><td>Cost of goods sold (D&A excluded)</td><td>157.4</td><td>168.3</td></tr><tr><td>Accounts receivable</td><td>152.3</td><td>155.5</td></tr><tr><td>Inventory</td><td>66.3</td><td>74.8</td></tr><tr><td>Accounts payable</td><td>35.5</td><td>34.1</td></tr></tbody></table>\nBased only on the information above, the company's 2022 statement of cash flows in the\ndirect format would include amounts (in $ millions) for cash received from customers\nand cash paid to suppliers, respectively, that are closest to:\ncash received from customers cash paid to suppliers",
     "options": {
       "A": "381.4 178.2",
       "B": "387.8 178.2",
@@ -3773,7 +3773,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 46,
-    "question": "An analyst gathers the following information from a company’s current financial\nstatements:\nYear Ended 31 December ($ millions) 2023\nRevenue 26,430\nCost of goods sold 12,381\nOperating expenses 9,280\nIncome tax expense 1,727\nNet Income 2,520\nYear Ended 31 December ($ millions) 2023 2022\nAccounts receivable 1,134 1,072\nAccounts payable 4,588 3,274\nInventory 4,246 3,706\nIf the company uses the direct method to prepare its cash flow statement, the cash\nreceived from customers (in $ millions) will be closest to:",
+    "question": "An analyst gathers the following information from a company’s current financial\nstatements:\n<table class=\"q-table\"><thead><tr><th>Income Statement ($ millions)</th><th>2023</th></tr></thead><tbody><tr><td>Revenue</td><td>26,430</td></tr><tr><td>Cost of goods sold</td><td>12,381</td></tr><tr><td>Operating expenses</td><td>9,280</td></tr><tr><td>Income tax expense</td><td>1,727</td></tr><tr><td>Net Income</td><td>2,520</td></tr></tbody></table>\n<table class=\"q-table\"><thead><tr><th>Balance Sheet ($ millions)</th><th>2023</th><th>2022</th></tr></thead><tbody><tr><td>Accounts receivable</td><td>1,134</td><td>1,072</td></tr><tr><td>Accounts payable</td><td>4,588</td><td>3,274</td></tr><tr><td>Inventory</td><td>4,246</td><td>3,706</td></tr></tbody></table>\nIf the company uses the direct method to prepare its cash flow statement, the cash\nreceived from customers (in $ millions) will be closest to:",
     "options": {
       "A": "26,368",
       "B": "25,296",
@@ -6638,7 +6638,7 @@ var JC_QUESTIONS =
     "subject": "经济学",
     "subjectEn": "Economics",
     "num": 6,
-    "question": "The following data apply to a firm operating in perfect competition.\nQuantity Total Revenue Total Cost\n21 $210 $138\n22 $220 $145\n23 $230 $154\n24 $240 $165\nThe firm's profit maximizing output (in units) is most likely:",
+    "question": "The following data apply to a firm operating in perfect competition.\n<table class=\"q-table\"><thead><tr><th>Quantity</th><th>Total Revenue</th><th>Total Cost</th></tr></thead><tbody><tr><td>21</td><td>$210</td><td>$138</td></tr><tr><td>22</td><td>$220</td><td>$145</td></tr><tr><td>23</td><td>$230</td><td>$154</td></tr><tr><td>24</td><td>$240</td><td>$165</td></tr></tbody></table>\nThe firm's profit maximizing output (in units) is most likely:",
     "options": {
       "A": "21",
       "B": "in excess of 24",
@@ -7658,7 +7658,7 @@ var JC_QUESTIONS =
     "subject": "经济学",
     "subjectEn": "Economics",
     "num": 74,
-    "question": "A New Zealand traveler returned from Singapore with SGD7, 200 (Singapore dollars). A\nforeign exchange dealer provided the traveler with the following quotes:\nRatio Spot Rates\nUSD/SGD 1.2580\nNZD/USD 0.7668\nUSD: US dollar\nNZD: New Zealand dollar\nThe amount of New Zealand dollars (NZD) that the traveler would receive for his\nSingapore dollars is closest to:",
+    "question": "A New Zealand traveler returned from Singapore with SGD7, 200 (Singapore dollars). A\nforeign exchange dealer provided the traveler with the following quotes:\n<table class=\"q-table\"><thead><tr><th>Ratio</th><th>Spot Rates</th></tr></thead><tbody><tr><td>USD/SGD</td><td>1.2580</td></tr><tr><td>NZD/USD</td><td>0.7668</td></tr></tbody></table>\nUSD: US dollar\nNZD: New Zealand dollar\nThe amount of New Zealand dollars (NZD) that the traveler would receive for his\nSingapore dollars is closest to:",
     "options": {
       "A": "NZD6,945",
       "B": "NZD6,954",
@@ -8948,7 +8948,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 20,
-    "question": "Consider the following limit orders for a particular stock. The bid and ask sizes are\nnumber of shares in hundreds.（原版书课后题改编）\nBid Size Limit Price ($) Offer Size\n6 66.40 16 66.50\n8 66.59\n67.50 14\n68.90 12\n68.91 14\nA new buy limit order is placed for 300 shares at $66.65. This limit order is said to:",
+    "question": "Consider the following limit orders for a particular stock. The bid and ask sizes are\nnumber of shares in hundreds.（原版书课后题改编）\n<table class=\"q-table\"><thead><tr><th>Bid Size</th><th>Limit Price ($)</th><th>Offer Size</th></tr></thead><tbody><tr><td>6</td><td>66.40</td><td></td></tr><tr><td>16</td><td>66.50</td><td></td></tr><tr><td>8</td><td>66.59</td><td></td></tr><tr><td></td><td>67.50</td><td>14</td></tr><tr><td></td><td>68.90</td><td>12</td></tr><tr><td></td><td>68.91</td><td>14</td></tr></tbody></table>\nA new buy limit order is placed for 300 shares at $66.65. This limit order is said to:",
     "options": {
       "A": "take the market",
       "B": "make the market",
@@ -8963,7 +8963,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 21,
-    "question": "A trader gathers the following limit order information about a stock:\nBid Size (number of shares) Share Price ($) Offer Size (number of shares)\n450 49.50 ---\n330 49.65 ---\n--- 49.80 200\n--- 49.95 220\n--- 50.10 260\nIf the trader submits a fill or kill buy order for 500 shares at a limit price of $50.00, the\ntrader's average price per share for this trade will be closest to:",
+    "question": "A trader gathers the following limit order information about a stock:\n<table class=\"q-table\"><thead><tr><th>Bid Size (shares)</th><th>Share Price ($)</th><th>Offer Size (shares)</th></tr></thead><tbody><tr><td>450</td><td>49.50</td><td>—</td></tr><tr><td>330</td><td>49.65</td><td>—</td></tr><tr><td>—</td><td>49.80</td><td>200</td></tr><tr><td>—</td><td>49.95</td><td>220</td></tr><tr><td>—</td><td>50.10</td><td>260</td></tr></tbody></table>\nIf the trader submits a fill or kill buy order for 500 shares at a limit price of $50.00, the\ntrader's average price per share for this trade will be closest to:",
     "options": {
       "A": "$49.50",
       "B": "$49.88",
@@ -9143,7 +9143,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 33,
-    "question": "An analyst collects the following information for a price-weighted index comprised of\nstocks A, B and C:（原版书课后题改编）\nBeginning of End of Period Total Dividends\nStocks\nPeriod Price (€) Price (€) (€)\nA 50.00 54.00 2.00\nB 70.00 50.00 3.00\nC 30.00 32.00 2.00\nThe price return of the index is:",
+    "question": "An analyst collects the following information for a price-weighted index comprised of\nstocks A, B and C:（原版书课后题改编）\n<table class=\"q-table\"><thead><tr><th>Stocks</th><th>Beginning of Period Price (€)</th><th>End of Period Price (€)</th><th>Total Dividends (€)</th></tr></thead><tbody><tr><td>A</td><td>50.00</td><td>54.00</td><td>2.00</td></tr><tr><td>B</td><td>70.00</td><td>50.00</td><td>3.00</td></tr><tr><td>C</td><td>30.00</td><td>32.00</td><td>2.00</td></tr></tbody></table>\nThe price return of the index is:",
     "options": {
       "A": "-4.6%.",
       "B": "-9.3%",
@@ -9158,7 +9158,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 34,
-    "question": "An analyst collects the following information for a market-capitalization-weighted index\ncomprised of securities X, Y, and Z.（原版书课后题改编）\nBeginning of End of Period Dividends Shares\nSecurity\nPeriod Price (￥) Price (￥) Per Share (￥) Outstanding\nX 1,500 1,700 50 3,000\nY 2,500 1,500 55 5,000\nZ 1,000 1,200 50 7,500\nThe total return of the index is closest to:",
+    "question": "An analyst collects the following information for a market-capitalization-weighted index\ncomprised of securities X, Y, and Z.（原版书课后题改编）\n<table class=\"q-table\"><thead><tr><th>Security</th><th>Beginning Price (￥)</th><th>End Period Price (￥)</th><th>Dividends Per Share (￥)</th><th>Shares Outstanding</th></tr></thead><tbody><tr><td>X</td><td>1,500</td><td>1,700</td><td>50</td><td>3,000</td></tr><tr><td>Y</td><td>2,500</td><td>1,500</td><td>55</td><td>5,000</td></tr><tr><td>Z</td><td>1,000</td><td>1,200</td><td>50</td><td>7,500</td></tr></tbody></table>\nThe total return of the index is closest to:",
     "options": {
       "A": "-5.35%",
       "B": "-8.57%",
@@ -10013,7 +10013,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 91,
-    "question": "An investor gathers the following data. To estimate the stock's justified forward P/E, the\ninvestor prefers to use:\n the earnings growth rate rather than the dividends growth rate and\n the average of the payout ratios over the relevant period, in this case 2006-2009,\nrather the most recent payout ratio.\nYear EPS DPS ROE\n2009 $3.20 $1.92 12%\n2008 $3.60 $1.80 17%\n2007 $2.44 $1.71 13%\n2006 $2.50 $1.60 15%\nThe yield on 10-year T-notes is 3 percent and the current equity risk premium is 6.5\npercent. If beta is 1.3, then the stock's justified forward P/E is closest to:（考题回顾题）",
+    "question": "An investor gathers the following data. To estimate the stock's justified forward P/E, the\ninvestor prefers to use:\n the earnings growth rate rather than the dividends growth rate and\n the average of the payout ratios over the relevant period, in this case 2006-2009,\nrather the most recent payout ratio.\n<table class=\"q-table\"><thead><tr><th>Year</th><th>EPS</th><th>DPS</th><th>ROE</th></tr></thead><tbody><tr><td>2009</td><td>$3.20</td><td>$1.92</td><td>12%</td></tr><tr><td>2008</td><td>$3.60</td><td>$1.80</td><td>17%</td></tr><tr><td>2007</td><td>$2.44</td><td>$1.71</td><td>13%</td></tr><tr><td>2006</td><td>$2.50</td><td>$1.60</td><td>15%</td></tr></tbody></table>\nThe yield on 10-year T-notes is 3 percent and the current equity risk premium is 6.5\npercent. If beta is 1.3, then the stock's justified forward P/E is closest to:（考题回顾题）",
     "options": {
       "A": "12",
       "B": "16",
@@ -12098,7 +12098,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 47,
-    "question": "A 3-year bond offers a 10% coupon rate with interest paid annually. Assuming the\nfollowing sequence of spot rates, the price of the bond is closest to:\nTime (year) Spot Rates\n1 8%\n2 9%\n3 10%",
+    "question": "A 3-year bond offers a 10% coupon rate with interest paid annually. Assuming the\nfollowing sequence of spot rates, the price of the bond is closest to:\n<table class=\"q-table\"><thead><tr><th>Time (year)</th><th>Spot Rates</th></tr></thead><tbody><tr><td>1</td><td>8%</td></tr><tr><td>2</td><td>9%</td></tr><tr><td>3</td><td>10%</td></tr></tbody></table>",
     "options": {
       "A": "98.56",
       "B": "100.32.",
@@ -12158,7 +12158,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 51,
-    "question": "Assume the following annual forward rates were calculated from the yield curve:\nTime Period Forward Rate\n0y1y 0.50%\n1y1y 0.70%\n2y1y 1.00% 3y1y 1.50%\n4y1y 2.20%\nThe four-year spot rate is closest to: (2012 )",
+    "question": "Assume the following annual forward rates were calculated from the yield curve:\n<table class=\"q-table\"><thead><tr><th>Time Period</th><th>Forward Rate</th></tr></thead><tbody><tr><td>0y1y</td><td>0.50%</td></tr><tr><td>1y1y</td><td>0.70%</td></tr><tr><td>2y1y</td><td>1.00%</td></tr><tr><td>3y1y</td><td>1.50%</td></tr><tr><td>4y1y</td><td>2.20%</td></tr></tbody></table>\nThe four-year spot rate is closest to: (2012 )",
     "options": {
       "A": "0.924%",
       "B": "1.348%",
