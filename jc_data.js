@@ -4223,7 +4223,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 76,
-    "question": "An analyst gathers the following information about a company:\n($ thousands) 2014 2013\nSales 2,125 2,003\nEnd-of-year inventories (LIFO) 312 280\nLIFO reserve 82 64\nNet profit margin 4.9% 4.0% If first-in, first-out (FIFO) instead of last-in, first-out (LIFO) is used, the net income (in\n$ thousands) for 2014 will be higher by an amount closest to:",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><thead><tr><th>($ thousands)</th><th>2014</th><th>2013</th></tr></thead><tbody><tr><td>Sales</td><td>2,125</td><td>2,003</td></tr><tr><td>End-of-year inventories (LIFO)</td><td>312</td><td>280</td></tr><tr><td>LIFO reserve</td><td>82</td><td>64</td></tr><tr><td>Net profit margin</td><td>4.9%</td><td>4.0%</td></tr></tbody></table>\nIf first-in, first-out (FIFO) instead of last-in, first-out (LIFO) is used, the net income (in\n$ thousands) for 2014 will be higher by an amount closest to:",
     "options": {
       "A": "18.0",
       "B": "57.4",
