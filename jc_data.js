@@ -8888,7 +8888,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 16,
-    "question": "Tom buys stock on margin and holds the position for exactly one year, during which\ntime the stock pays a dividend. For simplicity, assume that the interest on the loan and\nthe dividend are both paid at the end of the year.\nPurchase price $20/share\nSale price $15/share\nShares purchased 1,000\nLeverage ratio 2.5\nCall money rate 5%\nDividend $0.10/share\nCommission $0.01/share\nWhat is the total return on this investment?",
+    "question": "Tom buys stock on margin and holds the position for exactly one year, during which\ntime the stock pays a dividend. For simplicity, assume that the interest on the loan and\nthe dividend are both paid at the end of the year.\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Purchase price</td><td>$20/share</td></tr><tr><td>Sale price</td><td>$15/share</td></tr><tr><td>Shares purchased</td><td>1,000</td></tr><tr><td>Leverage ratio</td><td>2.5</td></tr><tr><td>Call money rate</td><td>5%</td></tr><tr><td>Dividend</td><td>$0.10/share</td></tr><tr><td>Commission</td><td>$0.01/share</td></tr></tbody></table>\nWhat is the total return on this investment?",
     "options": {
       "A": "-68.88%",
       "B": "-68.91%",
@@ -8933,7 +8933,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 19,
-    "question": "Consider an order-driven market that allows hidden orders. The following four sell\norders of the stock A are currently in the market's limit order book. Which of the order\ntakes precedence over the others, based on the commonly used order precedence\nhierarchy?\nTime of Arrival Special Instruction\nOrder Limit Price (€)\n(HH:MM:SS) (If Any)\nI 13:52:01 45.45\nII 13:52:08 45.20 Hidden order\nIII 13:53:04 45.20\nIV 13:53:49 45.20",
+    "question": "Consider an order-driven market that allows hidden orders. The following four sell\norders of the stock A are currently in the market's limit order book. Which of the order\ntakes precedence over the others, based on the commonly used order precedence\nhierarchy?\n<table class=\"q-table\"><thead><tr><th>Order</th><th>Limit Price (€)</th><th>Time of Arrival (HH:MM:SS)</th><th>Special Instruction (If Any)</th></tr></thead><tbody><tr><td>I</td><td>45.45</td><td>13:52:01</td><td></td></tr><tr><td>II</td><td>45.20</td><td>13:52:08</td><td>Hidden order</td></tr><tr><td>III</td><td>45.20</td><td>13:53:04</td><td></td></tr><tr><td>IV</td><td>45.20</td><td>13:53:49</td><td></td></tr></tbody></table>",
     "options": {
       "A": "Order I (time of arrival of 13:52:01)",
       "B": "Order II (time of arrival of 13:52:08)",
@@ -9098,7 +9098,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 30,
-    "question": "A price-weighted index series is composed of the following three stocks:\nPrice before Split Price after Split\nStock End of Day 1 End of Day 2\nA $5 $7\nB $10 $8\nC $30 $15\nIf stock C completes a two-for-one split at the end of Day 1, the value of the index after\nthe split (at the end of Day 2) is closest to: (mock 2018改编)",
+    "question": "A price-weighted index series is composed of the following three stocks:\n<table class=\"q-table\"><thead><tr><th>Stock</th><th>Price before Split (End of Day 1)</th><th>Price after Split (End of Day 2)</th></tr></thead><tbody><tr><td>A</td><td>$5</td><td>$7</td></tr><tr><td>B</td><td>$10</td><td>$8</td></tr><tr><td>C</td><td>$30</td><td>$15</td></tr></tbody></table>\nIf stock C completes a two-for-one split at the end of Day 1, the value of the index after\nthe split (at the end of Day 2) is closest to: (mock 2018改编)",
     "options": {
       "A": "15",
       "B": "10",
@@ -9128,7 +9128,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 32,
-    "question": "Use the information in the following table:\nAs of January 1 As of December 31\nNumber of shares Number of shares\nShare Price Share Price\noutstanding(thousands) outstanding(thousands)\nStock A $22 1,500 $28 1,500\nStock B $40 10,000 $50 10,000\nStock C $34 3,000 $30 3,000\nIf the base value is 100, the index value of December 31 on an equal-weighted index of these\nstocks is closest to:（考题回顾自编）",
+    "question": "Use the information in the following table:\n<table class=\"q-table\"><thead><tr><th>Stock</th><th>Share Price (Jan 1)</th><th>Shares Outstanding, thousands (Jan 1)</th><th>Share Price (Dec 31)</th><th>Shares Outstanding, thousands (Dec 31)</th></tr></thead><tbody><tr><td>Stock A</td><td>$22</td><td>1,500</td><td>$28</td><td>1,500</td></tr><tr><td>Stock B</td><td>$40</td><td>10,000</td><td>$50</td><td>10,000</td></tr><tr><td>Stock C</td><td>$34</td><td>3,000</td><td>$30</td><td>3,000</td></tr></tbody></table>\nIf the base value is 100, the index value of December 31 on an equal-weighted index of these\nstocks is closest to:（考题回顾自编）",
     "options": {
       "A": "114",
       "B": "118",
@@ -9308,7 +9308,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 44,
-    "question": "The following table shows information on three different investment strategies with\nsame systematic risk:\nAnnualized Data\nStrategy Type of Strategy Fees and Expenses(%) Net Return(%)\nA Passive 0.6 15.4\nB Uses technical analysis 2 14\nC Uses fundamental analysis 1.5\nThe net return that causes Strategy 3 to be most consistent with the strong form of\nmarket efficiency is:",
+    "question": "The following table shows information on three different investment strategies with\nsame systematic risk:\n<table class=\"q-table\"><thead><tr><th>Strategy</th><th>Type of Strategy</th><th>Fees and Expenses (%)</th><th>Net Return (%)</th></tr></thead><tbody><tr><td>A</td><td>Passive</td><td>0.6</td><td>15.4</td></tr><tr><td>B</td><td>Uses technical analysis</td><td>2</td><td>14</td></tr><tr><td>C</td><td>Uses fundamental analysis</td><td>1.5</td><td></td></tr></tbody></table>\nThe net return that causes Strategy 3 to be most consistent with the strong form of\nmarket efficiency is:",
     "options": {
       "A": "14.5%",
       "B": "16%",
@@ -9908,7 +9908,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 84,
-    "question": "An investor evaluating a company's common stock for investment has gathered the\nfollowing data.（原版书改编题）\nCurrent year's earnings per share $2.50\nDividend payout ratio 60%\nDividend growth rate expected during Year 1 and 2 25%\nDividend growth rate expected after Year 2 5%\nInvestors' requited rate of return 12%\nThe value per share of this common stock is closest to:",
+    "question": "An investor evaluating a company's common stock for investment has gathered the\nfollowing data.（原版书改编题）\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Current year's earnings per share</td><td>$2.50</td></tr><tr><td>Dividend payout ratio</td><td>60%</td></tr><tr><td>Dividend growth rate expected during Year 1 and 2</td><td>25%</td></tr><tr><td>Dividend growth rate expected after Year 2</td><td>5%</td></tr><tr><td>Investors' requited rate of return</td><td>12%</td></tr></tbody></table>\nThe value per share of this common stock is closest to:",
     "options": {
       "A": "$28.57",
       "B": "$31.57",
@@ -9923,7 +9923,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 85,
-    "question": "The following information is available about a company:\nNext year’s sales revenue $200million\nNext year’s net profit margin 20%\nDividend payout ratio 45%\nDividend growth rate expected during Years 2 and 3 18%\nDividend growth rate expected after Year 3 5%\nInvestors' required rate of return 15%\nNumber of outstanding shares 18million\nThe current value per share of the company’s common stock according to the two-stage\ndividend discount model is closest to:）",
+    "question": "The following information is available about a company:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Next year’s sales revenue</td><td>$200 million</td></tr><tr><td>Next year’s net profit margin</td><td>20%</td></tr><tr><td>Dividend payout ratio</td><td>45%</td></tr><tr><td>Dividend growth rate expected during Years 2 and 3</td><td>18%</td></tr><tr><td>Dividend growth rate expected after Year 3</td><td>5%</td></tr><tr><td>Investors’ required rate of return</td><td>15%</td></tr><tr><td>Number of outstanding shares</td><td>18 million</td></tr></tbody></table>\nThe current value per share of the company’s common stock according to the two-stage\ndividend discount model is closest to:）",
     "options": {
       "A": "$22.46",
       "B": "$22.14",
@@ -9983,7 +9983,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 89,
-    "question": "An investor who wants to estimate the enterprise value multiple (EV/EBITDA) of a\ncompany has gathered the following data:\nMarket value (MV) of debt $10 million\nMarket capitalization $45 million\nCash and short-term investments $2.5 million\nEBITDA $15 million Firm’s marginal tax rate 40%\nThe company’s EV/EBITDA multiple is closest to",
+    "question": "An investor who wants to estimate the enterprise value multiple (EV/EBITDA) of a\ncompany has gathered the following data:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Market value (MV) of debt</td><td>$10 million</td></tr><tr><td>Market capitalization</td><td>$45 million</td></tr><tr><td>Cash and short-term investments</td><td>$2.5 million</td></tr><tr><td>EBITDA</td><td>$15 million</td></tr><tr><td>Firm’s marginal tax rate</td><td>40%</td></tr></tbody></table>\nThe company’s EV/EBITDA multiple is closest to",
     "options": {
       "A": "3.5",
       "B": "5.8",
@@ -9998,7 +9998,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 90,
-    "question": "An investor has gathered the following data for a company's common stock:\nCurrent dividend per share (D0): $2.00\nDividend payout ratio: 50%\nReturn on Equity (ROE): 10%\nRequired rate of return: 8%\nUsing the Gordon Growth Model, calculate the intrinsic value per share of the stock.",
+    "question": "An investor has gathered the following data for a company's common stock:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Current dividend per share (D0)</td><td>$2.00</td></tr><tr><td>Dividend payout ratio</td><td>50%</td></tr><tr><td>Return on Equity (ROE)</td><td>10%</td></tr><tr><td>Required rate of return</td><td>8%</td></tr></tbody></table>\nUsing the Gordon Growth Model, calculate the intrinsic value per share of the stock.",
     "options": {
       "A": "$42",
       "B": "$66",
@@ -10028,7 +10028,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 92,
-    "question": "An analyst has determined that the appropriate EV/EBITDA for Rainbow Company is\n10.2. The analyst has also collected the following forecasted information for Rainbow\nCompany:\nEBITDA = $22,000,000 Market value of debt = $56,000,000\nCash = $1,500,000\nThe value of equity for Rainbow Company is closest to:",
+    "question": "An analyst has determined that the appropriate EV/EBITDA for Rainbow Company is\n10.2. The analyst has also collected the following forecasted information for Rainbow\nCompany:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>EBITDA</td><td>$22,000,000</td></tr><tr><td>Market value of debt</td><td>$56,000,000</td></tr><tr><td>Cash</td><td>$1,500,000</td></tr></tbody></table>\nThe value of equity for Rainbow Company is closest to:",
     "options": {
       "A": "$169 million",
       "B": "$224 million",
@@ -10103,7 +10103,7 @@ var JC_QUESTIONS =
     "subject": "权益投资",
     "subjectEn": "Equity Investments",
     "num": 97,
-    "question": "An analyst has collected the following data about a firm: 2024BT.6.1.22\nEarnings retention ratio: 60%\nCost of equity: 10%\nReturn on equity: 15%\nWhat is the justified forward P/E ratio for the company's stock?",
+    "question": "An analyst has collected the following data about a firm: 2024BT.6.1.22\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Earnings retention ratio</td><td>60%</td></tr><tr><td>Cost of equity</td><td>10%</td></tr><tr><td>Return on equity</td><td>15%</td></tr></tbody></table>\nWhat is the justified forward P/E ratio for the company's stock?",
     "options": {
       "A": "10.0",
       "B": "8.0",
@@ -10358,7 +10358,7 @@ var JC_QUESTIONS =
     "subject": "组合管理",
     "subjectEn": "Portfolio Management",
     "num": 14,
-    "question": "A correlation matrix of the returns for securities A, B, and C is reported below:\nSecurity A B C\nA 1\nB 0.7 1\nC 0 –0.3 1\nAssuming that the expected return and the standard deviation of each security are the\nsame, a portfolio consisting of an equal allocation of which two securities will be most\neffective for portfolio diversification?",
+    "question": "A correlation matrix of the returns for securities A, B, and C is reported below:\n<table class=\"q-table\"><thead><tr><th>Security</th><th>A</th><th>B</th><th>C</th></tr></thead><tbody><tr><td>A</td><td>1</td><td></td><td></td></tr><tr><td>B</td><td>0.7</td><td>1</td><td></td></tr><tr><td>C</td><td>0</td><td>–0.3</td><td>1</td></tr></tbody></table>\nAssuming that the expected return and the standard deviation of each security are the\nsame, a portfolio consisting of an equal allocation of which two securities will be most\neffective for portfolio diversification?",
     "options": {
       "A": "Securities A and B",
       "B": "Securities A and C",
@@ -10388,7 +10388,7 @@ var JC_QUESTIONS =
     "subject": "组合管理",
     "subjectEn": "Portfolio Management",
     "num": 16,
-    "question": "Two assets have the following characteristics:\nVariance of returns for Asset 1 0.03\nVariance of returns for Asset 2 0.07\nCorrelation of returns between Asset 1 and Asset 2 -0.6\nThe variance of returns for an equally weighted portfolio of the two assets is closest to:",
+    "question": "Two assets have the following characteristics:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Variance of returns for Asset 1</td><td>0.03</td></tr><tr><td>Variance of returns for Asset 2</td><td>0.07</td></tr><tr><td>Correlation of returns between Asset 1 and Asset 2</td><td>-0.6</td></tr></tbody></table>\nThe variance of returns for an equally weighted portfolio of the two assets is closest to:",
     "options": {
       "A": "0.011",
       "B": "0.018",
@@ -10688,7 +10688,7 @@ var JC_QUESTIONS =
     "subject": "组合管理",
     "subjectEn": "Portfolio Management",
     "num": 36,
-    "question": "An analyst gathers the following information:\nExpected Annual Expected Standard Correlation between\nSecurity\nReturn (%) Deviation (%) Security and the Market\nSecurity 1 12 26 0.7\nSecurity 2 12 21 0.8 Security 3 15 21 0.9\nMarket 11 16 1.0\nWhich security has the least amount of market risk?",
+    "question": "An analyst gathers the following information:\n<table class=\"q-table\"><thead><tr><th>Security</th><th>Expected Annual Return (%)</th><th>Expected Standard Deviation (%)</th><th>Correlation between Security and the Market</th></tr></thead><tbody><tr><td>Security 1</td><td>12</td><td>26</td><td>0.7</td></tr><tr><td>Security 2</td><td>12</td><td>21</td><td>0.8</td></tr><tr><td>Security 3</td><td>15</td><td>21</td><td>0.9</td></tr><tr><td>Market</td><td>11</td><td>16</td><td>1.0</td></tr></tbody></table>\nWhich security has the least amount of market risk?",
     "options": {
       "A": "Security 1",
       "B": "Security 2",
@@ -10898,7 +10898,7 @@ var JC_QUESTIONS =
     "subject": "组合管理",
     "subjectEn": "Portfolio Management",
     "num": 50,
-    "question": "Given the following data for a portfolio and the market:\nPortfolio's Sharpe Ratio 0.9\nPortfolio's Volatility 15%\nMarket Volatility 8% Correlation coefficient between portfolio returns and market returns 0.85\nApproximately what is the portfolio’s Treynor ratio？",
+    "question": "Given the following data for a portfolio and the market:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Portfolio’s Sharpe Ratio</td><td>0.9</td></tr><tr><td>Portfolio’s Volatility</td><td>15%</td></tr><tr><td>Market Volatility</td><td>8%</td></tr><tr><td>Correlation coefficient between portfolio returns and market returns</td><td>0.85</td></tr></tbody></table>\nApproximately what is the portfolio’s Treynor ratio？",
     "options": {
       "A": "0.060",
       "B": "0.085",
@@ -11543,7 +11543,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 10,
-    "question": "A company issues a 10-year bond on 1 January 2014. Its contract requires that the\ncoupon rate increase by specified margins at specified dates as shown in the following\ntable: Coupon Payment Date Range Coupon Rate\n1 Jan 2014–31 Dec 2015 4.00%\n1 Jan 2016–31 Dec 2017 5.00%\n1 Jan 2018–31 Dec 2019 7.50%\n1 Jan 2020–31 Dec 2023 9.00%\nThe security is most likely a (n): 2019 AM Mock",
+    "question": "A company issues a 10-year bond on 1 January 2014. Its contract requires that the\ncoupon rate increase by specified margins at specified dates as shown in the following\ntable:\n<table class=\"q-table\"><thead><tr><th>Coupon Payment Date Range</th><th>Coupon Rate</th></tr></thead><tbody><tr><td>1 Jan 2014–31 Dec 2015</td><td>4.00%</td></tr><tr><td>1 Jan 2016–31 Dec 2017</td><td>5.00%</td></tr><tr><td>1 Jan 2018–31 Dec 2019</td><td>7.50%</td></tr><tr><td>1 Jan 2020–31 Dec 2023</td><td>9.00%</td></tr></tbody></table>\nThe security is most likely a (n): 2019 AM Mock",
     "options": {
       "A": "step-up note",
       "B": "deferred coupon bond",
@@ -11888,7 +11888,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 33,
-    "question": "Bond A, described in the exhibit below, is sold for settlement on 21 June 2015. The full\nprice that bond A will settle at on 21 June 2015 is closest to:\n• Annual coupon:8%\n• Coupon payment frequency: semiannual\n• Interest payment date:5 April and 5 October\n• Maturity date: 5 October 2017\n• Day count convention:30/360\n• Annual yield-to-maturity:6%",
+    "question": "Bond A, described in the exhibit below, is sold for settlement on 21 June 2015. The full\nprice that bond A will settle at on 21 June 2015 is closest to:\n<table class=\"q-table\"><thead><tr><th>Bond A</th><th></th></tr></thead><tbody><tr><td>Annual coupon</td><td>8%</td></tr><tr><td>Coupon payment frequency</td><td>Semiannual</td></tr><tr><td>Interest payment date</td><td>5 April and 5 October</td></tr><tr><td>Maturity date</td><td>5 October 2017</td></tr><tr><td>Day count convention</td><td>30/360</td></tr><tr><td>Annual yield-to-maturity</td><td>6%</td></tr></tbody></table>",
     "options": {
       "A": "104.58",
       "B": "105.26",
@@ -12038,7 +12038,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 43,
-    "question": "An analyst evaluates the following information relating to floating rate notes (FRNs)\nissued at par value that have 6-month Libor as a reference rate:\nFloating Rate Note Quoted Margin Discount Margin\nX 0.60% 0.45%\nY 0.70% 0.70%\nZ 0.80% 0.85%\nBased only on the information provided, the FRN that will be priced at a discount on the\nnext reset date is:",
+    "question": "An analyst evaluates the following information relating to floating rate notes (FRNs)\nissued at par value that have 6-month Libor as a reference rate:\n<table class=\"q-table\"><thead><tr><th>Floating Rate Note</th><th>Quoted Margin</th><th>Discount Margin</th></tr></thead><tbody><tr><td>X</td><td>0.60%</td><td>0.45%</td></tr><tr><td>Y</td><td>0.70%</td><td>0.70%</td></tr><tr><td>Z</td><td>0.80%</td><td>0.85%</td></tr></tbody></table>\nBased only on the information provided, the FRN that will be priced at a discount on the\nnext reset date is:",
     "options": {
       "A": "FRN X",
       "B": "FRN Y",
@@ -12143,7 +12143,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 50,
-    "question": "Using the following US Treasury forward rates, the value of a 2.5-year $100 par value\nTreasury bond with a 6% coupon rate is closest to: (Mock 2018 )\nPeriod Years Forward\nRate\n1 0.5 1.50%\n2 1 2.50%\n3 1.5 3.30%\n4 2 3.90%\n5 2.5 4.30%",
+    "question": "Using the following US Treasury forward rates, the value of a 2.5-year $100 par value\nTreasury bond with a 6% coupon rate is closest to: (Mock 2018 )\n<table class=\"q-table\"><thead><tr><th>Period</th><th>Years</th><th>Forward Rate</th></tr></thead><tbody><tr><td>1</td><td>0.5</td><td>1.50%</td></tr><tr><td>2</td><td>1</td><td>2.50%</td></tr><tr><td>3</td><td>1.5</td><td>3.30%</td></tr><tr><td>4</td><td>2</td><td>3.90%</td></tr><tr><td>5</td><td>2.5</td><td>4.30%</td></tr></tbody></table>",
     "options": {
       "A": "$104.19",
       "B": "$107.03",
@@ -12188,7 +12188,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 53,
-    "question": "Three option-free, semiannual-pay bonds have identical yields to maturity and the\nfollowing characteristics: Bond Coupon Rate Maturity\n1 4.5% 10 years\n2 5.5% 7 years\n3 5.5% 10 years\nThe bond with the greatest reinvestment risk is:",
+    "question": "Three option-free, semiannual-pay bonds have identical yields to maturity and the\nfollowing characteristics:\n<table class=\"q-table\"><thead><tr><th>Bond</th><th>Coupon Rate</th><th>Maturity</th></tr></thead><tbody><tr><td>1</td><td>4.5%</td><td>10 years</td></tr><tr><td>2</td><td>5.5%</td><td>7 years</td></tr><tr><td>3</td><td>5.5%</td><td>10 years</td></tr></tbody></table>\nThe bond with the greatest reinvestment risk is:",
     "options": {
       "A": "Bond 1",
       "B": "Bond 2",
@@ -12308,7 +12308,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 61,
-    "question": "An analyst gathers the following information on a bond:\nPrice 85.4734\nPayment frequency Annual\nTime to maturity 5 years\nCoupon 4%\nMacaulay duration 4.5947\nModified duration is closest to:",
+    "question": "An analyst gathers the following information on a bond:\n<table class=\"q-table\"><thead><tr><th>Attribute</th><th>Value</th></tr></thead><tbody><tr><td>Price</td><td>85.4734</td></tr><tr><td>Payment frequency</td><td>Annual</td></tr><tr><td>Time to maturity</td><td>5 years</td></tr><tr><td>Coupon</td><td>4%</td></tr><tr><td>Macaulay duration</td><td>4.5947</td></tr></tbody></table>\nModified duration is closest to:",
     "options": {
       "A": "4.2702",
       "B": "4.4180",
@@ -12368,7 +12368,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 65,
-    "question": "The annualized convexity of a three-year, 3.2% (semiannual) coupon bond priced at par\nat issuance on 1 August 2025 and maturing on 1 August 2028 is closest to:\nThree-Year, 3.2% Semiannual Bond at Issuance\nFixed coupon 3.2%\nPeriods per year 2\nPrice (per 100 Par Value) 100\nYield-to-Maturity (%) 3.2%",
+    "question": "The annualized convexity of a three-year, 3.2% (semiannual) coupon bond priced at par\nat issuance on 1 August 2025 and maturing on 1 August 2028 is closest to:\n<table class=\"q-table\"><thead><tr><th colspan=\"2\">Three-Year, 3.2% Semiannual Bond at Issuance</th></tr></thead><tbody><tr><td>Fixed coupon</td><td>3.2%</td></tr><tr><td>Periods per year</td><td>2</td></tr><tr><td>Price (per 100 Par Value)</td><td>100</td></tr><tr><td>Yield-to-Maturity (%)</td><td>3.2%</td></tr></tbody></table>",
     "options": {
       "A": "7.2831",
       "B": "9.6506",
@@ -12383,7 +12383,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 66,
-    "question": "Using the information below, and prices are per 100 of par value. The bond portfolio’s\nmoney duration is closest to: (2208 )\nMarket Modified\nbond Full price\nvalue duration\nA 95.00 180,000 7.5\nB 85.00 100,000 5.5\nC 90.00 120,000",
+    "question": "Using the information below, and prices are per 100 of par value. The bond portfolio’s\nmoney duration is closest to: (2208 )\n<table class=\"q-table\"><thead><tr><th>Bond</th><th>Full Price</th><th>Market Value</th><th>Modified Duration</th></tr></thead><tbody><tr><td>A</td><td>95.00</td><td>180,000</td><td>7.5</td></tr><tr><td>B</td><td>85.00</td><td>100,000</td><td>5.5</td></tr><tr><td>C</td><td>90.00</td><td>120,000</td><td></td></tr></tbody></table>",
     "options": {
       "A": "686.40",
       "B": "707.50",
@@ -13403,7 +13403,7 @@ var JC_QUESTIONS =
     "subject": "衍生品",
     "subjectEn": "Derivatives",
     "num": 37,
-    "question": "If there are two call options for two different underlying assets, and related information\nis shown in the table below.\nOption 1 Option 2\nPayments on the underlying Positive Zero\nCarrying cost Zero Positive\nBased on the table, which of the option is most likely to have higher value?",
+    "question": "If there are two call options for two different underlying assets, and related information\nis shown in the table below.\n<table class=\"q-table\"><thead><tr><th></th><th>Option 1</th><th>Option 2</th></tr></thead><tbody><tr><td>Payments on the underlying</td><td>Positive</td><td>Zero</td></tr><tr><td>Carrying cost</td><td>Zero</td><td>Positive</td></tr></tbody></table>\nBased on the table, which of the option is most likely to have higher value?",
     "options": {
       "A": "Option 1",
       "B": "Option 2",
