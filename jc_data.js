@@ -188,7 +188,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 13,
-    "question": "The following information is available for a portfolio:\nAsset Class Equities (60%) Bonds (40%)\nTime\nFirst year returns 15% 11%\nSecond year returns 11% -5.6%\nThird year returns -13.86% 12%\nThe geometric mean return on the portfolio is closest to: （2019.12考题回顾未改编）",
+    "question": "The following information is available for a portfolio:\n<table class=\"q-table\"><thead><tr><th>Time</th><th>Asset Class: Equities (60%)</th><th>Asset Class: Bonds (40%)</th></tr></thead><tbody><tr><td>First year returns</td><td>15%</td><td>11%</td></tr><tr><td>Second year returns</td><td>11%</td><td>-5.6%</td></tr><tr><td>Third year returns</td><td>-13.86%</td><td>12%</td></tr></tbody></table>\nThe geometric mean return on the portfolio is closest to: （2019.12考题回顾未改编）",
     "options": {
       "A": "3.9834%",
       "B": "3.5697%",
@@ -323,7 +323,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 22,
-    "question": "Consider a sample of four returns for a security:\nAsset Security 1 Security 2 Security 3 Security 4\nReturn 3% 1% -3% -1%\nWhich of the following statements regarding the sample’s mean absolute deviation (MAD)\nand standard deviation (SD) is true?",
+    "question": "Consider a sample of four returns for a security:\n<table class=\"q-table\"><thead><tr><th>Asset</th><th>Security 1</th><th>Security 2</th><th>Security 3</th><th>Security 4</th></tr></thead><tbody><tr><td>Return</td><td>3%</td><td>1%</td><td>-3%</td><td>-1%</td></tr></tbody></table>\nWhich of the following statements regarding the sample’s mean absolute deviation (MAD)\nand standard deviation (SD) is true?",
     "options": {
       "A": "MAD ＞ SD",
       "B": "MAD ＝ SD",
@@ -428,7 +428,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 29,
-    "question": "The joint probability of the returns of Asset A and Asset B are given in the following\nfigure.\nJoint Probabilities R =0.40 R =0.20\nB1 B2\nR =0.20 0.30 0.20\nA1\nR =0.10 0 0.50\nA2\nThe correlation of returns for Asset A and Asset B is closest to:",
+    "question": "The joint probability of the returns of Asset A and Asset B are given in the following\nfigure.\n<table class=\"q-table\"><thead><tr><th>Joint Probabilities</th><th>R_B1 = 0.40</th><th>R_B2 = 0.20</th></tr></thead><tbody><tr><td>R_A1 = 0.20</td><td>0.30</td><td>0.20</td></tr><tr><td>R_A2 = 0.10</td><td>0</td><td>0.50</td></tr></tbody></table>\nThe correlation of returns for Asset A and Asset B is closest to:",
     "options": {
       "A": "0.0030",
       "B": "0.0024",
@@ -473,7 +473,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 32,
-    "question": "An analyst develops the following covariance matrix of returns: （未知题目来源，已改编）\nHedge Fund Market Index\nHedge fund 225 90\nMarket index 90 64\nThe correlation of returns between the hedge fund and the market index is closest to:",
+    "question": "An analyst develops the following covariance matrix of returns: （未知题目来源，已改编）\n<table class=\"q-table\"><thead><tr><th></th><th>Hedge Fund</th><th>Market Index</th></tr></thead><tbody><tr><td>Hedge fund</td><td>225</td><td>90</td></tr><tr><td>Market index</td><td>90</td><td>64</td></tr></tbody></table>\nThe correlation of returns between the hedge fund and the market index is closest to:",
     "options": {
       "A": "0.005",
       "B": "0.75",
@@ -953,7 +953,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 64,
-    "question": "Investment analysts often use earnings per share (EPS) forecasts. One test of\nforecasting quality is the zero-mean test, which states that optimal forecasts should\nhave a mean forecasting error of 0. (Forecasting error = Predicted value of variable −\nActual value of variable.)\nPerformance in Forecasting Quarterly Earnings per Share\nMean Forecast Error Standard Deviations of\nNumber of Forecasts\n(Predicted – Actual) Forecast Errors\n100 0.06 0.20\nTo test whether the mean forecasting error is 0, the t-statistic calculated is most likely:",
+    "question": "Investment analysts often use earnings per share (EPS) forecasts. One test of\nforecasting quality is the zero-mean test, which states that optimal forecasts should\nhave a mean forecasting error of 0. (Forecasting error = Predicted value of variable −\nActual value of variable.)\nPerformance in Forecasting Quarterly Earnings per Share\n<table class=\"q-table\"><thead><tr><th>Number of Forecasts</th><th>Mean Forecast Error (Predicted – Actual)</th><th>Standard Deviations of Forecast Errors</th></tr></thead><tbody><tr><td>100</td><td>0.06</td><td>0.20</td></tr></tbody></table>\nTo test whether the mean forecasting error is 0, the t-statistic calculated is most likely:",
     "options": {
       "A": "3.015",
       "B": "3.000",
@@ -1343,7 +1343,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 90,
-    "question": "Bill Coldplay, CFA, is analyzing the performance of the Vigorous Growth Index Fund\n(VIGRX) over the past three years. The fund employs a passive management investment\napproach designed to track the performance of the MSCI US Prime Market Growth Index,\na broadly diversified index of growth stocks of large U.S. companies. Coldplay estimates\na regression using excess monthly returns on VIGRX (exVIGRX) as the dependent\nvariable and excess monthly returns on the S&P 500 Index (exS&PSOO) as the\nindependent variable. The data are expressed in decimal terms (e.g., 0.03, not 3%).\n𝐞𝐱𝐕𝐈𝐆𝐑𝐗 =𝒃 +𝒃 (𝐞𝐱𝐒&𝐏𝟓𝟎𝟎 )+𝜺\n𝒕 𝟎 𝟏 𝐭 𝐭\nResults from that analysis are presented in the following figures.\nEstimated Coefficients\nCoefficients Coefficient Estimate Standard Error\n𝒃 0.0023 0.0022\n𝟎\n𝒃 1.1163 0.0624\n𝟏\nPartial ANOVA Table\nSource of Variation Sum of Squares\nRegression (explained) 0.0228\nError (unexplained) 0.0024\nThe 𝑹𝟐from the regression is closest to:",
+    "question": "Bill Coldplay, CFA, is analyzing the performance of the Vigorous Growth Index Fund\n(VIGRX) over the past three years. The fund employs a passive management investment\napproach designed to track the performance of the MSCI US Prime Market Growth Index,\na broadly diversified index of growth stocks of large U.S. companies. Coldplay estimates\na regression using excess monthly returns on VIGRX (exVIGRX) as the dependent\nvariable and excess monthly returns on the S&P 500 Index (exS&PSOO) as the\nindependent variable. The data are expressed in decimal terms (e.g., 0.03, not 3%).\n𝐞𝐱𝐕𝐈𝐆𝐑𝐗 =𝒃 +𝒃 (𝐞𝐱𝐒&𝐏𝟓𝟎𝟎 )+𝜺\n𝒕 𝟎 𝟏 𝐭 𝐭\nResults from that analysis are presented in the following figures.\nEstimated Coefficients\n<table class=\"q-table\"><thead><tr><th>Coefficients</th><th>Coefficient Estimate</th><th>Standard Error</th></tr></thead><tbody><tr><td>𝒃₀</td><td>0.0023</td><td>0.0022</td></tr><tr><td>𝒃₁</td><td>1.1163</td><td>0.0624</td></tr></tbody></table>\nPartial ANOVA Table\n<table class=\"q-table\"><thead><tr><th>Source of Variation</th><th>Sum of Squares</th></tr></thead><tbody><tr><td>Regression (explained)</td><td>0.0228</td></tr><tr><td>Error (unexplained)</td><td>0.0024</td></tr></tbody></table>\nThe 𝑹𝟐from the regression is closest to:",
     "options": {
       "A": "0.095",
       "B": "0.295",
@@ -1358,7 +1358,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 91,
-    "question": "Bill Coldplay, CFA, is analyzing the performance of the Vigorous Growth Index Fund\n(VIGRX) over the past three years. The fund employs a passive management investment\napproach designed to track the performance of the MSCI US Prime Market Growth Index,\na broadly diversified index of growth stocks of large U.S. companies. Coldplay estimates\na regression using excess monthly returns on VIGRX (exVIGRX) as the dependent\nvariable and excess monthly returns on the S&P 500 Index (exS&PSOO) as the\nindependent variable. The data are expressed in decimal terms (e.g., 0.03, not 3%).\n𝐞𝐱𝐕𝐈𝐆𝐑𝐗 =𝒃 +𝒃 (𝐞𝐱𝐒&𝐏𝟓𝟎𝟎 )+𝜺\n𝒕 𝟎 𝟏 𝐭 𝐭\nResults from that analysis are presented in the following figures.\nEstimated Coefficients\nCoefficients Coefficient Estimate Standard Error 𝒃 0.0023 0.0022\n𝟎\n𝒃 1.1163 0.0624\n𝟏\nPartial ANOVA Table\nSource of Variation Sum of Squares\nRegression (explained) 0.0228\nError (unexplained) 0.0024\nThe standard error of estimate (SEE) is closest to:",
+    "question": "Bill Coldplay, CFA, is analyzing the performance of the Vigorous Growth Index Fund\n(VIGRX) over the past three years. The fund employs a passive management investment\napproach designed to track the performance of the MSCI US Prime Market Growth Index,\na broadly diversified index of growth stocks of large U.S. companies. Coldplay estimates\na regression using excess monthly returns on VIGRX (exVIGRX) as the dependent\nvariable and excess monthly returns on the S&P 500 Index (exS&PSOO) as the\nindependent variable. The data are expressed in decimal terms (e.g., 0.03, not 3%).\n𝐞𝐱𝐕𝐈𝐆𝐑𝐗 =𝒃 +𝒃 (𝐞𝐱𝐒&𝐏𝟓𝟎𝟎 )+𝜺\n𝒕 𝟎 𝟏 𝐭 𝐭\nResults from that analysis are presented in the following figures.\nEstimated Coefficients\n<table class=\"q-table\"><thead><tr><th>Coefficients</th><th>Coefficient Estimate</th><th>Standard Error</th></tr></thead><tbody><tr><td>𝒃₀</td><td>0.0023</td><td>0.0022</td></tr><tr><td>𝒃₁</td><td>1.1163</td><td>0.0624</td></tr></tbody></table>\nPartial ANOVA Table\n<table class=\"q-table\"><thead><tr><th>Source of Variation</th><th>Sum of Squares</th></tr></thead><tbody><tr><td>Regression (explained)</td><td>0.0228</td></tr><tr><td>Error (unexplained)</td><td>0.0024</td></tr></tbody></table>\nThe standard error of estimate (SEE) is closest to:",
     "options": {
       "A": "0.008",
       "B": "0.014",
@@ -1373,7 +1373,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 92,
-    "question": "An analyst is exploring the relationship between corporate earnings growth and stock\nreturns. Specifically, he wants to explain the variation that he observes in stock prices by\nusing the variation seen in earnings per share (EPS). He collects the data in the following\nExhibit on EPS revisions and stock price returns for a sample of six companies.\nCompany Stock Returns EPS Growth (𝒀 −𝒀̅)𝟐 (𝑿 −𝑿̅̅̅ )𝟐 (𝒀 −𝒀̅)(𝑿 −𝑿̅̅̅)\n𝒊 𝒊 𝒊 𝒊 𝒊 𝒊 𝒊 𝒊\n(Yi) (Xi)\nA 9.00 4.00 28.44 25.84 27.11\nB 7.00 5.00 53.78 16.67 2994\nC 17.00 9.00 7.11 0.01 (0.22)\nD 23.00 13.00 75.11 15.34 33.94\nE 11.00 9.50 11.11 0.17 (1.39)\nF 19.00 14.00 21.78 24.17 22.94\nSum 86.00 54.50 197.33 82.21 112.33\nMean 14.33 9.08\nS.D. 6.28 4.05\nWhich one of the following computations for the simple linear regression model is least\naccurate?",
+    "question": "An analyst is exploring the relationship between corporate earnings growth and stock\nreturns. Specifically, he wants to explain the variation that he observes in stock prices by\nusing the variation seen in earnings per share (EPS). He collects the data in the following\nExhibit on EPS revisions and stock price returns for a sample of six companies.\n<table class=\"q-table\"><thead><tr><th>Company</th><th>Stock Returns (Yi)</th><th>EPS Growth (Xi)</th><th>(Yi-Ybar)^2</th><th>(Xi-Xbar)^2</th><th>(Yi-Ybar)(Xi-Xbar)</th></tr></thead><tbody><tr><td>A</td><td>9.00</td><td>4.00</td><td>28.44</td><td>25.84</td><td>27.11</td></tr><tr><td>B</td><td>7.00</td><td>5.00</td><td>53.78</td><td>16.67</td><td>29.94</td></tr><tr><td>C</td><td>17.00</td><td>9.00</td><td>7.11</td><td>0.01</td><td>(0.22)</td></tr><tr><td>D</td><td>23.00</td><td>13.00</td><td>75.11</td><td>15.34</td><td>33.94</td></tr><tr><td>E</td><td>11.00</td><td>9.50</td><td>11.11</td><td>0.17</td><td>(1.39)</td></tr><tr><td>F</td><td>19.00</td><td>14.00</td><td>21.78</td><td>24.17</td><td>22.94</td></tr><tr><td>Sum</td><td>86.00</td><td>54.50</td><td>197.33</td><td>82.21</td><td>112.33</td></tr><tr><td>Mean</td><td>14.33</td><td>9.08</td><td></td><td></td><td></td></tr><tr><td>S.D.</td><td>6.28</td><td>4.05</td><td></td><td></td><td></td></tr></tbody></table>\nWhich one of the following computations for the simple linear regression model is least\naccurate?",
     "options": {
       "A": "The slope coefficient for the model is closest to 1.37",
       "B": "The intercept for this regression model is closest to 1.89",
@@ -1403,7 +1403,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 94,
-    "question": "You are examining the results of a regression estimation that attempts to explain the return\non equity of a company based on the variations in asset turnover. The analysis of variance\noutput for the regression is given in the following table. The regression was based on five\nobservations (n = 5).\nANOVA Table for Return of Equity Regressed Against Asset Turnover\nSource df Sum of Squares Mean Square F p-value\nRegression 1 95 95 31.4922 0.0112\nTesidual 3 9.1 3.0166\nTotal 4 104.1\nBased on the data shown in the ANOVA table, which of the following conclusions is least\naccurate?",
+    "question": "You are examining the results of a regression estimation that attempts to explain the return\non equity of a company based on the variations in asset turnover. The analysis of variance\noutput for the regression is given in the following table. The regression was based on five\nobservations (n = 5).\nANOVA Table for Return of Equity Regressed Against Asset Turnover\n<table class=\"q-table\"><thead><tr><th>Source</th><th>df</th><th>Sum of Squares</th><th>Mean Square</th><th>F</th><th>p-value</th></tr></thead><tbody><tr><td>Regression</td><td>1</td><td>95</td><td>95</td><td>31.4922</td><td>0.0112</td></tr><tr><td>Residual</td><td>3</td><td>9.1</td><td>3.0166</td><td></td><td></td></tr><tr><td>Total</td><td>4</td><td>104.1</td><td></td><td></td><td></td></tr></tbody></table>\nBased on the data shown in the ANOVA table, which of the following conclusions is least\naccurate?",
     "options": {
       "A": "The sample variance of the dependent variable would be 26.025",
       "B": "The standard error of the estimate 4.5",
@@ -1433,7 +1433,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 96,
-    "question": "From conducting a simple linear regression analysis, an analyst obtains the following\nresults:\nCoefficient of determination (R^2) 0.9\nSum of squared regression 90\nNumbers of observations 50\nWhat is the standard error of estimate?",
+    "question": "From conducting a simple linear regression analysis, an analyst obtains the following\nresults:\n<table class=\"q-table\"><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Coefficient of determination (R^2)</td><td>0.9</td></tr><tr><td>Sum of squared regression</td><td>90</td></tr><tr><td>Numbers of observations</td><td>50</td></tr></tbody></table>\nWhat is the standard error of estimate?",
     "options": {
       "A": "432.07",
       "B": "0.46",
@@ -1448,7 +1448,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 97,
-    "question": "Evian Wang, an analyst of Golden Future, runs a regression analysis using monthly stock\n(601857) returns of China National Petroleum Corporation as the dependent variable and\nthe monthly change in China-Automobile Health Index (C-AHI) as the independent\nvariable. The following table displays the results of this regression model.\nRegression Statistics\nCoefficients Standard error t-statistic\nIntercept 0.0138 0.0046 3.0275\nC-AHI (%) -0.6486 0.2818 -2.3014\nBased on the regression, if the C-AHI decreases by 1.0%, the monthly stock return of\nChina National Petroleum Corporation during the next period is closest to:",
+    "question": "Evian Wang, an analyst of Golden Future, runs a regression analysis using monthly stock\n(601857) returns of China National Petroleum Corporation as the dependent variable and\nthe monthly change in China-Automobile Health Index (C-AHI) as the independent\nvariable. The following table displays the results of this regression model.\nRegression Statistics\n<table class=\"q-table\"><thead><tr><th></th><th>Coefficients</th><th>Standard Error</th><th>t-statistic</th></tr></thead><tbody><tr><td>Intercept</td><td>0.0138</td><td>0.0046</td><td>3.0275</td></tr><tr><td>C-AHI (%)</td><td>-0.6486</td><td>0.2818</td><td>-2.3014</td></tr></tbody></table>\nBased on the regression, if the C-AHI decreases by 1.0%, the monthly stock return of\nChina National Petroleum Corporation during the next period is closest to:",
     "options": {
       "A": "0.0073 (0.73%)",
       "B": "0.0138 (1.38%)",
@@ -1463,7 +1463,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 98,
-    "question": "Elena Vasileva recently joined EnergyInvest as a junior portfolio analyst. Vasileva’s\nsupervisor asks her to evaluate a potential investment opportunity in Amtex, a\nmultinational oil and gas corporation based in the United States. Vasileva’s supervisor\nsuggests using regression analysis to examine the relation between Amtex shares and\nreturns on crude oil.\nVasileva runs a regression of Amtex share returns on crude oil returns using the monthly\ndata she collected. Selected regression output is presented in Exhibit 1. She uses a 1%\nlevel of significance in all her tests.\nVasileva expects the crude oil return next month, Month 37, to be −0.01. She computes\nthe standard error of the forecast to be 0.0469.\nExhibit 1 Selected Data for Crude Oil Returns and Amtex Share Returns\nCoefficient Standard Error\nIntercept 0.0095 0.0078 Oil return 0.2354 0.0760\nCritical t-values for a 1% level of significance:\nOne-sided, left side: −2.441\nOne-sided, right side: +2.441\nTwo-sided: ±2.728\nUsing information from Exhibit 2, the 99% prediction interval for Amtex share return for\nMonth 37 is best described as:",
+    "question": "Elena Vasileva recently joined EnergyInvest as a junior portfolio analyst. Vasileva’s\nsupervisor asks her to evaluate a potential investment opportunity in Amtex, a\nmultinational oil and gas corporation based in the United States. Vasileva’s supervisor\nsuggests using regression analysis to examine the relation between Amtex shares and\nreturns on crude oil.\nVasileva runs a regression of Amtex share returns on crude oil returns using the monthly\ndata she collected. Selected regression output is presented in Exhibit 1. She uses a 1%\nlevel of significance in all her tests.\nVasileva expects the crude oil return next month, Month 37, to be −0.01. She computes\nthe standard error of the forecast to be 0.0469.\nExhibit 1 Selected Data for Crude Oil Returns and Amtex Share Returns\n<table class=\"q-table\"><thead><tr><th></th><th>Coefficient</th><th>Standard Error</th></tr></thead><tbody><tr><td>Intercept</td><td>0.0095</td><td>0.0078</td></tr><tr><td>Oil return</td><td>0.2354</td><td>0.0760</td></tr></tbody></table>\nCritical t-values for a 1% level of significance:\nOne-sided, left side: −2.441\nOne-sided, right side: +2.441\nTwo-sided: ±2.728\nUsing information from Exhibit 2, the 99% prediction interval for Amtex share return for\nMonth 37 is best described as:",
     "options": {
       "A": "𝑌̂ ±0.0053",
       "B": "𝑌̂ ±0.0469",
@@ -3233,7 +3233,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 10,
-    "question": "At the start of the year, a company's capital contributed by owners and retained earnings\naccounts had balances of $10,000 and $6,000, respectively. During the year, the\nfollowing events took place:\nNet income earned $4,000\nInterest paid on debt $500\nRepayment of long-term debt $1,000\nProceeds from shares issued $2,000\nDividends paid $600\nThe end-of-year owners' equity is closest to:",
+    "question": "At the start of the year, a company's capital contributed by owners and retained earnings\naccounts had balances of $10,000 and $6,000, respectively. During the year, the\nfollowing events took place:\n<table class=\"q-table\"><thead><tr><th>Event</th><th>Amount</th></tr></thead><tbody><tr><td>Net income earned</td><td>$4,000</td></tr><tr><td>Interest paid on debt</td><td>$500</td></tr><tr><td>Repayment of long-term debt</td><td>$1,000</td></tr><tr><td>Proceeds from shares issued</td><td>$2,000</td></tr><tr><td>Dividends paid</td><td>$600</td></tr></tbody></table>\nThe end-of-year owners' equity is closest to:",
     "options": {
       "A": "$19,900",
       "B": "$19,400",
@@ -3428,7 +3428,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 23,
-    "question": "JOOVI Inc. has recently purchased and installed a new machine for its manufacturing\nplant. The company incurred the following costs: (原版书)\nPurchase price $12,980\nFreight and insurance $1,200\nInstallation $700\nTesting $100\nMaintenance staff training costs $500\nThe total cost of the machine to be shown on JOOVI's balance sheet is closest to:",
+    "question": "JOOVI Inc. has recently purchased and installed a new machine for its manufacturing\nplant. The company incurred the following costs: (原版书)\n<table class=\"q-table\"><thead><tr><th>Cost Item</th><th>Amount</th></tr></thead><tbody><tr><td>Purchase price</td><td>$12,980</td></tr><tr><td>Freight and insurance</td><td>$1,200</td></tr><tr><td>Installation</td><td>$700</td></tr><tr><td>Testing</td><td>$100</td></tr><tr><td>Maintenance staff training costs</td><td>$500</td></tr></tbody></table>\nThe total cost of the machine to be shown on JOOVI's balance sheet is closest to:",
     "options": {
       "A": "$14,180",
       "B": "$14,980",
@@ -3458,7 +3458,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 25,
-    "question": "Assume U.S. GAAP applies unless otherwise noted. An analyst gathered the following\ninformation about a company:\nShares of common stock 1,500,000\nNet income for the year $3,000,000\nPar value of convertible bonds with a 4% coupon rate $20,000,000\nPar value of cumulative preferred stock with a 7% dividend rate $4,000,000\nTax rate 25%\nThe bonds were issued at par and can be converted into 600,000 common shares. All\nsecurities were outstanding for the entire year. Dilutive earnings per share for the\ncompany are closest to:",
+    "question": "Assume U.S. GAAP applies unless otherwise noted. An analyst gathered the following\ninformation about a company:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Shares of common stock</td><td>1,500,000</td></tr><tr><td>Net income for the year</td><td>$3,000,000</td></tr><tr><td>Par value of convertible bonds with a 4% coupon rate</td><td>$20,000,000</td></tr><tr><td>Par value of cumulative preferred stock with a 7% dividend rate</td><td>$4,000,000</td></tr><tr><td>Tax rate</td><td>25%</td></tr></tbody></table>\nThe bonds were issued at par and can be converted into 600,000 common shares. All\nsecurities were outstanding for the entire year. Dilutive earnings per share for the\ncompany are closest to:",
     "options": {
       "A": "$1.81",
       "B": "$1.58",
@@ -3533,7 +3533,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 30,
-    "question": "The following data are available on a company for the current year:\nMetric £ thousands\nTotal comprehensive income 345,000\nDividends paid 45,000\nDividend declared 80,000\nEnding retained earnings 985,000\nOpening retained earnings 643,000\nThe company will most likely report other comprehensive income (OCI) (in £ thousands)\nas a:",
+    "question": "The following data are available on a company for the current year:\n<table class=\"q-table\"><thead><tr><th>Metric</th><th>£ thousands</th></tr></thead><tbody><tr><td>Total comprehensive income</td><td>345,000</td></tr><tr><td>Dividends paid</td><td>45,000</td></tr><tr><td>Dividend declared</td><td>80,000</td></tr><tr><td>Ending retained earnings</td><td>985,000</td></tr><tr><td>Opening retained earnings</td><td>643,000</td></tr></tbody></table>\nThe company will most likely report other comprehensive income (OCI) (in £ thousands)\nas a:",
     "options": {
       "A": "loss of 42,000",
       "B": "loss of 77,000",
@@ -3608,7 +3608,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 35,
-    "question": "Based on the above information about a company’s trade receivables, the bad debt expense (in millions) for 2014 is closest to:\n(£ millions) 2014 2013\nAccounts receivables, gross 6,620 4,840\nAllowance for doubtful accounts 92 56\nWrite-offs during the year 84",
+    "question": "Based on the above information about a company’s trade receivables, the bad debt expense (in millions) for 2014 is closest to:\n<table class=\"q-table\"><thead><tr><th>(£ millions)</th><th>2014</th><th>2013</th></tr></thead><tbody><tr><td>Accounts receivables, gross</td><td>6,620</td><td>4,840</td></tr><tr><td>Allowance for doubtful accounts</td><td>92</td><td>56</td></tr><tr><td>Write-offs during the year</td><td>84</td><td></td></tr></tbody></table>",
     "options": {
       "A": "£36",
       "B": "£84",
@@ -3683,7 +3683,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 40,
-    "question": "A company recorded the following in Year 1:\nProceeds from issuance of long-term debt €380,000\nPurchase of equipment €210,000\nLoss on sale of equipment €73,000\nProceeds from sale of equipment €150,000\nEquity in earnings of affiliate €17,000\nOn the Year 1 statement of cash flows, the company would report net cash flow from\ninvesting activities closest to:",
+    "question": "A company recorded the following in Year 1:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody><tr><td>Proceeds from issuance of long-term debt</td><td>€380,000</td></tr><tr><td>Purchase of equipment</td><td>€210,000</td></tr><tr><td>Loss on sale of equipment</td><td>€73,000</td></tr><tr><td>Proceeds from sale of equipment</td><td>€150,000</td></tr><tr><td>Equity in earnings of affiliate</td><td>€17,000</td></tr></tbody></table>\nOn the Year 1 statement of cash flows, the company would report net cash flow from\ninvesting activities closest to:",
     "options": {
       "A": "(€150,000)",
       "B": "(€60,000)",
@@ -3743,7 +3743,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 44,
-    "question": "The following items are from a company's cash flow statement.\nClassification of Cash Description Amount\nOperating acFtliovwiti es Cash received from customers (£ t1h1o0u,0sa0n0d s)\nInvesting activities Interest and dividends received 200,000\nFinancing activities Net repayment of revolving credit loan 24,000\nWhich of the following standards and formats did the company most likely use in the\npreparation for its financial statements?（协会模拟考试题改数字）",
+    "question": "The following items are from a company's cash flow statement.\n<table class=\"q-table\"><thead><tr><th>Classification of Cash Flows</th><th>Description</th><th>Amount (£ thousands)</th></tr></thead><tbody><tr><td>Operating activities</td><td>Cash received from customers</td><td>110,000</td></tr><tr><td>Investing activities</td><td>Interest and dividends received</td><td>200,000</td></tr><tr><td>Financing activities</td><td>Net repayment of revolving credit loan</td><td>24,000</td></tr></tbody></table>\nWhich of the following standards and formats did the company most likely use in the\npreparation for its financial statements?（协会模拟考试题改数字）",
     "options": {
       "A": "IFRS, indirect format",
       "B": "Either IFRS or US GAAP, direct format",
@@ -3758,7 +3758,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 45,
-    "question": "The following annual financial data are available for a company:\n£ millions\nBeginning interest payable 40.9\nCash paid for interest 130.3\nEnding interest payable 58.4\nInterest expense (in millions) for the year is closest to:",
+    "question": "The following annual financial data are available for a company:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>£ millions</th></tr></thead><tbody><tr><td>Beginning interest payable</td><td>40.9</td></tr><tr><td>Cash paid for interest</td><td>130.3</td></tr><tr><td>Ending interest payable</td><td>58.4</td></tr></tbody></table>\nInterest expense (in millions) for the year is closest to:",
     "options": {
       "A": "137.8",
       "B": "147.8",
@@ -3818,7 +3818,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 49,
-    "question": "Silverago Incorporated, an international metals company, reported a loss on the sale of equipment of $2 million in 2010. In addition, the company’s income statement shows\ndepreciation expense of $8 million and the cash flow statement shows capital\nexpenditure of $10 million, all of which was for the purchase of new equipment. Using\nthe following information from the comparative balance sheets, how much cash did the\ncompany receive from the equipment sale? (CFA Level 1 Curriculum, Volume 3)\nBalance Sheet Item 12/31/2009 12/31/2010 Change\nEquipment $100 million $105 million $5 million\nAccumulated depreciation—equipment $40 million $46 million $6 million",
+    "question": "Silverago Incorporated, an international metals company, reported a loss on the sale of equipment of $2 million in 2010. In addition, the company’s income statement shows\ndepreciation expense of $8 million and the cash flow statement shows capital\nexpenditure of $10 million, all of which was for the purchase of new equipment. Using\nthe following information from the comparative balance sheets, how much cash did the\ncompany receive from the equipment sale? (CFA Level 1 Curriculum, Volume 3)\n<table class=\"q-table\"><thead><tr><th>Balance Sheet Item</th><th>12/31/2009</th><th>12/31/2010</th><th>Change</th></tr></thead><tbody><tr><td>Equipment</td><td>$100 million</td><td>$105 million</td><td>$5 million</td></tr><tr><td>Accumulated depreciation—equipment</td><td>$40 million</td><td>$46 million</td><td>$6 million</td></tr></tbody></table>",
     "options": {
       "A": "$1 million",
       "B": "$2 million",
@@ -3848,7 +3848,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 51,
-    "question": "In 20X8, a company recorded several transactions under U.S. GAAP. The company\npurchased a new machine to update its manufacturing line for $150,000. During the year,\n$140,000 of convertible preferred stocks were exercised; $24,000 dividends were\nreceived; and $42,000 dividends were paid. The mortgage payment of the company\nincludes $34,000 of principal. The investing cash flows and the financing cash flows of\nthe company were closest to:\nCFI CFF",
+    "question": "In 20X8, a company recorded several transactions under U.S. GAAP. The company\npurchased a new machine to update its manufacturing line for $150,000. During the year,\n$140,000 of convertible preferred stocks were exercised; $24,000 dividends were\nreceived; and $42,000 dividends were paid. The mortgage payment of the company\nincludes $34,000 of principal. The investing cash flows and the financing cash flows of\nthe company were closest to:\n<table class=\"q-table\"><thead><tr><th>Option</th><th>CFI</th><th>CFF</th></tr></thead><tbody><tr><td>A</td><td>($10,000)</td><td>($42,000)</td></tr><tr><td>B</td><td>($150,000)</td><td>($42,000)</td></tr><tr><td>C</td><td>($150,000)</td><td>($76,000)</td></tr></tbody></table>",
     "options": {
       "A": "($10,000) ($42,000)",
       "B": "($150,000) ($42,000)",
@@ -3863,7 +3863,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 52,
-    "question": "Copper, Inc., a fictitious brewery and restaurant chain, reported a gain on the sale of\nequipment of $12 million. In addition, the company’s income statement shows\ndepreciation expense of $8 million and the cash flow statement shows capital\nexpenditure of $15 million, all of which was for the purchase of new equipment.\nBalance sheet item 12/31/2017 12/31/2018 Change\nEquipment $100 million $109 million $9 million\nAccumulated depreciation- $30 million $36 million $6 million\nequipment\nUsing the above information from the comparative balance sheets, how much cash did\nthe company receive from the equipment sale?",
+    "question": "Copper, Inc., a fictitious brewery and restaurant chain, reported a gain on the sale of\nequipment of $12 million. In addition, the company’s income statement shows\ndepreciation expense of $8 million and the cash flow statement shows capital\nexpenditure of $15 million, all of which was for the purchase of new equipment.\n<table class=\"q-table\"><thead><tr><th>Balance Sheet Item</th><th>12/31/2017</th><th>12/31/2018</th><th>Change</th></tr></thead><tbody><tr><td>Equipment</td><td>$100 million</td><td>$109 million</td><td>$9 million</td></tr><tr><td>Accumulated depreciation—equipment</td><td>$30 million</td><td>$36 million</td><td>$6 million</td></tr></tbody></table>\nUsing the above information from the comparative balance sheets, how much cash did\nthe company receive from the equipment sale?",
     "options": {
       "A": "$12 million",
       "B": "$16 million",
@@ -3878,7 +3878,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 53,
-    "question": "Based on the following information for Pinkerly Inc., a fictitious company, what are the\ntotal adjustments that the company would make to net income in order to derive\noperating cash flow?\nIncome statement item 12/31/2018\nNet income $30 million\nDepreciation $7 million\nBalance sheet item 12/31/2017 12/31/2018 Change\nAccounts receivable $15 million $30 million $15 million\nInventory $16 million $13 million ($3 million)\nAccounts payable $10 million $20 million $10 million",
+    "question": "Based on the following information for Pinkerly Inc., a fictitious company, what are the\ntotal adjustments that the company would make to net income in order to derive\noperating cash flow?\n<table class=\"q-table\"><thead><tr><th>Income Statement Item</th><th>12/31/2018</th></tr></thead><tbody><tr><td>Net income</td><td>$30 million</td></tr><tr><td>Depreciation</td><td>$7 million</td></tr></tbody></table>\n<table class=\"q-table\"><thead><tr><th>Balance Sheet Item</th><th>12/31/2017</th><th>12/31/2018</th><th>Change</th></tr></thead><tbody><tr><td>Accounts receivable</td><td>$15 million</td><td>$30 million</td><td>$15 million</td></tr><tr><td>Inventory</td><td>$16 million</td><td>$13 million</td><td>($3 million)</td></tr><tr><td>Accounts payable</td><td>$10 million</td><td>$20 million</td><td>$10 million</td></tr></tbody></table>",
     "options": {
       "A": "Add $5 million",
       "B": "Add $21 million",
@@ -3893,7 +3893,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 54,
-    "question": "Assume U.S. GAAP applies unless otherwise noted. An analyst gathered the following\nannual information ($ millions) about a company that pays no dividends and has no debt:\nNet income 91.6\nDepreciation 36.4\nLoss on sale of equipment 3.2\nDecrease in accounts receivable 8.4\nIncrease in inventories 10.8\nIncrease in accounts payable 9\nCapital expenditures 14.6\nProceeds from issuance of new shares 17\nThe company's annual free cash flow to equity ($ millions) is closest to:（未知改编）",
+    "question": "Assume U.S. GAAP applies unless otherwise noted. An analyst gathered the following\nannual information ($ millions) about a company that pays no dividends and has no debt:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>$ millions</th></tr></thead><tbody><tr><td>Net income</td><td>91.6</td></tr><tr><td>Depreciation</td><td>36.4</td></tr><tr><td>Loss on sale of equipment</td><td>3.2</td></tr><tr><td>Decrease in accounts receivable</td><td>8.4</td></tr><tr><td>Increase in inventories</td><td>10.8</td></tr><tr><td>Increase in accounts payable</td><td>9</td></tr><tr><td>Capital expenditures</td><td>14.6</td></tr><tr><td>Proceeds from issuance of new shares</td><td>17</td></tr></tbody></table>\nThe company's annual free cash flow to equity ($ millions) is closest to:（未知改编）",
     "options": {
       "A": "106.2",
       "B": "116.8",
@@ -3953,7 +3953,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 58,
-    "question": "After reviewing the inventory records for Argo, the following cost related to inventory\nwere incurred:\nFixed production overhead $540,000\nDirect material purchased $522,000\nDirect labour cost $153,000\nStorage costs incurred during production $52,000\nStorage cost incurred before deliver to customers $21,500\nNormal waste costs $5,700\nAbnormal waste costs $40,000\nThe inventory value capitalized in the balance sheet of Argo is closest to: （自编）",
+    "question": "After reviewing the inventory records for Argo, the following cost related to inventory\nwere incurred:\n<table class=\"q-table\"><thead><tr><th>Cost Item</th><th>Amount</th></tr></thead><tbody><tr><td>Fixed production overhead</td><td>$540,000</td></tr><tr><td>Direct material purchased</td><td>$522,000</td></tr><tr><td>Direct labour cost</td><td>$153,000</td></tr><tr><td>Storage costs incurred during production</td><td>$52,000</td></tr><tr><td>Storage cost incurred before deliver to customers</td><td>$21,500</td></tr><tr><td>Normal waste costs</td><td>$5,700</td></tr><tr><td>Abnormal waste costs</td><td>$40,000</td></tr></tbody></table>\nThe inventory value capitalized in the balance sheet of Argo is closest to: （自编）",
     "options": {
       "A": "$1,272,700",
       "B": "$1,294,200",
@@ -4058,7 +4058,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 65,
-    "question": "For a manufacturing company, its information is shown in the table below:\n$ million\nEnding inventory (under FIFO) 4.3\nNRV 4.1\nReplacement cost 3.8\nNormal profit margin 0.5\nIf the company is using International Financial Reporting Standards (IFRS) instead of\nUS GAAP, its cost of goods sold (in millions) is most likely:",
+    "question": "For a manufacturing company, its information is shown in the table below:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>$ million</th></tr></thead><tbody><tr><td>Ending inventory (under FIFO)</td><td>4.3</td></tr><tr><td>NRV</td><td>4.1</td></tr><tr><td>Replacement cost</td><td>3.8</td></tr><tr><td>Normal profit margin</td><td>0.5</td></tr></tbody></table>\nIf the company is using International Financial Reporting Standards (IFRS) instead of\nUS GAAP, its cost of goods sold (in millions) is most likely:",
     "options": {
       "A": "0.3 higher",
       "B": "0.3 lower",
@@ -4073,7 +4073,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 66,
-    "question": "For a manufacturing company using US GAAP, its information is shown in the table\nbelow:\n$ million\nEnding inventory (under LIFO) 4.3\nNRV 4.1\nReplacement cost 3.8\nNormal profit margin 0.5\nIts cost of goods sold (in millions) will most likely:",
+    "question": "For a manufacturing company using US GAAP, its information is shown in the table\nbelow:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>$ million</th></tr></thead><tbody><tr><td>Ending inventory (under LIFO)</td><td>4.3</td></tr><tr><td>NRV</td><td>4.1</td></tr><tr><td>Replacement cost</td><td>3.8</td></tr><tr><td>Normal profit margin</td><td>0.5</td></tr></tbody></table>\nIts cost of goods sold (in millions) will most likely:",
     "options": {
       "A": "increase by 0.2",
       "B": "increase by 0.5",
@@ -4148,7 +4148,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 71,
-    "question": "An investor collected a company’s inventory data as follows:\n2009 2008\nCOGS 1200 1430\nLIFO Reserve 800 820\nIf the company used FIFO method to recognize, what would the cost of goods sold be?",
+    "question": "An investor collected a company’s inventory data as follows:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>2009</th><th>2008</th></tr></thead><tbody><tr><td>COGS</td><td>1200</td><td>1430</td></tr><tr><td>LIFO Reserve</td><td>800</td><td>820</td></tr></tbody></table>\nIf the company used FIFO method to recognize, what would the cost of goods sold be?",
     "options": {
       "A": "1220",
       "B": "1200",
@@ -4208,7 +4208,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 75,
-    "question": "An analyst gathers the following information about a company:\n($ thousands) 2014 2013\nSales 2,173 2,080\nEnd-of-year inventories (LIFO) 310 270\nLIFO reserve 77 59\nGross profit margin 0.48 0.47\nUsing end-of-year inventories, if first-in, first-out (FIFO) instead of last-in, first-out\n(LIFO) is used to determine the number of days in inventory on hand for 2014, the\ndifference in days will be greater by an amount closest to:",
+    "question": "An analyst gathers the following information about a company:\n<table class=\"q-table\"><thead><tr><th>($ thousands)</th><th>2014</th><th>2013</th></tr></thead><tbody><tr><td>Sales</td><td>2,173</td><td>2,080</td></tr><tr><td>End-of-year inventories (LIFO)</td><td>310</td><td>270</td></tr><tr><td>LIFO reserve</td><td>77</td><td>59</td></tr><tr><td>Gross profit margin</td><td>0.48</td><td>0.47</td></tr></tbody></table>\nUsing end-of-year inventories, if first-in, first-out (FIFO) instead of last-in, first-out\n(LIFO) is used to determine the number of days in inventory on hand for 2014, the\ndifference in days will be greater by an amount closest to:",
     "options": {
       "A": "25",
       "B": "27",
@@ -4238,7 +4238,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 77,
-    "question": "A financial analyst is analyzing the result of the sale of a vehicle for $ 65,000 on 31\nDecember 2022. The analyst compiles the following information about the vehicle:\nAcquisition cost of the vehicle $ 100,000\nAcquisition date 1 January 2019\nEstimated residual value at acquisition date $ 10,000\nExpected useful life 9 years\nDepreciation method Straight-line\nThe result of the sale of the vehicle is most likely:（2012原版书后Reading30）",
+    "question": "A financial analyst is analyzing the result of the sale of a vehicle for $ 65,000 on 31\nDecember 2022. The analyst compiles the following information about the vehicle:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Detail</th></tr></thead><tbody><tr><td>Acquisition cost of the vehicle</td><td>$100,000</td></tr><tr><td>Acquisition date</td><td>1 January 2019</td></tr><tr><td>Estimated residual value at acquisition date</td><td>$10,000</td></tr><tr><td>Expected useful life</td><td>9 years</td></tr><tr><td>Depreciation method</td><td>Straight-line</td></tr></tbody></table>\nThe result of the sale of the vehicle is most likely:（2012原版书后Reading30）",
     "options": {
       "A": "a loss of $5,000",
       "B": "a gain of $5,000",
@@ -4298,7 +4298,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 81,
-    "question": "Using the following information, a Mexican corporation is computing the depreciation\nexpense for a piece of manufacturing equipment that it purchased at the start of the\ncurrent year. The company takes a full year's depreciation in the year of acquisition.\nCost of equipment MXN2,000,000\nEstimated residual value MXN200,000\nExpected useful life 10 years Total productive capacity 5,000,000 units\nProduction during year 800,000 units\nThe depreciation expense (in MXN) will most likely be higher by: （协会模拟考试题）",
+    "question": "Using the following information, a Mexican corporation is computing the depreciation\nexpense for a piece of manufacturing equipment that it purchased at the start of the\ncurrent year. The company takes a full year's depreciation in the year of acquisition.\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Cost of equipment</td><td>MXN2,000,000</td></tr><tr><td>Estimated residual value</td><td>MXN200,000</td></tr><tr><td>Expected useful life</td><td>10 years</td></tr><tr><td>Total productive capacity</td><td>5,000,000 units</td></tr><tr><td>Production during year</td><td>800,000 units</td></tr></tbody></table>\nThe depreciation expense (in MXN) will most likely be higher by: （协会模拟考试题）",
     "options": {
       "A": "112,000, using the double-declining method compared with the units-of-production method",
       "B": "140,000, using the units-of-production method compared with the straight-line method",
@@ -4313,7 +4313,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 82,
-    "question": "Assume U.S. GAAP applies unless otherwise noted. An analyst determined the\nfollowing information concerning Franklin, Inc.’s stamping machine:\nAcquired January 1, 1998\nCost $22 million\nDepreciation straight line method\nEstimated useful life 12 years\nSalvage value $4 million\nAs of December 31, 2004, the stamping machine is expected to generate $1,500,000 per\nyear for five more years and will then be sold for $1,000,000. The stamping machine is:",
+    "question": "Assume U.S. GAAP applies unless otherwise noted. An analyst determined the\nfollowing information concerning Franklin, Inc.’s stamping machine:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Detail</th></tr></thead><tbody><tr><td>Acquired</td><td>January 1, 1998</td></tr><tr><td>Cost</td><td>$22 million</td></tr><tr><td>Depreciation</td><td>Straight-line method</td></tr><tr><td>Estimated useful life</td><td>12 years</td></tr><tr><td>Salvage value</td><td>$4 million</td></tr></tbody></table>\nAs of December 31, 2004, the stamping machine is expected to generate $1,500,000 per\nyear for five more years and will then be sold for $1,000,000. The stamping machine is:",
     "options": {
       "A": "impaired because its carrying value exceeds expected future cash flows",
       "B": "impaired because expected salvage value has declined",
@@ -4328,7 +4328,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 83,
-    "question": "The demand of products sold by Argo has been decreased due to the market place\nchange for the company, and this decrease is not expected to recover to the previous\ncondition in the forseeable future. The following information is provided by Argo about\na customer list:\nItem description $ (thousands)\nCarrying value amount 930,000\nUndiscounted expected future cash flows 960,000\nPresent value of expected future cash flows 886,000\nFair value if sold 890,000\nCosts to sell 7,000\nWhich of the following statements is most accurate? As an intangible asset with\nindifinate life, the customer list is impaired:（未知改编）",
+    "question": "The demand of products sold by Argo has been decreased due to the market place\nchange for the company, and this decrease is not expected to recover to the previous\ncondition in the forseeable future. The following information is provided by Argo about\na customer list:\n<table class=\"q-table\"><thead><tr><th>Item Description</th><th>$ (thousands)</th></tr></thead><tbody><tr><td>Carrying value amount</td><td>930,000</td></tr><tr><td>Undiscounted expected future cash flows</td><td>960,000</td></tr><tr><td>Present value of expected future cash flows</td><td>886,000</td></tr><tr><td>Fair value if sold</td><td>890,000</td></tr><tr><td>Costs to sell</td><td>7,000</td></tr></tbody></table>\nWhich of the following statements is most accurate? As an intangible asset with\nindifinate life, the customer list is impaired:（未知改编）",
     "options": {
       "A": "IFRS only",
       "B": "U.S. GAAP only",
@@ -4343,7 +4343,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 84,
-    "question": "A company that reports in accordance with IFRS does not use the cost model to value its\ninvestment properties and property, plant, and equipment. Information related to an\ninvestment property and a plant is as follows:\nEnd of Year\n€ thousands Carrying Value Fair Value\nInvestment property 1,100 2,000\nPlant 1,200 3,000\nThe impact on its net income for the year will most likely be a gain (in thousands) of:",
+    "question": "A company that reports in accordance with IFRS does not use the cost model to value its\ninvestment properties and property, plant, and equipment. Information related to an\ninvestment property and a plant is as follows (End of Year):\n<table class=\"q-table\"><thead><tr><th>€ thousands</th><th>Carrying Value</th><th>Fair Value</th></tr></thead><tbody><tr><td>Investment property</td><td>1,100</td><td>2,000</td></tr><tr><td>Plant</td><td>1,200</td><td>3,000</td></tr></tbody></table>\nThe impact on its net income for the year will most likely be a gain (in thousands) of:",
     "options": {
       "A": "€900",
       "B": "€1,800",
@@ -4403,7 +4403,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 88,
-    "question": "Under IFRS, Segeo owns several investment properties and these properties are valued\nunder fair value model, based on prevailing rental market. The table shows a summary\nfor the valuation of investment properties:\nInitial cost (acquired in 2019) $50 million\nValue of property revalued at 31 Dec. 2020 $50.25 million\nValue of property revalued at 31 Dec. 2021 $55.75 million\nValue of property revalued at 31 Dec. 2022 $48.25 million\nWhich of the following most accurately describes the accounting treatment for the\ninvestment property owned by Segeo in 2017?",
+    "question": "Under IFRS, Segeo owns several investment properties and these properties are valued\nunder fair value model, based on prevailing rental market. The table shows a summary\nfor the valuation of investment properties:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Initial cost (acquired in 2019)</td><td>$50 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2020</td><td>$50.25 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2021</td><td>$55.75 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2022</td><td>$48.25 million</td></tr></tbody></table>\nWhich of the following most accurately describes the accounting treatment for the\ninvestment property owned by Segeo in 2017?",
     "options": {
       "A": "5.25 million charged to OCI, and 1.75 million charged to net income",
       "B": "7.5 million charged to OCI",
@@ -4448,7 +4448,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 91,
-    "question": "On 1 January 2022 the market rate of interest on a company's bonds is 5 percent and it\nissues a bond with the following characteristics:\nFace value $500 million\nCoupon rate, paid annually 3%\nMaturity date December 31,2031 (10 years)\nIssue price 84.56\nIf the company uses IFRS, its interest expense (in millions) in 2022 is closest to:",
+    "question": "On 1 January 2022 the market rate of interest on a company's bonds is 5 percent and it\nissues a bond with the following characteristics:\n<table class=\"q-table\"><thead><tr><th>Characteristic</th><th>Value</th></tr></thead><tbody><tr><td>Face value</td><td>$500 million</td></tr><tr><td>Coupon rate, paid annually</td><td>3%</td></tr><tr><td>Maturity date</td><td>December 31, 2031 (10 years)</td></tr><tr><td>Issue price</td><td>84.56</td></tr></tbody></table>\nIf the company uses IFRS, its interest expense (in millions) in 2022 is closest to:",
     "options": {
       "A": "$18.46",
       "B": "$21.14",
@@ -4628,7 +4628,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 103,
-    "question": "The following information is available from a company’s current financial data,\nprepared according to US GAAP: （协会模拟考试题）\nDefined Benefit Plan: $ Thousands\nContributions to defined benefit plan 1,500\nEmployees’ service cost for the period 1,400\nInterest expense accrued on the beginning pension obligation 200\nExpected return on plan assets 400\nActuarial gains for the period 100\nThe pension expense (in $ thousands) reported in the current year is closest to:",
+    "question": "The following information is available from a company’s current financial data,\nprepared according to US GAAP: （协会模拟考试题）\n<table class=\"q-table\"><thead><tr><th>Defined Benefit Plan</th><th>$ Thousands</th></tr></thead><tbody><tr><td>Contributions to defined benefit plan</td><td>1,500</td></tr><tr><td>Employees’ service cost for the period</td><td>1,400</td></tr><tr><td>Interest expense accrued on the beginning pension obligation</td><td>200</td></tr><tr><td>Expected return on plan assets</td><td>400</td></tr><tr><td>Actuarial gains for the period</td><td>100</td></tr></tbody></table>\nThe pension expense (in $ thousands) reported in the current year is closest to:",
     "options": {
       "A": "1,200",
       "B": "1,500",
@@ -4688,7 +4688,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 107,
-    "question": "A company reported the following information of its tax related events.\n(‘000) 2022 2021\nDeferred tax assets 500 420\nDeferred tax liabilities 800 620\nEarnings before taxes 9,000 8,600\nIncome taxes at the statutory rate 2,600 2,880\nCurrent income tax expense 3,000 2,800\nThe company’s income tax expense during 2022 is closest to:未知）",
+    "question": "A company reported the following information of its tax related events.\n<table class=\"q-table\"><thead><tr><th>(‘000)</th><th>2022</th><th>2021</th></tr></thead><tbody><tr><td>Deferred tax assets</td><td>500</td><td>420</td></tr><tr><td>Deferred tax liabilities</td><td>800</td><td>620</td></tr><tr><td>Earnings before taxes</td><td>9,000</td><td>8,600</td></tr><tr><td>Income taxes at the statutory rate</td><td>2,600</td><td>2,880</td></tr><tr><td>Current income tax expense</td><td>3,000</td><td>2,800</td></tr></tbody></table>\nThe company’s income tax expense during 2022 is closest to:未知）",
     "options": {
       "A": "$3,000",
       "B": "$3,100",
@@ -4703,7 +4703,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 108,
-    "question": "The following information is available for a company that prepares its financial\nstatements according to US GAAP:\n2022 2021\nDeferred tax assets $ 1,200 $ 1,000\nDeferred tax liabilities $ 700 $ 800 Valuation allowance $ 600 $ 500\nThe overall effect on 2022 net income from the above changes in the company’s\ndeferred tax accounts is closest to a:",
+    "question": "The following information is available for a company that prepares its financial\nstatements according to US GAAP:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>2022</th><th>2021</th></tr></thead><tbody><tr><td>Deferred tax assets</td><td>$1,200</td><td>$1,000</td></tr><tr><td>Deferred tax liabilities</td><td>$700</td><td>$800</td></tr><tr><td>Valuation allowance</td><td>$600</td><td>$500</td></tr></tbody></table>\nThe overall effect on 2022 net income from the above changes in the company’s\ndeferred tax accounts is closest to a:",
     "options": {
       "A": "$200 increase",
       "B": "$300 increase",
@@ -4718,7 +4718,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 109,
-    "question": "The following information is about a company equipment, which was purchased on 1\nJanuary 2007:\nAccounting Purposes Tax Purposes\n2007 Acquisition cost $100,000 $100,000\nDepreciation method Straight-line Double-declining balance method\nUseful life 10 years 8 years\nSalvage value $20,000 $0\nTax rate 30% 30%\nAt the end of 2007, the balance sheet should occur:（未知）",
+    "question": "The following information is about a company equipment, which was purchased on 1\nJanuary 2007:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Accounting Purposes</th><th>Tax Purposes</th></tr></thead><tbody><tr><td>2007 Acquisition cost</td><td>$100,000</td><td>$100,000</td></tr><tr><td>Depreciation method</td><td>Straight-line</td><td>Double-declining balance method</td></tr><tr><td>Useful life</td><td>10 years</td><td>8 years</td></tr><tr><td>Salvage value</td><td>$20,000</td><td>$0</td></tr><tr><td>Tax rate</td><td>30%</td><td>30%</td></tr></tbody></table>\nAt the end of 2007, the balance sheet should occur:（未知）",
     "options": {
       "A": "$3,600 deferred tax liability",
       "B": "$5,100 deferred tax asset",
@@ -4928,7 +4928,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 123,
-    "question": "The following selected financial information is available：\nMetric (in $ millions)\nSales 421\nCOGS 315\nPurchase 300\nAverage accounts receivable 40\nAverage inventories 36\nAverage accounts payable 33\nThe company’s cash conversion cycle (in days) is closest to:",
+    "question": "The following selected financial information is available：\n<table class=\"q-table\"><thead><tr><th>Metric</th><th>(in $ millions)</th></tr></thead><tbody><tr><td>Sales</td><td>421</td></tr><tr><td>COGS</td><td>315</td></tr><tr><td>Purchase</td><td>300</td></tr><tr><td>Average accounts receivable</td><td>40</td></tr><tr><td>Average inventories</td><td>36</td></tr><tr><td>Average accounts payable</td><td>33</td></tr></tbody></table>\nThe company’s cash conversion cycle (in days) is closest to:",
     "options": {
       "A": "36.8",
       "B": "36.4",
@@ -4973,7 +4973,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 126,
-    "question": "The following information is selected from a company’s balance sheet:\nCash $4,100\nMarketable securities $17,200\nAccounts receivable $225,300\nInventory $229,400\nTotal current assets $475,500\nCurrent liabilities $339,600\nThe company’s quick ratio is closest to:",
+    "question": "The following information is selected from a company’s balance sheet:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Amount</th></tr></thead><tbody><tr><td>Cash</td><td>$4,100</td></tr><tr><td>Marketable securities</td><td>$17,200</td></tr><tr><td>Accounts receivable</td><td>$225,300</td></tr><tr><td>Inventory</td><td>$229,400</td></tr><tr><td>Total current assets</td><td>$475,500</td></tr><tr><td>Current liabilities</td><td>$339,600</td></tr></tbody></table>\nThe company’s quick ratio is closest to:",
     "options": {
       "A": "1.40",
       "B": "0.06",
@@ -5003,7 +5003,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 128,
-    "question": "The following financial data is available for a company:\nReturn on assets (ROA) 3.8%\nTotal asset turnover 1.82\nFinancial leverage 1.65\nDividend payout ratio 47.1%\nThe company’s sustainable growth rate is closest to:（协会模拟考试题改编）",
+    "question": "The following financial data is available for a company:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Return on assets (ROA)</td><td>3.8%</td></tr><tr><td>Total asset turnover</td><td>1.82</td></tr><tr><td>Financial leverage</td><td>1.65</td></tr><tr><td>Dividend payout ratio</td><td>47.1%</td></tr></tbody></table>\nThe company’s sustainable growth rate is closest to:（协会模拟考试题改编）",
     "options": {
       "A": "3.00%",
       "B": "3.32%",
@@ -5018,7 +5018,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 129,
-    "question": "Consider the following information available for a company for last year:\nROE 16%\nNet profit margin 20%\nRevenue $500,000\nAverage total assets $800,000\nThe average shareholder’s equity is closest to:",
+    "question": "Consider the following information available for a company for last year:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>ROE</td><td>16%</td></tr><tr><td>Net profit margin</td><td>20%</td></tr><tr><td>Revenue</td><td>$500,000</td></tr><tr><td>Average total assets</td><td>$800,000</td></tr></tbody></table>\nThe average shareholder’s equity is closest to:",
     "options": {
       "A": "645,000",
       "B": "625,000",
@@ -5048,7 +5048,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 131,
-    "question": "A company’s most recent balance sheet shows the following values (NZ$ thousands):\nAccounts payable 3,800\nLong-term debt 5,590\nOther long-term liabilities 800\nCommon stock 1,200\nRetained earnings 1,810\nThe company’s debt- to- capital ratio is closest to:",
+    "question": "A company’s most recent balance sheet shows the following values (NZ$ thousands):\n<table class=\"q-table\"><thead><tr><th>Item</th><th>NZ$ thousands</th></tr></thead><tbody><tr><td>Accounts payable</td><td>3,800</td></tr><tr><td>Long-term debt</td><td>5,590</td></tr><tr><td>Other long-term liabilities</td><td>800</td></tr><tr><td>Common stock</td><td>1,200</td></tr><tr><td>Retained earnings</td><td>1,810</td></tr></tbody></table>\nThe company’s debt- to- capital ratio is closest to:",
     "options": {
       "A": "0.77",
       "B": "1.86",
@@ -5063,7 +5063,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 132,
-    "question": "The following common-size income statement data and tax rates are available on a\ncompany.\nFinancial Item Current Year (%)\nRevenues 100\nCost of goods sold 37.6\nInterest expense 3.0\nResearch expenses 4.3\nSelling and general expenses 31.9\nIncome tax rate 20%\nPrior Year’s Profitability Ratios\nGross profit margin 61.5%\nOperating profit margin 25.8%\nNet profit margin 17.8%\nThe profitability ratio that had the largest absolute increase in value in the current year\nis the: （协会模拟考试题改编）",
+    "question": "The following common-size income statement data and tax rates are available on a\ncompany.\n<table class=\"q-table\"><thead><tr><th>Financial Item</th><th>Current Year (%)</th></tr></thead><tbody><tr><td>Revenues</td><td>100</td></tr><tr><td>Cost of goods sold</td><td>37.6</td></tr><tr><td>Interest expense</td><td>3.0</td></tr><tr><td>Research expenses</td><td>4.3</td></tr><tr><td>Selling and general expenses</td><td>31.9</td></tr><tr><td>Income tax rate</td><td>20%</td></tr></tbody></table>\n<table class=\"q-table\"><thead><tr><th>Prior Year’s Profitability Ratios</th><th>Value</th></tr></thead><tbody><tr><td>Gross profit margin</td><td>61.5%</td></tr><tr><td>Operating profit margin</td><td>25.8%</td></tr><tr><td>Net profit margin</td><td>17.8%</td></tr></tbody></table>\nThe profitability ratio that had the largest absolute increase in value in the current year\nis the: （协会模拟考试题改编）",
     "options": {
       "A": "operating profit margin",
       "B": "net profit margin",
@@ -5588,7 +5588,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 34,
-    "question": "The following information is available for a company and the industry in which it competes: Company Industry\nAccounts receivable turnover 5.6 times 6.5 times\nInventory turnover 4.2 times 4.0 times\nNumber of days of payables 28 days 36 days\nOperating cycle ? 147 days\nCash conversion cycle 124 days ?\nRelative to the industry, the company’s operating cycle:\n（协会模考题）",
+    "question": "The following information is available for a company and the industry in which it competes:\n<table class=\"q-table\"><thead><tr><th></th><th>Company</th><th>Industry</th></tr></thead><tbody><tr><td>Accounts receivable turnover</td><td>5.6 times</td><td>6.5 times</td></tr><tr><td>Inventory turnover</td><td>4.2 times</td><td>4.0 times</td></tr><tr><td>Number of days of payables</td><td>28 days</td><td>36 days</td></tr><tr><td>Operating cycle</td><td>?</td><td>147 days</td></tr><tr><td>Cash conversion cycle</td><td>124 days</td><td>?</td></tr></tbody></table>\nRelative to the industry, the company’s operating cycle:\n（协会模考题）",
     "options": {
       "A": "is shorter, but its cash conversion cycle is longer",
       "B": "and cash conversion cycle are both longer",
@@ -5678,7 +5678,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 40,
-    "question": "The current ratio for the firm’s peer is 3.2. Based on the current ratio, the firm’s liquidity\ncompared with peer is best described as being:\nAs of 31 December 2022 $ thousands\nCash 200\nAccounts receivable 350\nInventory 1,250\nAccounts payable 300\nTaxes payable 200\nInstallment loan payable, due in three equal annual payments on 30 June.",
+    "question": "The current ratio for the firm’s peer is 3.2. Based on the current ratio, the firm’s liquidity\ncompared with peer is best described as being:\nAs of 31 December 2022\n<table class=\"q-table\"><thead><tr><th>Item</th><th>$ thousands</th></tr></thead><tbody><tr><td>Cash</td><td>200</td></tr><tr><td>Accounts receivable</td><td>350</td></tr><tr><td>Inventory</td><td>1,250</td></tr><tr><td>Accounts payable</td><td>300</td></tr><tr><td>Taxes payable</td><td>200</td></tr><tr><td>Installment loan payable, due in three equal annual payments on 30 June</td><td></td></tr></tbody></table>",
     "options": {
       "A": "higher",
       "B": "equivalent",
@@ -5828,7 +5828,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 50,
-    "question": "A company has a fixed $1,100 capital budget and has the opportunity to invest in the\nfour independent projects listed in the table: 18\n（ 年模考题） Project Investment outlay NPV\n1 $600 $100\n2 $500 $100\n3 $300 $50\n4 $200 $50\nThe combination of projects that provides the best choice is:",
+    "question": "A company has a fixed $1,100 capital budget and has the opportunity to invest in the\nfour independent projects listed in the table: （18年模考题）\n<table class=\"q-table\"><thead><tr><th>Project</th><th>Investment Outlay</th><th>NPV</th></tr></thead><tbody><tr><td>1</td><td>$600</td><td>$100</td></tr><tr><td>2</td><td>$500</td><td>$100</td></tr><tr><td>3</td><td>$300</td><td>$50</td></tr><tr><td>4</td><td>$200</td><td>$50</td></tr></tbody></table>\nThe combination of projects that provides the best choice is:",
     "options": {
       "A": "2, 3, and 4",
       "B": "1, 3, and 4",
@@ -5903,7 +5903,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 55,
-    "question": "A project has the following annual cash flows:\nYear 0 Year 1 Year 2 Year 3 Year 4\n‒$4,662,005 $22,610,723 ‒$41,072,261 $33,116,550 ‒$10,000,000\nWhich of the following discount rates is most likely to yield the highest net present value ?",
+    "question": "A project has the following annual cash flows:\n<table class=\"q-table\"><thead><tr><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th></tr></thead><tbody><tr><td>‒$4,662,005</td><td>$22,610,723</td><td>‒$41,072,261</td><td>$33,116,550</td><td>‒$10,000,000</td></tr></tbody></table>\nWhich of the following discount rates is most likely to yield the highest net present value ?",
     "options": {
       "A": "8%",
       "B": "15%",
@@ -6098,7 +6098,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 68,
-    "question": "An analyst gathered the following Information about the capital structure and before-tax\ncomponent costs for a company. The company’s marginal tax rate is 40%.\nCapital component Book Value (000) Market Value(000) Component cost\nDebt $100 $80 8%\nPreferred stock $20 $20 10% Common stock $100 $200 12%\nThe company’s weighted average cost of capital (WACC) is closest to: 1906\n（ 考题回顾）",
+    "question": "An analyst gathered the following Information about the capital structure and before-tax\ncomponent costs for a company. The company’s marginal tax rate is 40%.\n<table class=\"q-table\"><thead><tr><th>Capital Component</th><th>Book Value (000)</th><th>Market Value (000)</th><th>Component Cost</th></tr></thead><tbody><tr><td>Debt</td><td>$100</td><td>$80</td><td>8%</td></tr><tr><td>Preferred stock</td><td>$20</td><td>$20</td><td>10%</td></tr><tr><td>Common stock</td><td>$100</td><td>$200</td><td>12%</td></tr></tbody></table>\nThe company’s weighted average cost of capital (WACC) is closest to: （1906考题回顾）",
     "options": {
       "A": "8.55%",
       "B": "9.95%",
@@ -6623,7 +6623,7 @@ var JC_QUESTIONS =
     "subject": "经济学",
     "subjectEn": "Economics",
     "num": 5,
-    "question": "Three firms operate under perfect competition, producing 900 units of the same product but using different production technologies. Each company's cost structure is indicated\nin the table: 1306\nCompany X Y Z\nTotal Variable Costs $2,700 $3,600 $4,500\nTotal Fixed Costs 2,700 1,800 900\nTotal Costs $5,400 $5,400 $5,400\nWhich of the following statements is most accurate? If the unit selling price is:",
+    "question": "Three firms operate under perfect competition, producing 900 units of the same product but using different production technologies. Each company's cost structure is indicated\nin the table: \uff081306题\uff09\n<table class=\"q-table\"><thead><tr><th></th><th>Company X</th><th>Company Y</th><th>Company Z</th></tr></thead><tbody><tr><td>Total Variable Costs</td><td>$2,700</td><td>$3,600</td><td>$4,500</td></tr><tr><td>Total Fixed Costs</td><td>2,700</td><td>1,800</td><td>900</td></tr><tr><td>Total Costs</td><td>$5,400</td><td>$5,400</td><td>$5,400</td></tr></tbody></table>\nWhich of the following statements is most accurate? If the unit selling price is:",
     "options": {
       "A": "$6.00, all firms should exit the market in the long run",
       "B": "$4.50, all firms should continue to operate in the short run, but exit the market in the long",
@@ -6908,7 +6908,7 @@ var JC_QUESTIONS =
     "subject": "经济学",
     "subjectEn": "Economics",
     "num": 24,
-    "question": "An analyst gathered the following market share data for an industry comprised of six\nfirms:\nCompany A B C D E F\nMarket Share (%) 30 20 20 15 10 5\nSo, the industry’s four-firm concentration ratio and Herfindahl-Hirschman index are\nclosest to:\nFour-firm concentration ratio HHI",
+    "question": "An analyst gathered the following market share data for an industry comprised of six\nfirms:\n<table class=\"q-table\"><thead><tr><th>Company</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th></tr></thead><tbody><tr><td>Market Share (%)</td><td>30</td><td>20</td><td>20</td><td>15</td><td>10</td><td>5</td></tr></tbody></table>\nSo, the industry’s four-firm concentration ratio and Herfindahl-Hirschman index are\nclosest to:\nFour-firm concentration ratio HHI",
     "options": {
       "A": "95% 19.5%",
       "B": "85% 19.5%",
@@ -7643,7 +7643,7 @@ var JC_QUESTIONS =
     "subject": "经济学",
     "subjectEn": "Economics",
     "num": 73,
-    "question": "An Australian firm purchased a patent for USD20,000 and machinery for USD21,500 from\na U.S. firm when the exchange rates were as follows:\nRatio Exchange Rate\nUSD/EUR 1.29\nAUD/EUR 1.24\nThe impact of these transactions on the capital account of Australia (in AUD) is closest\nto:",
+    "question": "An Australian firm purchased a patent for USD20,000 and machinery for USD21,500 from\na U.S. firm when the exchange rates were as follows:\n<table class=\"q-table\"><thead><tr><th>Ratio</th><th>Exchange Rate</th></tr></thead><tbody><tr><td>USD/EUR</td><td>1.29</td></tr><tr><td>AUD/EUR</td><td>1.24</td></tr></tbody></table>\nThe impact of these transactions on the capital account of Australia (in AUD) is closest\nto:",
     "options": {
       "A": "19,225",
       "B": "20,667",
@@ -7688,7 +7688,7 @@ var JC_QUESTIONS =
     "subject": "经济学",
     "subjectEn": "Economics",
     "num": 76,
-    "question": "Spot Rate Expected Spot Rate in One Year USD/EUR 1.3001 1.3456\nUSD/GBP 1.5805 1.5489\nBased on the table, the appreciation of which of the following currencies is most likely\nto occur?",
+    "question": "<table class=\"q-table\"><thead><tr><th></th><th>Spot Rate</th><th>Expected Spot Rate in One Year</th></tr></thead><tbody><tr><td>USD/EUR</td><td>1.3001</td><td>1.3456</td></tr><tr><td>USD/GBP</td><td>1.5805</td><td>1.5489</td></tr></tbody></table>\nBased on the table, the appreciation of which of the following currencies is most likely\nto occur?",
     "options": {
       "A": "The British pound against the US dollar by 2.00%",
       "B": "The US dollar against the euro by 3.38%",
