@@ -68,7 +68,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 5,
-    "question": "The table below shows the stock prices and dividends of GF Corporation for three years.\nYear Price Dividend\n1 70 1\n2 65 2\n3 70 0.5\nIf the dividends are not reinvested in the account, the three-year holding period return of\nthe stock is closest to:",
+    "question": "The table below shows the stock prices and dividends of GF Corporation for three years.\n<table class=\"q-table\"><thead><tr><th>Year</th><th>Price</th><th>Dividend</th></tr></thead><tbody><tr><td>1</td><td>70</td><td>1</td></tr><tr><td>2</td><td>65</td><td>2</td></tr><tr><td>3</td><td>70</td><td>0.5</td></tr></tbody></table>\nIf the dividends are not reinvested in the account, the three-year holding period return of\nthe stock is closest to:",
     "options": {
       "A": "5.00%",
       "B": "7.14%",
@@ -308,7 +308,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 21,
-    "question": "An analyst gathered the following information:\nPortfolio Mean Return (%) Sharpe ratio (%)\n1 10 34\n2 10 37\nIf the risk-free rate of return is 5.0 percent, which portfolio’s coefficient of variation is\nlarger? （2012年12月考题回顾）",
+    "question": "An analyst gathered the following information:\n<table class=\"q-table\"><thead><tr><th>Portfolio</th><th>Mean Return (%)</th><th>Sharpe ratio (%)</th></tr></thead><tbody><tr><td>1</td><td>10</td><td>34</td></tr><tr><td>2</td><td>10</td><td>37</td></tr></tbody></table>\nIf the risk-free rate of return is 5.0 percent, which portfolio’s coefficient of variation is\nlarger? （2012年12月考题回顾）",
     "options": {
       "A": "Portfolio 1",
       "B": "Portfolio 2",
@@ -1328,7 +1328,7 @@ var JC_QUESTIONS =
     "subject": "数量分析",
     "subjectEn": "Quantitative Methods",
     "num": 89,
-    "question": "Bill Coldplay, CFA, is analyzing the performance of the Vigorous Growth Index Fund\n(VIGRX) over the past three years. The fund employs a passive management investment\napproach designed to track the performance of the MSCI US Prime Market Growth Index,\na broadly diversified index of growth stocks of large U.S. companies. Coldplay estimates\na regression using excess monthly returns on VIGRX (exVIGRX) as the dependent\nvariable and excess monthly returns on the S&P 500 Index (exS&PSOO) as the\nindependent variable. The data are expressed in decimal terms (e.g., 0.03, not 3%).\n𝐞𝐱𝐕𝐈𝐆𝐑𝐗 =𝒃 +𝒃 (𝐞𝐱𝐒&𝐏𝟓𝟎𝟎 )+𝜺\n𝒕 𝟎 𝟏 𝐭 𝐭\nResults from that analysis are presented in the following figures.\nCritical t-values, level of significance of 0.01: One-sided,right side: +2.4411\nEstimated Coefficients\nCoefficients Coefficient Estimate Standard Error\n𝒃 0.0023 0.0022\n𝟎\n𝒃 1.1163 0.0624\n𝟏\nPartial ANOVA Table\nSource of Variation Sum of Squares\nRegression (explained) 0.0228\nError (unexplained) 0.0024\nColdplay would like to test the following hypothesis:𝑯 :𝒃 ≤𝟏versus 𝑯 :𝒃 >𝟏at the\n𝟎 𝟏 𝟏 𝟏\n1 % significance level. The calculated t-statistic and the appropriate conclusion are:\nCalculated t-statistic Appropriate conclusion",
+    "question": "Bill Coldplay, CFA, is analyzing the performance of the Vigorous Growth Index Fund\n(VIGRX) over the past three years. The fund employs a passive management investment\napproach designed to track the performance of the MSCI US Prime Market Growth Index,\na broadly diversified index of growth stocks of large U.S. companies. Coldplay estimates\na regression using excess monthly returns on VIGRX (exVIGRX) as the dependent\nvariable and excess monthly returns on the S&P 500 Index (exS&PSOO) as the\nindependent variable. The data are expressed in decimal terms (e.g., 0.03, not 3%).\n𝐞𝐱𝐕𝐈𝐆𝐑𝐗 =𝒃 +𝒃 (𝐞𝐱𝐒&𝐏𝟓𝟎𝟎 )+𝜺\n𝒕 𝟎 𝟏 𝐭 𝐭\nResults from that analysis are presented in the following figures.\nCritical t-values, level of significance of 0.01: One-sided,right side: +2.4411\nEstimated Coefficients\n<table class=\"q-table\"><thead><tr><th>Coefficients</th><th>Coefficient Estimate</th><th>Standard Error</th></tr></thead><tbody><tr><td>𝒃₀</td><td>0.0023</td><td>0.0022</td></tr><tr><td>𝒃₁</td><td>1.1163</td><td>0.0624</td></tr></tbody></table>\nPartial ANOVA Table\n<table class=\"q-table\"><thead><tr><th>Source of Variation</th><th>Sum of Squares</th></tr></thead><tbody><tr><td>Regression (explained)</td><td>0.0228</td></tr><tr><td>Error (unexplained)</td><td>0.0024</td></tr></tbody></table>\nColdplay would like to test the following hypothesis:𝑯 :𝒃 ≤𝟏versus 𝑯 :𝒃 >𝟏at the\n𝟎 𝟏 𝟏 𝟏\n1 % significance level. The calculated t-statistic and the appropriate conclusion are:\nCalculated t-statistic Appropriate conclusion",
     "options": {
       "A": "1.86 Reject 𝑯",
       "B": "1.86 Fail to reject 𝑯",
@@ -4268,7 +4268,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 79,
-    "question": "An analyst has gathered the following information about a company’s capital assets:\nYear ending 2017 2016 2015\nProperty, plant, and equipment €5,000 €5,000 €5,000\nAccumulated depreciation 750 500 250\nNet book value 4,250 4,500 4750\nAs of the end of 2017, the expected remaining life of the assets, in years, is closest to:",
+    "question": "An analyst has gathered the following information about a company’s capital assets:\n<table class=\"q-table\"><thead><tr><th></th><th>2017</th><th>2016</th><th>2015</th></tr></thead><tbody><tr><td>Property, plant, and equipment</td><td>€5,000</td><td>€5,000</td><td>€5,000</td></tr><tr><td>Accumulated depreciation</td><td>750</td><td>500</td><td>250</td></tr><tr><td>Net book value</td><td>4,250</td><td>4,500</td><td>4,750</td></tr></tbody></table>\nAs of the end of 2017, the expected remaining life of the assets, in years, is closest to:",
     "options": {
       "A": "6. （协会模拟考试题改编）",
       "B": "17",
@@ -4988,7 +4988,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 127,
-    "question": "Income statements for two companies (A and B) and the common-sized income\nstatement for the industry are provided below:\nAll $ figures in ’000s Company A Company B Industry\nSales $ 21,000 $ 16,500 100.0%\nCost of goods sold 12,706 10,478 63.8%\nSelling, general, and administrative 5,250 4,042 24.8%\nexpenses\nInterest expense 1,680 1,072 7.0%\nPretax earnings 1,364 908 4.4%\nTaxes 410 290 1.6%\nNet earnings $ 954 $ 618 2.8%\nThe best conclusion an analyst can make is that:（协会模拟考试题改编）",
+    "question": "Income statements for two companies (A and B) and the common-sized income\nstatement for the industry are provided below:\n<table class=\"q-table\"><thead><tr><th>All $ figures in ‘000s</th><th>Company A</th><th>Company B</th><th>Industry</th></tr></thead><tbody><tr><td>Sales</td><td>$21,000</td><td>$16,500</td><td>100.0%</td></tr><tr><td>Cost of goods sold</td><td>12,706</td><td>10,478</td><td>63.8%</td></tr><tr><td>Selling, general, and administrative expenses</td><td>5,250</td><td>4,042</td><td>24.8%</td></tr><tr><td>Interest expense</td><td>1,680</td><td>1,072</td><td>7.0%</td></tr><tr><td>Pretax earnings</td><td>1,364</td><td>908</td><td>4.4%</td></tr><tr><td>Taxes</td><td>410</td><td>290</td><td>1.6%</td></tr><tr><td>Net earnings</td><td>$954</td><td>$618</td><td>2.8%</td></tr></tbody></table>\nThe best conclusion an analyst can make is that:（协会模拟考试题改编）",
     "options": {
       "A": "Company B’s interest rate is the industry average",
       "B": "both companies’ tax rates are higher than the industry average",
@@ -5843,7 +5843,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 51,
-    "question": "Two mutually exclusive projects have the following cash flows (€) and internal rates of\nreturn (IRR):\nProject IRR Year 0 Year 1 Year 2 Year 3 Year 4\nA 27.97% -4,900 690 1,698 1,270 7,290\nB 28.37% -4,900 690 1,698 2,102 6,350\nAssuming a discount rate of 8% annually for both projects, the firm should most likely\naccept:\n（模拟题改编）",
+    "question": "Two mutually exclusive projects have the following cash flows (€) and internal rates of\nreturn (IRR):\n<table class=\"q-table\"><thead><tr><th>Project</th><th>IRR</th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th></tr></thead><tbody><tr><td>A</td><td>27.97%</td><td>-4,900</td><td>690</td><td>1,698</td><td>1,270</td><td>7,290</td></tr><tr><td>B</td><td>28.37%</td><td>-4,900</td><td>690</td><td>1,698</td><td>2,102</td><td>6,350</td></tr></tbody></table>\nAssuming a discount rate of 8% annually for both projects, the firm should most likely\naccept:\n（模拟题改编）",
     "options": {
       "A": "both projects",
       "B": "Project A only",
@@ -5873,7 +5873,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 53,
-    "question": "If the discount rate of 10%, the net present value (NPV) of the given investment is closest\nto:\nTime 0 1 2 3 4 5 6\nCash flow −1,500 300 600 1,000 200 500",
+    "question": "If the discount rate of 10%, the net present value (NPV) of the given investment is closest\nto:\n<table class=\"q-table\"><thead><tr><th>Time</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr></thead><tbody><tr><td>Cash flow</td><td>−1,500</td><td>300</td><td>600</td><td>1,000</td><td>200</td><td>500</td><td>300</td></tr></tbody></table>",
     "options": {
       "A": "605",
       "B": "578",
@@ -5888,7 +5888,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 54,
-    "question": "Information on two mutually exclusive projects are as follows:\nNet Present Internal Rate of\nYear 0 1 2 3 4 Value (NPV, € Return\nthousands) (IRR, %)\nProject X −15,000 2,000 5,000 8,000 8,000 354.0 16.0\nProject Y −13,250 200 500 7,000 15,000 ? ?\nThe appropriate hurdle rate to use in evaluating projects is 15.0%. Of the following\nstatements, which one is most accurate? The company should accept:",
+    "question": "Information on two mutually exclusive projects are as follows:\n<table class=\"q-table\"><thead><tr><th></th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th><th>NPV (€ thousands)</th><th>IRR (%)</th></tr></thead><tbody><tr><td>Project X</td><td>−15,000</td><td>2,000</td><td>5,000</td><td>8,000</td><td>8,000</td><td>354.0</td><td>16.0</td></tr><tr><td>Project Y</td><td>−13,250</td><td>200</td><td>500</td><td>7,000</td><td>15,000</td><td>?</td><td>?</td></tr></tbody></table>\nThe appropriate hurdle rate to use in evaluating projects is 15.0%. Of the following\nstatements, which one is most accurate? The company should accept:",
     "options": {
       "A": "Both projects",
       "B": "Project Y only",
@@ -5948,7 +5948,7 @@ var JC_QUESTIONS =
     "subject": "公司发行人",
     "subjectEn": "Corporate Issuers",
     "num": 58,
-    "question": "Wilson Flannery is concerned that this project has multiple IRRs.\nYear 0 1 2 3\nCash flows —50 100 0 —50\nHow many discount rates produce a zero NPV for this project?\n（原版书课后题）",
+    "question": "Wilson Flannery is concerned that this project has multiple IRRs.\n<table class=\"q-table\"><thead><tr><th>Year</th><th>0</th><th>1</th><th>2</th><th>3</th></tr></thead><tbody><tr><td>Cash flows</td><td>−50</td><td>100</td><td>0</td><td>−50</td></tr></tbody></table>\nHow many discount rates produce a zero NPV for this project?\n（原版书课后题）",
     "options": {
       "A": "One, a discount rate of 0 percent",
       "B": "Two, discount rates of 0 percent and 32 percent",
