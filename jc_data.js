@@ -149,8 +149,8 @@ var JC_QUESTIONS =
       "B": "€ 51,903.24",
       "C": "€ 58,831.19."
     },
-    "answer": "C",
-    "explanation": "Using a financial calculator: N = 8x12=96; the discount rate, I/Y = (6/12) = 0.5; PMT = 4,800; FV\n= 0; Mode = BGN; CPT PV = - 367,083.3329."
+    "answer": "B",
+    "explanation": "Step 1: Annual CD interest payment = €40,000 × 7% = €2,800.\nStep 2: Convert the savings account rate to an effective annual rate (EAR).\nEAR = (1 + 0.04/12)^12 − 1 = 4.0742%\nStep 3: Find the FV of the four annual payments of €2,800 at EAR = 4.0742% (ordinary annuity, END mode).\nN = 4; I/Y = 4.0742; PMT = 2,800; PV = 0; CPT FV = 11,903.24\nStep 4: Add the CD principal returned at maturity.\nTotal = €40,000 + €11,903.24 = €51,903.24"
   },
   {
     "id": "jc_QM_011",
