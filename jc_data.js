@@ -629,8 +629,8 @@ var JC_QUESTIONS =
       "B": "27%",
       "C": "15.5%"
     },
-    "answer": "B",
-    "explanation": "For a standard normal distribution, the probability that a random variable lies within 1 standard of\nthe mean is about 68%.\nThe probability that a random variable lies within 1.96 standard of the mean is about 95%.\nThe probability that a random variable lies within 1 standard deviation to 2 standard deviation is\nabout 13.5%."
+    "answer": "A",
+    "explanation": "For a standard normal distribution, the probability that a random variable lies within 1 standard of\nthe mean is about 68%.\nThe probability that a random variable lies within 1.96 standard of the mean is about 95%.\nThe probability that a random variable lies within 1 standard deviation to 2 standard deviation is\nabout 13.5%.\nP(1 < x < 2) = N(2) − N(1) ≈ 97.72% − 84.13% = 13.59% ≈ 13.5%."
   },
   {
     "id": "jc_QM_043",
@@ -644,8 +644,8 @@ var JC_QUESTIONS =
       "B": "is partially described by two parameters",
       "C": "can be the linear combination of two or more normal random variables."
     },
-    "answer": "B",
-    "explanation": "A normal distribution has an excess kurtosis of 0 (kurtosis of 3), is completely described by two\nparameters (mean and variance) and a liner combination of two or more normal random variables\nis also normally distributed."
+    "answer": "C",
+    "explanation": "A normal distribution has an excess kurtosis of 0 (kurtosis of 3), is completely described by two\nparameters (mean and variance) and a liner combination of two or more normal random variables\nis also normally distributed.\nOption A is incorrect: excess kurtosis = 0, not 3 (kurtosis = 3, but excess kurtosis = kurtosis − 3 = 0).\nOption B is incorrect: a normal distribution is completely (not partially) described by two parameters.\nOption C is correct: a linear combination of normal random variables is also normally distributed."
   },
   {
     "id": "jc_QM_044",
@@ -3555,7 +3555,7 @@ var JC_QUESTIONS =
       "C": "€20 million."
     },
     "answer": "C",
-    "explanation": "If the company’s actual ending shareholders’ equity is €247 million, then €10 million [€247–\n(€210 + €30 – €13)] has bypassed the net income calculation by being classified as other\ncomprehensive income."
+    "explanation": "If the company’s actual ending shareholders’ equity is €247 million, then €20 million [€247–\n(€210 + €30 – €13) = €247 – €227 = €20] has bypassed the net income calculation by being classified as other\ncomprehensive income."
   },
   {
     "id": "jc_FSA_032",
@@ -3885,7 +3885,7 @@ var JC_QUESTIONS =
       "C": "Subtract $9 million."
     },
     "answer": "A",
-    "explanation": "To derive operating cash flow, the company would make the following adjustments to net income:\nadd depreciation (a non-cash expense) of $7 million; subtract the decrease in inventory of $3\nmillion; add the increase in accounts payable of $10 million; and subtract the increase in accounts\nreceivable of $15 million. Total additions of $20 million and total subtractions of $15 million\nresult in net total additions of $5 million."
+    "explanation": "To derive operating cash flow, the company would make the following adjustments to net income:\nadd depreciation (a non-cash expense) of $7 million; add the decrease in inventory of $3\nmillion (a source of cash); add the increase in accounts payable of $10 million; and subtract the increase in accounts\nreceivable of $15 million. Total additions of $20 million and total subtractions of $15 million\nresult in net total additions of $5 million."
   },
   {
     "id": "jc_FSA_054",
@@ -4334,8 +4334,8 @@ var JC_QUESTIONS =
       "B": "U.S. GAAP only",
       "C": "both IFRS and U.S. GAAP"
     },
-    "answer": "A",
-    "explanation": "Under IFRS,the recoverable amount for customer list is the higher of:\n⚫ Value in use, which is the present value of the future cash flows: $886,000.\n⚫ Fair value less costs to sell: $890,000 -7,000 = $883,000.\nThe recoverable amount ($886,000) is lower than the carrying value ($930,000).\nTherefore, the asset is impaired and should be written down to that amount.\nUnder U.S. GAAP, the carrying value of the customer list is lower than undiscounted future cash\nflow, so the customer list is not impaired under US GAAP."
+    "answer": "C",
+    "explanation": "Under IFRS (IAS 36), recoverable amount = higher of value in use vs. FVLCTS:\n⚫ Value in use (PV of future cash flows): $886,000.\n⚫ Fair value less costs to sell: $890,000 − $7,000 = $883,000.\nRecoverable amount = $886,000 < carrying value $930,000 → impaired under IFRS.\nUnder U.S. GAAP, indefinite-lived intangible assets (ASC 350-30) are tested by directly comparing carrying value to fair value — the undiscounted cash flow recoverability screen applies only to finite-lived long-lived assets under ASC 360, NOT to indefinite-lived intangibles.\nCarrying value ($930,000) > fair value ($890,000) → also impaired under U.S. GAAP.\nTherefore, the customer list is impaired under both IFRS and U.S. GAAP."
   },
   {
     "id": "jc_FSA_084",
@@ -4350,7 +4350,7 @@ var JC_QUESTIONS =
       "C": "€2,700"
     },
     "answer": "A",
-    "explanation": "The fair value model would be used for the investment property, and the €900 thousand gain\nshould be recognized on the company’s income statement. The revaluation model would be used\nfor the plant, and the €1,800 thousand gain should be recognized in the revaluation surplus\naccount on the balance sheet with no impact on net income. Therefore, only the €100 thousand\nwill affect net income."
+    "explanation": "The fair value model would be used for the investment property, and the €900 thousand gain\nshould be recognized on the company’s income statement. The revaluation model would be used\nfor the plant, and the €1,800 thousand gain should be recognized in the revaluation surplus\naccount on the balance sheet with no impact on net income. Therefore, only the €900 thousand\nwill affect net income."
   },
   {
     "id": "jc_FSA_085",
@@ -4403,7 +4403,7 @@ var JC_QUESTIONS =
     "subject": "财务报表",
     "subjectEn": "Financial Statement Analysis",
     "num": 88,
-    "question": "Under IFRS, Segeo owns several investment properties and these properties are valued\nunder fair value model, based on prevailing rental market. The table shows a summary\nfor the valuation of investment properties:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Initial cost (acquired in 2019)</td><td>$50 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2020</td><td>$50.25 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2021</td><td>$55.75 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2022</td><td>$48.25 million</td></tr></tbody></table>\nWhich of the following most accurately describes the accounting treatment for the\ninvestment property owned by Segeo in 2017?",
+    "question": "Under IFRS, Segeo owns several investment properties and these properties are valued\nunder fair value model, based on prevailing rental market. The table shows a summary\nfor the valuation of investment properties:\n<table class=\"q-table\"><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Initial cost (acquired in 2019)</td><td>$50 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2020</td><td>$50.25 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2021</td><td>$55.75 million</td></tr><tr><td>Value of property revalued at 31 Dec. 2022</td><td>$48.25 million</td></tr></tbody></table>\nWhich of the following most accurately describes the accounting treatment for the\ninvestment property owned by Segeo in 2022?",
     "options": {
       "A": "5.25 million charged to OCI, and 1.75 million charged to net income",
       "B": "7.5 million charged to OCI",
@@ -9299,8 +9299,8 @@ var JC_QUESTIONS =
       "B": "weak, then investment strategies based on fundamental analysis could achieve abnormal",
       "C": "strong, then prices reflect only private information."
     },
-    "answer": "A",
-    "explanation": "Restricting short selling will reduce arbitrage trading, which promotes market efficiency.\nPermitting foreign investor trading increases market participation, which makes markets more\nefficient. Penalizing insider trading encourages greater market participation, which increases\nmarket efficiency."
+    "answer": "C",
+    "explanation": "Option A is accurate: semi-strong form efficiency encompasses weak form, so prices do fully reflect all past market data.\nOption B is accurate: weak form only restricts technical analysis; fundamental analysis could still generate abnormal returns.\nOption C is least accurate: strong form efficiency means prices reflect ALL information — both public AND private. The word 'only private' is incorrect; strong form includes public information as well."
   },
   {
     "id": "jc_EQ_044",
@@ -10664,8 +10664,8 @@ var JC_QUESTIONS =
       "B": "Nonsystematic risk",
       "C": "both systematic and unsystematic risk."
     },
-    "answer": "B",
-    "explanation": "Nonsystematic risk is the risk that pertains to a single company or industry.\nSystematic (market-related) risk is caused by macroeconomic variables such as interest rate\nvolatility."
+    "answer": "A",
+    "explanation": "Systematic (market-related) risk is caused by macroeconomic variables such as changes in industrial production, interest rate volatility, and inflation — factors that affect the entire economy.\nNonsystematic risk is unique to a single company or industry and can be diversified away.\nTherefore, changes in industrial production contribute to systematic risk."
   },
   {
     "id": "jc_PM_035",
@@ -10695,7 +10695,7 @@ var JC_QUESTIONS =
       "C": "Security 3"
     },
     "answer": "B",
-    "explanation": "𝜎𝜎𝑖𝑖\nβ Se 𝑖𝑖 c = ur 𝜌𝜌 it 𝑖𝑖 y ,𝑚𝑚 2 𝜎𝜎h𝑚𝑚as the lowest beta value: 1.05= ρ 2,m ×σ 2 = 0.8×21%\nσ 16%\nm\nCompared to security 1 and 3 with beta values of 1.1375 and 1.3125, respectively."
+    "explanation": "𝜎𝜎𝑖𝑖\nβ Se 𝑖𝑖 c = ur 𝜌𝜌 it 𝑖𝑖 y ,𝑚𝑚 2 𝜎𝜎h𝑚𝑚as the lowest beta value: 1.05= ρ 2,m ×σ 2 = 0.8×21%\nσ 16%\nm\nCompared to security 1 and 3 with beta values of 1.1375 and 1.1813, respectively.\nβ₃ = ρ₃,m × (σ₃/σm) = 0.9 × (21%/16%) = 1.1813"
   },
   {
     "id": "jc_PM_037",
@@ -12383,7 +12383,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 66,
-    "question": "Using the information below, and prices are per 100 of par value. The bond portfolio’s\nmoney duration is closest to: (2208 )\n<table class=\"q-table\"><thead><tr><th>Bond</th><th>Full Price</th><th>Market Value</th><th>Modified Duration</th></tr></thead><tbody><tr><td>A</td><td>95.00</td><td>180,000</td><td>7.5</td></tr><tr><td>B</td><td>85.00</td><td>100,000</td><td>5.5</td></tr><tr><td>C</td><td>90.00</td><td>120,000</td><td></td></tr></tbody></table>",
+    "question": "Using the information below, and prices are per 100 of par value. The bond portfolio’s\nmoney duration is closest to: (2208 )\n<table class=\"q-table\"><thead><tr><th>Bond</th><th>Full Price</th><th>Market Value</th><th>Modified Duration</th></tr></thead><tbody><tr><td>A</td><td>95.00</td><td>180,000</td><td>7.5</td></tr><tr><td>B</td><td>85.00</td><td>100,000</td><td>5.5</td></tr><tr><td>C</td><td>90.00</td><td>120,000</td><td>10</td></tr></tbody></table>",
     "options": {
       "A": "686.40",
       "B": "707.50",
@@ -12563,7 +12563,7 @@ var JC_QUESTIONS =
     "subject": "固定收益",
     "subjectEn": "Fixed Income",
     "num": 78,
-    "question": "For a bond with a modified duration of 6 and a convexity of 0.50, which of the following\nchanges in credit spread would result in a price decrease closest to 7.4%?",
+    "question": "For a bond with a modified duration of 6 and a convexity of 50, which of the following\nchanges in credit spread would result in a price decrease closest to 7.4%?",
     "options": {
       "A": "-1.3%",
       "B": "1.3%",
@@ -13553,7 +13553,7 @@ var JC_QUESTIONS =
     "subject": "衍生品",
     "subjectEn": "Derivatives",
     "num": 47,
-    "question": "An analyst observes a current USD/GBP spot exchange rate of 1.22, a US risk-free rate\nof -0.25%, and a UK risk-free rate of 1.5%. Which of the following statements describe\nthe action that can take today to earn a riskless profit if the one-year USD/GBP forward\nrate is observed to be 1.205?",
+    "question": "An analyst observes a current USD/GBP spot exchange rate of 1.22, a US risk-free rate\nof 0.25%, and a UK risk-free rate of 1.5%. Which of the following statements describe\nthe action that can take today to earn a riskless profit if the one-year USD/GBP forward\nrate is observed to be 1.205?",
     "options": {
       "A": "No arbitrage opportunity exists, because the observed one-year USD/GBP FX forward rate",
       "B": "Since the no-arbitrage one-year USD/GBP forward rate is 1.196, the investor should borrow in US dollars and buy British pounds today, simultaneously selling British pounds against US dollars one year forward.",
