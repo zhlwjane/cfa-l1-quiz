@@ -1,4 +1,4 @@
-var CFA_QUESTIONS=[
+var CFA_QUESTIONS = [
   {
     "num": 1,
     "subject": "财务报表",
@@ -5507,8 +5507,8 @@ var CFA_QUESTIONS=[
       "B": "7.45.",
       "C": "7.50."
     },
-    "answer": "C",
-    "explanation": "A. Incorrect because the candidate calculates the Macaulay duration incorrectly: MacDur # 7.4 / (1 + 9%) = 6.8.\nBecause the duration gap is equal to the bond's Macaulay duration minus the investment horizon the investment\nhorizon is incorrectly stated as 6.8 years.\n\nB. Incorrect because the candidate confuses the Macaulay duration with the modified duration, thus incorrectly\ndetermining the investment horizon as 7.4 years.\n\nC. Correct because we use the fact that ModDur = MacDur / (1 + r) to calculate the Macaulay duration of the bond:\nMacDur = 7.4 x (1 + 9%) = 8.07. Because the duration gap is equal to the bond's Macaulay duration minus the\ninvestment horizon the investment horizon is closest to 8.1 years.\n\nFixed Income\n\nhorizon;",
+    "answer": "B",
+    "explanation": "A. Incorrect. This confuses the formula: 3.75 = 1.49 / (2 × 0.001 × 100) × 0.5 — incorrectly halving the result.\nB. Correct. Effective duration is calculated as:\nEffDur = (PV− − PV+) / (2 × ΔCurve × PV₀)\n= (100.75 − 99.26) / (2 × 0.001 × 100.00)\n= 1.49 / 0.20 = 7.45\nwhere PV− = 100.75 (price when rate decreases to 5.9%), PV+ = 99.26 (price when rate increases to 6.1%), ΔCurve = 0.001 (10 bps = 0.001), PV₀ = 100.00 (current price at 6.0%).\nC. Incorrect. This rounds the numerator incorrectly to 1.50 instead of 1.49: 1.50 / (2 × 0.001 × 100) = 7.50.",
     "display_num": 98
   },
   {
@@ -5599,7 +5599,7 @@ var CFA_QUESTIONS=[
       "C": "3.0."
     },
     "answer": "B",
-    "explanation": "A. Incorrect because both the coupon payment and discount rate used are annual:\nPV=\n12 12 12+100\n(1+0.04)* & (1+0.04)? + (1+0.04)*\nB. Correct because\nPV=\n6 6 6 6 6 6+100\n(1+0.02)* * (1+0.02)2 + (1+0.02)5 + (1+0.02)4 ui (140.02) 5 + (1+0.02)£\nC. Incorrect because the the coupon payment and discount rate are annual, similar to the other distractor. The\ndifference between this and other distractor is that payment is made at the beginning of the period, not at the\nend. =122.53\nFixed-Income Bond Valuation: Prices and Yields",
+    "explanation": "A. Incorrect. This calculates using only the price difference and the full rate change (not the two-way formula): 4.5 / (0.0075 × 106) = 5.66/2 ≈ 2.1, or alternatively uses the wrong denominator.\nB. Correct. Duration is estimated as:\nDuration = (P− − P+) / (2 × ΔYield × P₀)\n= (108.5 − 104.0) / (2 × 0.0075 × 106)\n= 4.5 / 1.59 = 2.83 ≈ 2.8\nwhere P− = 108.5 (price when rate decreases 75 bps), P+ = 104.0 (price when rate increases 75 bps), ΔYield = 0.0075, P₀ = 106 (current price).\nC. Incorrect. This rounds up or uses a slightly different formula, giving 3.0.",
     "display_num": 106
   },
   {
@@ -6547,8 +6547,8 @@ var CFA_QUESTIONS=[
       "B": "1.4%.",
       "C": "2.8%."
     },
-    "answer": "C",
-    "explanation": "A. Incorrect because event risk evolves around set dates, such as elections, new legislation, or other date-driven\nmilestones, such as holidays or political anniversaries, known in advance.\n\nB. Incorrect because thematic risks are known risks that evolve and expand over a period of time. Climate\nchange, pattern migration, the rise of populist forces, and the ongoing threat of terrorism fall into this category.\n\nC. Correct because exogenous risk is a sudden or unanticipated risk that impacts either a country’s cooperative\nstance, the ability of non-state actors to globalize, or both. Examples include sudden uprisings, invasions, or the\naftermath of natural disasters.\n\nEconomics",
+    "answer": "B",
+    "explanation": "A. Incorrect. This error occurs from not inverting the CAD/USD quote when computing the cross-rate:\nBeginning JPY/CAD = JPY/USD × CAD/USD = 105.42 × 1.3216 = 139.32\nEnd JPY/CAD = 104.74 × 1.2944 = 135.58\nPercentage change = 135.58/139.32 − 1 = −2.7%\nThis is incorrect because CAD/USD must be inverted to get USD/CAD before multiplying.\nB. Correct. The JPY/CAD cross-rate requires inverting the CAD/USD quote:\nJPY/CAD = JPY/USD ÷ CAD/USD = (JPY/USD) × (USD/CAD)\nBeginning JPY/CAD = 105.42 / 1.3216 = 79.766\nEnd JPY/CAD = 104.74 / 1.2944 = 80.918\nPercentage change = 80.918 / 79.766 − 1 = +1.44% ≈ 1.4%\nC. Incorrect. This doubles the percentage change by failing to divide by the beginning rate correctly, giving approximately 2.8%.",
     "display_num": 73
   },
   {
@@ -11286,7 +11286,7 @@ var CFA_QUESTIONS=[
   {
     "num": 7,
     "subject": "组合管理",
-    "question": "An analyst gathers the following information about a company: Payables turnover Inventory turnover Receivables turnover 8 2 10 If all purchases and sales were made on credit, the cash conversion cycle (based on a 360-day year) is:",
+    "question": "For a risk-neutral investor, the expected utility of the risk-free asset is most likely:",
     "options": {
       "A": "less than the utility generated for a risk-averse investor.",
       "B": "equal to the utility generated for a risk-averse investor.",
